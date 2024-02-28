@@ -1,4 +1,4 @@
-package simulation.src;
+package simulation;
 
 
 public class Wallet{

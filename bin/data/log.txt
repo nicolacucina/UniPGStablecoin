@@ -1,0 +1,3962 @@
+Day 0 of the simulation
+Wallet 0 wants to sell.
+Wallet 1 wants to sell.
+Wallet 2 wants to sell.
+Wallet 3 wants to buy.
+Wallet 4 wants to sell.
+Wallet 5 wants to buy.
+Wallet 6 wants to sell.
+Wallet 7 wants to buy.
+Wallet 8 wants to sell.
+Wallet 9 wants to sell.
+Wallet 10 wants to buy.
+Wallet 11 wants to buy.
+Wallet 12 wants to buy.
+Wallet 13 does nothing.
+Wallet 14 wants to buy.
+Wallet 15 wants to sell.
+Wallet 16 wants to sell.
+Wallet 17 wants to sell.
+Wallet 18 wants to sell.
+Wallet 19 wants to buy.
+Wallet 20 wants to sell.
+Wallet 21 wants to sell.
+Wallet 22 wants to buy.
+Wallet 23 wants to buy.
+Wallet 24 wants to sell.
+Wallet 25 does nothing.
+Wallet 26 wants to buy.
+Wallet 27 wants to buy.
+Wallet 28 wants to buy.
+Wallet 29 wants to buy.
+Wallet 30 wants to sell.
+Wallet 31 does nothing.
+Wallet 32 wants to sell.
+Wallet 33 does nothing.
+Wallet 34 wants to buy.
+Wallet 35 does nothing.
+Wallet 36 wants to sell.
+Wallet 37 wants to sell.
+Wallet 38 does nothing.
+Wallet 39 wants to sell.
+Wallet 40 wants to buy.
+Wallet 41 wants to buy.
+Wallet 42 does nothing.
+Wallet 43 wants to sell.
+Wallet 44 does nothing.
+Wallet 45 wants to buy.
+Wallet 46 wants to sell.
+Wallet 47 wants to buy.
+Wallet 48 wants to sell.
+Wallet 49 wants to sell.
+Wallet 50 wants to sell.
+Wallet 51 wants to sell.
+Wallet 52 wants to buy.
+Wallet 53 wants to sell.
+Wallet 54 wants to sell.
+Wallet 55 wants to buy.
+Wallet 56 wants to sell.
+Wallet 57 wants to sell.
+Wallet 58 wants to buy.
+Wallet 59 wants to buy.
+Wallet 60 wants to sell.
+Wallet 61 wants to buy.
+Wallet 62 wants to buy.
+Wallet 63 wants to sell.
+Wallet 64 wants to buy.
+Wallet 65 wants to sell.
+Wallet 66 does nothing.
+Wallet 67 wants to sell.
+Wallet 68 wants to buy.
+Wallet 69 wants to sell.
+Wallet 70 wants to buy.
+Wallet 71 wants to sell.
+Wallet 72 wants to buy.
+Wallet 73 wants to buy.
+Wallet 74 wants to buy.
+Wallet 75 wants to buy.
+Wallet 76 wants to sell.
+Wallet 77 wants to buy.
+Wallet 78 wants to buy.
+Wallet 79 wants to buy.
+Wallet 80 wants to sell.
+Wallet 81 wants to buy.
+Wallet 82 wants to sell.
+Wallet 83 wants to buy.
+Wallet 84 wants to sell.
+Wallet 85 wants to buy.
+Wallet 86 wants to buy.
+Wallet 87 wants to sell.
+Wallet 88 wants to buy.
+Wallet 89 wants to buy.
+Wallet 90 does nothing.
+Wallet 91 wants to sell.
+Wallet 92 wants to sell.
+Wallet 93 wants to sell.
+Wallet 94 wants to sell.
+Wallet 95 wants to buy.
+Wallet 96 wants to sell.
+Wallet 97 wants to sell.
+Wallet 98 wants to buy.
+Wallet 99 wants to buy.
+End of day0 token price: 1.0011777248047444
+Rebase, old token amount: 10000.0
+Rebase, new token amount: 9988.236605993465
+Day 1 of the simulation
+Wallet 0 wants to buy.
+Wallet 1 does nothing.
+Wallet 2 wants to sell.
+Wallet 3 wants to sell.
+Wallet 4 does nothing.
+Wallet 5 wants to sell.
+Wallet 6 wants to buy.
+Wallet 7 wants to buy.
+Wallet 8 wants to sell.
+Wallet 9 wants to sell.
+Wallet 10 wants to buy.
+Wallet 11 wants to sell.
+Wallet 12 wants to sell.
+Wallet 13 wants to buy.
+Wallet 14 wants to buy.
+Wallet 15 does nothing.
+Wallet 16 wants to sell.
+Wallet 17 wants to sell.
+Wallet 18 wants to sell.
+Wallet 19 wants to buy.
+Wallet 20 wants to sell.
+Wallet 21 wants to buy.
+Wallet 22 wants to buy.
+Wallet 23 wants to buy.
+Wallet 24 wants to sell.
+Wallet 25 does nothing.
+Wallet 26 wants to sell.
+Wallet 27 wants to buy.
+Wallet 28 does nothing.
+Wallet 29 wants to buy.
+Wallet 30 wants to buy.
+Wallet 31 wants to buy.
+Wallet 32 wants to sell.
+Wallet 33 does nothing.
+Wallet 34 wants to sell.
+Wallet 35 wants to buy.
+Wallet 36 wants to sell.
+Wallet 37 wants to sell.
+Wallet 38 wants to sell.
+Wallet 39 wants to sell.
+Wallet 40 wants to sell.
+Wallet 41 wants to sell.
+Wallet 42 wants to buy.
+Wallet 43 wants to sell.
+Wallet 44 does nothing.
+Wallet 45 wants to sell.
+Wallet 46 wants to sell.
+Wallet 47 wants to buy.
+Wallet 48 does nothing.
+Wallet 49 does nothing.
+Wallet 50 wants to buy.
+Wallet 51 wants to sell.
+Wallet 52 wants to buy.
+Wallet 53 wants to buy.
+Wallet 54 wants to sell.
+Wallet 55 wants to buy.
+Wallet 56 wants to sell.
+Wallet 57 wants to buy.
+Wallet 58 wants to buy.
+Wallet 59 wants to buy.
+Wallet 60 wants to sell.
+Wallet 61 wants to buy.
+Wallet 62 wants to sell.
+Wallet 63 wants to sell.
+Wallet 64 wants to sell.
+Wallet 65 wants to sell.
+Wallet 66 wants to sell.
+Wallet 67 does nothing.
+Wallet 68 wants to buy.
+Wallet 69 wants to buy.
+Wallet 70 wants to buy.
+Wallet 71 wants to sell.
+Wallet 72 wants to buy.
+Wallet 73 wants to sell.
+Wallet 74 wants to sell.
+Wallet 75 does nothing.
+Wallet 76 does nothing.
+Wallet 77 wants to buy.
+Wallet 78 wants to buy.
+Wallet 79 wants to sell.
+Wallet 80 wants to buy.
+Wallet 81 wants to buy.
+Wallet 82 wants to buy.
+Wallet 83 wants to sell.
+Wallet 84 wants to sell.
+Wallet 85 wants to buy.
+Wallet 86 wants to buy.
+Wallet 87 wants to sell.
+Wallet 88 wants to sell.
+Wallet 89 wants to buy.
+Wallet 90 wants to buy.
+Wallet 91 wants to buy.
+Wallet 92 wants to buy.
+Wallet 93 does nothing.
+Wallet 94 wants to sell.
+Wallet 95 wants to buy.
+Wallet 96 does nothing.
+Wallet 97 wants to sell.
+Wallet 98 wants to sell.
+Wallet 99 wants to sell.
+Wallet 101 wants to buy.
+Wallet 102 wants to buy.
+Wallet 103 wants to buy.
+Wallet 104 wants to buy.
+Wallet 105 wants to buy.
+End of day1 token price: 1.0144450143885348
+Rebase, old token amount: Infinity
+Rebase, new token amount: Infinity
+Day 2 of the simulation
+Wallet 0 wants to buy.
+Wallet 1 wants to sell.
+Wallet 2 wants to buy.
+Wallet 3 does nothing.
+Wallet 4 wants to sell.
+Wallet 5 wants to sell.
+Wallet 6 wants to sell.
+Wallet 7 wants to buy.
+Wallet 8 wants to sell.
+Wallet 9 wants to buy.
+Wallet 10 wants to sell.
+Wallet 11 wants to sell.
+Wallet 12 wants to sell.
+Wallet 13 wants to sell.
+Wallet 14 wants to buy.
+Wallet 15 wants to sell.
+Wallet 16 wants to sell.
+Wallet 17 does nothing.
+Wallet 18 does nothing.
+Wallet 19 wants to buy.
+Wallet 20 wants to buy.
+Wallet 21 wants to sell.
+Wallet 22 wants to buy.
+Wallet 23 wants to sell.
+Wallet 24 wants to sell.
+Wallet 25 wants to sell.
+Wallet 26 wants to buy.
+Wallet 27 wants to buy.
+Wallet 28 wants to buy.
+Wallet 29 wants to buy.
+Wallet 30 wants to sell.
+Wallet 31 wants to sell.
+Wallet 32 wants to sell.
+Wallet 33 wants to buy.
+Wallet 34 does nothing.
+Wallet 35 does nothing.
+Wallet 36 wants to buy.
+Wallet 37 wants to buy.
+Wallet 38 does nothing.
+Wallet 39 wants to sell.
+Wallet 40 wants to buy.
+Wallet 41 wants to buy.
+Wallet 42 does nothing.
+Wallet 43 wants to buy.
+Wallet 44 does nothing.
+Wallet 45 wants to sell.
+Wallet 46 wants to sell.
+Wallet 47 wants to buy.
+Wallet 48 wants to sell.
+Wallet 49 wants to sell.
+Wallet 50 wants to sell.
+Wallet 51 wants to buy.
+Wallet 52 wants to buy.
+Wallet 53 wants to buy.
+Wallet 54 wants to buy.
+Wallet 55 wants to buy.
+Wallet 56 wants to sell.
+Wallet 57 wants to sell.
+Wallet 58 wants to buy.
+Wallet 59 wants to sell.
+Wallet 60 wants to sell.
+Wallet 61 wants to buy.
+Wallet 62 does nothing.
+Wallet 63 wants to sell.
+Wallet 64 wants to buy.
+Wallet 65 wants to sell.
+Wallet 66 wants to buy.
+Wallet 67 wants to sell.
+Wallet 68 wants to buy.
+Wallet 69 wants to sell.
+Wallet 70 does nothing.
+Wallet 71 wants to buy.
+Wallet 72 wants to buy.
+Wallet 73 wants to sell.
+Wallet 74 does nothing.
+Wallet 75 wants to sell.
+Wallet 76 wants to sell.
+Wallet 77 wants to buy.
+Wallet 78 wants to sell.
+Wallet 79 does nothing.
+Wallet 80 wants to sell.
+Wallet 81 wants to buy.
+Wallet 82 wants to sell.
+Wallet 83 wants to sell.
+Wallet 84 wants to sell.
+Wallet 85 wants to buy.
+Wallet 86 wants to sell.
+Wallet 87 wants to buy.
+Wallet 88 wants to buy.
+Wallet 89 wants to sell.
+Wallet 90 wants to sell.
+Wallet 91 wants to sell.
+Wallet 92 wants to sell.
+Wallet 93 wants to buy.
+Wallet 94 wants to buy.
+Wallet 95 wants to sell.
+Wallet 96 wants to buy.
+Wallet 97 does nothing.
+Wallet 98 wants to sell.
+Wallet 99 wants to buy.
+Wallet 101 wants to buy.
+Wallet 102 wants to sell.
+Wallet 103 wants to buy.
+Wallet 104 wants to sell.
+Wallet 105 wants to sell.
+End of day2 token price: 1.0380094652536143
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 3 of the simulation
+Wallet 0 wants to sell.
+Wallet 1 wants to sell.
+Wallet 2 wants to buy.
+Wallet 3 wants to buy.
+Wallet 4 wants to buy.
+Wallet 5 wants to buy.
+Wallet 6 wants to buy.
+Wallet 7 wants to sell.
+Wallet 8 wants to buy.
+Wallet 9 wants to sell.
+Wallet 10 wants to buy.
+Wallet 11 wants to buy.
+Wallet 12 wants to sell.
+Wallet 13 wants to buy.
+Wallet 14 wants to sell.
+Wallet 15 wants to sell.
+Wallet 16 wants to sell.
+Wallet 17 wants to sell.
+Wallet 18 wants to sell.
+Wallet 19 wants to sell.
+Wallet 20 wants to sell.
+Wallet 21 does nothing.
+Wallet 22 wants to buy.
+Wallet 23 wants to buy.
+Wallet 24 wants to buy.
+Wallet 25 wants to sell.
+Wallet 26 does nothing.
+Wallet 27 does nothing.
+Wallet 28 wants to sell.
+Wallet 29 does nothing.
+Wallet 30 does nothing.
+Wallet 31 wants to sell.
+Wallet 32 wants to buy.
+Wallet 33 wants to sell.
+Wallet 34 does nothing.
+Wallet 35 wants to buy.
+Wallet 36 wants to buy.
+Wallet 37 wants to sell.
+Wallet 38 does nothing.
+Wallet 39 wants to buy.
+Wallet 40 wants to buy.
+Wallet 41 wants to buy.
+Wallet 42 wants to sell.
+Wallet 43 wants to sell.
+Wallet 44 wants to buy.
+Wallet 45 wants to sell.
+Wallet 46 wants to sell.
+Wallet 47 wants to buy.
+Wallet 48 wants to buy.
+Wallet 49 wants to sell.
+Wallet 50 wants to buy.
+Wallet 51 does nothing.
+Wallet 52 wants to sell.
+Wallet 53 wants to buy.
+Wallet 54 wants to sell.
+Wallet 55 wants to buy.
+Wallet 56 wants to buy.
+Wallet 57 wants to sell.
+Wallet 58 wants to buy.
+Wallet 59 wants to buy.
+Wallet 60 wants to sell.
+Wallet 61 does nothing.
+Wallet 62 does nothing.
+Wallet 63 wants to sell.
+Wallet 64 wants to buy.
+Wallet 65 wants to sell.
+Wallet 66 wants to buy.
+Wallet 67 wants to buy.
+Wallet 68 wants to buy.
+Wallet 69 wants to buy.
+Wallet 70 wants to buy.
+Wallet 71 wants to sell.
+Wallet 72 wants to buy.
+Wallet 73 wants to buy.
+Wallet 74 wants to buy.
+Wallet 75 wants to sell.
+Wallet 76 wants to buy.
+Wallet 77 wants to sell.
+Wallet 78 wants to sell.
+Wallet 79 wants to buy.
+Wallet 80 does nothing.
+Wallet 81 does nothing.
+Wallet 82 wants to buy.
+Wallet 83 wants to buy.
+Wallet 84 wants to buy.
+Wallet 85 wants to sell.
+Wallet 86 wants to buy.
+Wallet 87 wants to buy.
+Wallet 88 wants to buy.
+Wallet 89 wants to buy.
+Wallet 90 wants to buy.
+Wallet 91 wants to buy.
+Wallet 92 wants to sell.
+Wallet 93 wants to sell.
+Wallet 94 does nothing.
+Wallet 95 wants to sell.
+Wallet 96 does nothing.
+Wallet 97 wants to sell.
+Wallet 98 wants to sell.
+Wallet 99 wants to buy.
+Wallet 101 wants to buy.
+Wallet 102 does nothing.
+Wallet 103 wants to buy.
+Wallet 104 does nothing.
+Wallet 105 does nothing.
+End of day3 token price: 0.8966085767661548
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 4 of the simulation
+Wallet 0 wants to sell.
+Wallet 1 wants to sell.
+Wallet 2 wants to sell.
+Wallet 3 does nothing.
+Wallet 4 wants to buy.
+Wallet 5 does nothing.
+Wallet 6 wants to buy.
+Wallet 7 does nothing.
+Wallet 8 does nothing.
+Wallet 9 wants to sell.
+Wallet 10 wants to buy.
+Wallet 11 wants to buy.
+Wallet 12 wants to sell.
+Wallet 13 wants to sell.
+Wallet 14 wants to buy.
+Wallet 15 wants to buy.
+Wallet 16 wants to buy.
+Wallet 17 wants to buy.
+Wallet 18 wants to buy.
+Wallet 19 wants to buy.
+Wallet 20 wants to sell.
+Wallet 21 wants to buy.
+Wallet 22 wants to buy.
+Wallet 23 wants to buy.
+Wallet 24 wants to buy.
+Wallet 25 wants to buy.
+Wallet 26 wants to buy.
+Wallet 27 wants to sell.
+Wallet 28 wants to sell.
+Wallet 29 does nothing.
+Wallet 30 wants to buy.
+Wallet 31 does nothing.
+Wallet 32 wants to buy.
+Wallet 33 wants to sell.
+Wallet 34 wants to buy.
+Wallet 35 wants to buy.
+Wallet 36 does nothing.
+Wallet 37 wants to buy.
+Wallet 38 wants to sell.
+Wallet 39 wants to buy.
+Wallet 40 wants to buy.
+Wallet 41 wants to sell.
+Wallet 42 wants to buy.
+Wallet 43 wants to buy.
+Wallet 44 wants to buy.
+Wallet 45 wants to buy.
+Wallet 46 wants to sell.
+Wallet 47 does nothing.
+Wallet 48 wants to buy.
+Wallet 49 wants to buy.
+Wallet 50 wants to buy.
+Wallet 51 wants to sell.
+Wallet 52 does nothing.
+Wallet 53 wants to buy.
+Wallet 54 wants to buy.
+Wallet 55 wants to buy.
+Wallet 56 wants to sell.
+Wallet 57 wants to sell.
+Wallet 58 wants to sell.
+Wallet 59 wants to sell.
+Wallet 60 wants to sell.
+Wallet 61 wants to sell.
+Wallet 62 wants to buy.
+Wallet 63 wants to buy.
+Wallet 64 wants to buy.
+Wallet 65 wants to sell.
+Wallet 66 wants to buy.
+Wallet 67 wants to sell.
+Wallet 68 wants to buy.
+Wallet 69 wants to sell.
+Wallet 70 wants to sell.
+Wallet 71 wants to sell.
+Wallet 72 wants to sell.
+Wallet 73 wants to sell.
+Wallet 74 wants to buy.
+Wallet 75 wants to buy.
+Wallet 76 does nothing.
+Wallet 77 wants to sell.
+Wallet 78 wants to buy.
+Wallet 79 wants to sell.
+Wallet 80 wants to sell.
+Wallet 81 does nothing.
+Wallet 82 does nothing.
+Wallet 83 wants to sell.
+Wallet 84 wants to sell.
+Wallet 85 wants to sell.
+Wallet 86 wants to buy.
+Wallet 87 wants to sell.
+Wallet 88 wants to buy.
+Wallet 89 wants to sell.
+Wallet 90 wants to buy.
+Wallet 91 wants to buy.
+Wallet 92 wants to buy.
+Wallet 93 wants to buy.
+Wallet 94 does nothing.
+Wallet 95 does nothing.
+Wallet 96 wants to sell.
+Wallet 97 wants to buy.
+Wallet 98 wants to sell.
+Wallet 99 wants to buy.
+Wallet 101 does nothing.
+Wallet 102 wants to sell.
+Wallet 103 does nothing.
+Wallet 104 wants to sell.
+Wallet 105 wants to sell.
+End of day4 token price: 0.9993729696844857
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 5 of the simulation
+Wallet 0 wants to sell.
+Wallet 1 does nothing.
+Wallet 2 wants to buy.
+Wallet 3 wants to buy.
+Wallet 4 wants to sell.
+Wallet 5 wants to sell.
+Wallet 6 wants to sell.
+Wallet 7 wants to sell.
+Wallet 8 wants to sell.
+Wallet 9 wants to sell.
+Wallet 10 does nothing.
+Wallet 11 wants to buy.
+Wallet 12 wants to buy.
+Wallet 13 wants to sell.
+Wallet 14 wants to buy.
+Wallet 15 wants to buy.
+Wallet 16 does nothing.
+Wallet 17 wants to buy.
+Wallet 18 wants to sell.
+Wallet 19 wants to sell.
+Wallet 20 wants to sell.
+Wallet 21 wants to buy.
+Wallet 22 wants to buy.
+Wallet 23 wants to buy.
+Wallet 24 wants to buy.
+Wallet 25 does nothing.
+Wallet 26 wants to sell.
+Wallet 27 wants to buy.
+Wallet 28 wants to sell.
+Wallet 29 wants to sell.
+Wallet 30 wants to sell.
+Wallet 31 wants to sell.
+Wallet 32 wants to buy.
+Wallet 33 wants to buy.
+Wallet 34 wants to sell.
+Wallet 35 wants to sell.
+Wallet 36 wants to sell.
+Wallet 37 wants to sell.
+Wallet 38 wants to sell.
+Wallet 39 wants to sell.
+Wallet 40 wants to buy.
+Wallet 41 wants to sell.
+Wallet 42 wants to buy.
+Wallet 43 wants to buy.
+Wallet 44 wants to buy.
+Wallet 45 wants to sell.
+Wallet 46 wants to buy.
+Wallet 47 wants to sell.
+Wallet 48 wants to sell.
+Wallet 49 wants to buy.
+Wallet 50 wants to buy.
+Wallet 51 wants to sell.
+Wallet 52 does nothing.
+Wallet 53 wants to sell.
+Wallet 54 wants to buy.
+Wallet 55 does nothing.
+Wallet 56 wants to sell.
+Wallet 57 wants to buy.
+Wallet 58 wants to sell.
+Wallet 59 wants to sell.
+Wallet 60 wants to buy.
+Wallet 61 wants to buy.
+Wallet 62 wants to buy.
+Wallet 63 wants to sell.
+Wallet 64 wants to buy.
+Wallet 65 wants to sell.
+Wallet 66 wants to sell.
+Wallet 67 wants to buy.
+Wallet 68 wants to sell.
+Wallet 69 wants to buy.
+Wallet 70 does nothing.
+Wallet 71 does nothing.
+Wallet 72 wants to sell.
+Wallet 73 wants to buy.
+Wallet 74 wants to buy.
+Wallet 75 wants to sell.
+Wallet 76 wants to sell.
+Wallet 77 wants to sell.
+Wallet 78 wants to sell.
+Wallet 79 wants to sell.
+Wallet 80 wants to sell.
+Wallet 81 wants to sell.
+Wallet 82 wants to sell.
+Wallet 83 wants to buy.
+Wallet 84 wants to sell.
+Wallet 85 wants to sell.
+Wallet 86 wants to buy.
+Wallet 87 does nothing.
+Wallet 88 wants to sell.
+Wallet 89 wants to buy.
+Wallet 90 wants to sell.
+Wallet 91 wants to sell.
+Wallet 92 wants to buy.
+Wallet 93 wants to buy.
+Wallet 94 wants to sell.
+Wallet 95 wants to buy.
+Wallet 96 wants to sell.
+Wallet 97 wants to sell.
+Wallet 98 wants to sell.
+Wallet 99 wants to buy.
+Wallet 101 wants to sell.
+Wallet 102 wants to buy.
+Wallet 103 wants to sell.
+Wallet 104 wants to buy.
+Wallet 105 wants to buy.
+End of day5 token price: 1.012423965868237
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 6 of the simulation
+Wallet 0 wants to buy.
+Wallet 1 wants to buy.
+Wallet 2 wants to buy.
+Wallet 3 does nothing.
+Wallet 4 wants to buy.
+Wallet 5 wants to sell.
+Wallet 6 wants to sell.
+Wallet 7 wants to sell.
+Wallet 8 does nothing.
+Wallet 9 wants to sell.
+Wallet 10 wants to sell.
+Wallet 11 does nothing.
+Wallet 12 wants to sell.
+Wallet 13 wants to sell.
+Wallet 14 wants to sell.
+Wallet 15 wants to sell.
+Wallet 16 wants to sell.
+Wallet 17 does nothing.
+Wallet 18 does nothing.
+Wallet 19 wants to sell.
+Wallet 20 wants to buy.
+Wallet 21 does nothing.
+Wallet 22 wants to buy.
+Wallet 23 wants to buy.
+Wallet 24 wants to sell.
+Wallet 25 wants to buy.
+Wallet 26 wants to sell.
+Wallet 27 wants to sell.
+Wallet 28 wants to buy.
+Wallet 29 does nothing.
+Wallet 30 wants to sell.
+Wallet 31 wants to sell.
+Wallet 32 wants to sell.
+Wallet 33 wants to sell.
+Wallet 34 wants to buy.
+Wallet 35 wants to buy.
+Wallet 36 wants to buy.
+Wallet 37 wants to sell.
+Wallet 38 wants to sell.
+Wallet 39 wants to buy.
+Wallet 40 does nothing.
+Wallet 41 wants to buy.
+Wallet 42 wants to buy.
+Wallet 43 wants to buy.
+Wallet 44 wants to sell.
+Wallet 45 wants to sell.
+Wallet 46 wants to sell.
+Wallet 47 wants to sell.
+Wallet 48 wants to sell.
+Wallet 49 wants to sell.
+Wallet 50 wants to buy.
+Wallet 51 wants to buy.
+Wallet 52 wants to buy.
+Wallet 53 wants to sell.
+Wallet 54 does nothing.
+Wallet 55 wants to sell.
+Wallet 56 wants to sell.
+Wallet 57 wants to sell.
+Wallet 58 wants to sell.
+Wallet 59 wants to buy.
+Wallet 60 wants to buy.
+Wallet 61 wants to sell.
+Wallet 62 wants to buy.
+Wallet 63 wants to sell.
+Wallet 64 wants to sell.
+Wallet 65 does nothing.
+Wallet 66 wants to sell.
+Wallet 67 wants to sell.
+Wallet 68 wants to sell.
+Wallet 69 does nothing.
+Wallet 70 wants to sell.
+Wallet 71 wants to sell.
+Wallet 72 wants to sell.
+Wallet 73 does nothing.
+Wallet 74 wants to buy.
+Wallet 75 wants to buy.
+Wallet 76 wants to buy.
+Wallet 77 wants to sell.
+Wallet 78 wants to sell.
+Wallet 79 wants to sell.
+Wallet 80 wants to sell.
+Wallet 81 wants to sell.
+Wallet 82 wants to sell.
+Wallet 83 wants to sell.
+Wallet 84 wants to sell.
+Wallet 85 wants to sell.
+Wallet 86 does nothing.
+Wallet 87 does nothing.
+Wallet 88 wants to buy.
+Wallet 89 wants to sell.
+Wallet 90 wants to buy.
+Wallet 91 wants to sell.
+Wallet 92 wants to buy.
+Wallet 93 wants to buy.
+Wallet 94 wants to sell.
+Wallet 95 wants to buy.
+Wallet 96 wants to sell.
+Wallet 97 wants to buy.
+Wallet 98 wants to buy.
+Wallet 99 wants to sell.
+Wallet 101 does nothing.
+Wallet 102 wants to sell.
+Wallet 103 wants to sell.
+Wallet 104 wants to buy.
+Wallet 105 wants to buy.
+Wallet 106 wants to buy.
+Wallet 107 wants to buy.
+Wallet 108 wants to buy.
+Wallet 109 wants to buy.
+End of day6 token price: 1.0369106541949056
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 7 of the simulation
+Wallet 0 wants to sell.
+Wallet 1 wants to buy.
+Wallet 2 wants to buy.
+Wallet 3 wants to sell.
+Wallet 4 wants to sell.
+Wallet 5 wants to sell.
+Wallet 6 wants to sell.
+Wallet 7 does nothing.
+Wallet 8 wants to sell.
+Wallet 9 wants to buy.
+Wallet 10 wants to buy.
+Wallet 11 wants to buy.
+Wallet 12 does nothing.
+Wallet 13 wants to sell.
+Wallet 14 wants to buy.
+Wallet 15 wants to sell.
+Wallet 16 wants to sell.
+Wallet 17 wants to buy.
+Wallet 18 wants to sell.
+Wallet 19 wants to buy.
+Wallet 20 wants to buy.
+Wallet 21 wants to buy.
+Wallet 22 wants to buy.
+Wallet 23 wants to sell.
+Wallet 24 wants to buy.
+Wallet 25 wants to sell.
+Wallet 26 wants to buy.
+Wallet 27 wants to sell.
+Wallet 28 wants to sell.
+Wallet 29 wants to buy.
+Wallet 30 wants to sell.
+Wallet 31 wants to sell.
+Wallet 32 wants to buy.
+Wallet 33 wants to buy.
+Wallet 34 wants to buy.
+Wallet 35 wants to sell.
+Wallet 36 wants to sell.
+Wallet 37 wants to sell.
+Wallet 38 wants to buy.
+Wallet 39 wants to buy.
+Wallet 40 wants to sell.
+Wallet 41 does nothing.
+Wallet 42 wants to buy.
+Wallet 43 wants to buy.
+Wallet 44 wants to buy.
+Wallet 45 wants to buy.
+Wallet 46 wants to buy.
+Wallet 47 does nothing.
+Wallet 48 wants to sell.
+Wallet 49 does nothing.
+Wallet 50 wants to sell.
+Wallet 51 wants to sell.
+Wallet 52 wants to sell.
+Wallet 53 wants to sell.
+Wallet 54 wants to sell.
+Wallet 55 does nothing.
+Wallet 56 wants to buy.
+Wallet 57 wants to buy.
+Wallet 58 wants to buy.
+Wallet 59 wants to buy.
+Wallet 60 wants to sell.
+Wallet 61 wants to buy.
+Wallet 62 wants to sell.
+Wallet 63 wants to sell.
+Wallet 64 does nothing.
+Wallet 65 wants to buy.
+Wallet 66 wants to sell.
+Wallet 67 wants to buy.
+Wallet 68 wants to buy.
+Wallet 69 wants to buy.
+Wallet 70 wants to sell.
+Wallet 71 wants to buy.
+Wallet 72 wants to sell.
+Wallet 73 wants to sell.
+Wallet 74 wants to sell.
+Wallet 75 wants to buy.
+Wallet 76 does nothing.
+Wallet 77 wants to buy.
+Wallet 78 wants to buy.
+Wallet 79 wants to sell.
+Wallet 80 wants to buy.
+Wallet 81 wants to sell.
+Wallet 82 wants to buy.
+Wallet 83 wants to sell.
+Wallet 84 wants to sell.
+Wallet 85 wants to sell.
+Wallet 86 wants to buy.
+Wallet 87 wants to buy.
+Wallet 88 wants to sell.
+Wallet 89 wants to sell.
+Wallet 90 wants to sell.
+Wallet 91 wants to sell.
+Wallet 92 wants to buy.
+Wallet 93 does nothing.
+Wallet 94 wants to sell.
+Wallet 95 wants to buy.
+Wallet 96 wants to sell.
+Wallet 97 wants to sell.
+Wallet 98 wants to sell.
+Wallet 99 wants to buy.
+Wallet 101 wants to sell.
+Wallet 102 wants to sell.
+Wallet 103 wants to buy.
+Wallet 104 wants to buy.
+Wallet 105 wants to buy.
+Wallet 106 wants to buy.
+Wallet 107 wants to buy.
+Wallet 108 does nothing.
+Wallet 109 does nothing.
+Wallet 110 wants to buy.
+Wallet 111 wants to buy.
+Wallet 112 wants to buy.
+End of day7 token price: 1.0275030866878148
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 8 of the simulation
+Wallet 0 wants to sell.
+Wallet 1 wants to buy.
+Wallet 2 wants to buy.
+Wallet 3 wants to sell.
+Wallet 4 wants to buy.
+Wallet 5 wants to sell.
+Wallet 6 does nothing.
+Wallet 7 does nothing.
+Wallet 8 wants to sell.
+Wallet 9 wants to buy.
+Wallet 10 does nothing.
+Wallet 11 wants to buy.
+Wallet 12 wants to sell.
+Wallet 13 wants to buy.
+Wallet 14 wants to buy.
+Wallet 15 wants to buy.
+Wallet 16 wants to buy.
+Wallet 17 does nothing.
+Wallet 18 wants to sell.
+Wallet 19 does nothing.
+Wallet 20 does nothing.
+Wallet 21 wants to sell.
+Wallet 22 wants to sell.
+Wallet 23 wants to sell.
+Wallet 24 wants to buy.
+Wallet 25 wants to buy.
+Wallet 26 wants to sell.
+Wallet 27 wants to buy.
+Wallet 28 wants to sell.
+Wallet 29 wants to sell.
+Wallet 30 wants to buy.
+Wallet 31 wants to sell.
+Wallet 32 wants to sell.
+Wallet 33 wants to buy.
+Wallet 34 wants to buy.
+Wallet 35 wants to buy.
+Wallet 36 wants to sell.
+Wallet 37 wants to buy.
+Wallet 38 wants to sell.
+Wallet 39 wants to buy.
+Wallet 40 wants to sell.
+Wallet 41 wants to buy.
+Wallet 42 wants to buy.
+Wallet 43 wants to sell.
+Wallet 44 wants to sell.
+Wallet 45 wants to sell.
+Wallet 46 does nothing.
+Wallet 47 wants to buy.
+Wallet 48 wants to buy.
+Wallet 49 wants to sell.
+Wallet 50 wants to sell.
+Wallet 51 wants to sell.
+Wallet 52 wants to buy.
+Wallet 53 wants to sell.
+Wallet 54 wants to buy.
+Wallet 55 wants to buy.
+Wallet 56 wants to buy.
+Wallet 57 wants to sell.
+Wallet 58 wants to sell.
+Wallet 59 wants to buy.
+Wallet 60 wants to buy.
+Wallet 61 wants to buy.
+Wallet 62 wants to sell.
+Wallet 63 wants to sell.
+Wallet 64 wants to buy.
+Wallet 65 wants to sell.
+Wallet 66 wants to buy.
+Wallet 67 wants to sell.
+Wallet 68 wants to buy.
+Wallet 69 wants to sell.
+Wallet 70 does nothing.
+Wallet 71 wants to buy.
+Wallet 72 wants to buy.
+Wallet 73 wants to buy.
+Wallet 74 wants to sell.
+Wallet 75 wants to buy.
+Wallet 76 wants to buy.
+Wallet 77 wants to sell.
+Wallet 78 wants to buy.
+Wallet 79 wants to buy.
+Wallet 80 does nothing.
+Wallet 81 wants to buy.
+Wallet 82 wants to buy.
+Wallet 83 wants to sell.
+Wallet 84 wants to sell.
+Wallet 85 wants to buy.
+Wallet 86 wants to buy.
+Wallet 87 does nothing.
+Wallet 88 wants to buy.
+Wallet 89 wants to sell.
+Wallet 90 wants to sell.
+Wallet 91 wants to buy.
+Wallet 92 does nothing.
+Wallet 93 wants to sell.
+Wallet 94 wants to buy.
+Wallet 95 wants to buy.
+Wallet 96 wants to sell.
+Wallet 97 does nothing.
+Wallet 98 wants to sell.
+Wallet 99 does nothing.
+Wallet 101 wants to sell.
+Wallet 102 does nothing.
+Wallet 103 wants to buy.
+Wallet 104 wants to buy.
+Wallet 105 does nothing.
+Wallet 106 wants to buy.
+Wallet 107 wants to buy.
+Wallet 108 wants to buy.
+Wallet 109 does nothing.
+Wallet 110 wants to sell.
+Wallet 111 does nothing.
+Wallet 112 wants to buy.
+End of day8 token price: 1.0414624370805663
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 9 of the simulation
+Wallet 0 wants to sell.
+Wallet 1 wants to buy.
+Wallet 2 wants to sell.
+Wallet 3 wants to buy.
+Wallet 4 wants to buy.
+Wallet 5 does nothing.
+Wallet 6 wants to sell.
+Wallet 7 wants to sell.
+Wallet 8 does nothing.
+Wallet 9 wants to sell.
+Wallet 10 wants to buy.
+Wallet 11 wants to buy.
+Wallet 12 does nothing.
+Wallet 13 wants to buy.
+Wallet 14 wants to buy.
+Wallet 15 does nothing.
+Wallet 16 wants to sell.
+Wallet 17 wants to sell.
+Wallet 18 wants to sell.
+Wallet 19 does nothing.
+Wallet 20 wants to buy.
+Wallet 21 wants to sell.
+Wallet 22 does nothing.
+Wallet 23 wants to sell.
+Wallet 24 does nothing.
+Wallet 25 wants to sell.
+Wallet 26 wants to buy.
+Wallet 27 wants to sell.
+Wallet 28 wants to buy.
+Wallet 29 wants to buy.
+Wallet 30 wants to sell.
+Wallet 31 does nothing.
+Wallet 32 wants to sell.
+Wallet 33 wants to sell.
+Wallet 34 wants to buy.
+Wallet 35 wants to sell.
+Wallet 36 wants to sell.
+Wallet 37 wants to buy.
+Wallet 38 wants to buy.
+Wallet 39 wants to buy.
+Wallet 40 wants to buy.
+Wallet 41 wants to sell.
+Wallet 42 wants to sell.
+Wallet 43 wants to buy.
+Wallet 44 wants to buy.
+Wallet 45 wants to sell.
+Wallet 46 wants to buy.
+Wallet 47 wants to sell.
+Wallet 48 wants to sell.
+Wallet 49 wants to sell.
+Wallet 50 does nothing.
+Wallet 51 wants to sell.
+Wallet 52 wants to buy.
+Wallet 53 wants to sell.
+Wallet 54 wants to buy.
+Wallet 55 wants to sell.
+Wallet 56 does nothing.
+Wallet 57 wants to sell.
+Wallet 58 wants to sell.
+Wallet 59 wants to buy.
+Wallet 60 wants to buy.
+Wallet 61 wants to sell.
+Wallet 62 does nothing.
+Wallet 63 wants to buy.
+Wallet 64 wants to buy.
+Wallet 65 wants to sell.
+Wallet 66 wants to sell.
+Wallet 67 wants to sell.
+Wallet 68 wants to sell.
+Wallet 69 wants to buy.
+Wallet 70 wants to buy.
+Wallet 71 wants to sell.
+Wallet 72 does nothing.
+Wallet 73 wants to sell.
+Wallet 74 does nothing.
+Wallet 75 wants to buy.
+Wallet 76 does nothing.
+Wallet 77 wants to buy.
+Wallet 78 wants to buy.
+Wallet 79 wants to buy.
+Wallet 80 does nothing.
+Wallet 81 wants to buy.
+Wallet 82 wants to buy.
+Wallet 83 wants to sell.
+Wallet 84 wants to sell.
+Wallet 85 wants to buy.
+Wallet 86 wants to buy.
+Wallet 87 wants to buy.
+Wallet 88 wants to buy.
+Wallet 89 wants to sell.
+Wallet 90 wants to sell.
+Wallet 91 wants to buy.
+Wallet 92 does nothing.
+Wallet 93 wants to sell.
+Wallet 94 wants to sell.
+Wallet 95 wants to buy.
+Wallet 96 wants to sell.
+Wallet 97 wants to buy.
+Wallet 98 does nothing.
+Wallet 99 does nothing.
+Wallet 101 wants to buy.
+Wallet 102 does nothing.
+Wallet 103 wants to buy.
+Wallet 104 wants to buy.
+Wallet 105 wants to sell.
+Wallet 106 wants to sell.
+Wallet 107 wants to buy.
+Wallet 108 does nothing.
+Wallet 109 wants to buy.
+Wallet 110 wants to sell.
+Wallet 111 wants to buy.
+Wallet 112 wants to sell.
+Wallet 113 wants to buy.
+Wallet 114 wants to buy.
+End of day9 token price: 1.0246930377512127
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 10 of the simulation
+Wallet 0 wants to sell.
+Wallet 1 wants to buy.
+Wallet 2 wants to sell.
+Wallet 3 wants to sell.
+Wallet 4 wants to buy.
+Wallet 5 wants to buy.
+Wallet 6 wants to sell.
+Wallet 7 does nothing.
+Wallet 8 wants to buy.
+Wallet 9 wants to buy.
+Wallet 10 wants to buy.
+Wallet 11 wants to buy.
+Wallet 12 wants to sell.
+Wallet 13 wants to buy.
+Wallet 14 wants to buy.
+Wallet 15 does nothing.
+Wallet 16 wants to buy.
+Wallet 17 wants to buy.
+Wallet 18 wants to buy.
+Wallet 19 wants to sell.
+Wallet 20 wants to buy.
+Wallet 21 wants to buy.
+Wallet 22 wants to buy.
+Wallet 23 wants to sell.
+Wallet 24 wants to sell.
+Wallet 25 wants to buy.
+Wallet 26 wants to sell.
+Wallet 27 wants to buy.
+Wallet 28 wants to sell.
+Wallet 29 wants to sell.
+Wallet 30 wants to buy.
+Wallet 31 wants to buy.
+Wallet 32 wants to sell.
+Wallet 33 wants to buy.
+Wallet 34 wants to sell.
+Wallet 35 wants to sell.
+Wallet 36 wants to sell.
+Wallet 37 does nothing.
+Wallet 38 does nothing.
+Wallet 39 wants to sell.
+Wallet 40 wants to sell.
+Wallet 41 wants to buy.
+Wallet 42 does nothing.
+Wallet 43 wants to buy.
+Wallet 44 wants to sell.
+Wallet 45 wants to buy.
+Wallet 46 wants to sell.
+Wallet 47 wants to sell.
+Wallet 48 wants to buy.
+Wallet 49 wants to sell.
+Wallet 50 wants to sell.
+Wallet 51 wants to sell.
+Wallet 52 wants to buy.
+Wallet 53 wants to sell.
+Wallet 54 wants to buy.
+Wallet 55 wants to buy.
+Wallet 56 does nothing.
+Wallet 57 wants to sell.
+Wallet 58 wants to sell.
+Wallet 59 does nothing.
+Wallet 60 wants to sell.
+Wallet 61 wants to buy.
+Wallet 62 wants to buy.
+Wallet 63 wants to sell.
+Wallet 64 wants to sell.
+Wallet 65 wants to buy.
+Wallet 66 does nothing.
+Wallet 67 wants to sell.
+Wallet 68 wants to sell.
+Wallet 69 wants to buy.
+Wallet 70 wants to buy.
+Wallet 71 wants to buy.
+Wallet 72 does nothing.
+Wallet 73 wants to buy.
+Wallet 74 wants to sell.
+Wallet 75 wants to buy.
+Wallet 76 wants to sell.
+Wallet 77 wants to sell.
+Wallet 78 wants to buy.
+Wallet 79 wants to sell.
+Wallet 80 wants to sell.
+Wallet 81 wants to buy.
+Wallet 82 wants to sell.
+Wallet 83 wants to sell.
+Wallet 84 does nothing.
+Wallet 85 wants to sell.
+Wallet 86 wants to buy.
+Wallet 87 wants to sell.
+Wallet 88 does nothing.
+Wallet 89 does nothing.
+Wallet 90 does nothing.
+Wallet 91 wants to sell.
+Wallet 92 wants to buy.
+Wallet 93 wants to sell.
+Wallet 94 wants to sell.
+Wallet 95 wants to sell.
+Wallet 96 wants to sell.
+Wallet 97 wants to sell.
+Wallet 98 wants to sell.
+Wallet 99 wants to sell.
+Wallet 101 wants to buy.
+Wallet 102 wants to sell.
+Wallet 103 wants to buy.
+Wallet 104 wants to buy.
+Wallet 105 wants to buy.
+Wallet 106 wants to sell.
+Wallet 107 wants to sell.
+Wallet 108 does nothing.
+Wallet 109 wants to buy.
+Wallet 110 wants to sell.
+Wallet 111 wants to buy.
+Wallet 112 wants to sell.
+Wallet 113 wants to sell.
+Wallet 114 wants to sell.
+Wallet 115 wants to buy.
+Wallet 116 wants to buy.
+Wallet 117 wants to buy.
+Wallet 118 wants to buy.
+End of day10 token price: 0.9680876011263746
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 11 of the simulation
+Wallet 0 wants to sell.
+Wallet 1 wants to sell.
+Wallet 2 wants to buy.
+Wallet 3 wants to buy.
+Wallet 4 wants to sell.
+Wallet 5 wants to sell.
+Wallet 6 wants to sell.
+Wallet 7 wants to buy.
+Wallet 8 wants to buy.
+Wallet 9 wants to sell.
+Wallet 10 wants to buy.
+Wallet 11 wants to sell.
+Wallet 12 wants to sell.
+Wallet 13 wants to sell.
+Wallet 14 wants to sell.
+Wallet 15 wants to buy.
+Wallet 16 wants to buy.
+Wallet 17 does nothing.
+Wallet 18 wants to sell.
+Wallet 19 wants to buy.
+Wallet 20 wants to sell.
+Wallet 21 does nothing.
+Wallet 22 wants to buy.
+Wallet 23 wants to sell.
+Wallet 24 wants to buy.
+Wallet 25 wants to buy.
+Wallet 26 wants to buy.
+Wallet 27 wants to buy.
+Wallet 28 wants to sell.
+Wallet 29 wants to sell.
+Wallet 30 wants to buy.
+Wallet 31 wants to sell.
+Wallet 32 wants to buy.
+Wallet 33 wants to sell.
+Wallet 34 wants to sell.
+Wallet 35 wants to sell.
+Wallet 36 wants to buy.
+Wallet 37 wants to sell.
+Wallet 38 does nothing.
+Wallet 39 does nothing.
+Wallet 40 wants to sell.
+Wallet 41 wants to sell.
+Wallet 42 wants to sell.
+Wallet 43 wants to sell.
+Wallet 44 wants to buy.
+Wallet 45 wants to sell.
+Wallet 46 wants to sell.
+Wallet 47 wants to sell.
+Wallet 48 wants to sell.
+Wallet 49 wants to sell.
+Wallet 50 wants to buy.
+Wallet 51 does nothing.
+Wallet 52 wants to sell.
+Wallet 53 wants to sell.
+Wallet 54 wants to sell.
+Wallet 55 wants to sell.
+Wallet 56 wants to buy.
+Wallet 57 does nothing.
+Wallet 58 wants to sell.
+Wallet 59 wants to sell.
+Wallet 60 wants to buy.
+Wallet 61 wants to buy.
+Wallet 62 does nothing.
+Wallet 63 wants to sell.
+Wallet 64 does nothing.
+Wallet 65 wants to buy.
+Wallet 66 wants to sell.
+Wallet 67 wants to sell.
+Wallet 68 wants to buy.
+Wallet 69 wants to sell.
+Wallet 70 wants to buy.
+Wallet 71 wants to sell.
+Wallet 72 wants to sell.
+Wallet 73 wants to buy.
+Wallet 74 wants to sell.
+Wallet 75 wants to buy.
+Wallet 76 wants to buy.
+Wallet 77 wants to sell.
+Wallet 78 wants to sell.
+Wallet 79 wants to buy.
+Wallet 80 wants to sell.
+Wallet 81 wants to buy.
+Wallet 82 wants to sell.
+Wallet 83 wants to sell.
+Wallet 84 wants to buy.
+Wallet 85 wants to buy.
+Wallet 86 wants to sell.
+Wallet 87 wants to sell.
+Wallet 88 wants to sell.
+Wallet 89 wants to sell.
+Wallet 90 wants to sell.
+Wallet 91 wants to sell.
+Wallet 92 wants to sell.
+Wallet 93 wants to buy.
+Wallet 94 wants to sell.
+Wallet 95 wants to sell.
+Wallet 96 wants to sell.
+Wallet 97 wants to buy.
+Wallet 98 does nothing.
+Wallet 99 wants to sell.
+Wallet 101 wants to buy.
+Wallet 102 wants to buy.
+Wallet 103 does nothing.
+Wallet 104 wants to buy.
+Wallet 105 wants to sell.
+Wallet 106 wants to sell.
+Wallet 107 wants to buy.
+Wallet 108 does nothing.
+Wallet 109 wants to sell.
+Wallet 110 wants to sell.
+Wallet 111 wants to sell.
+Wallet 112 wants to sell.
+Wallet 113 wants to sell.
+Wallet 114 wants to buy.
+Wallet 115 wants to sell.
+Wallet 116 wants to buy.
+Wallet 117 wants to buy.
+Wallet 118 wants to buy.
+Wallet 119 wants to buy.
+Wallet 120 wants to buy.
+End of day11 token price: 0.9205901523311569
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 12 of the simulation
+Wallet 0 wants to sell.
+Wallet 1 wants to sell.
+Wallet 2 wants to sell.
+Wallet 3 does nothing.
+Wallet 4 wants to sell.
+Wallet 5 wants to sell.
+Wallet 6 does nothing.
+Wallet 7 does nothing.
+Wallet 8 wants to sell.
+Wallet 9 wants to buy.
+Wallet 10 wants to sell.
+Wallet 11 wants to buy.
+Wallet 12 wants to sell.
+Wallet 13 wants to sell.
+Wallet 14 wants to sell.
+Wallet 15 wants to buy.
+Wallet 16 does nothing.
+Wallet 17 wants to buy.
+Wallet 18 wants to sell.
+Wallet 19 wants to sell.
+Wallet 20 wants to buy.
+Wallet 21 wants to sell.
+Wallet 22 wants to sell.
+Wallet 23 wants to sell.
+Wallet 24 wants to sell.
+Wallet 25 wants to sell.
+Wallet 26 wants to buy.
+Wallet 27 wants to buy.
+Wallet 28 wants to sell.
+Wallet 29 wants to sell.
+Wallet 30 wants to sell.
+Wallet 31 wants to sell.
+Wallet 32 wants to sell.
+Wallet 33 wants to buy.
+Wallet 34 wants to buy.
+Wallet 35 wants to buy.
+Wallet 36 wants to buy.
+Wallet 37 wants to buy.
+Wallet 38 wants to sell.
+Wallet 39 wants to sell.
+Wallet 40 does nothing.
+Wallet 41 wants to buy.
+Wallet 42 wants to buy.
+Wallet 43 wants to sell.
+Wallet 44 wants to buy.
+Wallet 45 wants to sell.
+Wallet 46 wants to buy.
+Wallet 47 wants to sell.
+Wallet 48 wants to buy.
+Wallet 49 wants to sell.
+Wallet 50 wants to sell.
+Wallet 51 wants to sell.
+Wallet 52 wants to sell.
+Wallet 53 wants to buy.
+Wallet 54 wants to buy.
+Wallet 55 wants to sell.
+Wallet 56 wants to sell.
+Wallet 57 wants to sell.
+Wallet 58 wants to buy.
+Wallet 59 wants to sell.
+Wallet 60 does nothing.
+Wallet 61 wants to sell.
+Wallet 62 wants to sell.
+Wallet 63 wants to buy.
+Wallet 64 does nothing.
+Wallet 65 wants to sell.
+Wallet 66 wants to buy.
+Wallet 67 wants to buy.
+Wallet 68 wants to buy.
+Wallet 69 wants to sell.
+Wallet 70 wants to sell.
+Wallet 71 wants to sell.
+Wallet 72 wants to sell.
+Wallet 73 wants to sell.
+Wallet 74 does nothing.
+Wallet 75 wants to buy.
+Wallet 76 wants to buy.
+Wallet 77 wants to sell.
+Wallet 78 wants to sell.
+Wallet 79 wants to sell.
+Wallet 80 wants to buy.
+Wallet 81 wants to sell.
+Wallet 82 does nothing.
+Wallet 83 wants to sell.
+Wallet 84 wants to buy.
+Wallet 85 wants to buy.
+Wallet 86 does nothing.
+Wallet 87 wants to sell.
+Wallet 88 wants to sell.
+Wallet 89 wants to sell.
+Wallet 90 does nothing.
+Wallet 91 does nothing.
+Wallet 92 wants to buy.
+Wallet 93 wants to sell.
+Wallet 94 does nothing.
+Wallet 95 wants to buy.
+Wallet 96 wants to sell.
+Wallet 97 wants to buy.
+Wallet 98 wants to buy.
+Wallet 99 does nothing.
+Wallet 101 wants to sell.
+Wallet 102 does nothing.
+Wallet 103 wants to buy.
+Wallet 104 wants to buy.
+Wallet 105 wants to buy.
+Wallet 106 wants to buy.
+Wallet 107 wants to buy.
+Wallet 108 does nothing.
+Wallet 109 wants to sell.
+Wallet 110 wants to sell.
+Wallet 111 does nothing.
+Wallet 112 wants to sell.
+Wallet 113 wants to buy.
+Wallet 114 wants to buy.
+Wallet 115 wants to sell.
+Wallet 116 wants to sell.
+Wallet 117 wants to buy.
+Wallet 118 wants to buy.
+Wallet 119 wants to sell.
+Wallet 120 does nothing.
+Wallet 121 wants to buy.
+Wallet 122 wants to buy.
+Wallet 123 wants to buy.
+Wallet 124 wants to buy.
+End of day12 token price: 1.0172533704332756
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 13 of the simulation
+Wallet 0 wants to buy.
+Wallet 1 wants to sell.
+Wallet 2 wants to buy.
+Wallet 3 wants to sell.
+Wallet 4 wants to buy.
+Wallet 5 wants to sell.
+Wallet 6 wants to sell.
+Wallet 7 wants to buy.
+Wallet 8 wants to buy.
+Wallet 9 does nothing.
+Wallet 10 wants to buy.
+Wallet 11 wants to sell.
+Wallet 12 wants to buy.
+Wallet 13 wants to sell.
+Wallet 14 wants to buy.
+Wallet 15 wants to sell.
+Wallet 16 does nothing.
+Wallet 17 wants to sell.
+Wallet 18 wants to buy.
+Wallet 19 wants to sell.
+Wallet 20 wants to sell.
+Wallet 21 wants to buy.
+Wallet 22 does nothing.
+Wallet 23 wants to buy.
+Wallet 24 wants to buy.
+Wallet 25 wants to sell.
+Wallet 26 wants to sell.
+Wallet 27 wants to sell.
+Wallet 28 wants to buy.
+Wallet 29 wants to buy.
+Wallet 30 wants to sell.
+Wallet 31 wants to buy.
+Wallet 32 wants to sell.
+Wallet 33 wants to sell.
+Wallet 34 wants to buy.
+Wallet 35 does nothing.
+Wallet 36 wants to buy.
+Wallet 37 wants to buy.
+Wallet 38 wants to sell.
+Wallet 39 wants to sell.
+Wallet 40 wants to sell.
+Wallet 41 wants to buy.
+Wallet 42 wants to sell.
+Wallet 43 wants to sell.
+Wallet 44 does nothing.
+Wallet 45 does nothing.
+Wallet 46 wants to buy.
+Wallet 47 wants to buy.
+Wallet 48 does nothing.
+Wallet 49 wants to sell.
+Wallet 50 wants to sell.
+Wallet 51 wants to buy.
+Wallet 52 does nothing.
+Wallet 53 wants to sell.
+Wallet 54 wants to buy.
+Wallet 55 wants to buy.
+Wallet 56 wants to sell.
+Wallet 57 wants to buy.
+Wallet 58 wants to buy.
+Wallet 59 wants to buy.
+Wallet 60 does nothing.
+Wallet 61 wants to sell.
+Wallet 62 wants to sell.
+Wallet 63 wants to buy.
+Wallet 64 wants to sell.
+Wallet 65 wants to buy.
+Wallet 66 wants to sell.
+Wallet 67 wants to buy.
+Wallet 68 wants to buy.
+Wallet 69 wants to buy.
+Wallet 70 wants to sell.
+Wallet 71 does nothing.
+Wallet 72 wants to sell.
+Wallet 73 does nothing.
+Wallet 74 does nothing.
+Wallet 75 wants to buy.
+Wallet 76 wants to buy.
+Wallet 77 wants to sell.
+Wallet 78 does nothing.
+Wallet 79 wants to sell.
+Wallet 80 wants to buy.
+Wallet 81 wants to sell.
+Wallet 82 does nothing.
+Wallet 83 wants to buy.
+Wallet 84 wants to buy.
+Wallet 85 wants to sell.
+Wallet 86 wants to buy.
+Wallet 87 wants to sell.
+Wallet 88 wants to sell.
+Wallet 89 wants to buy.
+Wallet 90 wants to buy.
+Wallet 91 wants to buy.
+Wallet 92 wants to buy.
+Wallet 93 wants to buy.
+Wallet 94 wants to buy.
+Wallet 95 wants to sell.
+Wallet 96 wants to buy.
+Wallet 97 wants to sell.
+Wallet 98 wants to sell.
+Wallet 99 wants to sell.
+Wallet 101 does nothing.
+Wallet 102 wants to sell.
+Wallet 103 wants to sell.
+Wallet 104 wants to sell.
+Wallet 105 wants to buy.
+Wallet 106 wants to buy.
+Wallet 107 wants to sell.
+Wallet 108 wants to sell.
+Wallet 109 does nothing.
+Wallet 110 wants to buy.
+Wallet 111 wants to sell.
+Wallet 112 wants to buy.
+Wallet 113 wants to buy.
+Wallet 114 wants to sell.
+Wallet 115 does nothing.
+Wallet 116 wants to buy.
+Wallet 117 wants to sell.
+Wallet 118 wants to buy.
+Wallet 119 wants to buy.
+Wallet 120 wants to sell.
+Wallet 121 wants to buy.
+Wallet 122 wants to buy.
+Wallet 123 wants to sell.
+Wallet 124 does nothing.
+Wallet 125 wants to buy.
+Wallet 126 wants to buy.
+Wallet 127 wants to buy.
+Wallet 128 wants to buy.
+Wallet 129 wants to buy.
+End of day13 token price: 0.9918098496199287
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 14 of the simulation
+Wallet 0 wants to buy.
+Wallet 1 wants to sell.
+Wallet 2 wants to sell.
+Wallet 3 wants to buy.
+Wallet 4 wants to buy.
+Wallet 5 wants to sell.
+Wallet 6 wants to sell.
+Wallet 7 wants to buy.
+Wallet 8 wants to buy.
+Wallet 9 wants to buy.
+Wallet 10 wants to sell.
+Wallet 11 wants to sell.
+Wallet 12 wants to buy.
+Wallet 13 wants to sell.
+Wallet 14 wants to sell.
+Wallet 15 wants to buy.
+Wallet 16 wants to buy.
+Wallet 17 wants to buy.
+Wallet 18 wants to sell.
+Wallet 19 wants to buy.
+Wallet 20 wants to sell.
+Wallet 21 wants to buy.
+Wallet 22 wants to sell.
+Wallet 23 wants to sell.
+Wallet 24 wants to sell.
+Wallet 25 wants to buy.
+Wallet 26 does nothing.
+Wallet 27 wants to buy.
+Wallet 28 wants to buy.
+Wallet 29 wants to buy.
+Wallet 30 wants to sell.
+Wallet 31 wants to sell.
+Wallet 32 wants to buy.
+Wallet 33 wants to sell.
+Wallet 34 wants to sell.
+Wallet 35 wants to buy.
+Wallet 36 wants to sell.
+Wallet 37 wants to buy.
+Wallet 38 wants to buy.
+Wallet 39 wants to buy.
+Wallet 40 wants to sell.
+Wallet 41 wants to buy.
+Wallet 42 wants to sell.
+Wallet 43 does nothing.
+Wallet 44 wants to buy.
+Wallet 45 wants to buy.
+Wallet 46 wants to buy.
+Wallet 47 wants to sell.
+Wallet 48 does nothing.
+Wallet 49 wants to buy.
+Wallet 50 wants to sell.
+Wallet 51 wants to sell.
+Wallet 52 wants to sell.
+Wallet 53 wants to sell.
+Wallet 54 wants to sell.
+Wallet 55 wants to sell.
+Wallet 56 wants to sell.
+Wallet 57 wants to sell.
+Wallet 58 wants to sell.
+Wallet 59 wants to sell.
+Wallet 60 wants to sell.
+Wallet 61 wants to buy.
+Wallet 62 wants to sell.
+Wallet 63 wants to sell.
+Wallet 64 wants to buy.
+Wallet 65 wants to buy.
+Wallet 66 wants to buy.
+Wallet 67 wants to sell.
+Wallet 68 wants to sell.
+Wallet 69 wants to buy.
+Wallet 70 wants to buy.
+Wallet 71 wants to buy.
+Wallet 72 wants to buy.
+Wallet 73 wants to sell.
+Wallet 74 wants to sell.
+Wallet 75 wants to buy.
+Wallet 76 wants to buy.
+Wallet 77 does nothing.
+Wallet 78 wants to buy.
+Wallet 79 wants to buy.
+Wallet 80 wants to buy.
+Wallet 81 wants to sell.
+Wallet 82 does nothing.
+Wallet 83 wants to buy.
+Wallet 84 wants to sell.
+Wallet 85 wants to buy.
+Wallet 86 wants to buy.
+Wallet 87 wants to buy.
+Wallet 88 wants to buy.
+Wallet 89 wants to sell.
+Wallet 90 wants to sell.
+Wallet 91 wants to buy.
+Wallet 92 wants to buy.
+Wallet 93 wants to sell.
+Wallet 94 wants to buy.
+Wallet 95 wants to buy.
+Wallet 96 wants to sell.
+Wallet 97 wants to buy.
+Wallet 98 does nothing.
+Wallet 99 wants to buy.
+Wallet 101 wants to buy.
+Wallet 102 wants to buy.
+Wallet 103 wants to sell.
+Wallet 104 wants to buy.
+Wallet 105 wants to sell.
+Wallet 106 wants to buy.
+Wallet 107 does nothing.
+Wallet 108 wants to buy.
+Wallet 109 wants to buy.
+Wallet 110 wants to sell.
+Wallet 111 wants to buy.
+Wallet 112 wants to buy.
+Wallet 113 wants to buy.
+Wallet 114 wants to sell.
+Wallet 115 wants to sell.
+Wallet 116 wants to buy.
+Wallet 117 wants to sell.
+Wallet 118 wants to sell.
+Wallet 119 wants to buy.
+Wallet 120 wants to sell.
+Wallet 121 wants to sell.
+Wallet 122 wants to sell.
+Wallet 123 wants to sell.
+Wallet 124 wants to sell.
+Wallet 125 wants to sell.
+Wallet 126 wants to buy.
+Wallet 127 wants to buy.
+Wallet 128 does nothing.
+Wallet 129 wants to buy.
+End of day14 token price: 0.9414120729328485
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 15 of the simulation
+Wallet 0 does nothing.
+Wallet 1 wants to sell.
+Wallet 2 wants to sell.
+Wallet 3 wants to buy.
+Wallet 4 wants to sell.
+Wallet 5 wants to buy.
+Wallet 6 wants to sell.
+Wallet 7 wants to buy.
+Wallet 8 wants to buy.
+Wallet 9 wants to sell.
+Wallet 10 wants to buy.
+Wallet 11 wants to sell.
+Wallet 12 wants to sell.
+Wallet 13 wants to buy.
+Wallet 14 wants to buy.
+Wallet 15 wants to buy.
+Wallet 16 wants to buy.
+Wallet 17 wants to sell.
+Wallet 18 wants to sell.
+Wallet 19 wants to buy.
+Wallet 20 wants to buy.
+Wallet 21 wants to sell.
+Wallet 22 wants to buy.
+Wallet 23 does nothing.
+Wallet 24 wants to sell.
+Wallet 25 wants to sell.
+Wallet 26 wants to buy.
+Wallet 27 wants to buy.
+Wallet 28 wants to sell.
+Wallet 29 wants to buy.
+Wallet 30 wants to sell.
+Wallet 31 does nothing.
+Wallet 32 does nothing.
+Wallet 33 wants to sell.
+Wallet 34 wants to sell.
+Wallet 35 does nothing.
+Wallet 36 wants to sell.
+Wallet 37 wants to sell.
+Wallet 38 wants to buy.
+Wallet 39 wants to buy.
+Wallet 40 wants to buy.
+Wallet 41 wants to buy.
+Wallet 42 wants to sell.
+Wallet 43 wants to sell.
+Wallet 44 wants to buy.
+Wallet 45 wants to sell.
+Wallet 46 wants to buy.
+Wallet 47 wants to sell.
+Wallet 48 wants to sell.
+Wallet 49 wants to sell.
+Wallet 50 wants to sell.
+Wallet 51 wants to sell.
+Wallet 52 wants to buy.
+Wallet 53 wants to buy.
+Wallet 54 wants to buy.
+Wallet 55 wants to buy.
+Wallet 56 wants to sell.
+Wallet 57 wants to sell.
+Wallet 58 wants to sell.
+Wallet 59 wants to buy.
+Wallet 60 does nothing.
+Wallet 61 wants to sell.
+Wallet 62 wants to buy.
+Wallet 63 wants to sell.
+Wallet 64 does nothing.
+Wallet 65 wants to sell.
+Wallet 66 wants to buy.
+Wallet 67 wants to sell.
+Wallet 68 wants to sell.
+Wallet 69 wants to buy.
+Wallet 70 wants to buy.
+Wallet 71 wants to sell.
+Wallet 72 wants to sell.
+Wallet 73 wants to buy.
+Wallet 74 does nothing.
+Wallet 75 wants to sell.
+Wallet 76 wants to sell.
+Wallet 77 wants to sell.
+Wallet 78 wants to buy.
+Wallet 79 wants to sell.
+Wallet 80 wants to buy.
+Wallet 81 wants to buy.
+Wallet 82 wants to sell.
+Wallet 83 wants to sell.
+Wallet 84 wants to sell.
+Wallet 85 wants to buy.
+Wallet 86 wants to sell.
+Wallet 87 wants to sell.
+Wallet 88 wants to buy.
+Wallet 89 wants to sell.
+Wallet 90 does nothing.
+Wallet 91 wants to buy.
+Wallet 92 wants to buy.
+Wallet 93 does nothing.
+Wallet 94 wants to sell.
+Wallet 95 does nothing.
+Wallet 96 wants to sell.
+Wallet 97 wants to buy.
+Wallet 98 wants to sell.
+Wallet 99 wants to buy.
+Wallet 101 wants to sell.
+Wallet 102 wants to sell.
+Wallet 103 wants to sell.
+Wallet 104 wants to buy.
+Wallet 105 wants to buy.
+Wallet 106 wants to sell.
+Wallet 107 wants to sell.
+Wallet 108 wants to sell.
+Wallet 109 does nothing.
+Wallet 110 wants to sell.
+Wallet 111 does nothing.
+Wallet 112 does nothing.
+Wallet 113 wants to sell.
+Wallet 114 wants to buy.
+Wallet 115 wants to sell.
+Wallet 116 wants to buy.
+Wallet 117 wants to sell.
+Wallet 118 wants to sell.
+Wallet 119 wants to buy.
+Wallet 120 wants to sell.
+Wallet 121 wants to buy.
+Wallet 122 wants to sell.
+Wallet 123 wants to buy.
+Wallet 124 wants to buy.
+Wallet 125 wants to buy.
+Wallet 126 wants to sell.
+Wallet 127 wants to buy.
+Wallet 128 wants to sell.
+Wallet 129 wants to buy.
+End of day15 token price: 1.0464748784883195
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 16 of the simulation
+Wallet 0 wants to sell.
+Wallet 1 wants to sell.
+Wallet 2 wants to sell.
+Wallet 3 wants to sell.
+Wallet 4 wants to buy.
+Wallet 5 wants to sell.
+Wallet 6 wants to buy.
+Wallet 7 does nothing.
+Wallet 8 does nothing.
+Wallet 9 wants to buy.
+Wallet 10 wants to buy.
+Wallet 11 does nothing.
+Wallet 12 wants to sell.
+Wallet 13 wants to sell.
+Wallet 14 does nothing.
+Wallet 15 wants to buy.
+Wallet 16 wants to sell.
+Wallet 17 wants to buy.
+Wallet 18 wants to buy.
+Wallet 19 wants to buy.
+Wallet 20 does nothing.
+Wallet 21 does nothing.
+Wallet 22 wants to buy.
+Wallet 23 wants to sell.
+Wallet 24 wants to buy.
+Wallet 25 wants to sell.
+Wallet 26 wants to buy.
+Wallet 27 wants to buy.
+Wallet 28 wants to buy.
+Wallet 29 wants to buy.
+Wallet 30 wants to sell.
+Wallet 31 does nothing.
+Wallet 32 does nothing.
+Wallet 33 wants to sell.
+Wallet 34 wants to sell.
+Wallet 35 wants to sell.
+Wallet 36 does nothing.
+Wallet 37 wants to buy.
+Wallet 38 does nothing.
+Wallet 39 wants to buy.
+Wallet 40 wants to sell.
+Wallet 41 wants to sell.
+Wallet 42 wants to sell.
+Wallet 43 wants to sell.
+Wallet 44 wants to sell.
+Wallet 45 wants to sell.
+Wallet 46 wants to buy.
+Wallet 47 wants to buy.
+Wallet 48 wants to sell.
+Wallet 49 wants to sell.
+Wallet 50 wants to sell.
+Wallet 51 wants to sell.
+Wallet 52 does nothing.
+Wallet 53 wants to buy.
+Wallet 54 wants to sell.
+Wallet 55 wants to sell.
+Wallet 56 wants to buy.
+Wallet 57 wants to sell.
+Wallet 58 wants to buy.
+Wallet 59 wants to sell.
+Wallet 60 wants to sell.
+Wallet 61 wants to sell.
+Wallet 62 does nothing.
+Wallet 63 wants to sell.
+Wallet 64 wants to buy.
+Wallet 65 wants to buy.
+Wallet 66 wants to sell.
+Wallet 67 wants to sell.
+Wallet 68 wants to sell.
+Wallet 69 wants to sell.
+Wallet 70 wants to buy.
+Wallet 71 wants to buy.
+Wallet 72 wants to sell.
+Wallet 73 wants to sell.
+Wallet 74 does nothing.
+Wallet 75 wants to buy.
+Wallet 76 wants to sell.
+Wallet 77 wants to sell.
+Wallet 78 does nothing.
+Wallet 79 wants to buy.
+Wallet 80 wants to buy.
+Wallet 81 wants to sell.
+Wallet 82 wants to buy.
+Wallet 83 wants to buy.
+Wallet 84 wants to sell.
+Wallet 85 wants to buy.
+Wallet 86 does nothing.
+Wallet 87 wants to buy.
+Wallet 88 wants to buy.
+Wallet 89 wants to buy.
+Wallet 90 wants to buy.
+Wallet 91 does nothing.
+Wallet 92 does nothing.
+Wallet 93 wants to sell.
+Wallet 94 wants to buy.
+Wallet 95 wants to buy.
+Wallet 96 wants to sell.
+Wallet 97 wants to sell.
+Wallet 98 wants to buy.
+Wallet 99 wants to buy.
+Wallet 101 wants to buy.
+Wallet 102 wants to sell.
+Wallet 103 wants to sell.
+Wallet 104 wants to sell.
+Wallet 105 wants to buy.
+Wallet 106 wants to buy.
+Wallet 107 wants to buy.
+Wallet 108 does nothing.
+Wallet 109 wants to buy.
+Wallet 110 wants to buy.
+Wallet 111 wants to sell.
+Wallet 112 wants to buy.
+Wallet 113 does nothing.
+Wallet 114 wants to buy.
+Wallet 115 wants to sell.
+Wallet 116 wants to sell.
+Wallet 117 wants to buy.
+Wallet 118 wants to buy.
+Wallet 119 wants to sell.
+Wallet 120 does nothing.
+Wallet 121 wants to buy.
+Wallet 122 wants to sell.
+Wallet 123 wants to sell.
+Wallet 124 does nothing.
+Wallet 125 wants to buy.
+Wallet 126 wants to buy.
+Wallet 127 wants to buy.
+Wallet 128 wants to sell.
+Wallet 129 wants to sell.
+End of day16 token price: 1.0123442164214218
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 17 of the simulation
+Wallet 0 wants to sell.
+Wallet 1 wants to buy.
+Wallet 2 wants to sell.
+Wallet 3 does nothing.
+Wallet 4 wants to buy.
+Wallet 5 wants to sell.
+Wallet 6 wants to sell.
+Wallet 7 wants to sell.
+Wallet 8 wants to sell.
+Wallet 9 wants to sell.
+Wallet 10 wants to sell.
+Wallet 11 wants to buy.
+Wallet 12 wants to buy.
+Wallet 13 wants to sell.
+Wallet 14 wants to sell.
+Wallet 15 wants to sell.
+Wallet 16 wants to sell.
+Wallet 17 wants to buy.
+Wallet 18 does nothing.
+Wallet 19 wants to sell.
+Wallet 20 does nothing.
+Wallet 21 wants to sell.
+Wallet 22 wants to buy.
+Wallet 23 wants to buy.
+Wallet 24 wants to sell.
+Wallet 25 wants to buy.
+Wallet 26 wants to buy.
+Wallet 27 wants to buy.
+Wallet 28 wants to sell.
+Wallet 29 wants to buy.
+Wallet 30 wants to sell.
+Wallet 31 wants to buy.
+Wallet 32 wants to sell.
+Wallet 33 wants to buy.
+Wallet 34 does nothing.
+Wallet 35 wants to buy.
+Wallet 36 wants to sell.
+Wallet 37 wants to buy.
+Wallet 38 wants to sell.
+Wallet 39 wants to sell.
+Wallet 40 wants to sell.
+Wallet 41 does nothing.
+Wallet 42 wants to sell.
+Wallet 43 wants to buy.
+Wallet 44 wants to buy.
+Wallet 45 wants to buy.
+Wallet 46 wants to buy.
+Wallet 47 wants to buy.
+Wallet 48 wants to buy.
+Wallet 49 wants to buy.
+Wallet 50 wants to sell.
+Wallet 51 does nothing.
+Wallet 52 wants to sell.
+Wallet 53 wants to buy.
+Wallet 54 wants to sell.
+Wallet 55 wants to buy.
+Wallet 56 wants to sell.
+Wallet 57 wants to buy.
+Wallet 58 wants to buy.
+Wallet 59 wants to sell.
+Wallet 60 wants to buy.
+Wallet 61 wants to sell.
+Wallet 62 wants to buy.
+Wallet 63 does nothing.
+Wallet 64 wants to buy.
+Wallet 65 wants to sell.
+Wallet 66 wants to sell.
+Wallet 67 wants to buy.
+Wallet 68 wants to sell.
+Wallet 69 wants to sell.
+Wallet 70 wants to sell.
+Wallet 71 wants to buy.
+Wallet 72 wants to sell.
+Wallet 73 wants to sell.
+Wallet 74 wants to buy.
+Wallet 75 wants to buy.
+Wallet 76 wants to sell.
+Wallet 77 wants to sell.
+Wallet 78 wants to sell.
+Wallet 79 wants to sell.
+Wallet 80 wants to sell.
+Wallet 81 wants to sell.
+Wallet 82 does nothing.
+Wallet 83 wants to buy.
+Wallet 84 wants to buy.
+Wallet 85 wants to sell.
+Wallet 86 wants to sell.
+Wallet 87 wants to buy.
+Wallet 88 wants to sell.
+Wallet 89 wants to sell.
+Wallet 90 wants to buy.
+Wallet 91 wants to sell.
+Wallet 92 wants to buy.
+Wallet 93 wants to sell.
+Wallet 94 wants to sell.
+Wallet 95 wants to sell.
+Wallet 96 wants to sell.
+Wallet 97 wants to buy.
+Wallet 98 wants to buy.
+Wallet 99 wants to sell.
+Wallet 101 wants to sell.
+Wallet 102 wants to sell.
+Wallet 103 wants to sell.
+Wallet 104 wants to buy.
+Wallet 105 wants to buy.
+Wallet 106 wants to sell.
+Wallet 107 wants to sell.
+Wallet 108 wants to sell.
+Wallet 109 wants to buy.
+Wallet 110 wants to sell.
+Wallet 111 wants to buy.
+Wallet 112 wants to buy.
+Wallet 113 wants to buy.
+Wallet 114 wants to buy.
+Wallet 115 wants to sell.
+Wallet 116 wants to sell.
+Wallet 117 wants to sell.
+Wallet 118 wants to sell.
+Wallet 119 wants to sell.
+Wallet 120 wants to sell.
+Wallet 121 does nothing.
+Wallet 122 wants to sell.
+Wallet 123 wants to buy.
+Wallet 124 wants to sell.
+Wallet 125 wants to sell.
+Wallet 126 wants to sell.
+Wallet 127 wants to buy.
+Wallet 128 wants to sell.
+Wallet 129 wants to sell.
+Wallet 130 wants to buy.
+Wallet 131 wants to buy.
+Wallet 132 wants to buy.
+Wallet 133 wants to buy.
+Wallet 134 wants to buy.
+Wallet 135 wants to buy.
+Wallet 136 wants to buy.
+Wallet 137 wants to buy.
+Wallet 138 wants to buy.
+End of day17 token price: 1.0432033309729716
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 18 of the simulation
+Wallet 0 wants to sell.
+Wallet 1 wants to sell.
+Wallet 2 wants to sell.
+Wallet 3 wants to buy.
+Wallet 4 wants to sell.
+Wallet 5 wants to buy.
+Wallet 6 wants to sell.
+Wallet 7 wants to buy.
+Wallet 8 does nothing.
+Wallet 9 wants to sell.
+Wallet 10 wants to buy.
+Wallet 11 wants to sell.
+Wallet 12 wants to buy.
+Wallet 13 wants to buy.
+Wallet 14 wants to sell.
+Wallet 15 wants to sell.
+Wallet 16 wants to buy.
+Wallet 17 wants to sell.
+Wallet 18 wants to buy.
+Wallet 19 wants to sell.
+Wallet 20 wants to sell.
+Wallet 21 wants to sell.
+Wallet 22 wants to sell.
+Wallet 23 wants to buy.
+Wallet 24 wants to sell.
+Wallet 25 wants to buy.
+Wallet 26 wants to sell.
+Wallet 27 wants to sell.
+Wallet 28 wants to buy.
+Wallet 29 wants to sell.
+Wallet 30 wants to buy.
+Wallet 31 wants to sell.
+Wallet 32 wants to buy.
+Wallet 33 wants to buy.
+Wallet 34 wants to buy.
+Wallet 35 wants to sell.
+Wallet 36 wants to sell.
+Wallet 37 does nothing.
+Wallet 38 wants to buy.
+Wallet 39 wants to sell.
+Wallet 40 wants to buy.
+Wallet 41 wants to sell.
+Wallet 42 wants to sell.
+Wallet 43 wants to buy.
+Wallet 44 wants to buy.
+Wallet 45 wants to sell.
+Wallet 46 wants to buy.
+Wallet 47 wants to buy.
+Wallet 48 wants to buy.
+Wallet 49 wants to buy.
+Wallet 50 wants to buy.
+Wallet 51 wants to buy.
+Wallet 52 wants to sell.
+Wallet 53 wants to sell.
+Wallet 54 wants to buy.
+Wallet 55 wants to sell.
+Wallet 56 wants to sell.
+Wallet 57 wants to buy.
+Wallet 58 wants to sell.
+Wallet 59 wants to sell.
+Wallet 60 wants to sell.
+Wallet 61 wants to buy.
+Wallet 62 wants to sell.
+Wallet 63 does nothing.
+Wallet 64 wants to buy.
+Wallet 65 wants to buy.
+Wallet 66 wants to sell.
+Wallet 67 wants to sell.
+Wallet 68 wants to buy.
+Wallet 69 wants to buy.
+Wallet 70 wants to sell.
+Wallet 71 wants to sell.
+Wallet 72 wants to buy.
+Wallet 73 wants to buy.
+Wallet 74 wants to sell.
+Wallet 75 wants to sell.
+Wallet 76 wants to buy.
+Wallet 77 wants to sell.
+Wallet 78 wants to buy.
+Wallet 79 wants to sell.
+Wallet 80 wants to sell.
+Wallet 81 wants to buy.
+Wallet 82 wants to buy.
+Wallet 83 wants to buy.
+Wallet 84 wants to buy.
+Wallet 85 wants to buy.
+Wallet 86 does nothing.
+Wallet 87 wants to buy.
+Wallet 88 does nothing.
+Wallet 89 wants to buy.
+Wallet 90 wants to buy.
+Wallet 91 wants to sell.
+Wallet 92 does nothing.
+Wallet 93 wants to buy.
+Wallet 94 wants to sell.
+Wallet 95 wants to sell.
+Wallet 96 does nothing.
+Wallet 97 wants to sell.
+Wallet 98 wants to buy.
+Wallet 99 wants to sell.
+Wallet 101 wants to sell.
+Wallet 102 does nothing.
+Wallet 103 wants to buy.
+Wallet 104 does nothing.
+Wallet 105 wants to buy.
+Wallet 106 wants to buy.
+Wallet 107 wants to sell.
+Wallet 108 wants to buy.
+Wallet 109 wants to sell.
+Wallet 110 wants to buy.
+Wallet 111 wants to sell.
+Wallet 112 wants to buy.
+Wallet 113 wants to buy.
+Wallet 114 does nothing.
+Wallet 115 wants to sell.
+Wallet 116 wants to buy.
+Wallet 117 wants to buy.
+Wallet 118 does nothing.
+Wallet 119 does nothing.
+Wallet 120 wants to buy.
+Wallet 121 wants to buy.
+Wallet 122 wants to sell.
+Wallet 123 does nothing.
+Wallet 124 wants to buy.
+Wallet 125 does nothing.
+Wallet 126 wants to sell.
+Wallet 127 wants to buy.
+Wallet 128 wants to buy.
+Wallet 129 wants to buy.
+Wallet 130 does nothing.
+Wallet 131 wants to sell.
+Wallet 132 wants to sell.
+Wallet 133 wants to buy.
+Wallet 134 wants to sell.
+Wallet 135 wants to buy.
+Wallet 136 wants to sell.
+Wallet 137 wants to buy.
+Wallet 138 wants to buy.
+Wallet 139 wants to buy.
+End of day18 token price: 1.1297758889730831
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 19 of the simulation
+Wallet 0 wants to buy.
+Wallet 1 wants to sell.
+Wallet 2 wants to sell.
+Wallet 3 wants to sell.
+Wallet 4 wants to sell.
+Wallet 5 does nothing.
+Wallet 6 wants to buy.
+Wallet 7 does nothing.
+Wallet 8 does nothing.
+Wallet 9 wants to buy.
+Wallet 10 wants to sell.
+Wallet 11 wants to sell.
+Wallet 12 wants to sell.
+Wallet 13 wants to sell.
+Wallet 14 wants to sell.
+Wallet 15 wants to sell.
+Wallet 16 wants to buy.
+Wallet 17 wants to buy.
+Wallet 18 wants to sell.
+Wallet 19 wants to sell.
+Wallet 20 wants to sell.
+Wallet 21 wants to sell.
+Wallet 22 wants to sell.
+Wallet 23 wants to sell.
+Wallet 24 wants to sell.
+Wallet 25 wants to buy.
+Wallet 26 wants to sell.
+Wallet 27 wants to buy.
+Wallet 28 wants to buy.
+Wallet 29 wants to sell.
+Wallet 30 wants to buy.
+Wallet 31 wants to buy.
+Wallet 32 wants to sell.
+Wallet 33 does nothing.
+Wallet 34 does nothing.
+Wallet 35 wants to sell.
+Wallet 36 wants to sell.
+Wallet 37 wants to buy.
+Wallet 38 wants to sell.
+Wallet 39 wants to buy.
+Wallet 40 wants to buy.
+Wallet 41 wants to sell.
+Wallet 42 wants to sell.
+Wallet 43 wants to buy.
+Wallet 44 wants to buy.
+Wallet 45 wants to sell.
+Wallet 46 wants to buy.
+Wallet 47 does nothing.
+Wallet 48 wants to sell.
+Wallet 49 wants to sell.
+Wallet 50 wants to buy.
+Wallet 51 wants to buy.
+Wallet 52 wants to buy.
+Wallet 53 wants to sell.
+Wallet 54 wants to buy.
+Wallet 55 wants to buy.
+Wallet 56 does nothing.
+Wallet 57 wants to sell.
+Wallet 58 wants to buy.
+Wallet 59 wants to buy.
+Wallet 60 wants to sell.
+Wallet 61 wants to buy.
+Wallet 62 wants to sell.
+Wallet 63 wants to buy.
+Wallet 64 wants to buy.
+Wallet 65 wants to sell.
+Wallet 66 wants to sell.
+Wallet 67 wants to sell.
+Wallet 68 does nothing.
+Wallet 69 wants to buy.
+Wallet 70 wants to buy.
+Wallet 71 wants to buy.
+Wallet 72 wants to sell.
+Wallet 73 wants to sell.
+Wallet 74 wants to sell.
+Wallet 75 wants to sell.
+Wallet 76 wants to sell.
+Wallet 77 wants to sell.
+Wallet 78 wants to buy.
+Wallet 79 does nothing.
+Wallet 80 does nothing.
+Wallet 81 wants to sell.
+Wallet 82 wants to sell.
+Wallet 83 wants to buy.
+Wallet 84 wants to sell.
+Wallet 85 wants to buy.
+Wallet 86 wants to sell.
+Wallet 87 wants to sell.
+Wallet 88 wants to buy.
+Wallet 89 does nothing.
+Wallet 90 wants to sell.
+Wallet 91 wants to buy.
+Wallet 92 wants to buy.
+Wallet 93 wants to buy.
+Wallet 94 wants to buy.
+Wallet 95 wants to buy.
+Wallet 96 wants to sell.
+Wallet 97 wants to sell.
+Wallet 98 wants to buy.
+Wallet 99 wants to buy.
+Wallet 101 wants to buy.
+Wallet 102 wants to buy.
+Wallet 103 wants to buy.
+Wallet 104 wants to sell.
+Wallet 105 wants to sell.
+Wallet 106 wants to sell.
+Wallet 107 wants to sell.
+Wallet 108 wants to buy.
+Wallet 109 wants to sell.
+Wallet 110 wants to buy.
+Wallet 111 wants to buy.
+Wallet 112 wants to sell.
+Wallet 113 wants to sell.
+Wallet 114 wants to buy.
+Wallet 115 wants to sell.
+Wallet 116 wants to buy.
+Wallet 117 wants to buy.
+Wallet 118 wants to sell.
+Wallet 119 wants to sell.
+Wallet 120 wants to buy.
+Wallet 121 wants to buy.
+Wallet 122 wants to buy.
+Wallet 123 wants to buy.
+Wallet 124 wants to buy.
+Wallet 125 does nothing.
+Wallet 126 wants to buy.
+Wallet 127 wants to sell.
+Wallet 128 wants to sell.
+Wallet 129 wants to buy.
+Wallet 130 wants to sell.
+Wallet 131 wants to buy.
+Wallet 132 wants to sell.
+Wallet 133 wants to buy.
+Wallet 134 wants to sell.
+Wallet 135 does nothing.
+Wallet 136 does nothing.
+Wallet 137 wants to buy.
+Wallet 138 wants to buy.
+Wallet 139 wants to sell.
+Wallet 140 wants to buy.
+Wallet 141 wants to buy.
+Wallet 142 wants to buy.
+Wallet 143 wants to buy.
+Wallet 144 wants to buy.
+End of day19 token price: 1.0964815051625634
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 20 of the simulation
+Wallet 0 wants to buy.
+Wallet 1 wants to buy.
+Wallet 2 wants to sell.
+Wallet 3 wants to sell.
+Wallet 4 wants to sell.
+Wallet 5 does nothing.
+Wallet 6 wants to buy.
+Wallet 7 wants to buy.
+Wallet 8 wants to buy.
+Wallet 9 wants to buy.
+Wallet 10 wants to sell.
+Wallet 11 wants to buy.
+Wallet 12 wants to sell.
+Wallet 13 wants to sell.
+Wallet 14 wants to buy.
+Wallet 15 wants to sell.
+Wallet 16 wants to buy.
+Wallet 17 wants to buy.
+Wallet 18 wants to sell.
+Wallet 19 wants to sell.
+Wallet 20 wants to sell.
+Wallet 21 does nothing.
+Wallet 22 wants to sell.
+Wallet 23 wants to buy.
+Wallet 24 wants to sell.
+Wallet 25 wants to sell.
+Wallet 26 wants to sell.
+Wallet 27 wants to sell.
+Wallet 28 wants to buy.
+Wallet 29 wants to sell.
+Wallet 30 wants to buy.
+Wallet 31 wants to sell.
+Wallet 32 wants to buy.
+Wallet 33 wants to buy.
+Wallet 34 wants to buy.
+Wallet 35 wants to sell.
+Wallet 36 wants to buy.
+Wallet 37 wants to sell.
+Wallet 38 wants to buy.
+Wallet 39 wants to sell.
+Wallet 40 wants to sell.
+Wallet 41 wants to sell.
+Wallet 42 wants to buy.
+Wallet 43 wants to sell.
+Wallet 44 wants to buy.
+Wallet 45 wants to sell.
+Wallet 46 does nothing.
+Wallet 47 does nothing.
+Wallet 48 wants to buy.
+Wallet 49 wants to sell.
+Wallet 50 does nothing.
+Wallet 51 wants to buy.
+Wallet 52 wants to sell.
+Wallet 53 wants to buy.
+Wallet 54 wants to buy.
+Wallet 55 wants to buy.
+Wallet 56 wants to buy.
+Wallet 57 wants to sell.
+Wallet 58 wants to sell.
+Wallet 59 wants to sell.
+Wallet 60 wants to buy.
+Wallet 61 wants to buy.
+Wallet 62 wants to buy.
+Wallet 63 wants to buy.
+Wallet 64 wants to sell.
+Wallet 65 wants to buy.
+Wallet 66 wants to sell.
+Wallet 67 wants to buy.
+Wallet 68 wants to sell.
+Wallet 69 wants to buy.
+Wallet 70 wants to sell.
+Wallet 71 wants to sell.
+Wallet 72 does nothing.
+Wallet 73 wants to buy.
+Wallet 74 wants to buy.
+Wallet 75 wants to sell.
+Wallet 76 wants to sell.
+Wallet 77 wants to sell.
+Wallet 78 wants to sell.
+Wallet 79 wants to sell.
+Wallet 80 wants to buy.
+Wallet 81 wants to buy.
+Wallet 82 wants to sell.
+Wallet 83 wants to sell.
+Wallet 84 does nothing.
+Wallet 85 wants to sell.
+Wallet 86 wants to buy.
+Wallet 87 does nothing.
+Wallet 88 wants to buy.
+Wallet 89 wants to buy.
+Wallet 90 wants to sell.
+Wallet 91 wants to sell.
+Wallet 92 wants to buy.
+Wallet 93 wants to sell.
+Wallet 94 wants to buy.
+Wallet 95 wants to buy.
+Wallet 96 wants to buy.
+Wallet 97 wants to sell.
+Wallet 98 wants to sell.
+Wallet 99 wants to buy.
+Wallet 101 wants to sell.
+Wallet 102 does nothing.
+Wallet 103 wants to buy.
+Wallet 104 wants to buy.
+Wallet 105 wants to buy.
+Wallet 106 wants to buy.
+Wallet 107 wants to sell.
+Wallet 108 wants to buy.
+Wallet 109 wants to sell.
+Wallet 110 wants to sell.
+Wallet 111 wants to buy.
+Wallet 112 wants to sell.
+Wallet 113 wants to buy.
+Wallet 114 wants to buy.
+Wallet 115 wants to sell.
+Wallet 116 does nothing.
+Wallet 117 does nothing.
+Wallet 118 wants to buy.
+Wallet 119 wants to sell.
+Wallet 120 wants to sell.
+Wallet 121 wants to buy.
+Wallet 122 wants to sell.
+Wallet 123 wants to sell.
+Wallet 124 does nothing.
+Wallet 125 wants to sell.
+Wallet 126 wants to sell.
+Wallet 127 wants to sell.
+Wallet 128 wants to sell.
+Wallet 129 wants to buy.
+Wallet 130 wants to buy.
+Wallet 131 wants to sell.
+Wallet 132 wants to sell.
+Wallet 133 wants to buy.
+Wallet 134 wants to buy.
+Wallet 135 wants to buy.
+Wallet 136 wants to buy.
+Wallet 137 wants to sell.
+Wallet 138 does nothing.
+Wallet 139 wants to buy.
+Wallet 140 wants to sell.
+Wallet 141 wants to buy.
+Wallet 142 wants to sell.
+Wallet 143 wants to buy.
+Wallet 144 wants to buy.
+End of day20 token price: 1.0007580159184586
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 21 of the simulation
+Wallet 0 wants to buy.
+Wallet 1 wants to sell.
+Wallet 2 wants to buy.
+Wallet 3 wants to sell.
+Wallet 4 wants to sell.
+Wallet 5 wants to buy.
+Wallet 6 wants to sell.
+Wallet 7 wants to buy.
+Wallet 8 wants to buy.
+Wallet 9 wants to sell.
+Wallet 10 wants to sell.
+Wallet 11 does nothing.
+Wallet 12 wants to sell.
+Wallet 13 wants to sell.
+Wallet 14 wants to sell.
+Wallet 15 wants to sell.
+Wallet 16 wants to sell.
+Wallet 17 wants to sell.
+Wallet 18 wants to buy.
+Wallet 19 wants to buy.
+Wallet 20 wants to buy.
+Wallet 21 wants to buy.
+Wallet 22 wants to sell.
+Wallet 23 wants to buy.
+Wallet 24 wants to sell.
+Wallet 25 wants to buy.
+Wallet 26 wants to sell.
+Wallet 27 wants to sell.
+Wallet 28 wants to sell.
+Wallet 29 wants to sell.
+Wallet 30 wants to sell.
+Wallet 31 wants to buy.
+Wallet 32 wants to sell.
+Wallet 33 wants to buy.
+Wallet 34 wants to sell.
+Wallet 35 wants to buy.
+Wallet 36 does nothing.
+Wallet 37 wants to sell.
+Wallet 38 wants to buy.
+Wallet 39 wants to sell.
+Wallet 40 wants to sell.
+Wallet 41 wants to buy.
+Wallet 42 wants to sell.
+Wallet 43 wants to buy.
+Wallet 44 wants to buy.
+Wallet 45 wants to sell.
+Wallet 46 wants to sell.
+Wallet 47 wants to buy.
+Wallet 48 does nothing.
+Wallet 49 wants to sell.
+Wallet 50 wants to buy.
+Wallet 51 wants to buy.
+Wallet 52 wants to sell.
+Wallet 53 wants to sell.
+Wallet 54 wants to buy.
+Wallet 55 does nothing.
+Wallet 56 wants to buy.
+Wallet 57 wants to buy.
+Wallet 58 does nothing.
+Wallet 59 wants to buy.
+Wallet 60 wants to buy.
+Wallet 61 wants to sell.
+Wallet 62 wants to buy.
+Wallet 63 wants to buy.
+Wallet 64 wants to sell.
+Wallet 65 wants to sell.
+Wallet 66 wants to buy.
+Wallet 67 wants to buy.
+Wallet 68 wants to buy.
+Wallet 69 wants to sell.
+Wallet 70 wants to sell.
+Wallet 71 wants to sell.
+Wallet 72 wants to sell.
+Wallet 73 wants to sell.
+Wallet 74 wants to sell.
+Wallet 75 wants to sell.
+Wallet 76 wants to buy.
+Wallet 77 wants to sell.
+Wallet 78 wants to sell.
+Wallet 79 wants to sell.
+Wallet 80 wants to sell.
+Wallet 81 wants to buy.
+Wallet 82 wants to sell.
+Wallet 83 wants to sell.
+Wallet 84 wants to buy.
+Wallet 85 wants to sell.
+Wallet 86 wants to buy.
+Wallet 87 wants to sell.
+Wallet 88 wants to sell.
+Wallet 89 wants to sell.
+Wallet 90 wants to buy.
+Wallet 91 does nothing.
+Wallet 92 does nothing.
+Wallet 93 wants to buy.
+Wallet 94 wants to sell.
+Wallet 95 wants to buy.
+Wallet 96 wants to buy.
+Wallet 97 wants to sell.
+Wallet 98 wants to buy.
+Wallet 99 wants to buy.
+Wallet 101 wants to buy.
+Wallet 102 does nothing.
+Wallet 103 wants to sell.
+Wallet 104 wants to buy.
+Wallet 105 wants to buy.
+Wallet 106 wants to sell.
+Wallet 107 wants to buy.
+Wallet 108 wants to buy.
+Wallet 109 wants to buy.
+Wallet 110 wants to sell.
+Wallet 111 wants to buy.
+Wallet 112 wants to buy.
+Wallet 113 does nothing.
+Wallet 114 wants to sell.
+Wallet 115 wants to sell.
+Wallet 116 wants to sell.
+Wallet 117 does nothing.
+Wallet 118 wants to buy.
+Wallet 119 wants to sell.
+Wallet 120 wants to sell.
+Wallet 121 wants to buy.
+Wallet 122 wants to buy.
+Wallet 123 wants to sell.
+Wallet 124 wants to sell.
+Wallet 125 wants to sell.
+Wallet 126 wants to sell.
+Wallet 127 wants to buy.
+Wallet 128 wants to sell.
+Wallet 129 wants to buy.
+Wallet 130 wants to buy.
+Wallet 131 wants to buy.
+Wallet 132 wants to buy.
+Wallet 133 wants to buy.
+Wallet 134 wants to sell.
+Wallet 135 wants to sell.
+Wallet 136 wants to sell.
+Wallet 137 does nothing.
+Wallet 138 wants to sell.
+Wallet 139 wants to sell.
+Wallet 140 wants to sell.
+Wallet 141 wants to sell.
+Wallet 142 wants to sell.
+Wallet 143 wants to buy.
+Wallet 144 wants to buy.
+End of day21 token price: 0.9942152680321287
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 22 of the simulation
+Wallet 0 does nothing.
+Wallet 1 wants to sell.
+Wallet 2 wants to sell.
+Wallet 3 wants to sell.
+Wallet 4 wants to buy.
+Wallet 5 wants to sell.
+Wallet 6 wants to buy.
+Wallet 7 wants to sell.
+Wallet 8 wants to sell.
+Wallet 9 wants to buy.
+Wallet 10 wants to buy.
+Wallet 11 wants to buy.
+Wallet 12 wants to sell.
+Wallet 13 wants to sell.
+Wallet 14 wants to buy.
+Wallet 15 wants to sell.
+Wallet 16 wants to buy.
+Wallet 17 wants to buy.
+Wallet 18 wants to sell.
+Wallet 19 wants to sell.
+Wallet 20 wants to sell.
+Wallet 21 wants to sell.
+Wallet 22 wants to sell.
+Wallet 23 wants to sell.
+Wallet 24 wants to sell.
+Wallet 25 wants to buy.
+Wallet 26 wants to buy.
+Wallet 27 wants to sell.
+Wallet 28 wants to sell.
+Wallet 29 wants to sell.
+Wallet 30 wants to buy.
+Wallet 31 wants to sell.
+Wallet 32 wants to sell.
+Wallet 33 wants to buy.
+Wallet 34 wants to sell.
+Wallet 35 wants to sell.
+Wallet 36 wants to buy.
+Wallet 37 wants to sell.
+Wallet 38 does nothing.
+Wallet 39 wants to buy.
+Wallet 40 wants to buy.
+Wallet 41 wants to buy.
+Wallet 42 wants to buy.
+Wallet 43 does nothing.
+Wallet 44 wants to buy.
+Wallet 45 wants to buy.
+Wallet 46 does nothing.
+Wallet 47 wants to sell.
+Wallet 48 wants to buy.
+Wallet 49 wants to buy.
+Wallet 50 wants to buy.
+Wallet 51 wants to sell.
+Wallet 52 wants to sell.
+Wallet 53 wants to buy.
+Wallet 54 wants to sell.
+Wallet 55 wants to buy.
+Wallet 56 wants to sell.
+Wallet 57 wants to sell.
+Wallet 58 wants to sell.
+Wallet 59 wants to sell.
+Wallet 60 wants to sell.
+Wallet 61 wants to sell.
+Wallet 62 wants to buy.
+Wallet 63 wants to buy.
+Wallet 64 wants to sell.
+Wallet 65 wants to buy.
+Wallet 66 wants to buy.
+Wallet 67 wants to sell.
+Wallet 68 wants to buy.
+Wallet 69 wants to sell.
+Wallet 70 does nothing.
+Wallet 71 wants to sell.
+Wallet 72 wants to sell.
+Wallet 73 wants to buy.
+Wallet 74 wants to sell.
+Wallet 75 wants to buy.
+Wallet 76 wants to buy.
+Wallet 77 wants to sell.
+Wallet 78 wants to sell.
+Wallet 79 wants to sell.
+Wallet 80 wants to buy.
+Wallet 81 wants to sell.
+Wallet 82 does nothing.
+Wallet 83 wants to sell.
+Wallet 84 wants to buy.
+Wallet 85 wants to sell.
+Wallet 86 wants to sell.
+Wallet 87 wants to sell.
+Wallet 88 does nothing.
+Wallet 89 wants to sell.
+Wallet 90 wants to sell.
+Wallet 91 wants to sell.
+Wallet 92 wants to buy.
+Wallet 93 wants to sell.
+Wallet 94 wants to sell.
+Wallet 95 wants to sell.
+Wallet 96 wants to sell.
+Wallet 97 wants to buy.
+Wallet 98 does nothing.
+Wallet 99 wants to buy.
+Wallet 101 wants to buy.
+Wallet 102 wants to buy.
+Wallet 103 wants to buy.
+Wallet 104 wants to sell.
+Wallet 105 wants to buy.
+Wallet 106 does nothing.
+Wallet 107 wants to buy.
+Wallet 108 wants to sell.
+Wallet 109 does nothing.
+Wallet 110 wants to sell.
+Wallet 111 wants to sell.
+Wallet 112 does nothing.
+Wallet 113 wants to buy.
+Wallet 114 wants to buy.
+Wallet 115 wants to sell.
+Wallet 116 wants to sell.
+Wallet 117 wants to sell.
+Wallet 118 wants to sell.
+Wallet 119 wants to sell.
+Wallet 120 wants to sell.
+Wallet 121 wants to sell.
+Wallet 122 wants to sell.
+Wallet 123 does nothing.
+Wallet 124 wants to sell.
+Wallet 125 wants to sell.
+Wallet 126 wants to sell.
+Wallet 127 wants to buy.
+Wallet 128 does nothing.
+Wallet 129 does nothing.
+Wallet 130 does nothing.
+Wallet 131 wants to buy.
+Wallet 132 wants to buy.
+Wallet 133 wants to buy.
+Wallet 134 wants to buy.
+Wallet 135 wants to sell.
+Wallet 136 wants to buy.
+Wallet 137 wants to buy.
+Wallet 138 wants to buy.
+Wallet 139 wants to sell.
+Wallet 140 wants to sell.
+Wallet 141 wants to sell.
+Wallet 142 wants to buy.
+Wallet 143 wants to sell.
+Wallet 144 does nothing.
+End of day22 token price: 0.9525057645839938
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 23 of the simulation
+Wallet 0 wants to buy.
+Wallet 1 wants to sell.
+Wallet 2 wants to sell.
+Wallet 3 wants to sell.
+Wallet 4 wants to sell.
+Wallet 5 wants to sell.
+Wallet 6 does nothing.
+Wallet 7 wants to buy.
+Wallet 8 wants to buy.
+Wallet 9 wants to sell.
+Wallet 10 wants to sell.
+Wallet 11 wants to buy.
+Wallet 12 wants to sell.
+Wallet 13 wants to sell.
+Wallet 14 wants to sell.
+Wallet 15 wants to buy.
+Wallet 16 wants to buy.
+Wallet 17 wants to buy.
+Wallet 18 wants to sell.
+Wallet 19 wants to buy.
+Wallet 20 wants to sell.
+Wallet 21 wants to sell.
+Wallet 22 wants to buy.
+Wallet 23 wants to sell.
+Wallet 24 wants to buy.
+Wallet 25 wants to sell.
+Wallet 26 wants to buy.
+Wallet 27 wants to buy.
+Wallet 28 wants to sell.
+Wallet 29 wants to buy.
+Wallet 30 wants to buy.
+Wallet 31 wants to buy.
+Wallet 32 wants to sell.
+Wallet 33 does nothing.
+Wallet 34 wants to sell.
+Wallet 35 wants to buy.
+Wallet 36 wants to sell.
+Wallet 37 wants to sell.
+Wallet 38 wants to sell.
+Wallet 39 wants to buy.
+Wallet 40 does nothing.
+Wallet 41 wants to sell.
+Wallet 42 wants to buy.
+Wallet 43 wants to buy.
+Wallet 44 wants to buy.
+Wallet 45 wants to sell.
+Wallet 46 wants to sell.
+Wallet 47 wants to buy.
+Wallet 48 does nothing.
+Wallet 49 wants to sell.
+Wallet 50 wants to buy.
+Wallet 51 wants to sell.
+Wallet 52 does nothing.
+Wallet 53 wants to sell.
+Wallet 54 wants to buy.
+Wallet 55 wants to buy.
+Wallet 56 wants to sell.
+Wallet 57 wants to buy.
+Wallet 58 wants to buy.
+Wallet 59 wants to sell.
+Wallet 60 does nothing.
+Wallet 61 wants to sell.
+Wallet 62 does nothing.
+Wallet 63 wants to buy.
+Wallet 64 wants to sell.
+Wallet 65 wants to sell.
+Wallet 66 wants to sell.
+Wallet 67 wants to sell.
+Wallet 68 wants to buy.
+Wallet 69 wants to buy.
+Wallet 70 wants to sell.
+Wallet 71 wants to buy.
+Wallet 72 wants to buy.
+Wallet 73 wants to buy.
+Wallet 74 wants to buy.
+Wallet 75 wants to buy.
+Wallet 76 wants to buy.
+Wallet 77 wants to sell.
+Wallet 78 wants to sell.
+Wallet 79 wants to sell.
+Wallet 80 does nothing.
+Wallet 81 wants to buy.
+Wallet 82 wants to sell.
+Wallet 83 wants to buy.
+Wallet 84 wants to sell.
+Wallet 85 wants to sell.
+Wallet 86 wants to buy.
+Wallet 87 wants to buy.
+Wallet 88 wants to sell.
+Wallet 89 wants to buy.
+Wallet 90 wants to buy.
+Wallet 91 wants to buy.
+Wallet 92 wants to buy.
+Wallet 93 wants to sell.
+Wallet 94 wants to sell.
+Wallet 95 wants to sell.
+Wallet 96 wants to buy.
+Wallet 97 does nothing.
+Wallet 98 wants to buy.
+Wallet 99 wants to buy.
+Wallet 101 does nothing.
+Wallet 102 does nothing.
+Wallet 103 wants to sell.
+Wallet 104 wants to buy.
+Wallet 105 wants to sell.
+Wallet 106 wants to sell.
+Wallet 107 wants to sell.
+Wallet 108 wants to buy.
+Wallet 109 wants to sell.
+Wallet 110 wants to buy.
+Wallet 111 wants to sell.
+Wallet 112 wants to buy.
+Wallet 113 wants to buy.
+Wallet 114 does nothing.
+Wallet 115 wants to sell.
+Wallet 116 wants to sell.
+Wallet 117 wants to sell.
+Wallet 118 does nothing.
+Wallet 119 wants to buy.
+Wallet 120 wants to buy.
+Wallet 121 wants to sell.
+Wallet 122 wants to buy.
+Wallet 123 wants to buy.
+Wallet 124 wants to sell.
+Wallet 125 wants to sell.
+Wallet 126 does nothing.
+Wallet 127 wants to buy.
+Wallet 128 wants to buy.
+Wallet 129 wants to buy.
+Wallet 130 wants to buy.
+Wallet 131 wants to sell.
+Wallet 132 wants to buy.
+Wallet 133 wants to sell.
+Wallet 134 wants to buy.
+Wallet 135 wants to sell.
+Wallet 136 does nothing.
+Wallet 137 wants to buy.
+Wallet 138 wants to buy.
+Wallet 139 does nothing.
+Wallet 140 wants to buy.
+Wallet 141 wants to sell.
+Wallet 142 wants to sell.
+Wallet 143 wants to sell.
+Wallet 144 does nothing.
+End of day23 token price: 1.1444658142223971
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 24 of the simulation
+Wallet 0 wants to sell.
+Wallet 1 wants to sell.
+Wallet 2 wants to buy.
+Wallet 3 wants to sell.
+Wallet 4 does nothing.
+Wallet 5 does nothing.
+Wallet 6 wants to sell.
+Wallet 7 wants to sell.
+Wallet 8 wants to buy.
+Wallet 9 wants to sell.
+Wallet 10 wants to sell.
+Wallet 11 wants to buy.
+Wallet 12 wants to buy.
+Wallet 13 wants to buy.
+Wallet 14 wants to sell.
+Wallet 15 wants to buy.
+Wallet 16 does nothing.
+Wallet 17 wants to sell.
+Wallet 18 wants to sell.
+Wallet 19 does nothing.
+Wallet 20 wants to sell.
+Wallet 21 wants to buy.
+Wallet 22 wants to buy.
+Wallet 23 wants to buy.
+Wallet 24 wants to sell.
+Wallet 25 wants to sell.
+Wallet 26 wants to sell.
+Wallet 27 wants to sell.
+Wallet 28 wants to buy.
+Wallet 29 wants to sell.
+Wallet 30 wants to buy.
+Wallet 31 wants to buy.
+Wallet 32 wants to sell.
+Wallet 33 wants to sell.
+Wallet 34 wants to sell.
+Wallet 35 wants to buy.
+Wallet 36 wants to buy.
+Wallet 37 wants to buy.
+Wallet 38 wants to buy.
+Wallet 39 wants to buy.
+Wallet 40 wants to sell.
+Wallet 41 wants to buy.
+Wallet 42 wants to buy.
+Wallet 43 wants to sell.
+Wallet 44 wants to buy.
+Wallet 45 wants to sell.
+Wallet 46 wants to buy.
+Wallet 47 wants to buy.
+Wallet 48 wants to sell.
+Wallet 49 wants to sell.
+Wallet 50 wants to sell.
+Wallet 51 wants to sell.
+Wallet 52 wants to buy.
+Wallet 53 wants to sell.
+Wallet 54 wants to buy.
+Wallet 55 does nothing.
+Wallet 56 wants to sell.
+Wallet 57 wants to sell.
+Wallet 58 wants to sell.
+Wallet 59 wants to sell.
+Wallet 60 wants to buy.
+Wallet 61 does nothing.
+Wallet 62 wants to sell.
+Wallet 63 wants to buy.
+Wallet 64 wants to buy.
+Wallet 65 wants to buy.
+Wallet 66 wants to buy.
+Wallet 67 does nothing.
+Wallet 68 wants to sell.
+Wallet 69 wants to buy.
+Wallet 70 wants to sell.
+Wallet 71 wants to buy.
+Wallet 72 wants to buy.
+Wallet 73 wants to sell.
+Wallet 74 wants to buy.
+Wallet 75 wants to buy.
+Wallet 76 wants to buy.
+Wallet 77 wants to buy.
+Wallet 78 wants to sell.
+Wallet 79 wants to buy.
+Wallet 80 wants to buy.
+Wallet 81 wants to buy.
+Wallet 82 wants to sell.
+Wallet 83 wants to buy.
+Wallet 84 does nothing.
+Wallet 85 wants to buy.
+Wallet 86 wants to sell.
+Wallet 87 wants to sell.
+Wallet 88 wants to sell.
+Wallet 89 wants to buy.
+Wallet 90 does nothing.
+Wallet 91 wants to buy.
+Wallet 92 wants to sell.
+Wallet 93 wants to buy.
+Wallet 94 wants to sell.
+Wallet 95 wants to sell.
+Wallet 96 does nothing.
+Wallet 97 wants to buy.
+Wallet 98 wants to sell.
+Wallet 99 wants to buy.
+Wallet 101 wants to buy.
+Wallet 102 wants to buy.
+Wallet 103 wants to sell.
+Wallet 104 wants to sell.
+Wallet 105 wants to sell.
+Wallet 106 wants to buy.
+Wallet 107 wants to buy.
+Wallet 108 wants to buy.
+Wallet 109 wants to sell.
+Wallet 110 wants to buy.
+Wallet 111 wants to sell.
+Wallet 112 wants to sell.
+Wallet 113 wants to buy.
+Wallet 114 wants to buy.
+Wallet 115 wants to buy.
+Wallet 116 wants to buy.
+Wallet 117 wants to sell.
+Wallet 118 wants to buy.
+Wallet 119 does nothing.
+Wallet 120 wants to buy.
+Wallet 121 wants to sell.
+Wallet 122 wants to sell.
+Wallet 123 wants to sell.
+Wallet 124 wants to buy.
+Wallet 125 wants to sell.
+Wallet 126 wants to sell.
+Wallet 127 wants to sell.
+Wallet 128 wants to sell.
+Wallet 129 wants to sell.
+Wallet 130 wants to buy.
+Wallet 131 wants to buy.
+Wallet 132 does nothing.
+Wallet 133 wants to sell.
+Wallet 134 wants to sell.
+Wallet 135 wants to buy.
+Wallet 136 wants to buy.
+Wallet 137 wants to sell.
+Wallet 138 wants to buy.
+Wallet 139 wants to buy.
+Wallet 140 wants to sell.
+Wallet 141 wants to buy.
+Wallet 142 wants to buy.
+Wallet 143 does nothing.
+Wallet 144 does nothing.
+Wallet 145 wants to buy.
+End of day24 token price: 0.9619516935337188
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 25 of the simulation
+Wallet 0 wants to buy.
+Wallet 1 does nothing.
+Wallet 2 wants to buy.
+Wallet 3 wants to sell.
+Wallet 4 wants to buy.
+Wallet 5 does nothing.
+Wallet 6 does nothing.
+Wallet 7 wants to buy.
+Wallet 8 wants to buy.
+Wallet 9 wants to sell.
+Wallet 10 wants to sell.
+Wallet 11 wants to sell.
+Wallet 12 wants to buy.
+Wallet 13 wants to buy.
+Wallet 14 wants to sell.
+Wallet 15 wants to buy.
+Wallet 16 wants to sell.
+Wallet 17 wants to sell.
+Wallet 18 does nothing.
+Wallet 19 does nothing.
+Wallet 20 wants to buy.
+Wallet 21 wants to buy.
+Wallet 22 does nothing.
+Wallet 23 wants to buy.
+Wallet 24 wants to sell.
+Wallet 25 wants to buy.
+Wallet 26 does nothing.
+Wallet 27 wants to sell.
+Wallet 28 wants to buy.
+Wallet 29 wants to sell.
+Wallet 30 does nothing.
+Wallet 31 wants to sell.
+Wallet 32 wants to sell.
+Wallet 33 wants to buy.
+Wallet 34 wants to sell.
+Wallet 35 wants to sell.
+Wallet 36 wants to sell.
+Wallet 37 wants to buy.
+Wallet 38 wants to buy.
+Wallet 39 wants to sell.
+Wallet 40 wants to sell.
+Wallet 41 wants to sell.
+Wallet 42 wants to sell.
+Wallet 43 wants to sell.
+Wallet 44 wants to sell.
+Wallet 45 wants to sell.
+Wallet 46 wants to sell.
+Wallet 47 does nothing.
+Wallet 48 wants to sell.
+Wallet 49 does nothing.
+Wallet 50 does nothing.
+Wallet 51 wants to sell.
+Wallet 52 wants to sell.
+Wallet 53 wants to buy.
+Wallet 54 wants to sell.
+Wallet 55 wants to sell.
+Wallet 56 wants to buy.
+Wallet 57 wants to sell.
+Wallet 58 wants to buy.
+Wallet 59 wants to buy.
+Wallet 60 wants to buy.
+Wallet 61 wants to buy.
+Wallet 62 wants to buy.
+Wallet 63 wants to sell.
+Wallet 64 wants to sell.
+Wallet 65 wants to buy.
+Wallet 66 wants to sell.
+Wallet 67 wants to sell.
+Wallet 68 wants to sell.
+Wallet 69 wants to sell.
+Wallet 70 wants to sell.
+Wallet 71 wants to buy.
+Wallet 72 wants to buy.
+Wallet 73 wants to buy.
+Wallet 74 wants to buy.
+Wallet 75 wants to sell.
+Wallet 76 wants to sell.
+Wallet 77 wants to buy.
+Wallet 78 wants to sell.
+Wallet 79 wants to sell.
+Wallet 80 wants to buy.
+Wallet 81 wants to sell.
+Wallet 82 wants to sell.
+Wallet 83 wants to buy.
+Wallet 84 does nothing.
+Wallet 85 wants to buy.
+Wallet 86 wants to sell.
+Wallet 87 wants to sell.
+Wallet 88 wants to buy.
+Wallet 89 wants to buy.
+Wallet 90 wants to buy.
+Wallet 91 wants to buy.
+Wallet 92 wants to sell.
+Wallet 93 wants to sell.
+Wallet 94 wants to sell.
+Wallet 95 wants to sell.
+Wallet 96 does nothing.
+Wallet 97 wants to buy.
+Wallet 98 wants to buy.
+Wallet 99 does nothing.
+Wallet 101 wants to sell.
+Wallet 102 wants to sell.
+Wallet 103 wants to sell.
+Wallet 104 wants to buy.
+Wallet 105 does nothing.
+Wallet 106 wants to buy.
+Wallet 107 wants to sell.
+Wallet 108 wants to buy.
+Wallet 109 wants to buy.
+Wallet 110 wants to buy.
+Wallet 111 wants to sell.
+Wallet 112 wants to sell.
+Wallet 113 wants to sell.
+Wallet 114 wants to sell.
+Wallet 115 wants to buy.
+Wallet 116 wants to sell.
+Wallet 117 wants to sell.
+Wallet 118 wants to sell.
+Wallet 119 wants to sell.
+Wallet 120 does nothing.
+Wallet 121 wants to buy.
+Wallet 122 wants to sell.
+Wallet 123 wants to buy.
+Wallet 124 wants to sell.
+Wallet 125 wants to sell.
+Wallet 126 does nothing.
+Wallet 127 wants to buy.
+Wallet 128 wants to buy.
+Wallet 129 wants to sell.
+Wallet 130 wants to buy.
+Wallet 131 wants to sell.
+Wallet 132 wants to buy.
+Wallet 133 wants to sell.
+Wallet 134 wants to buy.
+Wallet 135 wants to sell.
+Wallet 136 does nothing.
+Wallet 137 wants to buy.
+Wallet 138 wants to sell.
+Wallet 139 wants to buy.
+Wallet 140 wants to buy.
+Wallet 141 wants to sell.
+Wallet 142 does nothing.
+Wallet 143 wants to sell.
+Wallet 144 wants to sell.
+Wallet 145 wants to buy.
+Wallet 146 wants to buy.
+Wallet 147 wants to buy.
+Wallet 148 wants to buy.
+Wallet 149 wants to buy.
+Wallet 150 wants to buy.
+End of day25 token price: 0.8676603510408958
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 26 of the simulation
+Wallet 0 wants to buy.
+Wallet 1 wants to sell.
+Wallet 2 wants to sell.
+Wallet 3 does nothing.
+Wallet 4 wants to buy.
+Wallet 5 does nothing.
+Wallet 6 wants to buy.
+Wallet 7 wants to sell.
+Wallet 8 wants to buy.
+Wallet 9 wants to sell.
+Wallet 10 wants to sell.
+Wallet 11 does nothing.
+Wallet 12 wants to buy.
+Wallet 13 wants to buy.
+Wallet 14 wants to buy.
+Wallet 15 wants to sell.
+Wallet 16 wants to sell.
+Wallet 17 wants to buy.
+Wallet 18 wants to buy.
+Wallet 19 wants to buy.
+Wallet 20 wants to sell.
+Wallet 21 wants to buy.
+Wallet 22 wants to sell.
+Wallet 23 wants to sell.
+Wallet 24 wants to buy.
+Wallet 25 wants to sell.
+Wallet 26 wants to sell.
+Wallet 27 wants to buy.
+Wallet 28 does nothing.
+Wallet 29 wants to sell.
+Wallet 30 wants to buy.
+Wallet 31 wants to sell.
+Wallet 32 wants to sell.
+Wallet 33 wants to buy.
+Wallet 34 wants to sell.
+Wallet 35 wants to sell.
+Wallet 36 wants to buy.
+Wallet 37 wants to sell.
+Wallet 38 wants to buy.
+Wallet 39 wants to sell.
+Wallet 40 wants to sell.
+Wallet 41 wants to buy.
+Wallet 42 wants to sell.
+Wallet 43 wants to buy.
+Wallet 44 wants to buy.
+Wallet 45 wants to sell.
+Wallet 46 wants to sell.
+Wallet 47 wants to sell.
+Wallet 48 wants to sell.
+Wallet 49 does nothing.
+Wallet 50 wants to sell.
+Wallet 51 wants to sell.
+Wallet 52 wants to buy.
+Wallet 53 wants to buy.
+Wallet 54 does nothing.
+Wallet 55 wants to buy.
+Wallet 56 wants to sell.
+Wallet 57 wants to buy.
+Wallet 58 wants to buy.
+Wallet 59 wants to sell.
+Wallet 60 wants to sell.
+Wallet 61 wants to buy.
+Wallet 62 wants to buy.
+Wallet 63 wants to sell.
+Wallet 64 wants to sell.
+Wallet 65 wants to buy.
+Wallet 66 wants to sell.
+Wallet 67 wants to sell.
+Wallet 68 wants to sell.
+Wallet 69 wants to sell.
+Wallet 70 wants to sell.
+Wallet 71 does nothing.
+Wallet 72 wants to sell.
+Wallet 73 wants to sell.
+Wallet 74 wants to sell.
+Wallet 75 wants to buy.
+Wallet 76 wants to sell.
+Wallet 77 wants to sell.
+Wallet 78 does nothing.
+Wallet 79 wants to sell.
+Wallet 80 wants to buy.
+Wallet 81 wants to sell.
+Wallet 82 wants to buy.
+Wallet 83 wants to buy.
+Wallet 84 does nothing.
+Wallet 85 wants to buy.
+Wallet 86 wants to buy.
+Wallet 87 does nothing.
+Wallet 88 wants to buy.
+Wallet 89 wants to sell.
+Wallet 90 wants to sell.
+Wallet 91 wants to sell.
+Wallet 92 wants to sell.
+Wallet 93 wants to buy.
+Wallet 94 does nothing.
+Wallet 95 wants to sell.
+Wallet 96 wants to sell.
+Wallet 97 wants to sell.
+Wallet 98 wants to buy.
+Wallet 99 wants to sell.
+Wallet 101 wants to buy.
+Wallet 102 does nothing.
+Wallet 103 does nothing.
+Wallet 104 wants to buy.
+Wallet 105 does nothing.
+Wallet 106 wants to sell.
+Wallet 107 wants to sell.
+Wallet 108 wants to sell.
+Wallet 109 wants to buy.
+Wallet 110 wants to buy.
+Wallet 111 wants to sell.
+Wallet 112 wants to buy.
+Wallet 113 wants to sell.
+Wallet 114 wants to buy.
+Wallet 115 wants to sell.
+Wallet 116 does nothing.
+Wallet 117 wants to buy.
+Wallet 118 wants to sell.
+Wallet 119 wants to sell.
+Wallet 120 wants to sell.
+Wallet 121 wants to sell.
+Wallet 122 wants to sell.
+Wallet 123 wants to buy.
+Wallet 124 wants to buy.
+Wallet 125 wants to sell.
+Wallet 126 wants to sell.
+Wallet 127 wants to buy.
+Wallet 128 wants to sell.
+Wallet 129 wants to buy.
+Wallet 130 wants to sell.
+Wallet 131 wants to sell.
+Wallet 132 wants to sell.
+Wallet 133 wants to buy.
+Wallet 134 wants to sell.
+Wallet 135 wants to buy.
+Wallet 136 wants to sell.
+Wallet 137 wants to sell.
+Wallet 138 does nothing.
+Wallet 139 wants to sell.
+Wallet 140 wants to sell.
+Wallet 141 wants to buy.
+Wallet 142 wants to sell.
+Wallet 143 wants to buy.
+Wallet 144 wants to buy.
+Wallet 145 wants to sell.
+Wallet 146 wants to sell.
+Wallet 147 wants to buy.
+Wallet 148 wants to buy.
+Wallet 149 wants to buy.
+Wallet 150 wants to sell.
+End of day26 token price: 0.9044521372121596
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 27 of the simulation
+Wallet 0 wants to buy.
+Wallet 1 wants to sell.
+Wallet 2 wants to buy.
+Wallet 3 wants to sell.
+Wallet 4 wants to buy.
+Wallet 5 does nothing.
+Wallet 6 wants to buy.
+Wallet 7 wants to sell.
+Wallet 8 wants to sell.
+Wallet 9 wants to buy.
+Wallet 10 wants to buy.
+Wallet 11 wants to sell.
+Wallet 12 does nothing.
+Wallet 13 wants to buy.
+Wallet 14 wants to buy.
+Wallet 15 wants to sell.
+Wallet 16 does nothing.
+Wallet 17 wants to buy.
+Wallet 18 does nothing.
+Wallet 19 does nothing.
+Wallet 20 wants to sell.
+Wallet 21 wants to buy.
+Wallet 22 wants to buy.
+Wallet 23 wants to sell.
+Wallet 24 wants to sell.
+Wallet 25 wants to sell.
+Wallet 26 wants to sell.
+Wallet 27 wants to buy.
+Wallet 28 wants to sell.
+Wallet 29 wants to buy.
+Wallet 30 wants to sell.
+Wallet 31 wants to sell.
+Wallet 32 wants to buy.
+Wallet 33 wants to buy.
+Wallet 34 wants to sell.
+Wallet 35 wants to buy.
+Wallet 36 wants to sell.
+Wallet 37 wants to buy.
+Wallet 38 wants to sell.
+Wallet 39 wants to buy.
+Wallet 40 wants to sell.
+Wallet 41 wants to sell.
+Wallet 42 wants to buy.
+Wallet 43 wants to sell.
+Wallet 44 wants to buy.
+Wallet 45 wants to sell.
+Wallet 46 wants to sell.
+Wallet 47 wants to sell.
+Wallet 48 does nothing.
+Wallet 49 does nothing.
+Wallet 50 wants to sell.
+Wallet 51 does nothing.
+Wallet 52 does nothing.
+Wallet 53 wants to sell.
+Wallet 54 wants to sell.
+Wallet 55 wants to buy.
+Wallet 56 wants to buy.
+Wallet 57 wants to sell.
+Wallet 58 does nothing.
+Wallet 59 wants to sell.
+Wallet 60 wants to buy.
+Wallet 61 wants to buy.
+Wallet 62 wants to buy.
+Wallet 63 wants to sell.
+Wallet 64 wants to sell.
+Wallet 65 wants to sell.
+Wallet 66 wants to buy.
+Wallet 67 wants to sell.
+Wallet 68 wants to sell.
+Wallet 69 wants to sell.
+Wallet 70 wants to buy.
+Wallet 71 wants to sell.
+Wallet 72 wants to buy.
+Wallet 73 wants to buy.
+Wallet 74 wants to sell.
+Wallet 75 wants to sell.
+Wallet 76 wants to buy.
+Wallet 77 wants to sell.
+Wallet 78 wants to buy.
+Wallet 79 does nothing.
+Wallet 80 wants to buy.
+Wallet 81 wants to buy.
+Wallet 82 wants to buy.
+Wallet 83 wants to sell.
+Wallet 84 wants to buy.
+Wallet 85 does nothing.
+Wallet 86 wants to buy.
+Wallet 87 does nothing.
+Wallet 88 wants to sell.
+Wallet 89 does nothing.
+Wallet 90 wants to sell.
+Wallet 91 wants to sell.
+Wallet 92 wants to sell.
+Wallet 93 wants to buy.
+Wallet 94 does nothing.
+Wallet 95 wants to sell.
+Wallet 96 wants to buy.
+Wallet 97 wants to sell.
+Wallet 98 wants to buy.
+Wallet 99 wants to buy.
+Wallet 101 wants to buy.
+Wallet 102 wants to sell.
+Wallet 103 wants to buy.
+Wallet 104 wants to sell.
+Wallet 105 does nothing.
+Wallet 106 wants to buy.
+Wallet 107 wants to sell.
+Wallet 108 wants to sell.
+Wallet 109 wants to buy.
+Wallet 110 wants to buy.
+Wallet 111 wants to sell.
+Wallet 112 does nothing.
+Wallet 113 wants to sell.
+Wallet 114 wants to buy.
+Wallet 115 wants to sell.
+Wallet 116 wants to sell.
+Wallet 117 wants to sell.
+Wallet 118 wants to sell.
+Wallet 119 does nothing.
+Wallet 120 wants to sell.
+Wallet 121 wants to buy.
+Wallet 122 wants to buy.
+Wallet 123 wants to buy.
+Wallet 124 wants to sell.
+Wallet 125 wants to sell.
+Wallet 126 wants to sell.
+Wallet 127 wants to buy.
+Wallet 128 wants to sell.
+Wallet 129 wants to sell.
+Wallet 130 wants to buy.
+Wallet 131 wants to sell.
+Wallet 132 wants to sell.
+Wallet 133 does nothing.
+Wallet 134 wants to sell.
+Wallet 135 wants to sell.
+Wallet 136 does nothing.
+Wallet 137 wants to buy.
+Wallet 138 wants to buy.
+Wallet 139 wants to sell.
+Wallet 140 wants to sell.
+Wallet 141 wants to sell.
+Wallet 142 wants to buy.
+Wallet 143 does nothing.
+Wallet 144 wants to buy.
+Wallet 145 wants to sell.
+Wallet 146 wants to buy.
+Wallet 147 wants to sell.
+Wallet 148 does nothing.
+Wallet 149 wants to sell.
+Wallet 150 wants to sell.
+End of day27 token price: 0.9943414441106406
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 28 of the simulation
+Wallet 0 does nothing.
+Wallet 1 wants to buy.
+Wallet 2 wants to buy.
+Wallet 3 wants to sell.
+Wallet 4 wants to buy.
+Wallet 5 wants to sell.
+Wallet 6 does nothing.
+Wallet 7 does nothing.
+Wallet 8 wants to sell.
+Wallet 9 wants to sell.
+Wallet 10 wants to buy.
+Wallet 11 wants to sell.
+Wallet 12 wants to sell.
+Wallet 13 wants to buy.
+Wallet 14 wants to buy.
+Wallet 15 wants to sell.
+Wallet 16 wants to buy.
+Wallet 17 wants to buy.
+Wallet 18 wants to sell.
+Wallet 19 wants to buy.
+Wallet 20 wants to buy.
+Wallet 21 wants to sell.
+Wallet 22 wants to sell.
+Wallet 23 wants to buy.
+Wallet 24 wants to sell.
+Wallet 25 wants to buy.
+Wallet 26 wants to buy.
+Wallet 27 wants to sell.
+Wallet 28 does nothing.
+Wallet 29 does nothing.
+Wallet 30 wants to sell.
+Wallet 31 wants to buy.
+Wallet 32 wants to sell.
+Wallet 33 wants to buy.
+Wallet 34 wants to buy.
+Wallet 35 does nothing.
+Wallet 36 wants to buy.
+Wallet 37 wants to buy.
+Wallet 38 wants to buy.
+Wallet 39 wants to sell.
+Wallet 40 wants to sell.
+Wallet 41 wants to buy.
+Wallet 42 does nothing.
+Wallet 43 wants to buy.
+Wallet 44 wants to sell.
+Wallet 45 wants to buy.
+Wallet 46 wants to buy.
+Wallet 47 wants to sell.
+Wallet 48 wants to buy.
+Wallet 49 wants to buy.
+Wallet 50 wants to sell.
+Wallet 51 wants to sell.
+Wallet 52 wants to sell.
+Wallet 53 wants to sell.
+Wallet 54 wants to sell.
+Wallet 55 wants to buy.
+Wallet 56 wants to buy.
+Wallet 57 wants to sell.
+Wallet 58 wants to sell.
+Wallet 59 does nothing.
+Wallet 60 wants to sell.
+Wallet 61 wants to buy.
+Wallet 62 wants to sell.
+Wallet 63 wants to buy.
+Wallet 64 wants to sell.
+Wallet 65 wants to sell.
+Wallet 66 wants to sell.
+Wallet 67 wants to sell.
+Wallet 68 wants to sell.
+Wallet 69 wants to sell.
+Wallet 70 wants to sell.
+Wallet 71 wants to sell.
+Wallet 72 wants to sell.
+Wallet 73 wants to sell.
+Wallet 74 wants to buy.
+Wallet 75 wants to sell.
+Wallet 76 wants to buy.
+Wallet 77 does nothing.
+Wallet 78 does nothing.
+Wallet 79 does nothing.
+Wallet 80 does nothing.
+Wallet 81 wants to sell.
+Wallet 82 wants to buy.
+Wallet 83 does nothing.
+Wallet 84 wants to buy.
+Wallet 85 wants to sell.
+Wallet 86 wants to buy.
+Wallet 87 wants to sell.
+Wallet 88 wants to sell.
+Wallet 89 wants to buy.
+Wallet 90 does nothing.
+Wallet 91 does nothing.
+Wallet 92 wants to buy.
+Wallet 93 wants to buy.
+Wallet 94 wants to sell.
+Wallet 95 wants to sell.
+Wallet 96 does nothing.
+Wallet 97 wants to buy.
+Wallet 98 does nothing.
+Wallet 99 wants to buy.
+Wallet 101 wants to sell.
+Wallet 102 wants to sell.
+Wallet 103 does nothing.
+Wallet 104 does nothing.
+Wallet 105 wants to sell.
+Wallet 106 wants to sell.
+Wallet 107 wants to sell.
+Wallet 108 wants to buy.
+Wallet 109 wants to buy.
+Wallet 110 wants to buy.
+Wallet 111 wants to sell.
+Wallet 112 does nothing.
+Wallet 113 wants to sell.
+Wallet 114 wants to buy.
+Wallet 115 wants to buy.
+Wallet 116 wants to buy.
+Wallet 117 wants to sell.
+Wallet 118 wants to sell.
+Wallet 119 wants to sell.
+Wallet 120 wants to buy.
+Wallet 121 wants to buy.
+Wallet 122 wants to buy.
+Wallet 123 wants to sell.
+Wallet 124 wants to buy.
+Wallet 125 wants to buy.
+Wallet 126 wants to buy.
+Wallet 127 wants to sell.
+Wallet 128 wants to sell.
+Wallet 129 wants to sell.
+Wallet 130 wants to sell.
+Wallet 131 wants to buy.
+Wallet 132 wants to sell.
+Wallet 133 wants to buy.
+Wallet 134 wants to sell.
+Wallet 135 wants to buy.
+Wallet 136 wants to buy.
+Wallet 137 wants to buy.
+Wallet 138 wants to sell.
+Wallet 139 wants to buy.
+Wallet 140 wants to sell.
+Wallet 141 wants to buy.
+Wallet 142 wants to buy.
+Wallet 143 does nothing.
+Wallet 144 wants to sell.
+Wallet 145 wants to buy.
+Wallet 146 wants to sell.
+Wallet 147 wants to buy.
+Wallet 148 wants to sell.
+Wallet 149 wants to buy.
+Wallet 150 wants to sell.
+End of day28 token price: 0.9921618612696124
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN
+Day 29 of the simulation
+Wallet 0 does nothing.
+Wallet 1 does nothing.
+Wallet 2 wants to sell.
+Wallet 3 wants to buy.
+Wallet 4 wants to buy.
+Wallet 5 does nothing.
+Wallet 6 wants to buy.
+Wallet 7 wants to buy.
+Wallet 8 wants to buy.
+Wallet 9 wants to buy.
+Wallet 10 wants to sell.
+Wallet 11 wants to buy.
+Wallet 12 wants to sell.
+Wallet 13 wants to buy.
+Wallet 14 wants to buy.
+Wallet 15 wants to sell.
+Wallet 16 wants to buy.
+Wallet 17 does nothing.
+Wallet 18 wants to buy.
+Wallet 19 wants to sell.
+Wallet 20 wants to buy.
+Wallet 21 wants to sell.
+Wallet 22 wants to buy.
+Wallet 23 wants to buy.
+Wallet 24 wants to buy.
+Wallet 25 wants to buy.
+Wallet 26 wants to buy.
+Wallet 27 does nothing.
+Wallet 28 wants to sell.
+Wallet 29 wants to buy.
+Wallet 30 wants to sell.
+Wallet 31 wants to buy.
+Wallet 32 wants to buy.
+Wallet 33 wants to buy.
+Wallet 34 wants to buy.
+Wallet 35 wants to buy.
+Wallet 36 wants to sell.
+Wallet 37 wants to sell.
+Wallet 38 wants to buy.
+Wallet 39 wants to buy.
+Wallet 40 wants to sell.
+Wallet 41 wants to buy.
+Wallet 42 wants to sell.
+Wallet 43 wants to sell.
+Wallet 44 wants to sell.
+Wallet 45 wants to sell.
+Wallet 46 wants to buy.
+Wallet 47 wants to sell.
+Wallet 48 wants to sell.
+Wallet 49 wants to buy.
+Wallet 50 wants to buy.
+Wallet 51 wants to sell.
+Wallet 52 wants to buy.
+Wallet 53 wants to sell.
+Wallet 54 wants to sell.
+Wallet 55 does nothing.
+Wallet 56 wants to buy.
+Wallet 57 wants to sell.
+Wallet 58 wants to buy.
+Wallet 59 wants to sell.
+Wallet 60 wants to sell.
+Wallet 61 wants to sell.
+Wallet 62 wants to sell.
+Wallet 63 wants to sell.
+Wallet 64 wants to sell.
+Wallet 65 wants to sell.
+Wallet 66 wants to buy.
+Wallet 67 wants to sell.
+Wallet 68 wants to sell.
+Wallet 69 wants to buy.
+Wallet 70 wants to buy.
+Wallet 71 wants to sell.
+Wallet 72 wants to sell.
+Wallet 73 wants to buy.
+Wallet 74 wants to buy.
+Wallet 75 wants to buy.
+Wallet 76 wants to buy.
+Wallet 77 wants to buy.
+Wallet 78 wants to sell.
+Wallet 79 wants to buy.
+Wallet 80 wants to buy.
+Wallet 81 wants to sell.
+Wallet 82 wants to buy.
+Wallet 83 wants to sell.
+Wallet 84 wants to buy.
+Wallet 85 wants to buy.
+Wallet 86 wants to sell.
+Wallet 87 does nothing.
+Wallet 88 wants to sell.
+Wallet 89 wants to sell.
+Wallet 90 wants to buy.
+Wallet 91 wants to buy.
+Wallet 92 wants to sell.
+Wallet 93 wants to sell.
+Wallet 94 wants to sell.
+Wallet 95 wants to buy.
+Wallet 96 wants to buy.
+Wallet 97 wants to sell.
+Wallet 98 wants to sell.
+Wallet 99 wants to buy.
+Wallet 101 wants to buy.
+Wallet 102 wants to buy.
+Wallet 103 does nothing.
+Wallet 104 wants to buy.
+Wallet 105 wants to sell.
+Wallet 106 wants to sell.
+Wallet 107 wants to sell.
+Wallet 108 wants to sell.
+Wallet 109 wants to sell.
+Wallet 110 wants to buy.
+Wallet 111 wants to sell.
+Wallet 112 does nothing.
+Wallet 113 wants to buy.
+Wallet 114 wants to sell.
+Wallet 115 wants to sell.
+Wallet 116 wants to buy.
+Wallet 117 wants to sell.
+Wallet 118 wants to buy.
+Wallet 119 wants to buy.
+Wallet 120 wants to sell.
+Wallet 121 wants to sell.
+Wallet 122 does nothing.
+Wallet 123 wants to sell.
+Wallet 124 wants to buy.
+Wallet 125 wants to sell.
+Wallet 126 wants to sell.
+Wallet 127 wants to sell.
+Wallet 128 wants to sell.
+Wallet 129 wants to sell.
+Wallet 130 wants to sell.
+Wallet 131 wants to sell.
+Wallet 132 wants to sell.
+Wallet 133 wants to buy.
+Wallet 134 wants to buy.
+Wallet 135 wants to sell.
+Wallet 136 wants to sell.
+Wallet 137 wants to buy.
+Wallet 138 wants to buy.
+Wallet 139 wants to sell.
+Wallet 140 does nothing.
+Wallet 141 wants to buy.
+Wallet 142 wants to sell.
+Wallet 143 wants to sell.
+Wallet 144 wants to sell.
+Wallet 145 wants to buy.
+Wallet 146 wants to sell.
+Wallet 147 wants to buy.
+Wallet 148 wants to sell.
+Wallet 149 wants to sell.
+Wallet 150 wants to buy.
+End of day29 token price: 0.997144884218803
+Rebase, old token amount: NaN
+Rebase, new token amount: NaN

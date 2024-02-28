@@ -1,6 +1,7 @@
-package simulation.src;
+package simulation;
 
 import java.util.LinkedList;
+import java.io.PrintWriter;
 
 
 public class Contract {
@@ -17,9 +18,11 @@ public class Contract {
         this.rebase = false;
     }
     
-    public void rebase(){
+    public void rebase(PrintWriter out){
         rebase = true;
+        out.println("Rebase, old token amount: " + getNumberofToken());
         double newTokenAmount = getNumberofToken()/getValue();
+        out.println("Rebase, new token amount: " + newTokenAmount);
         for(Wallet wallet : wallets){
             wallet.setToken(newTokenAmount*wallet.getPercentage());
         }
@@ -31,6 +34,9 @@ public class Contract {
             if(fromWallet.getToken() >= tokenAmount){
                 fromWallet.setToken(fromWallet.getToken() - tokenAmount);
                 toWallet.setToken(toWallet.getToken() + tokenAmount);
+            }
+            else{
+                System.out.println("Transaction not allowed, not enough tokens");
             }
         }
         else{

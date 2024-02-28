@@ -1,4 +1,4 @@
-package simulation.src;
+package simulation;
 
 import java.util.LinkedList;
 
@@ -24,8 +24,8 @@ public class Exchange{
         demand += tokenAmount;
 
         //Price update, weighted average between old price and price of the latest transaction
-        double w1 = 1.0;
-        double w2 = 1.0;
+        double w1 = 0.9;
+        double w2 = 0.1;
         this.price = (this.price * w1 + price * w2) / (w1 + w2);
     }
 
