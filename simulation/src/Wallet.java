@@ -1,20 +1,38 @@
 package simulation.src;
 
-public abstract class Wallet{
+
+public class Wallet{
     
+    // this is both the cryptowallet and the "bank account" of the user
+    private String name;
     private double token;
     private double money;
     private double percentage;
+    private Contract contract;
 
-    public Wallet(double token, double money){
+    Wallet(String name, double token, double money, Contract contract){
+        this.name = name;
         this.token = token;
-        this.money = money;
-        this.percentage = 0.0;
+        this.money = -money; //initial investment
+        this.contract = contract;
+        this.percentage = token/contract.getNumberofToken();
     }
 
-    public abstract void buy(Wallet fromWallet, double tokenAmount);
+    public void buy(Wallet fromWallet, double tokenAmount, Exchange exchange, double price){
+        contract.tranfer(fromWallet, this, tokenAmount);
+        exchange.transfer(this, fromWallet, price, tokenAmount);
+    }
 
-    public abstract void sell(Wallet toWallet, double tokenAmount);
+    public void sell(Wallet toWallet, double tokenAmount, Exchange exchange, double price){
+        contract.tranfer(this, toWallet, tokenAmount);
+        exchange.transfer(toWallet, this, price, -tokenAmount);
+    }
+
+//////////////////////////////////////////GETTERS AND SETTERS////////////////////////////////////////// 
+
+    public String getName(){
+        return name;
+    }
 
     public double getToken(){
         return token;
@@ -22,8 +40,12 @@ public abstract class Wallet{
     
     public void setToken(double token){
         this.token = token;
-        //changes in the token amount will affect the percentage
-        this.percentage = this.token/Contract.getNumberofToken();
+
+        //Changes in the token amount will affect the percentage, 
+        //only during transactions and not during rebase
+        if(!contract.isRebase()){
+            percentage = this.token/contract.getNumberofToken();
+        }
     }
     
     public double getMoney(){
@@ -40,5 +62,9 @@ public abstract class Wallet{
 
     public void setPercentage(double percentage){
         this.percentage = percentage;
+    }
+
+    public Contract getContract(){
+        return contract;
     }
 }
