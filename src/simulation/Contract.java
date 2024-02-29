@@ -21,7 +21,7 @@ public class Contract {
     public void rebase(PrintWriter out){
         rebase = true;
         out.println("Rebase, old token amount: " + getNumberofToken());
-        double newTokenAmount = getNumberofToken()/getValue();
+        double newTokenAmount = getNumberofToken()/value;
         out.println("Rebase, new token amount: " + newTokenAmount);
         for(Wallet wallet : wallets){
             wallet.setToken(newTokenAmount*wallet.getPercentage());

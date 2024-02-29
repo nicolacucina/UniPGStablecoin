@@ -8,21 +8,21 @@ import java.util.LinkedList;
 
 
 public class Simulation {
+
+    public static long seed;
     public static void main(String[] args) {
         // Simulation parameters
-        long seed = Long.parseLong(args[0]);
+        seed = Long.parseLong(args[0]);
         Random random = new Random(seed);
 
-        int days = 30;
-        int numberOfInitialWallets = 100;
+        int days = Integer.parseInt(args[1]);
+        int numberOfInitialWallets = Integer.parseInt(args[2]);
         int initialTokenAmount, initialMoneyAmount; 
-        initialTokenAmount = initialMoneyAmount = 100; // Assures that the initial price is 1
+        initialTokenAmount = initialMoneyAmount = Integer.parseInt(args[3]); // Assures that the initial price is 1
         double buyProbability = 0.4;
         double sellProbability = 0.4; 
         double percentageOfNewBuyers = 0.1;
-        int numberOfExchanges = 3;
-        //int numberOfTransactions = random.nextInt(100);
-        
+        int numberOfExchanges = 3;     
 
         // Setup phase, first minting of the tokens
         Contract contract = new Contract();
@@ -31,10 +31,13 @@ public class Simulation {
             contract.addWallet(wallet);
         }
 
+        System.out.println(numberOfInitialWallets + " wallets * " + initialTokenAmount + " token per account = "+contract.getNumberofToken() + " tokens");
+
         try {
             PrintWriter out = new PrintWriter (new FileWriter("data/log.txt"));
             // Simulation phase
             for(int i = 0; i < days; i++){
+                System.out.println("Day " + i + " of the simulation");
                 out.println("Day " + i + " of the simulation");
                 
                 // Setup wallet intentions
@@ -70,18 +73,24 @@ public class Simulation {
                 // Setup the exchanges
 
                 Exchange[] exchanges = new Exchange[numberOfExchanges];
-                exchanges[0] = new Exchange(0.0, 0.0, 1.0);
-                exchanges[1] = new Exchange(0.0, 0.0, 1.0);
-                exchanges[2] = new Exchange(0.0, 0.0, 1.0);
-
+                for(int j = 0; j < numberOfExchanges; j++){
+                    exchanges[j] = new Exchange(Integer.toString(j),0.0, 0.0, 1.0);
+                }
+                
                 for(Wallet wallet: contract.getWallets()){
-                    int temp = random.nextInt(numberOfExchanges);
+                    int temp = random.nextInt(numberOfExchanges*2);
                     if(temp == 0){
-                        exchanges[0].addWallet(wallet);
+                        exchanges[0].addBuyerWallet(wallet);
                     }else if(temp == 1){
-                        exchanges[1].addWallet(wallet);
+                        exchanges[1].addBuyerWallet(wallet);
+                    }else if(temp == 2){
+                        exchanges[2].addBuyerWallet(wallet);
+                    }else if(temp == 3){
+                        exchanges[0].addSellerWallet(wallet);
+                    }else if(temp == 4){
+                        exchanges[1].addSellerWallet(wallet);
                     }else{
-                        exchanges[2].addWallet(wallet);
+                        exchanges[2].addSellerWallet(wallet);
                     }
                 }
 
@@ -89,14 +98,14 @@ public class Simulation {
                     double supply = 0.0;
                     double demand = 0.0;
 
-                    for(int a = 0; a < exchange.getWallets().size(); a++){
-                        if(sellers.contains(exchange.getWallets().get(a))){
-                            supply += exchange.getWallets().get(a).getToken();
-                        }
-                        if(buyers.contains(exchange.getWallets().get(a))){
-                            demand += exchange.getWallets().get(a).getToken();
-                        }
+                    for(Wallet wallet : exchange.getSellerWallets()){
+                        supply += wallet.getToken();
                     }
+
+                    for(Wallet wallet : exchange.getBuyerWallets()){
+                        demand += wallet.getToken();
+                    }
+                                        
                     exchange.setSupply(supply);
                     exchange.setDemand(demand);
                 }
@@ -105,31 +114,18 @@ public class Simulation {
 
                 for(Exchange exchange : exchanges){
                     //randomly select a buyer and a seller from the exchange, whitout repetition
-                    boolean buyerFound = false;
-                    Wallet buyer = null;
-                    Wallet seller = null;
-
-                    while(!buyerFound){
-                        buyer = exchange.getWallets().get(random.nextInt(exchange.getWallets().size()));
-                        if(buyers.contains(buyer)){
-                            buyerFound = true;
-                            exchange.getWallets().remove(buyer);
-                        }
+                    System.out.println("Exchange: " + exchange.getName());
+                    while(exchange.getBuyerWallets().size() > 1 && exchange.getSellerWallets().size() > 1){
+                        Wallet buyer = exchange.getBuyerWallet();
+                        Wallet seller = exchange.getSellerWallet();
+    
+                        double tokenAmount = seller.getToken()*random.nextDouble();    
+                        double transationPrice = Math.abs(random.nextGaussian() + 1);
+                        
+                        System.out.println("Buyer: " + buyer.getName() + " Seller: " + seller.getName() + " Token amount: " + tokenAmount + " Transaction price: " + transationPrice);
+                        buyer.buy(seller, tokenAmount, exchange, transationPrice);
                     }
 
-                    boolean sellerFound = false;
-                    while(!sellerFound){
-                        seller = exchange.getWallets().get(random.nextInt(exchange.getWallets().size()));
-                        if(sellers.contains(seller)){
-                            sellerFound = true;
-                            exchange.getWallets().remove(seller);
-                        }
-                    }
-
-                    double tokenAmount = seller.getToken()*random.nextDouble();    
-                    double transationPrice = random.nextGaussian() + 1;
-
-                    buyer.buy(seller, tokenAmount, exchange, transationPrice);
                 }
                 
                 double endOfDayValue = 0.0;
@@ -148,4 +144,9 @@ public class Simulation {
             e.printStackTrace();
         }
     }
+
+    public static long getSeed(){
+        return seed;
+    }
+
 }
