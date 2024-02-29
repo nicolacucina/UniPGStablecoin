@@ -1,4 +1,5 @@
-Day 0 of the simulation
+Day 0 of the simulation----------------------------
+
 Wallet 0 wants to buy.
 Wallet 1 does nothing.
 Wallet 2 wants to buy.
@@ -19,10 +20,12 @@ Wallet 16 wants to buy.
 Wallet 17 wants to sell.
 Wallet 18 wants to buy.
 Wallet 19 wants to sell.
-End of day0 token price: 1.0427552618845692
+End of day 0 token price: 1.0427552618845692
 Rebase, old token amount: 400.00000000000006
-Rebase, new token amount: 383.5991191999175
-Day 1 of the simulation
+Rebase, new token amount: 417.10210475382775
+
+Day 1 of the simulation----------------------------
+
 Wallet 0 wants to buy.
 Wallet 1 wants to sell.
 Wallet 2 wants to sell.
@@ -44,10 +47,12 @@ Wallet 17 wants to buy.
 Wallet 18 wants to sell.
 Wallet 19 wants to sell.
 Wallet 21 wants to buy.
-End of day1 token price: 1.0035158341507844
-Rebase, old token amount: 537.1114937929492
-Rebase, new token amount: 535.2297148828495
-Day 2 of the simulation
+End of day 1 token price: 1.0035158341507844
+Rebase, old token amount: 582.2752547067929
+Rebase, new token amount: 584.3224379324478
+
+Day 2 of the simulation----------------------------
+
 Wallet 0 wants to buy.
 Wallet 1 wants to sell.
 Wallet 2 does nothing.
@@ -69,10 +74,12 @@ Wallet 17 wants to sell.
 Wallet 18 wants to sell.
 Wallet 19 does nothing.
 Wallet 21 wants to buy.
-End of day2 token price: 1.1040074451836075
-Rebase, old token amount: 717.142033247939
-Rebase, new token amount: 649.5807943837473
-Day 3 of the simulation
+End of day 2 token price: 1.1040074451836075
+Rebase, old token amount: 781.3102172405331
+Rebase, new token amount: 862.5722968315704
+
+Day 3 of the simulation----------------------------
+
 Wallet 0 wants to sell.
 Wallet 1 does nothing.
 Wallet 2 wants to sell.
@@ -94,10 +101,12 @@ Wallet 17 wants to sell.
 Wallet 18 wants to sell.
 Wallet 19 wants to buy.
 Wallet 21 wants to sell.
-End of day3 token price: 1.0429335946968081
-Rebase, old token amount: 756.4826575499833
-Rebase, new token amount: 725.3411544096447
-Day 4 of the simulation
+End of day 3 token price: 1.0429335946968081
+Rebase, old token amount: 1003.6711608956535
+Rebase, new token amount: 1046.7623717264225
+
+Day 4 of the simulation----------------------------
+
 Wallet 0 wants to sell.
 Wallet 1 wants to sell.
 Wallet 2 wants to sell.
@@ -119,10 +128,12 @@ Wallet 17 does nothing.
 Wallet 18 wants to sell.
 Wallet 19 does nothing.
 Wallet 21 wants to sell.
-End of day4 token price: 1.0228836888085748
-Rebase, old token amount: 804.4007890957693
-Rebase, new token amount: 786.4049431003361
-Day 5 of the simulation
+End of day 4 token price: 1.0228836888085748
+Rebase, old token amount: 1160.119098008214
+Rebase, new token amount: 1186.6669024279186
+
+Day 5 of the simulation----------------------------
+
 Wallet 0 wants to sell.
 Wallet 1 does nothing.
 Wallet 2 wants to buy.
@@ -144,10 +155,12 @@ Wallet 17 wants to buy.
 Wallet 18 wants to buy.
 Wallet 19 wants to sell.
 Wallet 21 wants to buy.
-End of day5 token price: 1.1011329129996472
-Rebase, old token amount: 840.0881253964958
-Rebase, new token amount: 762.9307193333934
-Day 6 of the simulation
+End of day 5 token price: 1.1011329129996472
+Rebase, old token amount: 1267.0956075009867
+Rebase, new token amount: 1395.2406773366192
+
+Day 6 of the simulation----------------------------
+
 Wallet 0 wants to buy.
 Wallet 1 does nothing.
 Wallet 2 wants to buy.
@@ -169,10 +182,12 @@ Wallet 17 wants to sell.
 Wallet 18 wants to buy.
 Wallet 19 wants to sell.
 Wallet 21 does nothing.
-End of day6 token price: 1.134554538550799
-Rebase, old token amount: 788.8541781958363
-Rebase, new token amount: 695.2985964019533
-Day 7 of the simulation
+End of day 6 token price: 1.134554538550799
+Rebase, old token amount: 1442.5022061324698
+Rebase, new token amount: 1636.5974248371338
+
+Day 7 of the simulation----------------------------
+
 Wallet 0 wants to buy.
 Wallet 1 wants to sell.
 Wallet 2 wants to buy.
@@ -194,10 +209,12 @@ Wallet 17 wants to sell.
 Wallet 18 wants to sell.
 Wallet 19 does nothing.
 Wallet 21 wants to sell.
-End of day7 token price: 0.9047044446222655
-Rebase, old token amount: 708.0831256757318
-Rebase, new token amount: 782.6678976595196
-Day 8 of the simulation
+End of day 7 token price: 0.9047044446222655
+Rebase, old token amount: 1666.5836948001668
+Rebase, new token amount: 1507.765676020708
+
+Day 8 of the simulation----------------------------
+
 Wallet 0 wants to sell.
 Wallet 1 wants to buy.
 Wallet 2 wants to sell.
@@ -219,10 +236,12 @@ Wallet 17 wants to buy.
 Wallet 18 wants to buy.
 Wallet 19 wants to buy.
 Wallet 21 wants to sell.
-End of day8 token price: 1.1087306802202945
-Rebase, old token amount: 788.4000213208575
-Rebase, new token amount: 711.0834356673613
-Day 9 of the simulation
+End of day 8 token price: 1.1087306802202945
+Rebase, old token amount: 1518.7535186033222
+Rebase, new token amount: 1683.8886217680272
+
+Day 9 of the simulation----------------------------
+
 Wallet 0 wants to buy.
 Wallet 1 does nothing.
 Wallet 2 wants to buy.
@@ -244,10 +263,12 @@ Wallet 17 wants to sell.
 Wallet 18 wants to buy.
 Wallet 19 wants to buy.
 Wallet 21 wants to sell.
-End of day9 token price: 1.0076707975174772
-Rebase, old token amount: 712.4246576767497
-Rebase, new token amount: 707.0013931453574
-Day 10 of the simulation
+End of day 9 token price: 1.0076707975174772
+Rebase, old token amount: 1687.0654586893893
+Rebase, new token amount: 1700.0065962217254
+
+Day 10 of the simulation----------------------------
+
 Wallet 0 wants to buy.
 Wallet 1 does nothing.
 Wallet 2 wants to buy.
@@ -269,10 +290,12 @@ Wallet 17 wants to sell.
 Wallet 18 wants to sell.
 Wallet 19 wants to sell.
 Wallet 21 wants to sell.
-End of day10 token price: 0.9585576876484981
-Rebase, old token amount: 709.640825261807
-Rebase, new token amount: 740.3214583805324
-Day 11 of the simulation
+End of day 10 token price: 0.9585576876484981
+Rebase, old token amount: 1706.380856923569
+Rebase, new token amount: 1635.664488460319
+
+Day 11 of the simulation----------------------------
+
 Wallet 0 wants to buy.
 Wallet 1 wants to sell.
 Wallet 2 wants to sell.
@@ -294,10 +317,12 @@ Wallet 17 wants to sell.
 Wallet 18 wants to buy.
 Wallet 19 wants to sell.
 Wallet 21 wants to sell.
-End of day11 token price: 1.0280085560518764
-Rebase, old token amount: 742.4524236458172
-Rebase, new token amount: 722.2239730156009
-Day 12 of the simulation
+End of day 11 token price: 1.0280085560518764
+Rebase, old token amount: 1640.3912041230758
+Rebase, new token amount: 1686.336193110762
+
+Day 12 of the simulation----------------------------
+
 Wallet 0 wants to buy.
 Wallet 1 wants to buy.
 Wallet 2 wants to sell.
@@ -319,10 +344,12 @@ Wallet 17 wants to sell.
 Wallet 18 wants to sell.
 Wallet 19 wants to sell.
 Wallet 21 wants to buy.
-End of day12 token price: 1.1089090937584867
-Rebase, old token amount: 725.5799493446046
-Rebase, new token amount: 654.3186934154869
-Day 13 of the simulation
+End of day 12 token price: 1.1089090937584867
+Rebase, old token amount: 1694.0884427544736
+Rebase, new token amount: 1878.5900798015891
+
+Day 13 of the simulation----------------------------
+
 Wallet 0 wants to sell.
 Wallet 1 wants to sell.
 Wallet 2 wants to buy.
@@ -344,10 +371,12 @@ Wallet 17 wants to buy.
 Wallet 18 wants to sell.
 Wallet 19 does nothing.
 Wallet 21 wants to buy.
-End of day13 token price: 1.0687779737798815
-Rebase, old token amount: 657.0394588738318
-Rebase, new token amount: 614.7576718391011
-Day 14 of the simulation
+End of day 13 token price: 1.0687779737798815
+Rebase, old token amount: 1886.3367937403614
+Rebase, new token amount: 2016.0752162802617
+
+Day 14 of the simulation----------------------------
+
 Wallet 0 wants to buy.
 Wallet 1 wants to sell.
 Wallet 2 wants to buy.
@@ -370,10 +399,12 @@ Wallet 18 wants to buy.
 Wallet 19 wants to buy.
 Wallet 21 does nothing.
 Wallet 22 wants to buy.
-End of day14 token price: 0.9965279394928133
-Rebase, old token amount: 636.8156301612938
-Rebase, new token amount: 639.0343962512517
-Day 15 of the simulation
+End of day 14 token price: 0.9965279394928133
+Rebase, old token amount: 2042.7801362609698
+Rebase, new token amount: 2035.6874800249925
+
+Day 15 of the simulation----------------------------
+
 Wallet 0 wants to buy.
 Wallet 1 wants to buy.
 Wallet 2 wants to buy.
@@ -396,10 +427,12 @@ Wallet 18 does nothing.
 Wallet 19 wants to sell.
 Wallet 21 wants to sell.
 Wallet 22 does nothing.
-End of day15 token price: 0.9824901604647307
-Rebase, old token amount: 648.4920214531554
-Rebase, new token amount: 660.0493801855586
-Day 16 of the simulation
+End of day 15 token price: 0.9824901604647307
+Rebase, old token amount: 2047.9643788792464
+Rebase, new token amount: 2012.1048512311233
+
+Day 16 of the simulation----------------------------
+
 Wallet 0 wants to buy.
 Wallet 1 wants to sell.
 Wallet 2 wants to sell.
@@ -422,10 +455,12 @@ Wallet 18 wants to sell.
 Wallet 19 wants to sell.
 Wallet 21 wants to buy.
 Wallet 22 does nothing.
-End of day16 token price: 1.1292946750362223
-Rebase, old token amount: 665.7295176841194
-Rebase, new token amount: 589.5091267146603
-Day 17 of the simulation
+End of day 16 token price: 1.1292946750362223
+Rebase, old token amount: 2020.3144720197918
+Rebase, new token amount: 2281.5303751505676
+
+Day 17 of the simulation----------------------------
+
 Wallet 0 does nothing.
 Wallet 1 wants to buy.
 Wallet 2 wants to buy.
@@ -448,10 +483,12 @@ Wallet 18 wants to buy.
 Wallet 19 wants to buy.
 Wallet 21 wants to sell.
 Wallet 22 wants to buy.
-End of day17 token price: 1.1221517625225579
-Rebase, old token amount: 592.8007942419632
-Rebase, new token amount: 528.271499488953
-Day 18 of the simulation
+End of day 17 token price: 1.1221517625225579
+Rebase, old token amount: 2288.3662524398987
+Rebase, new token amount: 2567.894223472573
+
+Day 18 of the simulation----------------------------
+
 Wallet 0 does nothing.
 Wallet 1 wants to buy.
 Wallet 2 wants to sell.
@@ -474,10 +511,12 @@ Wallet 18 wants to buy.
 Wallet 19 wants to sell.
 Wallet 21 wants to buy.
 Wallet 22 wants to buy.
-End of day18 token price: 1.0589479846601273
-Rebase, old token amount: 529.6191160696919
-Rebase, new token amount: 500.1370452012096
-Day 19 of the simulation
+End of day 18 token price: 1.0589479846601273
+Rebase, old token amount: 2571.8885644264187
+Rebase, new token amount: 2723.496212069784
+
+Day 19 of the simulation----------------------------
+
 Wallet 0 wants to sell.
 Wallet 1 wants to buy.
 Wallet 2 does nothing.
@@ -500,6 +539,7 @@ Wallet 18 wants to buy.
 Wallet 19 does nothing.
 Wallet 21 wants to buy.
 Wallet 22 wants to buy.
-End of day19 token price: 0.9378088107892738
-Rebase, old token amount: 512.9195111890956
-Rebase, new token amount: 546.9339862113419
+End of day 19 token price: 0.9378088107892738
+Rebase, old token amount: 2795.7444571411347
+Rebase, new token amount: 2621.8737846222316
+

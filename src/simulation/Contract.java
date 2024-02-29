@@ -21,12 +21,17 @@ public class Contract {
     public void rebase(PrintWriter out){
         rebase = true;
         out.println("Rebase, old token amount: " + getNumberofToken());
-        double newTokenAmount = getNumberofToken()/value;
+        double newTokenAmount = getNumberofToken()*value; 
         out.println("Rebase, new token amount: " + newTokenAmount);
+        out.println();
         for(Wallet wallet : wallets){
+            System.out.println(wallet.getName() + " token amount: " + wallet.getToken() + " percentage: " + wallet.getPercentage());
             wallet.setToken(newTokenAmount*wallet.getPercentage());
+            System.out.println(wallet.getName() + " token amount: " + wallet.getToken() + " percentage: " + wallet.getPercentage());
         }
         rebase = false;
+        System.out.println("Rebase finished, token amount: " + getNumberofToken());
+        System.out.println();
     }
     
     public void tranfer(Wallet fromWallet, Wallet toWallet, double tokenAmount){

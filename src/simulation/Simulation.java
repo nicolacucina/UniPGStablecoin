@@ -22,7 +22,10 @@ public class Simulation {
         double buyProbability = 0.4;
         double sellProbability = 0.4; 
         double percentageOfNewBuyers = 0.1;
-        int numberOfExchanges = 3;     
+        int numberOfExchanges = 3;  
+        
+        double[] prices = new double[days];
+        double[] tokenAmounts = new double[days];
 
         // Setup phase, first minting of the tokens
         Contract contract = new Contract();
@@ -37,9 +40,12 @@ public class Simulation {
             PrintWriter out = new PrintWriter (new FileWriter("data/log.txt"));
             // Simulation phase
             for(int i = 0; i < days; i++){
-                System.out.println("Day " + i + " of the simulation");
-                out.println("Day " + i + " of the simulation");
+                System.out.println("Day " + i + " of the simulation----------------------------");
+                out.println("Day " + i + " of the simulation----------------------------");
+                System.out.println();
+                out.println();
                 
+                System.out.println("Token amount: " + contract.getNumberofToken());
                 // Setup wallet intentions
                 LinkedList<Wallet> buyers = new LinkedList<Wallet>();
                 LinkedList<Wallet> sellers = new LinkedList<Wallet>();
@@ -125,9 +131,7 @@ public class Simulation {
                         System.out.println("Buyer: " + buyer.getName() + " Seller: " + seller.getName() + " Token amount: " + tokenAmount + " Transaction price: " + transationPrice);
                         buyer.buy(seller, tokenAmount, exchange, transationPrice);
                     }
-
                 }
-                
                 double endOfDayValue = 0.0;
                 // Rebase phase
                 for(Exchange exchange : exchanges){
@@ -135,11 +139,22 @@ public class Simulation {
                     exchange.resetWallets();
                 }
                 endOfDayValue = endOfDayValue/numberOfExchanges;
-                out.println("End of day" + i + " token price: " + endOfDayValue);
+                out.println("End of day " + i + " token price: " + endOfDayValue);
+                System.out.println("End of day " + i + " token price: " + endOfDayValue);
+
                 contract.setValue(endOfDayValue);
+                prices[i] = endOfDayValue;
                 contract.rebase(out);
-                }
+                tokenAmounts[i] = contract.getNumberofToken();
+            }
             out.close();
+            System.out.println("Simulation finished");
+            System.out.println("Prices, Tokens");
+            System.out.println("------------");
+            System.out.println(1.0 +", " + initialTokenAmount*numberOfInitialWallets);
+            for(int i = 0; i < days; i++){
+                System.out.println(prices[i] + ", " + tokenAmounts[i]);
+            }
         }catch (IOException e) {
             e.printStackTrace();
         }
