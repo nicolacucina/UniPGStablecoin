@@ -1,5 +1,7 @@
 Day 0 of the simulation----------------------------
 
+Token amount: 400.0
+
 Wallet 0 wants to buy.
 Wallet 1 does nothing.
 Wallet 2 wants to buy.
@@ -20,526 +22,3607 @@ Wallet 16 wants to buy.
 Wallet 17 wants to sell.
 Wallet 18 wants to buy.
 Wallet 19 wants to sell.
-End of day 0 token price: 1.0427552618845692
-Rebase, old token amount: 400.00000000000006
-Rebase, new token amount: 417.10210475382775
+
+Exchange: 0
+Buyer: 0
+Buyer: 2
+Buyer: 16
+Seller: 9
+Seller: 17
+
+Exchange: 1
+Buyer: 3
+Buyer: 4
+Buyer: 6
+Buyer: 8
+Buyer: 10
+Buyer: 13
+Buyer: 18
+Seller: 14
+Seller: 15
+
+Exchange: 2
+Buyer: 12
+Seller: 5
+Seller: 19
+
+Exchange: 0
+
+Buyer: 2 Seller: 17 Token amount: 19.965329029179507 Transaction price: 0.29325656673495315
+Supply was 40.0, Demand was 60.0 and now Supply is 20.034670970820493 and Demand is 79.96532902917951
+Price was 1.0 and now Price is 0.9293256566734953
+
+Buyer: 16 Seller: 17 Token amount: 0.023877874292242366 Transaction price: 1.357195999655508
+Supply was 20.034670970820493, Demand was 79.96532902917951 and now Supply is 20.01079309652825 and Demand is 79.98920690347175
+Price was 0.9293256566734953 and now Price is 0.9721126909716966
+
+Buyer: 0 Seller: 9 Token amount: 3.4325947775852628 Transaction price: 2.0572330452996184
+Supply was 20.01079309652825, Demand was 79.98920690347175 and now Supply is 16.578198318942988 and Demand is 83.42180168105702
+Price was 0.9721126909716966 and now Price is 1.0806247264044888
+
+Exchange: 1
+
+Buyer: 13 Seller: 15 Token amount: 15.323334244813644 Transaction price: 2.2166171018915883
+Supply was 40.0, Demand was 140.0 and now Supply is 24.676665755186356 and Demand is 155.32333424481365
+Price was 1.0 and now Price is 1.1216617101891588
+
+Buyer: 8 Seller: 15 Token amount: 0.7339616048876093 Transaction price: 0.7815835275753349
+Supply was 24.676665755186356, Demand was 155.32333424481365 and now Supply is 23.942704150298745 and Demand is 156.05729584970126
+Price was 1.1216617101891588 and now Price is 1.0876538919277765
+
+Buyer: 3 Seller: 14 Token amount: 17.19644958519275 Transaction price: 1.1304466263066777
+Supply was 23.942704150298745, Demand was 156.05729584970126 and now Supply is 6.746254565105996 and Demand is 173.253745434894
+Price was 1.0876538919277765 and now Price is 1.0919331653656665
+
+Buyer: 6 Seller: 14 Token amount: 2.1497262594045106 Transaction price: 0.5570789388355221
+Supply was 6.746254565105996, Demand was 173.253745434894 and now Supply is 4.596528305701486 and Demand is 175.4034716942985
+Price was 1.0919331653656665 and now Price is 1.0384477427126522
+
+Buyer: 10 Seller: 14 Token amount: 0.01621320679588052 Transaction price: 0.09690079237791105
+Supply was 4.596528305701486, Demand was 175.4034716942985 and now Supply is 4.580315098905605 and Demand is 175.41968490109437
+Price was 1.0384477427126522 and now Price is 0.9442930476791781
+
+Buyer: 4 Seller: 15 Token amount: 2.986960545750173 Transaction price: 2.9706842985336657
+Supply was 4.580315098905605, Demand was 175.41968490109437 and now Supply is 1.5933545531554323 and Demand is 178.40664544684455
+Price was 0.9442930476791781 and now Price is 1.146932172764627
+
+Buyer: 18 Seller: 15 Token amount: 0.5132547608321861 Transaction price: 2.188321304911223
+Supply was 1.5933545531554323, Demand was 178.40664544684455 and now Supply is 1.0800997923232463 and Demand is 178.91990020767673
+Price was 1.146932172764627 and now Price is 1.2510710859792864
+
+Exchange: 2
+
+Buyer: 12 Seller: 19 Token amount: 12.742109711900236 Transaction price: 0.5567890086181377
+Supply was 40.0, Demand was 20.0 and now Supply is 27.257890288099766 and Demand is 32.742109711900234
+Price was 1.0 and now Price is 0.9556789008618138
+
+
+Tokens after transactions: 399.9999999999999
+End of day 0 token price: 1.095791571081863
+
+Rebase
+Old token amount: 399.9999999999999
+New token amount: 399.9999999999999 tokens * 1.095791571081863 price per token = 438.3166284327451 tokens
+
+Wallet: 0, old token amount: 23.432594777585262, percentage: 0.05858148694396315
+Wallet: 0, new token amount: 25.677239845854807, percentage: 0.05858148694396315
+
+Wallet: 1, old token amount: 20.0, percentage: 0.05
+Wallet: 1, new token amount: 21.915831421637257, percentage: 0.05
+
+Wallet: 2, old token amount: 39.96532902917951, percentage: 0.09991332257294876
+Wallet: 2, new token amount: 43.793670685688184, percentage: 0.09991332257294876
+
+Wallet: 3, old token amount: 37.19644958519275, percentage: 0.09299112396298188
+Wallet: 3, new token amount: 40.75955592962567, percentage: 0.09299112396298188
+
+Wallet: 4, old token amount: 22.986960545750172, percentage: 0.05746740136437545
+Wallet: 4, new token amount: 25.188917610824383, percentage: 0.05746740136437545
+
+Wallet: 5, old token amount: 20.0, percentage: 0.05
+Wallet: 5, new token amount: 21.915831421637257, percentage: 0.05
+
+Wallet: 6, old token amount: 22.14972625940451, percentage: 0.05537431564851128
+Wallet: 6, new token amount: 24.271483336826062, percentage: 0.05537431564851128
+
+Wallet: 7, old token amount: 20.0, percentage: 0.05
+Wallet: 7, new token amount: 21.915831421637257, percentage: 0.05
+
+Wallet: 8, old token amount: 20.73396160488761, percentage: 0.05183490401221903
+Wallet: 8, new token amount: 22.720100361770818, percentage: 0.05183490401221903
+
+Wallet: 9, old token amount: 16.567405222414738, percentage: 0.04177702202510293
+Wallet: 9, new token amount: 18.31156344000365, percentage: 0.04177702202510293
+
+Wallet: 10, old token amount: 20.016213206795882, percentage: 0.05004053301698971
+Wallet: 10, new token amount: 21.933597716984394, percentage: 0.05004053301698971
+
+Wallet: 11, old token amount: 20.0, percentage: 0.05
+Wallet: 11, new token amount: 21.915831421637257, percentage: 0.05
+
+Wallet: 12, old token amount: 32.742109711900234, percentage: 0.0818552742797506
+Wallet: 12, new token amount: 35.878527841737885, percentage: 0.0818552742797506
+
+Wallet: 13, old token amount: 35.323334244813644, percentage: 0.0883083356120341
+Wallet: 13, new token amount: 38.70701192797411, percentage: 0.0883083356120341
+
+Wallet: 14, old token amount: 0.6376109486068601, percentage: 0.0015940919848746566
+Wallet: 14, new token amount: 0.6987170242219221, percentage: 0.0015940919848746566
+
+Wallet: 15, old token amount: 0.44248884371638775, percentage: 0.0011076433673699868
+Wallet: 15, new token amount: 0.4854985062915051, percentage: 0.0011076433673699868
+
+Wallet: 16, old token amount: 20.023877874292243, percentage: 0.050059694685730606
+Wallet: 16, new token amount: 21.941996595022047, percentage: 0.050059694685730606
+
+Wallet: 17, old token amount: 0.010793096528250275, percentage: 2.698435214304651E-5
+Wallet: 17, new token amount: 0.011827690251782067, percentage: 2.698435214304651E-5
+
+Wallet: 18, old token amount: 20.513254760832186, percentage: 0.05128313690208048
+Wallet: 18, new token amount: 22.47825166237481, percentage: 0.05128313690208048
+
+Wallet: 19, old token amount: 7.257890288099764, percentage: 0.018741749284179265
+Wallet: 19, new token amount: 8.21482035717327, percentage: 0.018741749284179265
+
+Rebase finished, token amount: 438.7361062191743
 
 Day 1 of the simulation----------------------------
 
-Wallet 0 wants to buy.
-Wallet 1 wants to sell.
+Token amount: 438.7361062191743
+
+Wallet 0 wants to sell.
+Wallet 1 wants to buy.
 Wallet 2 wants to sell.
-Wallet 3 wants to sell.
-Wallet 4 wants to sell.
+Wallet 3 does nothing.
+Wallet 4 wants to buy.
 Wallet 5 wants to buy.
-Wallet 6 wants to buy.
-Wallet 7 wants to sell.
-Wallet 8 does nothing.
-Wallet 9 wants to buy.
-Wallet 10 wants to buy.
+Wallet 6 wants to sell.
+Wallet 7 does nothing.
+Wallet 8 wants to sell.
+Wallet 9 wants to sell.
+Wallet 10 wants to sell.
 Wallet 11 wants to sell.
-Wallet 12 does nothing.
+Wallet 12 wants to buy.
 Wallet 13 wants to sell.
 Wallet 14 wants to sell.
 Wallet 15 wants to sell.
-Wallet 16 wants to sell.
-Wallet 17 wants to buy.
-Wallet 18 wants to sell.
+Wallet 16 wants to buy.
+Wallet 17 wants to sell.
+Wallet 18 wants to buy.
 Wallet 19 wants to sell.
-Wallet 21 wants to buy.
-End of day 1 token price: 1.0035158341507844
-Rebase, old token amount: 582.2752547067929
-Rebase, new token amount: 584.3224379324478
+New buyers
+New Wallet 21 wants to buy.
+
+Exchange: 0
+Buyer: 1
+Buyer: 18
+Buyer: 21
+Seller: 6
+Seller: 8
+Seller: 10
+Seller: 13
+Seller: 14
+
+Exchange: 1
+Buyer: 4
+Buyer: 5
+Seller: 2
+Seller: 9
+Seller: 15
+Seller: 17
+
+Exchange: 2
+Buyer: 12
+Buyer: 16
+Seller: 0
+Seller: 11
+Seller: 19
+
+Exchange: 0
+
+Buyer: 18 Seller: 6 Token amount: 19.651153174619573 Transaction price: 1.5433967661158492
+Supply was 108.3309103677773, Demand was 64.39408308401207 and now Supply is 88.67975719315774 and Demand is 84.04523625863163
+Price was 1.0 and now Price is 1.054339676611585
+
+Buyer: 21 Seller: 13 Token amount: 7.673089023199846 Transaction price: 0.13635866971163968
+Supply was 88.67975719315774, Demand was 84.04523625863163 and now Supply is 81.00666816995789 and Demand is 91.71832528183148
+Price was 1.054339676611585 and now Price is 0.9625415759215904
+
+Buyer: 1 Seller: 14 Token amount: 0.48838145177291237 Transaction price: 1.720960133803791
+Supply was 81.00666816995789, Demand was 91.71832528183148 and now Supply is 80.51828671818498 and Demand is 92.20670673360439
+Price was 0.9625415759215904 and now Price is 1.0383834317098104
+
+Exchange: 1
+
+Buyer: 4 Seller: 15 Token amount: 0.0910064920975482 Transaction price: 2.022762950553853
+Supply was 62.60256032223513, Demand was 47.10474903246164 and now Supply is 62.51155383013758 and Demand is 47.19575552455919
+Price was 1.0 and now Price is 1.1022762950553853
+
+Buyer: 5 Seller: 17 Token amount: 0.007595063365635592 Transaction price: 1.1327736659875174
+Supply was 62.51155383013758, Demand was 47.19575552455919 and now Supply is 62.503958766771945 and Demand is 47.203350587924824
+Price was 1.1022762950553853 and now Price is 1.1053260321485985
+
+Exchange: 2
+
+Buyer: 12 Seller: 11 Token amount: 8.119395215727184 Transaction price: 1.9128965078190756
+Supply was 55.80789162466533, Demand was 57.82052443675993 and now Supply is 47.68849640893815 and Demand is 65.93991965248712
+Price was 1.0 and now Price is 1.0912896507819076
+
+Buyer: 16 Seller: 0 Token amount: 2.256091482766353 Transaction price: 0.21804429347209608
+Supply was 47.68849640893815, Demand was 65.93991965248712 and now Supply is 45.4324049261718 and Demand is 68.19601113525347
+Price was 1.0912896507819076 and now Price is 1.0039651150509266
+
+
+Tokens after transactions: 458.7361062191744
+End of day 1 token price: 1.049224859636445
+
+Rebase
+Old token amount: 458.7361062191744
+New token amount: 458.7361062191744 tokens * 1.049224859636445 price per token = 481.3173266579826 tokens
+
+Wallet: 0, old token amount: 23.421148363088452, percentage: 0.05130815721825822
+Wallet: 0, new token amount: 24.69550506803952, percentage: 0.05130815721825822
+
+Wallet: 1, old token amount: 22.40421287341017, percentage: 0.04883900039624506
+Wallet: 1, new token amount: 23.507057107368826, percentage: 0.04883900039624506
+
+Wallet: 2, old token amount: 43.793670685688184, percentage: 0.09991332257294876
+Wallet: 2, new token amount: 48.09001331832837, percentage: 0.09991332257294876
+
+Wallet: 3, old token amount: 40.75955592962567, percentage: 0.09299112396298188
+Wallet: 3, new token amount: 44.758239188783506, percentage: 0.09299112396298188
+
+Wallet: 4, old token amount: 25.27992410292193, percentage: 0.055107770590099844
+Wallet: 4, new token amount: 26.524324818508255, percentage: 0.055107770590099844
+
+Wallet: 5, old token amount: 21.923426485002892, percentage: 0.04779093293024627
+Wallet: 5, new token amount: 23.002604076477084, percentage: 0.04779093293024627
+
+Wallet: 6, old token amount: 4.620330162206489, percentage: 0.010522633786855492
+Wallet: 6, new token amount: 5.0647259636902495, percentage: 0.010522633786855492
+
+Wallet: 7, old token amount: 21.915831421637257, percentage: 0.05
+Wallet: 7, new token amount: 24.065866332899134, percentage: 0.05
+
+Wallet: 8, old token amount: 22.720100361770818, percentage: 0.05183490401221903
+Wallet: 8, new token amount: 24.949037426734403, percentage: 0.05183490401221903
+
+Wallet: 9, old token amount: 18.31156344000365, percentage: 0.04177702202510293
+Wallet: 9, new token amount: 20.1080045568542, percentage: 0.04177702202510293
+
+Wallet: 10, old token amount: 21.933597716984394, percentage: 0.05004053301698971
+Wallet: 10, new token amount: 24.085375576278004, percentage: 0.05004053301698971
+
+Wallet: 11, old token amount: 13.796436205910073, percentage: 0.030616787768895082
+Wallet: 11, new token amount: 14.7363904397794, percentage: 0.030616787768895082
+
+Wallet: 12, old token amount: 43.99792305746507, percentage: 0.09591118392683003
+Wallet: 12, new token amount: 46.1637146442639, percentage: 0.09591118392683003
+
+Wallet: 13, old token amount: 31.03392290477426, percentage: 0.0688017454804788
+Wallet: 13, new token amount: 33.11547220406699, percentage: 0.0688017454804788
+
+Wallet: 14, old token amount: 0.2103355724490097, percentage: 4.589997092855668E-4
+Wallet: 14, new token amount: 0.2209245130101202, percentage: 4.589997092855668E-4
+
+Wallet: 15, old token amount: 0.3944920141939569, percentage: 8.601247771505789E-4
+Wallet: 15, new token amount: 0.41399295833040967, percentage: 8.601247771505789E-4
+
+Wallet: 16, old token amount: 24.1980880777884, percentage: 0.05274947349844546
+Wallet: 16, new token amount: 25.38923556688787, percentage: 0.05274947349844546
+
+Wallet: 17, old token amount: 0.004232626886146475, percentage: 9.226866835640937E-6
+Wallet: 17, new token amount: 0.004441050878759895, percentage: 9.226866835640937E-6
+
+Wallet: 18, old token amount: 42.12940483699438, percentage: 0.09183799632476684
+Wallet: 18, new token amount: 44.20321887666241, percentage: 0.09183799632476684
+
+Wallet: 19, old token amount: 8.21482035717327, percentage: 0.018741749284179265
+Wallet: 19, new token amount: 9.020728662355323, percentage: 0.018741749284179265
+
+Wallet: 21, old token amount: 27.673089023199847, percentage: 0.060324636862087846
+Wallet: 21, new token amount: 29.035292946073717, percentage: 0.060324636862087846
+
+Rebase finished, token amount: 491.15416529627043
 
 Day 2 of the simulation----------------------------
 
-Wallet 0 wants to buy.
-Wallet 1 wants to sell.
-Wallet 2 does nothing.
+Token amount: 491.15416529627043
+
+Wallet 0 wants to sell.
+Wallet 1 wants to buy.
+Wallet 2 wants to buy.
 Wallet 3 wants to buy.
-Wallet 4 wants to buy.
-Wallet 5 wants to buy.
-Wallet 6 wants to buy.
-Wallet 7 wants to sell.
+Wallet 4 wants to sell.
+Wallet 5 wants to sell.
+Wallet 6 does nothing.
+Wallet 7 wants to buy.
 Wallet 8 wants to buy.
-Wallet 9 wants to sell.
+Wallet 9 wants to buy.
 Wallet 10 wants to sell.
 Wallet 11 wants to sell.
 Wallet 12 wants to buy.
-Wallet 13 wants to sell.
-Wallet 14 wants to buy.
-Wallet 15 wants to buy.
+Wallet 13 wants to buy.
+Wallet 14 wants to sell.
+Wallet 15 wants to sell.
 Wallet 16 wants to buy.
 Wallet 17 wants to sell.
-Wallet 18 wants to sell.
+Wallet 18 does nothing.
 Wallet 19 does nothing.
 Wallet 21 wants to buy.
-End of day 2 token price: 1.1040074451836075
-Rebase, old token amount: 781.3102172405331
-Rebase, new token amount: 862.5722968315704
+
+Exchange: 0
+Buyer: 7
+Buyer: 8
+Seller: 4
+Seller: 11
+Seller: 15
+
+Exchange: 1
+Buyer: 3
+Buyer: 12
+Buyer: 13
+Buyer: 21
+Seller: 0
+Seller: 5
+Seller: 14
+
+Exchange: 2
+Buyer: 1
+Buyer: 2
+Buyer: 9
+Buyer: 16
+Seller: 10
+Seller: 17
+
+Exchange: 0
+
+Buyer: 7 Seller: 11 Token amount: 13.847821711556476 Transaction price: 2.638979982527176
+Supply was 41.674708216618065, Demand was 49.01490375963354 and now Supply is 27.826886505061587 and Demand is 62.86272547119002
+Price was 1.0 and now Price is 1.1638979982527176
+
+Buyer: 8 Seller: 4 Token amount: 7.657496040732577 Transaction price: 3.169978464660029
+Supply was 27.826886505061587, Demand was 62.86272547119002 and now Supply is 20.16939046432901 and Demand is 70.5202215119226
+Price was 1.1638979982527176 and now Price is 1.364506044893449
+
+Exchange: 1
+
+Buyer: 12 Seller: 5 Token amount: 14.899161377161779 Transaction price: 1.6286947465399138
+Supply was 47.919033657526725, Demand was 153.0727189831881 and now Supply is 33.01987228036495 and Demand is 167.9718803603499
+Price was 1.0 and now Price is 1.0628694746539913
+
+Buyer: 3 Seller: 0 Token amount: 9.216104806187824 Transaction price: 1.2047014322151037
+Supply was 33.01987228036495, Demand was 167.9718803603499 and now Supply is 23.80376747417713 and Demand is 177.18798516653771
+Price was 1.0628694746539913 and now Price is 1.0770526704101024
+
+Buyer: 21 Seller: 5 Token amount: 5.9065933717277 Transaction price: 0.2545991981588209
+Supply was 23.80376747417713, Demand was 177.18798516653771 and now Supply is 17.897174102449426 and Demand is 183.0945785382654
+Price was 1.0770526704101024 and now Price is 0.9948073231849743
+
+Buyer: 13 Seller: 0 Token amount: 6.655925933672518 Transaction price: 0.9762953999889036
+Supply was 17.897174102449426, Demand was 183.0945785382654 and now Supply is 11.24124816877691 and Demand is 189.75050447193792
+Price was 0.9948073231849743 and now Price is 0.9929561308653673
+
+Exchange: 2
+
+Buyer: 2 Seller: 17 Token amount: 0.002109752792919193 Transaction price: 1.9200328512756013
+Supply was 24.089816627156765, Demand was 117.09431054943926 and now Supply is 24.087706874363846 and Demand is 117.09642030223218
+Price was 1.0 and now Price is 1.0920032851275603
+
+Buyer: 1 Seller: 17 Token amount: 4.237556226283332E-4 Transaction price: 1.4538538847674762
+Supply was 24.087706874363846, Demand was 117.09642030223218 and now Supply is 24.08728311874122 and Demand is 117.09684405785481
+Price was 1.0920032851275603 and now Price is 1.128188345091552
+
+Buyer: 16 Seller: 10 Token amount: 8.613052357499571 Transaction price: 1.0467952662119757
+Supply was 24.08728311874122, Demand was 117.09684405785481 and now Supply is 15.474230761241648 and Demand is 125.70989641535438
+Price was 1.128188345091552 and now Price is 1.1200490372035943
+
+Buyer: 9 Seller: 10 Token amount: 9.280373102698897 Transaction price: 0.5556904048535966
+Supply was 15.474230761241648, Demand was 125.70989641535438 and now Supply is 6.1938576585427505 and Demand is 134.99026951805328
+Price was 1.1200490372035943 and now Price is 1.0636131739685946
+
+
+Tokens after transactions: 491.15416529627043
+End of day 2 token price: 1.1403584499091368
+
+Rebase
+Old token amount: 491.15416529627043
+New token amount: 491.15416529627043 tokens * 1.1403584499091368 price per token = 560.0918026036709 tokens
+
+Wallet: 0, old token amount: 8.823474328179177, percentage: 0.018211571500832018
+Wallet: 0, new token amount: 10.200151910146644, percentage: 0.018211571500832018
+
+Wallet: 1, old token amount: 23.507480862991454, percentage: 0.04786171537161136
+Wallet: 1, new token amount: 26.80695443818963, percentage: 0.04786171537161136
+
+Wallet: 2, old token amount: 48.092123071121286, percentage: 0.09791655343513478
+Wallet: 2, new token amount: 54.8422589182233, percentage: 0.09791655343513478
+
+Wallet: 3, old token amount: 53.97434399497133, percentage: 0.10989287642997655
+Wallet: 3, new token amount: 61.550099252968025, percentage: 0.10989287642997655
+
+Wallet: 4, old token amount: 18.866828777775677, percentage: 0.03902163133166109
+Wallet: 4, new token amount: 21.855695833085942, percentage: 0.03902163133166109
+
+Wallet: 5, old token amount: 2.1968493275876053, percentage: 0.00452727526049161
+Wallet: 5, new token amount: 2.5356897615317493, percentage: 0.00452727526049161
+
+Wallet: 6, old token amount: 5.0647259636902495, percentage: 0.010522633786855492
+Wallet: 6, new token amount: 5.893640925818184, percentage: 0.010522633786855492
+
+Wallet: 7, old token amount: 37.91368804445561, percentage: 0.07719305001024596
+Wallet: 7, new token amount: 43.235194528713976, percentage: 0.07719305001024596
+
+Wallet: 8, old token amount: 32.60653346746698, percentage: 0.06638757394594894
+Wallet: 8, new token amount: 37.18313596187104, percentage: 0.06638757394594894
+
+Wallet: 9, old token amount: 29.3883776595531, percentage: 0.05983534241601241
+Wallet: 9, new token amount: 33.51328479319228, percentage: 0.05983534241601241
+
+Wallet: 10, old token amount: 6.191950116079536, percentage: 0.012849734134518346
+Wallet: 10, new token amount: 7.197030754380301, percentage: 0.012849734134518346
+
+Wallet: 11, old token amount: 0.8885687282229249, percentage: 0.0018616319270963527
+Wallet: 11, new token amount: 1.0426847818319418, percentage: 0.0018616319270963527
+
+Wallet: 12, old token amount: 61.06287602142568, percentage: 0.12432527368385805
+Wallet: 12, new token amount: 69.63356664678679, percentage: 0.12432527368385805
+
+Wallet: 13, old token amount: 39.77139813773951, percentage: 0.08097538603535794
+Wallet: 13, new token amount: 45.35364993107174, percentage: 0.08097538603535794
+
+Wallet: 14, old token amount: 0.2209245130101202, percentage: 4.589997092855668E-4
+Wallet: 14, new token amount: 0.257081974568314, percentage: 4.589997092855668E-4
+
+Wallet: 15, old token amount: 0.41399295833040967, percentage: 8.601247771505789E-4
+Wallet: 15, new token amount: 0.48174883689834846, percentage: 8.601247771505789E-4
+
+Wallet: 16, old token amount: 34.00228792438744, percentage: 0.06922935877755781
+Wallet: 16, new token amount: 38.77479635081862, percentage: 0.06922935877755781
+
+Wallet: 17, old token amount: 0.0019075424632123688, percentage: 3.883799107849208E-6
+Wallet: 17, new token amount: 0.002175284043265792, percentage: 3.883799107849208E-6
+
+Wallet: 18, old token amount: 44.20321887666241, percentage: 0.09183799632476684
+Wallet: 18, new token amount: 51.43770890904796, percentage: 0.09183799632476684
+
+Wallet: 19, old token amount: 9.020728662355323, percentage: 0.018741749284179265
+Wallet: 19, new token amount: 10.497100140522024, percentage: 0.018741749284179265
+
+Wallet: 21, old token amount: 34.94188631780142, percentage: 0.07114240046549138
+Wallet: 21, new token amount: 39.8462753182693, percentage: 0.07114240046549138
+
+Rebase finished, token amount: 562.1399252519794
 
 Day 3 of the simulation----------------------------
 
-Wallet 0 wants to sell.
-Wallet 1 does nothing.
-Wallet 2 wants to sell.
+Token amount: 562.1399252519794
+
+Wallet 0 wants to buy.
+Wallet 1 wants to sell.
+Wallet 2 wants to buy.
 Wallet 3 wants to sell.
 Wallet 4 wants to buy.
 Wallet 5 wants to sell.
 Wallet 6 wants to sell.
 Wallet 7 wants to sell.
 Wallet 8 wants to sell.
-Wallet 9 wants to buy.
+Wallet 9 wants to sell.
 Wallet 10 wants to buy.
 Wallet 11 wants to sell.
-Wallet 12 wants to sell.
-Wallet 13 does nothing.
-Wallet 14 wants to sell.
-Wallet 15 wants to buy.
+Wallet 12 wants to buy.
+Wallet 13 wants to sell.
+Wallet 14 wants to buy.
+Wallet 15 wants to sell.
 Wallet 16 wants to sell.
-Wallet 17 wants to sell.
+Wallet 17 wants to buy.
 Wallet 18 wants to sell.
-Wallet 19 wants to buy.
-Wallet 21 wants to sell.
-End of day 3 token price: 1.0429335946968081
-Rebase, old token amount: 1003.6711608956535
-Rebase, new token amount: 1046.7623717264225
+Wallet 19 wants to sell.
+Wallet 21 wants to buy.
+
+Exchange: 0
+Buyer: 14
+Buyer: 17
+Buyer: 21
+Seller: 3
+Seller: 9
+Seller: 11
+Seller: 13
+Seller: 15
+Seller: 16
+Seller: 19
+
+Exchange: 1
+Buyer: 0
+Seller: 5
+Seller: 7
+Seller: 8
+
+Exchange: 2
+Buyer: 2
+Buyer: 4
+Buyer: 10
+Buyer: 12
+Seller: 1
+Seller: 6
+Seller: 18
+
+Exchange: 0
+
+Buyer: 17 Seller: 11 Token amount: 0.33863311067739826 Transaction price: 1.0811611196200754
+Supply was 191.21336408730303, Demand was 40.105532576880876 and now Supply is 190.87473097662564 and Demand is 40.444165687558275
+Price was 1.0 and now Price is 1.0081161119620075
+
+Buyer: 21 Seller: 19 Token amount: 3.239836264910205 Transaction price: 2.7764247097203447
+Supply was 190.87473097662564, Demand was 40.444165687558275 and now Supply is 187.63489471171545 and Demand is 43.68400195246848
+Price was 1.0081161119620075 and now Price is 1.1849469717378411
+
+Buyer: 14 Seller: 15 Token amount: 0.2045725032252657 Transaction price: 1.3751841785335932
+Supply was 187.63489471171545, Demand was 43.68400195246848 and now Supply is 187.43032220849017 and Demand is 43.88857445569374
+Price was 1.1849469717378411 and now Price is 1.2039706924174163
+
+Exchange: 1
+
+Buyer: 0 Seller: 7 Token amount: 10.808954890650115 Transaction price: 1.2144554211974843
+Supply was 82.95402025211676, Demand was 10.200151910146644 and now Supply is 72.14506536146665 and Demand is 21.009106800796758
+Price was 1.0 and now Price is 1.0214455421197484
+
+Exchange: 2
+
+Buyer: 4 Seller: 6 Token amount: 2.922355399951849 Transaction price: 1.0230794604725286
+Supply was 84.13830427305578, Demand was 153.52855215247632 and now Supply is 81.21594887310393 and Demand is 156.45090755242816
+Price was 1.0 and now Price is 1.0023079460472528
+
+Buyer: 2 Seller: 1 Token amount: 21.461279335541047 Transaction price: 1.2236050101011404
+Supply was 81.21594887310393, Demand was 156.45090755242816 and now Supply is 59.754669537562876 and Demand is 177.9121868879692
+Price was 1.0023079460472528 and now Price is 1.0244376524526415
+
+Buyer: 12 Seller: 6 Token amount: 0.9248856033227366 Transaction price: 1.137121158108884
+Supply was 59.754669537562876, Demand was 177.9121868879692 and now Supply is 58.82978393424014 and Demand is 178.83707249129193
+Price was 1.0244376524526415 and now Price is 1.0357060030182659
+
+Buyer: 10 Seller: 1 Token amount: 1.1000967191406479 Transaction price: 0.05330378603411989
+Supply was 58.82978393424014, Demand was 178.83707249129193 and now Supply is 57.729687215099496 and Demand is 179.9371692104326
+Price was 1.0357060030182659 and now Price is 0.9374657813198514
+
+
+Tokens after transactions: 562.1399252519793
+End of day 3 token price: 1.0542940052856722
+
+Rebase
+Old token amount: 562.1399252519793
+New token amount: 562.1399252519793 tokens * 1.0542940052856722 price per token = 592.6607533248977 tokens
+
+Wallet: 0, old token amount: 21.009106800796758, percentage: 0.03737344717399217
+Wallet: 0, new token amount: 22.14977535648647, percentage: 0.03737344717399217
+
+Wallet: 1, old token amount: 4.245578383507937, percentage: 0.007567338658666075
+Wallet: 1, new token amount: 4.484864630109656, percentage: 0.007567338658666075
+
+Wallet: 2, old token amount: 76.30353825376434, percentage: 0.13573762479076942
+Wallet: 2, new token amount: 80.44636296302971, percentage: 0.13573762479076942
+
+Wallet: 3, old token amount: 61.550099252968025, percentage: 0.10989287642997655
+Wallet: 3, new token amount: 65.1291949300298, percentage: 0.10989287642997655
+
+Wallet: 4, old token amount: 24.778051233037793, percentage: 0.04407808469026822
+Wallet: 4, new token amount: 26.123350877653003, percentage: 0.04407808469026822
+
+Wallet: 5, old token amount: 2.5356897615317493, percentage: 0.00452727526049161
+Wallet: 5, new token amount: 2.68313836639213, percentage: 0.00452727526049161
+
+Wallet: 6, old token amount: 2.046399922543599, percentage: 0.0036463739885244854
+Wallet: 6, new token amount: 2.161062754943233, percentage: 0.0036463739885244854
+
+Wallet: 7, old token amount: 32.42623963806386, percentage: 0.058814471490350836
+Wallet: 7, new token amount: 34.85702897987704, percentage: 0.058814471490350836
+
+Wallet: 8, old token amount: 37.18313596187104, percentage: 0.06638757394594894
+Wallet: 8, new token amount: 39.34530958621844, percentage: 0.06638757394594894
+
+Wallet: 9, old token amount: 33.51328479319228, percentage: 0.05983534241601241
+Wallet: 9, new token amount: 35.462059111727115, percentage: 0.05983534241601241
+
+Wallet: 10, old token amount: 8.297127473520948, percentage: 0.014759897137357321
+Wallet: 10, new token amount: 8.74761175642419, percentage: 0.014759897137357321
+
+Wallet: 11, old token amount: 0.7040516711545435, percentage: 0.001253204079454953
+Wallet: 11, new token amount: 0.7427248737996073, percentage: 0.001253204079454953
+
+Wallet: 12, old token amount: 70.55845225010953, percentage: 0.1255175963857783
+Wallet: 12, new token amount: 74.38935322952582, percentage: 0.1255175963857783
+
+Wallet: 13, old token amount: 45.35364993107174, percentage: 0.08097538603535794
+Wallet: 13, new token amount: 47.99093328848963, percentage: 0.08097538603535794
+
+Wallet: 14, old token amount: 0.4616544777935797, percentage: 8.212447774219968E-4
+Wallet: 14, new token amount: 0.4867195484510585, percentage: 8.212447774219968E-4
+
+Wallet: 15, old token amount: 0.27717633367308275, percentage: 4.932530625048794E-4
+Wallet: 15, new token amount: 0.2923317316039547, percentage: 4.932530625048794E-4
+
+Wallet: 16, old token amount: 38.77479635081862, percentage: 0.06922935877755781
+Wallet: 16, new token amount: 41.02952392530703, percentage: 0.06922935877755781
+
+Wallet: 17, old token amount: 0.34080839472066404, percentage: 6.06269683776502E-4
+Wallet: 17, new token amount: 0.35931224750502916, percentage: 6.06269683776502E-4
+
+Wallet: 18, old token amount: 51.43770890904796, percentage: 0.09183799632476684
+Wallet: 18, new token amount: 54.4287760856855, percentage: 0.09183799632476684
+
+Wallet: 19, old token amount: 7.2572638756118195, percentage: 0.012984903775493448
+Wallet: 19, new token amount: 7.695642853435254, percentage: 0.012984903775493448
+
+Wallet: 21, old token amount: 43.0861115831795, percentage: 0.07664659570989577
+Wallet: 21, new token amount: 45.425429153215696, percentage: 0.07664659570989577
+
+Rebase finished, token amount: 594.4305062499093
 
 Day 4 of the simulation----------------------------
 
-Wallet 0 wants to sell.
-Wallet 1 wants to sell.
-Wallet 2 wants to sell.
-Wallet 3 wants to sell.
-Wallet 4 wants to buy.
-Wallet 5 wants to buy.
-Wallet 6 wants to buy.
-Wallet 7 does nothing.
-Wallet 8 wants to buy.
-Wallet 9 does nothing.
-Wallet 10 does nothing.
-Wallet 11 wants to sell.
-Wallet 12 wants to buy.
-Wallet 13 wants to buy.
-Wallet 14 does nothing.
-Wallet 15 wants to sell.
-Wallet 16 wants to sell.
-Wallet 17 does nothing.
-Wallet 18 wants to sell.
-Wallet 19 does nothing.
-Wallet 21 wants to sell.
-End of day 4 token price: 1.0228836888085748
-Rebase, old token amount: 1160.119098008214
-Rebase, new token amount: 1186.6669024279186
-
-Day 5 of the simulation----------------------------
-
-Wallet 0 wants to sell.
-Wallet 1 does nothing.
-Wallet 2 wants to buy.
-Wallet 3 wants to buy.
-Wallet 4 wants to buy.
-Wallet 5 wants to sell.
-Wallet 6 wants to buy.
-Wallet 7 wants to buy.
-Wallet 8 wants to buy.
-Wallet 9 wants to sell.
-Wallet 10 wants to sell.
-Wallet 11 wants to sell.
-Wallet 12 wants to sell.
-Wallet 13 wants to buy.
-Wallet 14 wants to buy.
-Wallet 15 wants to buy.
-Wallet 16 does nothing.
-Wallet 17 wants to buy.
-Wallet 18 wants to buy.
-Wallet 19 wants to sell.
-Wallet 21 wants to buy.
-End of day 5 token price: 1.1011329129996472
-Rebase, old token amount: 1267.0956075009867
-Rebase, new token amount: 1395.2406773366192
-
-Day 6 of the simulation----------------------------
+Token amount: 594.4305062499093
 
 Wallet 0 wants to buy.
 Wallet 1 does nothing.
-Wallet 2 wants to buy.
+Wallet 2 does nothing.
 Wallet 3 wants to sell.
-Wallet 4 wants to sell.
-Wallet 5 wants to buy.
-Wallet 6 wants to sell.
-Wallet 7 wants to sell.
-Wallet 8 wants to sell.
-Wallet 9 wants to buy.
-Wallet 10 does nothing.
-Wallet 11 wants to sell.
-Wallet 12 wants to buy.
-Wallet 13 does nothing.
-Wallet 14 wants to sell.
-Wallet 15 does nothing.
-Wallet 16 wants to sell.
-Wallet 17 wants to sell.
-Wallet 18 wants to buy.
-Wallet 19 wants to sell.
-Wallet 21 does nothing.
-End of day 6 token price: 1.134554538550799
-Rebase, old token amount: 1442.5022061324698
-Rebase, new token amount: 1636.5974248371338
-
-Day 7 of the simulation----------------------------
-
-Wallet 0 wants to buy.
-Wallet 1 wants to sell.
-Wallet 2 wants to buy.
-Wallet 3 wants to buy.
-Wallet 4 wants to buy.
-Wallet 5 wants to buy.
-Wallet 6 wants to sell.
-Wallet 7 wants to sell.
-Wallet 8 wants to buy.
-Wallet 9 wants to sell.
-Wallet 10 wants to sell.
-Wallet 11 wants to buy.
-Wallet 12 wants to sell.
-Wallet 13 wants to sell.
-Wallet 14 wants to buy.
-Wallet 15 wants to sell.
-Wallet 16 wants to buy.
-Wallet 17 wants to sell.
-Wallet 18 wants to sell.
-Wallet 19 does nothing.
-Wallet 21 wants to sell.
-End of day 7 token price: 0.9047044446222655
-Rebase, old token amount: 1666.5836948001668
-Rebase, new token amount: 1507.765676020708
-
-Day 8 of the simulation----------------------------
-
-Wallet 0 wants to sell.
-Wallet 1 wants to buy.
-Wallet 2 wants to sell.
-Wallet 3 wants to sell.
-Wallet 4 wants to sell.
-Wallet 5 wants to buy.
-Wallet 6 wants to buy.
-Wallet 7 does nothing.
-Wallet 8 wants to sell.
-Wallet 9 wants to sell.
-Wallet 10 does nothing.
-Wallet 11 wants to buy.
-Wallet 12 wants to sell.
-Wallet 13 wants to sell.
-Wallet 14 wants to buy.
-Wallet 15 does nothing.
-Wallet 16 wants to buy.
-Wallet 17 wants to buy.
-Wallet 18 wants to buy.
-Wallet 19 wants to buy.
-Wallet 21 wants to sell.
-End of day 8 token price: 1.1087306802202945
-Rebase, old token amount: 1518.7535186033222
-Rebase, new token amount: 1683.8886217680272
-
-Day 9 of the simulation----------------------------
-
-Wallet 0 wants to buy.
-Wallet 1 does nothing.
-Wallet 2 wants to buy.
-Wallet 3 wants to buy.
 Wallet 4 does nothing.
-Wallet 5 wants to sell.
+Wallet 5 wants to buy.
 Wallet 6 wants to buy.
 Wallet 7 wants to sell.
 Wallet 8 does nothing.
-Wallet 9 wants to sell.
-Wallet 10 wants to sell.
-Wallet 11 wants to buy.
+Wallet 9 wants to buy.
+Wallet 10 wants to buy.
+Wallet 11 wants to sell.
 Wallet 12 wants to buy.
 Wallet 13 wants to sell.
 Wallet 14 wants to sell.
 Wallet 15 wants to sell.
 Wallet 16 wants to buy.
-Wallet 17 wants to sell.
-Wallet 18 wants to buy.
+Wallet 17 wants to buy.
+Wallet 18 wants to sell.
 Wallet 19 wants to buy.
-Wallet 21 wants to sell.
-End of day 9 token price: 1.0076707975174772
-Rebase, old token amount: 1687.0654586893893
-Rebase, new token amount: 1700.0065962217254
-
-Day 10 of the simulation----------------------------
-
-Wallet 0 wants to buy.
-Wallet 1 does nothing.
-Wallet 2 wants to buy.
-Wallet 3 wants to sell.
-Wallet 4 wants to buy.
-Wallet 5 wants to buy.
-Wallet 6 does nothing.
-Wallet 7 wants to sell.
-Wallet 8 wants to buy.
-Wallet 9 wants to buy.
-Wallet 10 wants to buy.
-Wallet 11 wants to sell.
-Wallet 12 wants to buy.
-Wallet 13 wants to buy.
-Wallet 14 wants to sell.
-Wallet 15 wants to sell.
-Wallet 16 does nothing.
-Wallet 17 wants to sell.
-Wallet 18 wants to sell.
-Wallet 19 wants to sell.
-Wallet 21 wants to sell.
-End of day 10 token price: 0.9585576876484981
-Rebase, old token amount: 1706.380856923569
-Rebase, new token amount: 1635.664488460319
-
-Day 11 of the simulation----------------------------
-
-Wallet 0 wants to buy.
-Wallet 1 wants to sell.
-Wallet 2 wants to sell.
-Wallet 3 wants to buy.
-Wallet 4 wants to buy.
-Wallet 5 wants to buy.
-Wallet 6 wants to sell.
-Wallet 7 wants to sell.
-Wallet 8 wants to buy.
-Wallet 9 wants to buy.
-Wallet 10 wants to buy.
-Wallet 11 wants to buy.
-Wallet 12 wants to sell.
-Wallet 13 does nothing.
-Wallet 14 wants to buy.
-Wallet 15 wants to buy.
-Wallet 16 wants to sell.
-Wallet 17 wants to sell.
-Wallet 18 wants to buy.
-Wallet 19 wants to sell.
-Wallet 21 wants to sell.
-End of day 11 token price: 1.0280085560518764
-Rebase, old token amount: 1640.3912041230758
-Rebase, new token amount: 1686.336193110762
-
-Day 12 of the simulation----------------------------
-
-Wallet 0 wants to buy.
-Wallet 1 wants to buy.
-Wallet 2 wants to sell.
-Wallet 3 wants to sell.
-Wallet 4 wants to sell.
-Wallet 5 wants to buy.
-Wallet 6 wants to buy.
-Wallet 7 wants to sell.
-Wallet 8 wants to sell.
-Wallet 9 wants to sell.
-Wallet 10 wants to sell.
-Wallet 11 wants to sell.
-Wallet 12 wants to buy.
-Wallet 13 wants to buy.
-Wallet 14 does nothing.
-Wallet 15 wants to sell.
-Wallet 16 wants to sell.
-Wallet 17 wants to sell.
-Wallet 18 wants to sell.
-Wallet 19 wants to sell.
 Wallet 21 wants to buy.
-End of day 12 token price: 1.1089090937584867
-Rebase, old token amount: 1694.0884427544736
-Rebase, new token amount: 1878.5900798015891
 
-Day 13 of the simulation----------------------------
+Exchange: 0
+Buyer: 12
+Buyer: 19
+Buyer: 21
+Seller: 18
+
+Exchange: 1
+Buyer: 0
+Buyer: 9
+Buyer: 10
+Seller: 7
+Seller: 15
+
+Exchange: 2
+Buyer: 5
+Buyer: 6
+Buyer: 16
+Buyer: 17
+Seller: 3
+Seller: 11
+Seller: 13
+Seller: 14
+
+Exchange: 0
+
+Buyer: 19 Seller: 18 Token amount: 11.808790881308342 Transaction price: 1.2988135078072778
+Supply was 54.4287760856855, Demand was 127.51042523617679 and now Supply is 42.61998520437716 and Demand is 139.31921611748513
+Price was 1.0 and now Price is 1.0298813507807278
+
+Buyer: 21 Seller: 18 Token amount: 11.504358688658586 Transaction price: 1.9249721803334072
+Supply was 42.61998520437716, Demand was 139.31921611748513 and now Supply is 31.115626515718574 and Demand is 150.8235748061437
+Price was 1.0298813507807278 and now Price is 1.1193904337359957
+
+Buyer: 12 Seller: 18 Token amount: 1.299468972841177 Transaction price: 2.708177719194727
+Supply was 31.115626515718574, Demand was 150.8235748061437 and now Supply is 29.8161575428774 and Demand is 152.12304377898488
+Price was 1.1193904337359957 and now Price is 1.2782691622818687
+
+Exchange: 1
+
+Buyer: 9 Seller: 15 Token amount: 0.10022526797242555 Transaction price: 0.7663486380368624
+Supply was 35.149360711480995, Demand was 66.35944622463778 and now Supply is 35.04913544350857 and Demand is 66.4596714926102
+Price was 1.0 and now Price is 0.9766348638036862
+
+Buyer: 10 Seller: 15 Token amount: 0.07773630179032372 Transaction price: 2.001072241960111
+Supply was 35.04913544350857, Demand was 66.4596714926102 and now Supply is 34.971399141718244 and Demand is 66.53740779440052
+Price was 0.9766348638036862 and now Price is 1.0790786016193288
+
+Buyer: 0 Seller: 7 Token amount: 28.28719755738898 Transaction price: 1.1756472572575158
+Supply was 34.971399141718244, Demand was 66.53740779440052 and now Supply is 6.684201584329266 and Demand is 94.8246053517895
+Price was 1.0790786016193288 and now Price is 1.0887354671831475
+
+Exchange: 2
+
+Buyer: 6 Seller: 13 Token amount: 21.12026562672808 Transaction price: 2.371781913663506
+Supply was 114.34957264077009, Demand was 46.23303729414742 and now Supply is 93.229307014042 and Demand is 67.3533029208755
+Price was 1.0 and now Price is 1.1371781913663506
+
+Buyer: 5 Seller: 14 Token amount: 0.3468885106879812 Transaction price: 2.390268650679225
+Supply was 93.229307014042, Demand was 67.3533029208755 and now Supply is 92.88241850335403 and Demand is 67.70019143156348
+Price was 1.1371781913663506 and now Price is 1.2624872372976381
+
+Buyer: 17 Seller: 3 Token amount: 19.865985927188213 Transaction price: 0.24807381157978126
+Supply was 92.88241850335403, Demand was 67.70019143156348 and now Supply is 73.01643257616581 and Demand is 87.5661773587517
+Price was 1.2624872372976381 and now Price is 1.1610458947258524
+
+Buyer: 16 Seller: 3 Token amount: 8.0160032692635 Transaction price: 0.4839722588597144
+Supply was 73.01643257616581, Demand was 87.5661773587517 and now Supply is 65.0004293069023 and Demand is 95.58218062801521
+Price was 1.1610458947258524 and now Price is 1.0933385311392387
+
+
+Tokens after transactions: 594.4305062499093
+End of day 4 token price: 1.1534477202014184
+
+Rebase
+Old token amount: 594.4305062499093
+New token amount: 594.4305062499093 tokens * 1.1534477202014184 price per token = 685.6445122521328 tokens
+
+Wallet: 0, old token amount: 50.43697291387545, percentage: 0.0848492336506546
+Wallet: 0, new token amount: 58.176411421370325, percentage: 0.0848492336506546
+
+Wallet: 1, old token amount: 4.484864630109656, percentage: 0.007567338658666075
+Wallet: 1, new token amount: 5.18850422366781, percentage: 0.007567338658666075
+
+Wallet: 2, old token amount: 80.44636296302971, percentage: 0.13573762479076942
+Wallet: 2, new token amount: 93.06775754393011, percentage: 0.13573762479076942
+
+Wallet: 3, old token amount: 37.247205733578085, percentage: 0.06351685632646674
+Wallet: 3, new token amount: 43.549983975749086, percentage: 0.06351685632646674
+
+Wallet: 4, old token amount: 26.123350877653003, percentage: 0.04407808469026822
+Wallet: 4, new token amount: 30.221896878467156, percentage: 0.04407808469026822
+
+Wallet: 5, old token amount: 3.030026877080111, percentage: 0.0050973609954772965
+Wallet: 5, new token amount: 3.4949775935170773, percentage: 0.0050973609954772965
+
+Wallet: 6, old token amount: 23.281328381671315, percentage: 0.039165769819833954
+Wallet: 6, new token amount: 26.853795145099355, percentage: 0.039165769819833954
+
+Wallet: 7, old token amount: 6.569831422488065, percentage: 0.011604537793903741
+Wallet: 7, new token amount: 7.956587655612572, percentage: 0.011604537793903741
+
+Wallet: 8, old token amount: 39.34530958621844, percentage: 0.06638757394594894
+Wallet: 8, new token amount: 45.51827575777256, percentage: 0.06638757394594894
+
+Wallet: 9, old token amount: 35.56228437969954, percentage: 0.05982580639081217
+Wallet: 9, new token amount: 41.01923584291894, percentage: 0.05982580639081217
+
+Wallet: 10, old token amount: 8.825348058214514, percentage: 0.01484672802863213
+Wallet: 10, new token amount: 10.179577597731546, percentage: 0.01484672802863213
+
+Wallet: 11, old token amount: 0.7427248737996073, percentage: 0.001253204079454953
+Wallet: 11, new token amount: 0.8592524998102743, percentage: 0.001253204079454953
+
+Wallet: 12, old token amount: 75.688822202367, percentage: 0.12732997618151523
+Wallet: 12, new token amount: 87.30309941405069, percentage: 0.12732997618151523
+
+Wallet: 13, old token amount: 26.870667661761548, percentage: 0.04686933139822073
+Wallet: 13, new token amount: 32.135699866116624, percentage: 0.04686933139822073
+
+Wallet: 14, old token amount: 0.13983103776307731, percentage: 2.3537265392909303E-4
+Wallet: 14, new token amount: 0.16138196850070305, percentage: 2.3537265392909303E-4
+
+Wallet: 15, old token amount: 0.11437016184120545, percentage: 1.9242807912073635E-4
+Wallet: 15, new token amount: 0.1319372564523521, percentage: 1.9242807912073635E-4
+
+Wallet: 16, old token amount: 49.04552719457053, percentage: 0.08250842895662375
+Wallet: 16, new token amount: 56.57145152865404, percentage: 0.08250842895662375
+
+Wallet: 17, old token amount: 20.225298174693243, percentage: 0.0340246638791956
+Wallet: 17, new token amount: 23.32882406999383, percentage: 0.0340246638791956
+
+Wallet: 18, old token amount: 29.8161575428774, percentage: 0.0502690900812689
+Wallet: 18, new token amount: 34.46672575013014, percentage: 0.0502690900812689
+
+Wallet: 19, old token amount: 19.504433734743596, percentage: 0.03281196629323661
+Wallet: 19, new token amount: 22.497344625159634, percentage: 0.03281196629323661
+
+Wallet: 21, old token amount: 56.92978784187428, percentage: 0.09577198216327742
+Wallet: 21, new token amount: 65.66553399776032, percentage: 0.09577198216327742
+
+Rebase finished, token amount: 688.3482546124652
+
+Day 5 of the simulation----------------------------
+
+Token amount: 688.3482546124652
 
 Wallet 0 wants to sell.
-Wallet 1 wants to sell.
-Wallet 2 wants to buy.
+Wallet 1 wants to buy.
+Wallet 2 wants to sell.
 Wallet 3 wants to sell.
-Wallet 4 wants to sell.
+Wallet 4 wants to buy.
 Wallet 5 wants to buy.
 Wallet 6 wants to buy.
-Wallet 7 wants to buy.
+Wallet 7 does nothing.
 Wallet 8 wants to sell.
 Wallet 9 wants to sell.
-Wallet 10 wants to sell.
-Wallet 11 wants to sell.
-Wallet 12 wants to sell.
+Wallet 10 wants to buy.
+Wallet 11 does nothing.
+Wallet 12 wants to buy.
+Wallet 13 wants to sell.
+Wallet 14 wants to sell.
+Wallet 15 wants to buy.
+Wallet 16 wants to sell.
+Wallet 17 wants to sell.
+Wallet 18 wants to sell.
+Wallet 19 wants to buy.
+Wallet 21 does nothing.
+New buyers
+New Wallet 22 wants to buy.
+
+Exchange: 0
+Buyer: 15
+Seller: 0
+Seller: 2
+Seller: 13
+
+Exchange: 1
+Buyer: 1
+Buyer: 6
+Buyer: 12
+Buyer: 19
+Seller: 3
+Seller: 16
+Seller: 18
+
+Exchange: 2
+Buyer: 4
+Buyer: 5
+Buyer: 10
+Buyer: 22
+Seller: 8
+Seller: 9
+Seller: 14
+Seller: 17
+
+Exchange: 0
+
+Buyer: 15 Seller: 2 Token amount: 69.62028415882021 Transaction price: 2.622600830336796
+Supply was 183.37986883141707, Demand was 0.1319372564523521 and now Supply is 113.75958467259686 and Demand is 69.75222141527256
+Price was 1.0 and now Price is 1.1622600830336796
+
+Exchange: 1
+
+Buyer: 6 Seller: 16 Token amount: 1.4990168847210805 Transaction price: 2.820514024485006
+Supply was 134.58816125453325, Demand was 141.84274340797748 and now Supply is 133.08914436981217 and Demand is 143.34176029269855
+Price was 1.0 and now Price is 1.1820514024485007
+
+Buyer: 1 Seller: 3 Token amount: 20.817129108755722 Transaction price: 0.6145660030353133
+Supply was 133.08914436981217, Demand was 143.34176029269855 and now Supply is 112.27201526105645 and Demand is 164.15888940145427
+Price was 1.1820514024485007 and now Price is 1.125302862507182
+
+Buyer: 19 Seller: 16 Token amount: 36.80196784677837 Transaction price: 0.5411066567326113
+Supply was 112.27201526105645, Demand was 164.15888940145427 and now Supply is 75.47004741427808 and Demand is 200.96085724823263
+Price was 1.125302862507182 and now Price is 1.0668832419297247
+
+Buyer: 12 Seller: 3 Token amount: 17.453903650568414 Transaction price: 1.3369157420795923
+Supply was 75.47004741427808, Demand was 200.96085724823263 and now Supply is 58.01614376370967 and Demand is 218.41476089880103
+Price was 1.0668832419297247 and now Price is 1.0938864919447115
+
+Exchange: 2
+
+Buyer: 5 Seller: 14 Token amount: 0.015793035814082992 Transaction price: 0.3288255858932899
+Supply was 110.02771763918602, Demand was 63.89645206971578 and now Supply is 110.01192460337194 and Demand is 63.91224510552986
+Price was 1.0 and now Price is 0.932882558589329
+
+Buyer: 4 Seller: 17 Token amount: 6.558865197706258 Transaction price: 1.645227034969447
+Supply was 110.01192460337194, Demand was 63.91224510552986 and now Supply is 103.45305940566568 and Demand is 70.47111030323612
+Price was 0.932882558589329 and now Price is 1.0041170062273408
+
+Buyer: 22 Seller: 8 Token amount: 1.8463124767630525 Transaction price: 2.20513517424037
+Supply was 103.45305940566568, Demand was 70.47111030323612 and now Supply is 101.60674692890264 and Demand is 72.31742277999916
+Price was 1.0041170062273408 and now Price is 1.1242188230286438
+
+Buyer: 10 Seller: 8 Token amount: 32.87589329491767 Transaction price: 1.8657783577893727
+Supply was 101.60674692890264, Demand was 72.31742277999916 and now Supply is 68.73085363398496 and Demand is 105.19331607491682
+Price was 1.1242188230286438 and now Price is 1.1983747765047168
+
+
+Tokens after transactions: 708.3482546124652
+End of day 5 token price: 1.151507117161036
+
+Rebase
+Old token amount: 708.3482546124652
+New token amount: 708.3482546124652 tokens * 1.151507117161036 price per token = 815.6680566148514 tokens
+
+Wallet: 0, old token amount: 58.176411421370325, percentage: 0.0848492336506546
+Wallet: 0, new token amount: 69.20880951708888, percentage: 0.0848492336506546
+
+Wallet: 1, old token amount: 26.005633332423532, percentage: 0.03671306191987601
+Wallet: 1, new token amount: 29.945671868565967, percentage: 0.03671306191987601
+
+Wallet: 2, old token amount: 23.4474733851099, percentage: 0.03670963926702124
+Wallet: 2, new token amount: 29.94288011996345, percentage: 0.03670963926702124
+
+Wallet: 3, old token amount: 5.27895121642495, percentage: 0.0076407502957222566
+Wallet: 3, new token amount: 6.232315944791124, percentage: 0.0076407502957222566
+
+Wallet: 4, old token amount: 36.78076207617342, percentage: 0.051924687943638734
+Wallet: 4, new token amount: 42.35330930532041, percentage: 0.051924687943638734
+
+Wallet: 5, old token amount: 3.5107706293311605, percentage: 0.004956277659287648
+Wallet: 5, new token amount: 4.04267736639476, percentage: 0.004956277659287648
+
+Wallet: 6, old token amount: 28.352812029820434, percentage: 0.04002665616128631
+Wallet: 6, new token amount: 32.64846484386727, percentage: 0.04002665616128631
+
+Wallet: 7, old token amount: 7.956587655612572, percentage: 0.011604537793903741
+Wallet: 7, new token amount: 9.46545079026706, percentage: 0.011604537793903741
+
+Wallet: 8, old token amount: 10.796069986091837, percentage: 0.015982992945904526
+Wallet: 8, new token amount: 13.036816795074824, percentage: 0.015982992945904526
+
+Wallet: 9, old token amount: 41.01923584291894, percentage: 0.05982580639081217
+Wallet: 9, new token amount: 48.79799923421012, percentage: 0.05982580639081217
+
+Wallet: 10, old token amount: 43.05547089264921, percentage: 0.06078291378893099
+Wallet: 10, new token amount: 49.578681165605396, percentage: 0.06078291378893099
+
+Wallet: 11, old token amount: 0.8592524998102743, percentage: 0.001253204079454953
+Wallet: 11, new token amount: 1.0221985360308252, percentage: 0.001253204079454953
+
+Wallet: 12, old token amount: 104.75700306461911, percentage: 0.14788912428665654
+Wallet: 12, new token amount: 120.62843460136936, percentage: 0.14788912428665654
+
+Wallet: 13, old token amount: 32.135699866116624, percentage: 0.04686933139822073
+Wallet: 13, new token amount: 38.22981645642413, percentage: 0.04686933139822073
+
+Wallet: 14, old token amount: 0.14558893268662004, percentage: 2.0553756969228686E-4
+Wallet: 14, new token amount: 0.1676504300322472, percentage: 2.0553756969228686E-4
+
+Wallet: 15, old token amount: 69.75222141527256, percentage: 0.09847165001265337
+Wallet: 15, new token amount: 80.32017939747878, percentage: 0.09847165001265337
+
+Wallet: 16, old token amount: 18.27046679715459, percentage: 0.02720656365348864
+Wallet: 16, new token amount: 22.19152490240933, percentage: 0.02720656365348864
+
+Wallet: 17, old token amount: 16.76995887228757, percentage: 0.023895999462563107
+Wallet: 17, new token amount: 19.49120344249838, percentage: 0.023895999462563107
+
+Wallet: 18, old token amount: 34.46672575013014, percentage: 0.0502690900812689
+Wallet: 18, new token amount: 41.002891014385504, percentage: 0.0502690900812689
+
+Wallet: 19, old token amount: 59.299312471938, percentage: 0.08371491294826505
+Wallet: 19, new token amount: 68.28358035419281, percentage: 0.08371491294826505
+
+Wallet: 21, old token amount: 65.66553399776032, percentage: 0.09577198216327742
+Wallet: 21, new token amount: 78.11814656927271, percentage: 0.09577198216327742
+
+Wallet: 22, old token amount: 21.846312476763053, percentage: 0.03084120322808601
+Wallet: 22, new token amount: 25.156184300716596, percentage: 0.03084120322808601
+
+Rebase finished, token amount: 829.8648869559602
+
+Day 6 of the simulation----------------------------
+
+Token amount: 829.8648869559602
+
+Wallet 0 wants to sell.
+Wallet 1 wants to buy.
+Wallet 2 wants to sell.
+Wallet 3 wants to buy.
+Wallet 4 wants to sell.
+Wallet 5 wants to sell.
+Wallet 6 does nothing.
+Wallet 7 wants to sell.
+Wallet 8 wants to buy.
+Wallet 9 wants to sell.
+Wallet 10 wants to buy.
+Wallet 11 wants to buy.
+Wallet 12 wants to buy.
 Wallet 13 wants to buy.
 Wallet 14 wants to sell.
 Wallet 15 wants to sell.
-Wallet 16 wants to sell.
-Wallet 17 wants to buy.
+Wallet 16 wants to buy.
+Wallet 17 wants to sell.
 Wallet 18 wants to sell.
-Wallet 19 does nothing.
-Wallet 21 wants to buy.
-End of day 13 token price: 1.0687779737798815
-Rebase, old token amount: 1886.3367937403614
-Rebase, new token amount: 2016.0752162802617
+Wallet 19 wants to buy.
+Wallet 21 wants to sell.
+Wallet 22 wants to sell.
 
-Day 14 of the simulation----------------------------
+Exchange: 0
+Seller: 4
+Seller: 9
+Seller: 14
+Seller: 17
 
-Wallet 0 wants to buy.
-Wallet 1 wants to sell.
-Wallet 2 wants to buy.
-Wallet 3 wants to buy.
+Exchange: 1
+Buyer: 3
+Buyer: 11
+Buyer: 12
+Buyer: 13
+Buyer: 16
+Seller: 2
+Seller: 15
+Seller: 21
+
+Exchange: 2
+Buyer: 1
+Buyer: 8
+Buyer: 10
+Buyer: 19
+Seller: 0
+Seller: 5
+Seller: 7
+Seller: 18
+Seller: 22
+
+Exchange: 0
+
+Exchange: 1
+
+Buyer: 11 Seller: 15 Token amount: 0.20054331497112898 Transaction price: 3.2315323804873
+Supply was 188.38120608671494, Demand was 188.3042904410248 and now Supply is 188.1806627717438 and Demand is 188.50483375599592
+Price was 1.0 and now Price is 1.22315323804873
+
+Buyer: 16 Seller: 2 Token amount: 15.911814896743094 Transaction price: 1.1136563275055473
+Supply was 188.1806627717438, Demand was 188.50483375599592 and now Supply is 172.26884787500072 and Demand is 204.416648652739
+Price was 1.22315323804873 and now Price is 1.212203546994412
+
+Buyer: 12 Seller: 15 Token amount: 47.264862569296454 Transaction price: 0.12277873172927367
+Supply was 172.26884787500072, Demand was 204.416648652739 and now Supply is 125.00398530570426 and Demand is 251.68151122203545
+Price was 1.212203546994412 and now Price is 1.103261065467898
+
+Buyer: 3 Seller: 2 Token amount: 5.216015450274656 Transaction price: 1.503035719166437
+Supply was 125.00398530570426, Demand was 251.68151122203545 and now Supply is 119.78796985542961 and Demand is 256.8975266723101
+Price was 1.103261065467898 and now Price is 1.143238530837752
+
+Buyer: 13 Seller: 2 Token amount: 4.311837064379672 Transaction price: 1.1577411909807522
+Supply was 119.78796985542961, Demand was 256.8975266723101 and now Supply is 115.47613279104993 and Demand is 261.2093637366898
+Price was 1.143238530837752 and now Price is 1.144688796852052
+
+Exchange: 2
+
+Buyer: 8 Seller: 0 Token amount: 57.145284794521984 Transaction price: 1.0534271028856799
+Supply was 148.8760129888528, Demand was 160.84475018343898 and now Supply is 91.73072819433082 and Demand is 217.99003497796096
+Price was 1.0 and now Price is 1.005342710288568
+
+Buyer: 1 Seller: 18 Token amount: 2.4838086821996 Transaction price: 0.11932614337234071
+Supply was 91.73072819433082, Demand was 217.99003497796096 and now Supply is 89.24691951213123 and Demand is 220.47384366016055
+Price was 1.005342710288568 and now Price is 0.9167410535969451
+
+Buyer: 19 Seller: 22 Token amount: 15.665847164460988 Transaction price: 2.1635130568359133
+Supply was 89.24691951213123, Demand was 220.47384366016055 and now Supply is 73.58107234767024 and Demand is 236.13969082462154
+Price was 0.9167410535969451 and now Price is 1.041418253920842
+
+Buyer: 10 Seller: 7 Token amount: 8.500998064369071 Transaction price: 0.9166385100456448
+Supply was 73.58107234767024, Demand was 236.13969082462154 and now Supply is 65.08007428330117 and Demand is 244.6406888889906
+Price was 1.041418253920842 and now Price is 1.0289402795333225
+
+
+Tokens after transactions: 829.8648869559601
+End of day 6 token price: 1.0578763587951248
+
+Rebase
+Old token amount: 829.8648869559601
+New token amount: 829.8648869559601 tokens * 1.0578763587951248 price per token = 877.8944449048988 tokens
+
+Wallet: 0, old token amount: 12.063524722566896, percentage: 0.015611775201280011
+Wallet: 0, new token amount: 13.705490724307781, percentage: 0.015611775201280011
+
+Wallet: 1, old token amount: 32.42948055076557, percentage: 0.03907802470076862
+Wallet: 1, new token amount: 34.306380802661195, percentage: 0.03907802470076862
+
+Wallet: 2, old token amount: 4.50321270856603, percentage: 0.005454782959323372
+Wallet: 2, new token amount: 4.788723658151893, percentage: 0.005454782959323372
+
+Wallet: 3, old token amount: 11.44833139506578, percentage: 0.01379541606713784
+Wallet: 3, new token amount: 12.110919130492096, percentage: 0.01379541606713784
+
+Wallet: 4, old token amount: 42.35330930532041, percentage: 0.051924687943638734
+Wallet: 4, new token amount: 45.58439509914082, percentage: 0.051924687943638734
+
+Wallet: 5, old token amount: 4.04267736639476, percentage: 0.004956277659287648
+Wallet: 5, new token amount: 4.351088624494881, percentage: 0.004956277659287648
+
+Wallet: 6, old token amount: 32.64846484386727, percentage: 0.04002665616128631
+Wallet: 6, new token amount: 35.139179092111696, percentage: 0.04002665616128631
+
+Wallet: 7, old token amount: 0.9644527258979885, percentage: 0.0011742088238131485
+Wallet: 7, new token amount: 1.0308314035838781, percentage: 0.0011742088238131485
+
+Wallet: 8, old token amount: 70.18210158959681, percentage: 0.08457051586678507
+Wallet: 8, new token amount: 74.24398608219222, percentage: 0.08457051586678507
+
+Wallet: 9, old token amount: 48.79799923421012, percentage: 0.05982580639081217
+Wallet: 9, new token amount: 52.52074309245, percentage: 0.05982580639081217
+
+Wallet: 10, old token amount: 58.07967922997447, percentage: 0.0699869100896863
+Wallet: 10, new token amount: 61.44111958379422, percentage: 0.0699869100896863
+
+Wallet: 11, old token amount: 1.2227418510019543, percentage: 0.0014734228067982392
+Wallet: 11, new token amount: 1.2935096970843583, percentage: 0.0014734228067982392
+
+Wallet: 12, old token amount: 167.89329717066582, percentage: 0.20231401497961643
+Wallet: 12, new token amount: 177.61034987701174, percentage: 0.20231401497961643
+
+Wallet: 13, old token amount: 42.541653520803806, percentage: 0.051263349238514576
+Wallet: 13, new token amount: 45.00380952371172, percentage: 0.051263349238514576
+
+Wallet: 14, old token amount: 0.1676504300322472, percentage: 2.0553756969228686E-4
+Wallet: 14, new token amount: 0.18044029065211212, percentage: 2.0553756969228686E-4
+
+Wallet: 15, old token amount: 32.8547735132112, percentage: 0.041981564642756077
+Wallet: 15, new token amount: 36.855382388291474, percentage: 0.041981564642756077
+
+Wallet: 16, old token amount: 38.10333979915242, percentage: 0.04591511268649991
+Wallet: 16, new token amount: 40.30862236466072, percentage: 0.04591511268649991
+
+Wallet: 17, old token amount: 19.49120344249838, percentage: 0.023895999462563107
+Wallet: 17, new token amount: 20.978165183634598, percentage: 0.023895999462563107
+
+Wallet: 18, old token amount: 38.5190823321859, percentage: 0.04655543055510977
+Wallet: 18, new token amount: 40.87075386448666, percentage: 0.04655543055510977
+
+Wallet: 19, old token amount: 83.94942751865379, percentage: 0.10116035614736027
+Wallet: 19, new token amount: 88.80811470636871, percentage: 0.10116035614736027
+
+Wallet: 21, old token amount: 78.11814656927271, percentage: 0.09577198216327742
+Wallet: 21, new token amount: 84.0776911186723, percentage: 0.09577198216327742
+
+Wallet: 22, old token amount: 9.490337136255608, percentage: 0.01165604068838733
+Wallet: 22, new token amount: 10.232773369920709, percentage: 0.01165604068838733
+
+Rebase finished, token amount: 885.4424696778756
+
+Day 7 of the simulation----------------------------
+
+Token amount: 885.4424696778756
+
+Wallet 0 wants to sell.
+Wallet 1 wants to buy.
+Wallet 2 wants to sell.
+Wallet 3 wants to sell.
 Wallet 4 wants to sell.
-Wallet 5 wants to buy.
+Wallet 5 wants to sell.
 Wallet 6 wants to sell.
 Wallet 7 wants to buy.
 Wallet 8 wants to sell.
-Wallet 9 does nothing.
-Wallet 10 wants to buy.
-Wallet 11 wants to sell.
-Wallet 12 does nothing.
-Wallet 13 wants to buy.
+Wallet 9 wants to buy.
+Wallet 10 wants to sell.
+Wallet 11 wants to buy.
+Wallet 12 wants to buy.
+Wallet 13 wants to sell.
 Wallet 14 wants to buy.
 Wallet 15 wants to buy.
 Wallet 16 wants to sell.
-Wallet 17 wants to sell.
-Wallet 18 wants to buy.
-Wallet 19 wants to buy.
-Wallet 21 does nothing.
-Wallet 22 wants to buy.
-End of day 14 token price: 0.9965279394928133
-Rebase, old token amount: 2042.7801362609698
-Rebase, new token amount: 2035.6874800249925
-
-Day 15 of the simulation----------------------------
-
-Wallet 0 wants to buy.
-Wallet 1 wants to buy.
-Wallet 2 wants to buy.
-Wallet 3 wants to sell.
-Wallet 4 does nothing.
-Wallet 5 wants to buy.
-Wallet 6 does nothing.
-Wallet 7 wants to buy.
-Wallet 8 wants to sell.
-Wallet 9 wants to sell.
-Wallet 10 wants to buy.
-Wallet 11 wants to sell.
-Wallet 12 wants to sell.
-Wallet 13 wants to buy.
-Wallet 14 wants to sell.
-Wallet 15 wants to buy.
-Wallet 16 wants to sell.
-Wallet 17 wants to sell.
-Wallet 18 does nothing.
-Wallet 19 wants to sell.
-Wallet 21 wants to sell.
-Wallet 22 does nothing.
-End of day 15 token price: 0.9824901604647307
-Rebase, old token amount: 2047.9643788792464
-Rebase, new token amount: 2012.1048512311233
-
-Day 16 of the simulation----------------------------
-
-Wallet 0 wants to buy.
-Wallet 1 wants to sell.
-Wallet 2 wants to sell.
-Wallet 3 wants to buy.
-Wallet 4 wants to sell.
-Wallet 5 wants to sell.
-Wallet 6 wants to sell.
-Wallet 7 wants to sell.
-Wallet 8 wants to buy.
-Wallet 9 wants to buy.
-Wallet 10 wants to sell.
-Wallet 11 does nothing.
-Wallet 12 wants to sell.
-Wallet 13 does nothing.
-Wallet 14 does nothing.
-Wallet 15 wants to buy.
-Wallet 16 wants to sell.
-Wallet 17 wants to buy.
+Wallet 17 does nothing.
 Wallet 18 wants to sell.
 Wallet 19 wants to sell.
-Wallet 21 wants to buy.
-Wallet 22 does nothing.
-End of day 16 token price: 1.1292946750362223
-Rebase, old token amount: 2020.3144720197918
-Rebase, new token amount: 2281.5303751505676
-
-Day 17 of the simulation----------------------------
-
-Wallet 0 does nothing.
-Wallet 1 wants to buy.
-Wallet 2 wants to buy.
-Wallet 3 wants to sell.
-Wallet 4 wants to sell.
-Wallet 5 does nothing.
-Wallet 6 wants to buy.
-Wallet 7 wants to sell.
-Wallet 8 wants to buy.
-Wallet 9 wants to sell.
-Wallet 10 wants to sell.
-Wallet 11 wants to buy.
-Wallet 12 wants to sell.
-Wallet 13 wants to buy.
-Wallet 14 does nothing.
-Wallet 15 wants to sell.
-Wallet 16 does nothing.
-Wallet 17 wants to sell.
-Wallet 18 wants to buy.
-Wallet 19 wants to buy.
 Wallet 21 wants to sell.
-Wallet 22 wants to buy.
-End of day 17 token price: 1.1221517625225579
-Rebase, old token amount: 2288.3662524398987
-Rebase, new token amount: 2567.894223472573
+Wallet 22 wants to sell.
+New buyers
+New Wallet 23 wants to buy.
 
-Day 18 of the simulation----------------------------
+Exchange: 0
+Buyer: 1
+Seller: 2
+Seller: 3
+Seller: 6
+Seller: 10
+Seller: 19
 
-Wallet 0 does nothing.
-Wallet 1 wants to buy.
-Wallet 2 wants to sell.
-Wallet 3 wants to buy.
-Wallet 4 does nothing.
-Wallet 5 wants to sell.
-Wallet 6 wants to buy.
-Wallet 7 wants to sell.
-Wallet 8 wants to buy.
-Wallet 9 wants to sell.
-Wallet 10 wants to sell.
-Wallet 11 wants to sell.
-Wallet 12 wants to buy.
-Wallet 13 does nothing.
-Wallet 14 wants to sell.
-Wallet 15 does nothing.
-Wallet 16 wants to sell.
-Wallet 17 wants to buy.
-Wallet 18 wants to buy.
-Wallet 19 wants to sell.
-Wallet 21 wants to buy.
-Wallet 22 wants to buy.
-End of day 18 token price: 1.0589479846601273
-Rebase, old token amount: 2571.8885644264187
-Rebase, new token amount: 2723.496212069784
+Exchange: 1
+Buyer: 7
+Buyer: 9
+Buyer: 11
+Buyer: 12
+Buyer: 14
+Buyer: 23
+Seller: 4
+Seller: 18
+Seller: 21
 
-Day 19 of the simulation----------------------------
+Exchange: 2
+Buyer: 15
+Seller: 0
+Seller: 5
+Seller: 8
+Seller: 13
+Seller: 16
+Seller: 22
+
+Exchange: 0
+
+Buyer: 1 Seller: 2 Token amount: 3.7675795272343904 Transaction price: 0.3859738269087475
+Supply was 202.28805617091862, Demand was 34.306380802661195 and now Supply is 198.52047664368422 and Demand is 38.073960329895584
+Price was 1.0 and now Price is 0.9385973826908748
+
+Exchange: 1
+
+Buyer: 9 Seller: 18 Token amount: 14.421358333502027 Transaction price: 1.8523455011781613
+Supply was 170.5328400822998, Demand was 252.63587436078208 and now Supply is 156.11148174879776 and Demand is 267.0572326942841
+Price was 1.0 and now Price is 1.0852345501178162
+
+Buyer: 11 Seller: 4 Token amount: 44.40747957364793 Transaction price: 1.7061426149627186
+Supply was 156.11148174879776, Demand was 267.0572326942841 and now Supply is 111.70400217514982 and Demand is 311.46471226793204
+Price was 1.0852345501178162 and now Price is 1.1473253566023065
+
+Buyer: 23 Seller: 18 Token amount: 16.28746409744028 Transaction price: 1.2000406761587286
+Supply was 111.70400217514982, Demand was 311.46471226793204 and now Supply is 95.41653807770955 and Demand is 327.75217636537235
+Price was 1.1473253566023065 and now Price is 1.1525968885579487
+
+Buyer: 12 Seller: 4 Token amount: 0.5298303150741209 Transaction price: 0.19369898402714214
+Supply was 95.41653807770955, Demand was 327.75217636537235 and now Supply is 94.88670776263542 and Demand is 328.28200668044644
+Price was 1.1525968885579487 and now Price is 1.056707098104868
+
+Buyer: 7 Seller: 4 Token amount: 0.5569522465805389 Transaction price: 1.0439277691169395
+Supply was 94.88670776263542, Demand was 328.28200668044644 and now Supply is 94.32975551605489 and Demand is 328.83895892702697
+Price was 1.056707098104868 and now Price is 1.0554291652060752
+
+Buyer: 14 Seller: 4 Token amount: 0.03535134556366206 Transaction price: 1.200792337944642
+Supply was 94.32975551605489, Demand was 328.83895892702697 and now Supply is 94.29440417049122 and Demand is 328.8743102725906
+Price was 1.0554291652060752 and now Price is 1.0699654824799318
+
+Exchange: 2
+
+Buyer: 15 Seller: 16 Token amount: 26.804383390992196 Transaction price: 0.21180734874095974
+Supply was 187.84577068928803, Demand was 36.855382388291474 and now Supply is 161.04138729829583 and Demand is 63.659765779283674
+Price was 1.0 and now Price is 0.921180734874096
+
+
+Tokens after transactions: 905.4424696778758
+End of day 7 token price: 0.9765812000149675
+
+Rebase
+Old token amount: 905.4424696778758
+New token amount: 905.4424696778758 tokens * 0.9765812000149675 price per token = 884.2380935825358 tokens
+
+Wallet: 0, old token amount: 13.705490724307781, percentage: 0.015611775201280011
+Wallet: 0, new token amount: 13.804526341418947, percentage: 0.015611775201280011
+
+Wallet: 1, old token amount: 38.073960329895584, percentage: 0.042050115391031914
+Wallet: 1, new token amount: 37.18231386829171, percentage: 0.042050115391031914
+
+Wallet: 2, old token amount: 1.0211441309175027, percentage: 0.0011324970253379263
+Wallet: 2, new token amount: 1.0013970106727008, percentage: 0.0011324970253379263
+
+Wallet: 3, old token amount: 12.110919130492096, percentage: 0.01379541606713784
+Wallet: 3, new token amount: 12.198432403383848, percentage: 0.01379541606713784
+
+Wallet: 4, old token amount: 0.054781618274565715, percentage: 6.0504956461430404E-5
+Wallet: 4, new token amount: 0.05350078735374955, percentage: 6.0504956461430404E-5
+
+Wallet: 5, old token amount: 4.351088624494881, percentage: 0.004956277659287648
+Wallet: 5, new token amount: 4.3825295087142235, percentage: 0.004956277659287648
+
+Wallet: 6, old token amount: 35.139179092111696, percentage: 0.04002665616128631
+Wallet: 6, new token amount: 35.39309413653947, percentage: 0.04002665616128631
+
+Wallet: 7, old token amount: 1.587783650164417, percentage: 0.0017535997076979324
+Wallet: 7, new token amount: 1.5505996624417118, percentage: 0.0017535997076979324
+
+Wallet: 8, old token amount: 74.24398608219222, percentage: 0.08457051586678507
+Wallet: 8, new token amount: 74.78047172333763, percentage: 0.08457051586678507
+
+Wallet: 9, old token amount: 66.94210142595202, percentage: 0.07393302575012595
+Wallet: 9, new token amount: 65.37439774207989, percentage: 0.07393302575012595
+
+Wallet: 10, old token amount: 61.44111958379422, percentage: 0.0699869100896863
+Wallet: 10, new token amount: 61.88509195343656, percentage: 0.0699869100896863
+
+Wallet: 11, old token amount: 45.70098927073229, percentage: 0.050473653270307804
+Wallet: 11, new token amount: 44.6307269438829, percentage: 0.050473653270307804
+
+Wallet: 12, old token amount: 178.14018019208586, percentage: 0.19674378677583104
+Wallet: 12, new token amount: 173.96835094286976, percentage: 0.19674378677583104
+
+Wallet: 13, old token amount: 45.00380952371172, percentage: 0.051263349238514576
+Wallet: 13, new token amount: 45.32900620131987, percentage: 0.051263349238514576
+
+Wallet: 14, old token amount: 0.21579163621577419, percentage: 2.383272747218773E-4
+Wallet: 14, new token amount: 0.2107380550487941, percentage: 2.383272747218773E-4
+
+Wallet: 15, old token amount: 63.659765779283674, percentage: 0.07030790791372041
+Wallet: 15, new token amount: 62.16893045740462, percentage: 0.07030790791372041
+
+Wallet: 16, old token amount: 13.504238973668524, percentage: 0.015369512412940477
+Wallet: 16, new token amount: 13.590308355311608, percentage: 0.015369512412940477
+
+Wallet: 17, old token amount: 20.978165183634598, percentage: 0.023895999462563107
+Wallet: 17, new token amount: 21.129753009026103, percentage: 0.023895999462563107
+
+Wallet: 18, old token amount: 10.16193143354435, percentage: 0.011428751308564807
+Wallet: 18, new token amount: 10.105737269114256, percentage: 0.011428751308564807
+
+Wallet: 19, old token amount: 88.80811470636871, percentage: 0.10116035614736027
+Wallet: 19, new token amount: 89.4498404658722, percentage: 0.10116035614736027
+
+Wallet: 21, old token amount: 84.0776911186723, percentage: 0.09577198216327742
+Wallet: 21, new token amount: 84.68523492667705, percentage: 0.09577198216327742
+
+Wallet: 22, old token amount: 10.232773369920709, percentage: 0.01165604068838733
+Wallet: 22, new token amount: 10.30671519702008, percentage: 0.01165604068838733
+
+Wallet: 23, old token amount: 36.28746409744028, percentage: 0.040077051069130946
+Wallet: 23, new token amount: 35.43765523377828, percentage: 0.040077051069130946
+
+Rebase finished, token amount: 898.6193521949958
+
+Day 8 of the simulation----------------------------
+
+Token amount: 898.6193521949958
 
 Wallet 0 wants to sell.
 Wallet 1 wants to buy.
 Wallet 2 does nothing.
 Wallet 3 wants to buy.
 Wallet 4 wants to buy.
+Wallet 5 wants to sell.
+Wallet 6 wants to buy.
+Wallet 7 wants to buy.
+Wallet 8 wants to sell.
+Wallet 9 wants to buy.
+Wallet 10 wants to buy.
+Wallet 11 wants to buy.
+Wallet 12 wants to buy.
+Wallet 13 wants to sell.
+Wallet 14 wants to buy.
+Wallet 15 wants to sell.
+Wallet 16 wants to buy.
+Wallet 17 wants to buy.
+Wallet 18 wants to buy.
+Wallet 19 wants to sell.
+Wallet 21 wants to sell.
+Wallet 22 wants to sell.
+Wallet 23 wants to buy.
+
+Exchange: 0
+Buyer: 4
+Buyer: 9
+Buyer: 12
+Buyer: 23
+Seller: 19
+Seller: 22
+
+Exchange: 1
+Buyer: 3
+Buyer: 7
+Buyer: 14
+Buyer: 17
+Buyer: 18
+Seller: 0
+Seller: 8
+Seller: 15
+
+Exchange: 2
+Buyer: 1
+Buyer: 6
+Buyer: 10
+Buyer: 11
+Buyer: 16
+Seller: 5
+Seller: 13
+Seller: 21
+
+Exchange: 0
+
+Buyer: 9 Seller: 22 Token amount: 8.658879878089152 Transaction price: 0.4852488725819727
+Supply was 99.75655566289228, Demand was 274.8339047060817 and now Supply is 91.09767578480313 and Demand is 283.49278458417086
+Price was 1.0 and now Price is 0.9485248872581973
+
+Buyer: 4 Seller: 22 Token amount: 0.4397793401672541 Transaction price: 0.9175953470735535
+Supply was 91.09767578480313, Demand was 283.49278458417086 and now Supply is 90.65789644463588 and Demand is 283.9325639243381
+Price was 0.9485248872581973 and now Price is 0.9454319332397328
+
+Buyer: 23 Seller: 19 Token amount: 32.18665393562551 Transaction price: 0.6898993990569244
+Supply was 90.65789644463588, Demand was 283.9325639243381 and now Supply is 58.471242509010374 and Demand is 316.1192178599636
+Price was 0.9454319332397328 and now Price is 0.919878679821452
+
+Buyer: 12 Seller: 19 Token amount: 30.228239788443634 Transaction price: 2.8789946970552283
+Supply was 58.471242509010374, Demand was 316.1192178599636 and now Supply is 28.24300272056674 and Demand is 346.34745764840727
+Price was 0.919878679821452 and now Price is 1.1157902815448297
+
+Exchange: 1
+
+Buyer: 7 Seller: 8 Token amount: 48.973672464562554 Transaction price: 1.6191376277798595
+Supply was 150.7539285221612, Demand was 45.195260399014714 and now Supply is 101.78025605759865 and Demand is 94.16893286357727
+Price was 1.0 and now Price is 1.061913762777986
+
+Buyer: 18 Seller: 0 Token amount: 10.923284032616666 Transaction price: 1.1649166703129759
+Supply was 101.78025605759865, Demand was 94.16893286357727 and now Supply is 90.85697202498199 and Demand is 105.09221689619393
+Price was 1.061913762777986 and now Price is 1.072214053531485
+
+Buyer: 14 Seller: 8 Token amount: 17.417337169522845 Transaction price: 0.2850353669853005
+Supply was 90.85697202498199, Demand was 105.09221689619393 and now Supply is 73.43963485545913 and Demand is 122.50955406571677
+Price was 1.072214053531485 and now Price is 0.9934961848768665
+
+Buyer: 3 Seller: 0 Token amount: 1.158080031358118 Transaction price: 0.06351186356900929
+Supply was 73.43963485545913, Demand was 122.50955406571677 and now Supply is 72.28155482410101 and Demand is 123.6676340970749
+Price was 0.9934961848768665 and now Price is 0.9004977527460808
+
+Buyer: 17 Seller: 0 Token amount: 1.558547566570728 Transaction price: 0.3300399095328084
+Supply was 72.28155482410101, Demand was 123.6676340970749 and now Supply is 70.72300725753028 and Demand is 125.22618166364562
+Price was 0.9004977527460808 and now Price is 0.8434519684247536
+
+Exchange: 2
+
+Buyer: 6 Seller: 13 Token amount: 11.444929525442413 Transaction price: 1.0115962411125021
+Supply was 134.39677063671115, Demand was 192.68153525746226 and now Supply is 122.95184111126873 and Demand is 204.12646478290466
+Price was 1.0 and now Price is 1.0011596241112501
+
+Buyer: 16 Seller: 5 Token amount: 1.9971448684814999 Transaction price: 1.627988158934503
+Supply was 122.95184111126873, Demand was 204.12646478290466 and now Supply is 120.95469624278724 and Demand is 206.12360965138618
+Price was 1.0011596241112501 and now Price is 1.0638424775935755
+
+Buyer: 10 Seller: 13 Token amount: 31.599334573361435 Transaction price: 0.48945654142506045
+Supply was 120.95469624278724, Demand was 206.12360965138618 and now Supply is 89.3553616694258 and Demand is 237.7229442247476
+Price was 1.0638424775935755 and now Price is 1.006403883976724
+
+Buyer: 1 Seller: 5 Token amount: 0.4417889017271899 Transaction price: 0.7934712040997214
+Supply was 89.3553616694258, Demand was 237.7229442247476 and now Supply is 88.91357276769861 and Demand is 238.1647331264748
+Price was 1.006403883976724 and now Price is 0.9851106159890237
+
+Buyer: 11 Seller: 5 Token amount: 1.4158514884704199 Transaction price: 0.700990917298416
+Supply was 88.91357276769861, Demand was 238.1647331264748 and now Supply is 87.49772127922819 and Demand is 239.58058461494522
+Price was 0.9851106159890237 and now Price is 0.956698646119963
+
+
+Tokens after transactions: 898.6193521949959
+End of day 8 token price: 0.9719802986965155
+
+Rebase
+Old token amount: 898.6193521949959
+New token amount: 898.6193521949959 tokens * 0.9719802986965155 price per token = 873.4403063609614 tokens
+
+Wallet: 0, old token amount: 0.1646147108734357, percentage: 1.8350451833822051E-4
+Wallet: 0, new token amount: 0.16028024271595598, percentage: 1.8350451833822051E-4
+
+Wallet: 1, old token amount: 37.6241027700189, percentage: 0.041868787577428734
+Wallet: 1, new token amount: 36.569886648591364, percentage: 0.041868787577428734
+
+Wallet: 2, old token amount: 1.0013970106727008, percentage: 0.0011324970253379263
+Wallet: 2, new token amount: 0.9891685487640358, percentage: 0.0011324970253379263
+
+Wallet: 3, old token amount: 13.356512434741965, percentage: 0.014863370571885557
+Wallet: 3, new token amount: 12.982266945864218, percentage: 0.014863370571885557
+
+Wallet: 4, old token amount: 0.4932801275210037, percentage: 5.489311200744811E-4
+Wallet: 4, new token amount: 0.4794585656889204, percentage: 5.489311200744811E-4
+
+Wallet: 5, old token amount: 0.5277442500351142, percentage: 5.882101993801057E-4
+Wallet: 5, new token amount: 0.5137664967512017, percentage: 5.882101993801057E-4
+
+Wallet: 6, old token amount: 46.83802366198188, percentage: 0.05212220674702125
+Wallet: 6, new token amount: 45.5256362293276, percentage: 0.05212220674702125
+
+Wallet: 7, old token amount: 50.52427212700427, percentage: 0.056224331251705284
+Wallet: 7, new token amount: 49.10859711342964, percentage: 0.056224331251705284
+
+Wallet: 8, old token amount: 8.389462089252227, percentage: 0.009520475380449183
+Wallet: 8, new token amount: 8.315566933001525, percentage: 0.009520475380449183
+
+Wallet: 9, old token amount: 74.03327762016905, percentage: 0.08238558121337253
+Wallet: 9, new token amount: 71.95888729473397, percentage: 0.08238558121337253
+
+Wallet: 10, old token amount: 93.48442652679799, percentage: 0.10403117437705965
+Wallet: 10, new token amount: 90.86502081898958, percentage: 0.10403117437705965
+
+Wallet: 11, old token amount: 46.04657843235332, percentage: 0.05124147206476079
+Wallet: 11, new token amount: 44.756367058631305, percentage: 0.05124147206476079
+
+Wallet: 12, old token amount: 204.1965907313134, percentage: 0.22723368936194882
+Wallet: 12, new token amount: 198.4750632518321, percentage: 0.22723368936194882
+
+Wallet: 13, old token amount: 2.2847421025160237, percentage: 0.002635166496828312
+Wallet: 13, new token amount: 2.301660632301862, percentage: 0.002635166496828312
+
+Wallet: 14, old token amount: 17.62807522457164, percentage: 0.01961684352947969
+Wallet: 14, new token amount: 17.134141822223786, percentage: 0.01961684352947969
+
+Wallet: 15, old token amount: 62.16893045740462, percentage: 0.07030790791372041
+Wallet: 15, new token amount: 61.40976062775821, percentage: 0.07030790791372041
+
+Wallet: 16, old token amount: 15.587453223793108, percentage: 0.01734600215955588
+Wallet: 16, new token amount: 15.150697440380387, percentage: 0.01734600215955588
+
+Wallet: 17, old token amount: 22.68830057559683, percentage: 0.02524795456516452
+Wallet: 17, new token amount: 22.05258117038493, percentage: 0.02524795456516452
+
+Wallet: 18, old token amount: 21.02902130173092, percentage: 0.023401478334919866
+Wallet: 18, new token amount: 20.439794406151808, percentage: 0.023401478334919866
+
+Wallet: 19, old token amount: 27.034946741803058, percentage: 0.031132224127538265
+Wallet: 19, new token amount: 27.192139379655135, percentage: 0.031132224127538265
+
+Wallet: 21, old token amount: 84.68523492667705, percentage: 0.09577198216327742
+Wallet: 21, new token amount: 83.65110944148957, percentage: 0.09577198216327742
+
+Wallet: 22, old token amount: 1.2080559787636744, percentage: 0.0013450049581108996
+Wallet: 22, new token amount: 1.1747815426693962, percentage: 0.0013450049581108996
+
+Wallet: 23, old token amount: 67.62430916940379, percentage: 0.07525356426413757
+Wallet: 23, new token amount: 65.72949622562261, percentage: 0.07525356426413757
+
+Rebase finished, token amount: 876.9361288369591
+
+Day 9 of the simulation----------------------------
+
+Token amount: 876.9361288369591
+
+Wallet 0 wants to sell.
+Wallet 1 wants to sell.
+Wallet 2 wants to buy.
+Wallet 3 wants to buy.
+Wallet 4 wants to sell.
 Wallet 5 wants to buy.
-Wallet 6 does nothing.
-Wallet 7 does nothing.
+Wallet 6 wants to buy.
+Wallet 7 wants to sell.
 Wallet 8 wants to sell.
 Wallet 9 does nothing.
+Wallet 10 wants to sell.
+Wallet 11 wants to sell.
+Wallet 12 wants to sell.
+Wallet 13 wants to sell.
+Wallet 14 wants to sell.
+Wallet 15 wants to sell.
+Wallet 16 wants to sell.
+Wallet 17 does nothing.
+Wallet 18 does nothing.
+Wallet 19 wants to buy.
+Wallet 21 wants to sell.
+Wallet 22 wants to buy.
+Wallet 23 does nothing.
+
+Exchange: 0
+Buyer: 6
+Seller: 0
+Seller: 4
+Seller: 7
+Seller: 8
+Seller: 14
+
+Exchange: 1
+Buyer: 2
+Buyer: 5
+Buyer: 19
+Buyer: 22
+Seller: 1
+Seller: 21
+
+Exchange: 2
+Buyer: 3
+Seller: 10
+Seller: 11
+Seller: 12
+Seller: 13
+Seller: 15
+Seller: 16
+
+Exchange: 0
+
+Buyer: 6 Seller: 0 Token amount: 0.08015150684703837 Transaction price: 1.3123387385542518
+Supply was 75.19804467705983, Demand was 45.5256362293276 and now Supply is 75.11789317021278 and Demand is 45.60578773617464
+Price was 1.0 and now Price is 1.0312338738554252
+
+Exchange: 1
+
+Buyer: 5 Seller: 21 Token amount: 21.516679854490192 Transaction price: 0.6012764479770121
+Supply was 120.22099609008093, Demand was 29.86985596783977 and now Supply is 98.70431623559074 and Demand is 51.38653582232996
+Price was 1.0 and now Price is 0.9601276447977012
+
+Buyer: 2 Seller: 21 Token amount: 8.392222704510129 Transaction price: 0.30187225903749326
+Supply was 98.70431623559074, Demand was 51.38653582232996 and now Supply is 90.3120935310806 and Demand is 59.77875852684009
+Price was 0.9601276447977012 and now Price is 0.8943021062216804
+
+Buyer: 22 Seller: 1 Token amount: 17.32491132565395 Transaction price: 0.44491704596275117
+Supply was 90.3120935310806, Demand was 59.77875852684009 and now Supply is 72.98718220542665 and Demand is 77.10366985249405
+Price was 0.8943021062216804 and now Price is 0.8493636001957875
+
+Buyer: 19 Seller: 1 Token amount: 6.620838800144267 Transaction price: 0.9689325048278478
+Supply was 72.98718220542665, Demand was 77.10366985249405 and now Supply is 66.36634340528238 and Demand is 83.72450865263832
+Price was 0.8493636001957875 and now Price is 0.8613204906589935
+
+Exchange: 2
+
+Buyer: 3 Seller: 15 Token amount: 10.3406517388569 Transaction price: 1.545818098780181
+Supply was 412.95856982989346, Demand was 12.982266945864218 and now Supply is 402.6179180910366 and Demand is 23.322918684721117
+Price was 1.0 and now Price is 1.0545818098780182
+
+
+Tokens after transactions: 876.936128836959
+End of day 9 token price: 0.982378724797479
+
+Rebase
+Old token amount: 876.936128836959
+New token amount: 876.936128836959 tokens * 0.982378724797479 price per token = 861.4833959756895 tokens
+
+Wallet: 0, old token amount: 0.08012873586891761, percentage: 9.138186651004758E-5
+Wallet: 0, new token amount: 0.07872396069167292, percentage: 9.138186651004758E-5
+
+Wallet: 1, old token amount: 12.624136522793147, percentage: 0.014505245015584109
+Wallet: 1, new token amount: 12.49602773548484, percentage: 0.014505245015584109
+
+Wallet: 2, old token amount: 9.381391253274165, percentage: 0.010697918519694566
+Wallet: 2, new token amount: 9.216079176217695, percentage: 0.010697918519694566
+
+Wallet: 3, old token amount: 23.322918684721117, percentage: 0.026595914933569057
+Wallet: 3, new token amount: 22.911939116051627, percentage: 0.026595914933569057
+
+Wallet: 4, old token amount: 0.4794585656889204, percentage: 5.489311200744811E-4
+Wallet: 4, new token amount: 0.472895045478503, percentage: 5.489311200744811E-4
+
+Wallet: 5, old token amount: 22.030446351241395, percentage: 0.02512206491076993
+Wallet: 5, new token amount: 21.642241793251788, percentage: 0.02512206491076993
+
+Wallet: 6, old token amount: 45.60578773617464, percentage: 0.05200582600771568
+Wallet: 6, new token amount: 44.80215559964774, percentage: 0.05200582600771568
+
+Wallet: 7, old token amount: 49.10859711342964, percentage: 0.056224331251705284
+Wallet: 7, new token amount: 48.43632782318116, percentage: 0.056224331251705284
+
+Wallet: 8, old token amount: 8.315566933001525, percentage: 0.009520475380449183
+Wallet: 8, new token amount: 8.201731462052306, percentage: 0.009520475380449183
+
+Wallet: 9, old token amount: 71.95888729473397, percentage: 0.08238558121337253
+Wallet: 9, new token amount: 70.97381028312714, percentage: 0.08238558121337253
+
+Wallet: 10, old token amount: 90.86502081898958, percentage: 0.10403117437705965
+Wallet: 10, new token amount: 89.62112938968849, percentage: 0.10403117437705965
+
+Wallet: 11, old token amount: 44.756367058631305, percentage: 0.05124147206476079
+Wallet: 11, new token amount: 44.14367736914355, percentage: 0.05124147206476079
+
+Wallet: 12, old token amount: 198.4750632518321, percentage: 0.22723368936194882
+Wallet: 12, new token amount: 195.7580503916166, percentage: 0.22723368936194882
+
+Wallet: 13, old token amount: 2.301660632301862, percentage: 0.002635166496828312
+Wallet: 13, new token amount: 2.2701521826490154, percentage: 0.002635166496828312
+
+Wallet: 14, old token amount: 17.134141822223786, percentage: 0.01961684352947969
+Wallet: 14, new token amount: 16.899584982099896, percentage: 0.01961684352947969
+
+Wallet: 15, old token amount: 51.06910888890131, percentage: 0.058930735549084894
+Wallet: 15, new token amount: 50.76785018817095, percentage: 0.058930735549084894
+
+Wallet: 16, old token amount: 15.150697440380387, percentage: 0.01734600215955588
+Wallet: 16, new token amount: 14.943292847015845, percentage: 0.01734600215955588
+
+Wallet: 17, old token amount: 22.05258117038493, percentage: 0.02524795456516452
+Wallet: 17, new token amount: 21.75069364023784, percentage: 0.02524795456516452
+
+Wallet: 18, old token amount: 20.439794406151808, percentage: 0.023401478334919866
+Wallet: 18, new token amount: 20.15998502681829, percentage: 0.023401478334919866
+
+Wallet: 19, old token amount: 33.8129781797994, percentage: 0.038558085438495995
+Wallet: 19, new token amount: 33.217150385876316, percentage: 0.038558085438495995
+
+Wallet: 21, old token amount: 53.74220688248924, percentage: 0.061876212017649916
+Wallet: 21, new token amount: 53.30532925907682, percentage: 0.061876212017649916
+
+Wallet: 22, old token amount: 18.499692868323347, percentage: 0.02109582700493667
+Wallet: 22, new token amount: 18.173704689128503, percentage: 0.02109582700493667
+
+Wallet: 23, old token amount: 65.72949622562261, percentage: 0.07525356426413757
+Wallet: 23, new token amount: 64.82969610154402, percentage: 0.07525356426413757
+
+Rebase finished, token amount: 865.0722284482506
+
+Day 10 of the simulation----------------------------
+
+Token amount: 865.0722284482506
+
+Wallet 0 wants to buy.
+Wallet 1 wants to sell.
+Wallet 2 wants to sell.
+Wallet 3 wants to buy.
+Wallet 4 wants to sell.
+Wallet 5 wants to sell.
+Wallet 6 wants to sell.
+Wallet 7 wants to buy.
+Wallet 8 wants to buy.
+Wallet 9 wants to buy.
 Wallet 10 wants to sell.
 Wallet 11 wants to buy.
 Wallet 12 wants to sell.
 Wallet 13 wants to sell.
 Wallet 14 wants to buy.
+Wallet 15 wants to sell.
+Wallet 16 wants to buy.
+Wallet 17 wants to buy.
+Wallet 18 wants to sell.
+Wallet 19 wants to sell.
+Wallet 21 wants to buy.
+Wallet 22 wants to sell.
+Wallet 23 wants to buy.
+
+Exchange: 0
+Buyer: 8
+Buyer: 9
+Buyer: 23
+Seller: 1
+Seller: 2
+Seller: 4
+Seller: 10
+Seller: 13
+Seller: 15
+
+Exchange: 1
+Buyer: 0
+Buyer: 7
+Buyer: 11
+Buyer: 14
+Buyer: 17
+Buyer: 21
+Seller: 5
+Seller: 19
+Seller: 22
+
+Exchange: 2
+Buyer: 3
+Buyer: 16
+Seller: 6
+Seller: 12
+Seller: 18
+
+Exchange: 0
+
+Buyer: 9 Seller: 13 Token amount: 0.6131008583464557 Transaction price: 1.5496159529600684
+Supply was 164.8441337176895, Demand was 144.00523784672345 and now Supply is 164.23103285934303 and Demand is 144.6183387050699
+Price was 1.0 and now Price is 1.0549615952960067
+
+Buyer: 23 Seller: 1 Token amount: 6.071562064261322 Transaction price: 2.662164908146969
+Supply was 164.23103285934303, Demand was 144.6183387050699 and now Supply is 158.15947079508172 and Demand is 150.68990076933122
+Price was 1.0549615952960067 and now Price is 1.215681926581103
+
+Buyer: 8 Seller: 13 Token amount: 0.9795605924470734 Transaction price: 1.211788712555374
+Supply was 158.15947079508172, Demand was 150.68990076933122 and now Supply is 157.17991020263463 and Demand is 151.6694613617783
+Price was 1.215681926581103 and now Price is 1.2152926051785302
+
+Exchange: 1
+
+Buyer: 7 Seller: 19 Token amount: 17.50016874485061 Transaction price: 0.2770357023892974
+Supply was 73.0330968682566, Demand was 184.61433703443095 and now Supply is 55.532928123405995 and Demand is 202.11450577928156
+Price was 1.0 and now Price is 0.9277035702389298
+
+Buyer: 11 Seller: 5 Token amount: 5.338040382702687 Transaction price: 0.36444467869486274
+Supply was 55.532928123405995, Demand was 202.11450577928156 and now Supply is 50.19488774070331 and Demand is 207.45254616198423
+Price was 0.9277035702389298 and now Price is 0.8713776810845232
+
+Buyer: 21 Seller: 19 Token amount: 13.370556610952741 Transaction price: 0.24388331233243765
+Supply was 50.19488774070331, Demand was 207.45254616198423 and now Supply is 36.82433112975057 and Demand is 220.82310277293698
+Price was 0.8713776810845232 and now Price is 0.8086282442093147
+
+Buyer: 14 Seller: 5 Token amount: 14.435633510941297 Transaction price: 1.3676490354283515
+Supply was 36.82433112975057, Demand was 220.82310277293698 and now Supply is 22.38869761880927 and Demand is 235.25873628387828
+Price was 0.8086282442093147 and now Price is 0.8645303233312185
+
+Buyer: 0 Seller: 5 Token amount: 1.1053228476264225 Transaction price: 0.3350204258234035
+Supply was 22.38869761880927, Demand was 235.25873628387828 and now Supply is 21.28337477118285 and Demand is 236.3640591315047
+Price was 0.8645303233312185 and now Price is 0.811579333580437
+
+Buyer: 17 Seller: 5 Token amount: 0.5210435266122526 Transaction price: 1.5156735743021916
+Supply was 21.28337477118285, Demand was 236.3640591315047 and now Supply is 20.762331244570596 and Demand is 236.88510265811695
+Price was 0.811579333580437 and now Price is 0.8819887576526125
+
+Exchange: 2
+
+Buyer: 3 Seller: 12 Token amount: 193.8651984042964 Transaction price: 4.025185071301624
+Supply was 260.72019101808263, Demand was 37.855231963067475 and now Supply is 66.85499261378624 and Demand is 231.72043036736386
+Price was 1.0 and now Price is 1.3025185071301624
+
+Buyer: 16 Seller: 6 Token amount: 19.676032140646498 Transaction price: 1.207342156907088
+Supply was 66.85499261378624, Demand was 231.72043036736386 and now Supply is 47.17896047313974 and Demand is 251.39646250801036
+Price was 1.3025185071301624 and now Price is 1.293000872107855
+
+
+Tokens after transactions: 865.0722284482507
+End of day 10 token price: 1.1300940783129991
+
+Rebase
+Old token amount: 865.0722284482507
+New token amount: 865.0722284482507 tokens * 1.1300940783129991 price per token = 977.6130026823981 tokens
+
+Wallet: 0, old token amount: 1.1840468083180955, percentage: 0.0013687259507128267
+Wallet: 0, new token amount: 1.3380842865256866, percentage: 0.0013687259507128267
+
+Wallet: 1, old token amount: 6.424465671223519, percentage: 0.0074789996360161886
+Wallet: 1, new token amount: 7.311567291226349, percentage: 0.0074789996360161886
+
+Wallet: 2, old token amount: 9.216079176217695, percentage: 0.010697918519694566
+Wallet: 2, new token amount: 10.45842424649024, percentage: 0.010697918519694566
+
+Wallet: 3, old token amount: 216.77713752034802, percentage: 0.25058848312492765
+Wallet: 3, new token amount: 244.97855942538797, percentage: 0.25058848312492765
+
+Wallet: 4, old token amount: 0.472895045478503, percentage: 5.489311200744811E-4
+Wallet: 4, new token amount: 0.5366422005618254, percentage: 5.489311200744811E-4
+
+Wallet: 5, old token amount: 0.24220152536912876, percentage: 2.8014712094932994E-4
+Wallet: 5, new token amount: 0.2738754681041034, percentage: 2.8014712094932994E-4
+
+Wallet: 6, old token amount: 25.126123459001242, percentage: 0.029721121964758523
+Wallet: 6, new token amount: 29.055755287057355, percentage: 0.029721121964758523
+
+Wallet: 7, old token amount: 65.93649656803177, percentage: 0.07622079914217954
+Wallet: 7, new token amount: 74.5144443162381, percentage: 0.07622079914217954
+
+Wallet: 8, old token amount: 9.18129205449938, percentage: 0.010613324243420227
+Wallet: 8, new token amount: 10.37572378205194, percentage: 0.010613324243420227
+
+Wallet: 9, old token amount: 71.58691114147359, percentage: 0.08275252491908655
+Wallet: 9, new token amount: 80.89994436569818, percentage: 0.08275252491908655
+
+Wallet: 10, old token amount: 89.62112938968849, percentage: 0.10403117437705965
+Wallet: 10, new token amount: 101.70222875533345, percentage: 0.10403117437705965
+
+Wallet: 11, old token amount: 49.48171775184624, percentage: 0.057199521756241746
+Wallet: 11, new token amount: 55.91899621611665, percentage: 0.057199521756241746
+
+Wallet: 12, old token amount: 1.8928519873201992, percentage: 0.0028200717552023338
+Wallet: 12, new token amount: 2.7569388163831743, percentage: 0.0028200717552023338
+
+Wallet: 13, old token amount: 0.6774907318554864, percentage: 7.840486987774596E-4
+Wallet: 13, new token amount: 0.7664962026610593, percentage: 7.840486987774596E-4
+
+Wallet: 14, old token amount: 31.335218493041193, percentage: 0.03622266148717972
+Wallet: 14, new token amount: 35.41174486162983, percentage: 0.03622266148717972
+
+Wallet: 15, old token amount: 50.76785018817095, percentage: 0.058930735549084894
+Wallet: 15, new token amount: 57.611453330423224, percentage: 0.058930735549084894
+
+Wallet: 16, old token amount: 34.619324987662345, percentage: 0.040018999395879114
+Wallet: 16, new token amount: 39.12309416375046, percentage: 0.040018999395879114
+
+Wallet: 17, old token amount: 22.271737166850095, percentage: 0.025745523245845833
+Wallet: 17, new token amount: 25.169158286000826, percentage: 0.025745523245845833
+
+Wallet: 18, old token amount: 20.15998502681829, percentage: 0.023401478334919866
+Wallet: 18, new token amount: 22.877589502208096, percentage: 0.023401478334919866
+
+Wallet: 19, old token amount: 2.3464250300729663, percentage: 0.002754984647395653
+Wallet: 19, new token amount: 2.6933088134843723, percentage: 0.002754984647395653
+
+Wallet: 21, old token amount: 66.67588587002956, percentage: 0.07707551309285635
+Wallet: 21, new token amount: 75.35002378799378, percentage: 0.07707551309285635
+
+Wallet: 22, old token amount: 18.173704689128503, percentage: 0.02109582700493667
+Wallet: 22, new token amount: 20.62355478236456, percentage: 0.02109582700493667
+
+Wallet: 23, old token amount: 70.90125816580533, percentage: 0.08195992870212306
+Wallet: 23, new token amount: 80.12509199811778, percentage: 0.08195992870212306
+
+Rebase finished, token amount: 979.872700185809
+
+Day 11 of the simulation----------------------------
+
+Token amount: 979.872700185809
+
+Wallet 0 wants to buy.
+Wallet 1 wants to buy.
+Wallet 2 wants to buy.
+Wallet 3 wants to buy.
+Wallet 4 wants to sell.
+Wallet 5 wants to sell.
+Wallet 6 wants to sell.
+Wallet 7 wants to buy.
+Wallet 8 wants to sell.
+Wallet 9 wants to sell.
+Wallet 10 wants to buy.
+Wallet 11 wants to sell.
+Wallet 12 wants to sell.
+Wallet 13 wants to buy.
+Wallet 14 wants to sell.
+Wallet 15 wants to sell.
+Wallet 16 wants to buy.
+Wallet 17 wants to buy.
+Wallet 18 wants to buy.
+Wallet 19 wants to sell.
+Wallet 21 wants to sell.
+Wallet 22 wants to sell.
+Wallet 23 wants to sell.
+New buyers
+New Wallet 24 wants to buy.
+
+Exchange: 0
+Buyer: 0
+Buyer: 16
+Buyer: 17
+Seller: 4
+Seller: 9
+Seller: 11
+Seller: 19
+
+Exchange: 1
+Buyer: 1
+Buyer: 13
+Seller: 5
+Seller: 14
+Seller: 15
+Seller: 21
+
+Exchange: 2
+Buyer: 2
+Buyer: 3
+Buyer: 7
+Buyer: 10
+Buyer: 18
+Buyer: 24
+Seller: 6
+Seller: 8
+Seller: 12
+Seller: 22
+Seller: 23
+
+Exchange: 0
+
+Buyer: 16 Seller: 11 Token amount: 10.55232669548748 Transaction price: 0.08538592197061756
+Supply was 140.04889159586102, Demand was 65.63033673627697 and now Supply is 129.49656490037353 and Demand is 76.18266343176445
+Price was 1.0 and now Price is 0.9085385921970618
+
+Buyer: 17 Seller: 19 Token amount: 0.19280072949145877 Transaction price: 2.3604518998272104
+Supply was 129.49656490037353, Demand was 76.18266343176445 and now Supply is 129.30376417088206 and Demand is 76.3754641612559
+Price was 0.9085385921970618 and now Price is 1.0537299229600767
+
+Buyer: 0 Seller: 4 Token amount: 0.49753723250444093 Transaction price: 2.875582435906723
+Supply was 129.30376417088206, Demand was 76.3754641612559 and now Supply is 128.80622693837762 and Demand is 76.87300139376035
+Price was 1.0537299229600767 and now Price is 1.2359151742547414
+
+Exchange: 1
+
+Buyer: 1 Seller: 15 Token amount: 42.56112342384671 Transaction price: 1.802101533727158
+Supply was 168.64709744815093, Demand was 8.078063493887408 and now Supply is 126.08597402430422 and Demand is 50.639186917734115
+Price was 1.0 and now Price is 1.0802101533727158
+
+Buyer: 13 Seller: 21 Token amount: 64.08494796786638 Transaction price: 2.158082491464444
+Supply was 126.08597402430422, Demand was 50.639186917734115 and now Supply is 62.00102605643784 and Demand is 114.7241348856005
+Price was 1.0802101533727158 and now Price is 1.1879973871818885
+
+Exchange: 2
+
+Buyer: 3 Seller: 6 Token amount: 18.441040434238094 Transaction price: 0.5284223682158626
+Supply was 142.93706466597482, Demand was 474.5312462456578 and now Supply is 124.49602423173673 and Demand is 492.97228667989594
+Price was 1.0 and now Price is 0.9528422368215863
+
+Buyer: 7 Seller: 22 Token amount: 14.57417495338707 Transaction price: 0.01929919317533868
+Supply was 124.49602423173673, Demand was 492.97228667989594 and now Supply is 109.92184927834965 and Demand is 507.546461633283
+Price was 0.9528422368215863 and now Price is 0.8594879324569615
+
+Buyer: 24 Seller: 23 Token amount: 75.32870615126335 Transaction price: 1.948485504832782
+Supply was 109.92184927834965, Demand was 507.546461633283 and now Supply is 34.59314312708631 and Demand is 582.8751677845463
+Price was 0.8594879324569615 and now Price is 0.9683876896945436
+
+Buyer: 10 Seller: 12 Token amount: 1.5778949935567834 Transaction price: 0.49379467644006303
+Supply was 34.59314312708631, Demand was 582.8751677845463 and now Supply is 33.015248133529525 and Demand is 584.4530627781031
+Price was 0.9683876896945436 and now Price is 0.9209283883690955
+
+Buyer: 2 Seller: 23 Token amount: 0.46379838719256106 Transaction price: 0.33811694243690293
+Supply was 33.015248133529525, Demand was 584.4530627781031 and now Supply is 32.551449746336964 and Demand is 584.9168611652957
+Price was 0.9209283883690955 and now Price is 0.8626472437758763
+
+Buyer: 18 Seller: 12 Token amount: 0.9651183102216998 Transaction price: 1.332171769010618
+Supply was 32.551449746336964, Demand was 584.9168611652957 and now Supply is 31.586331436115263 and Demand is 585.8819794755174
+Price was 0.8626472437758763 and now Price is 0.9095996962993506
+
+
+Tokens after transactions: 999.8727001858091
+End of day 11 token price: 1.1111707525786603
+
+Rebase
+Old token amount: 999.8727001858091
+New token amount: 999.8727001858091 tokens * 1.1111707525786603 price per token = 1111.0293007483226 tokens
+
+Wallet: 0, old token amount: 1.8356215190301275, percentage: 0.0018358552230589042
+Wallet: 0, new token amount: 2.03968894475029, percentage: 0.0018358552230589042
+
+Wallet: 1, old token amount: 49.872690715073055, percentage: 0.049879040307636235
+Wallet: 1, new token amount: 55.41707527499049, percentage: 0.049879040307636235
+
+Wallet: 2, old token amount: 10.922222633682802, percentage: 0.010923613207614423
+Wallet: 2, new token amount: 12.136454343700994, percentage: 0.010923613207614423
+
+Wallet: 3, old token amount: 263.4195998596261, percentage: 0.2634531373950645
+Wallet: 3, new token amount: 292.70415501999025, percentage: 0.2634531373950645
+
+Wallet: 4, old token amount: 0.039104968057384504, percentage: 3.912941756709604E-5
+Wallet: 4, new token amount: 0.04347392943825984, percentage: 3.912941756709604E-5
+
+Wallet: 5, old token amount: 0.2738754681041034, percentage: 2.8014712094932994E-4
+Wallet: 5, new token amount: 0.3112516598949898, percentage: 2.8014712094932994E-4
+
+Wallet: 6, old token amount: 10.614714852819262, percentage: 0.010815541507501558
+Wallet: 6, new token amount: 12.016383518293916, percentage: 0.010815541507501558
+
+Wallet: 7, old token amount: 89.08861926962517, percentage: 0.08909996167819122
+Wallet: 7, new token amount: 98.99266812002313, percentage: 0.08909996167819122
+
+Wallet: 8, old token amount: 10.37572378205194, percentage: 0.010613324243420227
+Wallet: 8, new token amount: 11.791714212782395, percentage: 0.010613324243420227
+
+Wallet: 9, old token amount: 80.89994436569818, percentage: 0.08275252491908655
+Wallet: 9, new token amount: 91.94047989601087, percentage: 0.08275252491908655
+
+Wallet: 10, old token amount: 103.28012374889023, percentage: 0.10329327296334563
+Wallet: 10, new token amount: 114.76185283247152, percentage: 0.10329327296334563
+
+Wallet: 11, old token amount: 45.36666952062917, percentage: 0.04585639873216762
+Wallet: 11, new token amount: 50.94780261823646, percentage: 0.04585639873216762
+
+Wallet: 12, old token amount: 0.21392551260469106, percentage: 2.1415946428499048E-4
+Wallet: 12, new token amount: 0.23793743985318835, percentage: 2.1415946428499048E-4
+
+Wallet: 13, old token amount: 64.85144417052744, percentage: 0.06485970079838756
+Wallet: 13, new token amount: 72.06102802477795, percentage: 0.06485970079838756
+
+Wallet: 14, old token amount: 35.41174486162983, percentage: 0.03622266148717972
+Wallet: 14, new token amount: 40.244438263344485, percentage: 0.03622266148717972
+
+Wallet: 15, old token amount: 15.050329906576515, percentage: 0.01572145398834847
+Wallet: 15, new token amount: 17.466996031421726, percentage: 0.01572145398834847
+
+Wallet: 16, old token amount: 49.67542085923794, percentage: 0.04968174533618792
+Wallet: 16, new token amount: 55.1978747808211, percentage: 0.04968174533618792
+
+Wallet: 17, old token amount: 25.361959015492285, percentage: 0.025365187999211503
+Wallet: 17, new token amount: 28.1814670861137, percentage: 0.025365187999211503
+
+Wallet: 18, old token amount: 23.842707812429797, percentage: 0.023845743371130185
+Wallet: 18, new token amount: 26.493319583450717, percentage: 0.023845743371130185
+
+Wallet: 19, old token amount: 2.5005080839929135, percentage: 0.0025013087542850774
+Wallet: 19, new token amount: 2.7790273162290076, percentage: 0.0025013087542850774
+
+Wallet: 21, old token amount: 11.265075820127393, percentage: 0.012038067172206143
+Wallet: 21, new token amount: 13.374645352697529, percentage: 0.012038067172206143
+
+Wallet: 22, old token amount: 6.049379828977491, percentage: 0.0061396416152663
+Wallet: 22, new token amount: 6.82132173065462, percentage: 0.0061396416152663
+
+Wallet: 23, old token amount: 4.332587459661873, percentage: 0.004335149959005368
+Wallet: 23, new token amount: 4.816478627592853, percentage: 0.004335149959005368
+
+Wallet: 24, old token amount: 95.32870615126335, percentage: 0.09534084302286497
+Wallet: 24, new token amount: 105.92647015644926, percentage: 0.09534084302286497
+
+Rebase finished, token amount: 1116.7040047639894
+
+Day 12 of the simulation----------------------------
+
+Token amount: 1116.7040047639894
+
+Wallet 0 wants to sell.
+Wallet 1 wants to buy.
+Wallet 2 wants to buy.
+Wallet 3 wants to buy.
+Wallet 4 wants to sell.
+Wallet 5 wants to sell.
+Wallet 6 wants to sell.
+Wallet 7 wants to buy.
+Wallet 8 wants to buy.
+Wallet 9 does nothing.
+Wallet 10 wants to sell.
+Wallet 11 wants to buy.
+Wallet 12 wants to buy.
+Wallet 13 wants to buy.
+Wallet 14 wants to sell.
+Wallet 15 wants to sell.
+Wallet 16 wants to sell.
+Wallet 17 wants to buy.
+Wallet 18 wants to sell.
+Wallet 19 wants to buy.
+Wallet 21 wants to buy.
+Wallet 22 wants to sell.
+Wallet 23 wants to sell.
+Wallet 24 wants to buy.
+
+Exchange: 0
+Buyer: 1
+Buyer: 2
+Buyer: 7
+Buyer: 8
+Buyer: 13
+Buyer: 17
+Seller: 14
+Seller: 15
+Seller: 18
+
+Exchange: 1
+Buyer: 12
+Buyer: 19
+Buyer: 21
+Seller: 16
+Seller: 22
+
+Exchange: 2
+Buyer: 3
+Buyer: 11
+Buyer: 24
+Seller: 0
+Seller: 4
+Seller: 5
+Seller: 6
+Seller: 10
+Seller: 23
+
+Exchange: 0
+
+Buyer: 2 Seller: 15 Token amount: 12.499967079749688 Transaction price: 2.726804206235167
+Supply was 84.20475387821692, Demand was 278.58040706238864 and now Supply is 71.70478679846724 and Demand is 291.08037414213834
+Price was 1.0 and now Price is 1.1726804206235166
+
+Buyer: 7 Seller: 14 Token amount: 2.5580346594799894 Transaction price: 0.8239498492922578
+Supply was 71.70478679846724, Demand was 291.08037414213834 and now Supply is 69.14675213898725 and Demand is 293.6384088016183
+Price was 1.1726804206235166 and now Price is 1.137807363490391
+
+Buyer: 17 Seller: 15 Token amount: 0.03845425862395346 Transaction price: 0.0593214162085004
+Supply was 69.14675213898725, Demand was 293.6384088016183 and now Supply is 69.1082978803633 and Demand is 293.6768630602423
+Price was 1.137807363490391 and now Price is 1.0299587687622018
+
+Buyer: 8 Seller: 14 Token amount: 32.86711828850816 Transaction price: 1.5779689493891733
+Supply was 69.1082978803633, Demand was 293.6768630602423 and now Supply is 36.241179591855136 and Demand is 326.54398134875044
+Price was 1.0299587687622018 and now Price is 1.084759786824899
+
+Buyer: 1 Seller: 14 Token amount: 0.12306806895993402 Transaction price: 0.04280649454883467
+Supply was 36.241179591855136, Demand was 326.54398134875044 and now Supply is 36.118111522895205 and Demand is 326.66704941771036
+Price was 1.084759786824899 and now Price is 0.9805644575972926
+
+Buyer: 13 Seller: 14 Token amount: 1.8853986487754946 Transaction price: 0.3008735715725549
+Supply was 36.118111522895205, Demand was 326.66704941771036 and now Supply is 34.23271287411971 and Demand is 328.55244806648585
+Price was 0.9805644575972926 and now Price is 0.9125953689948189
+
+Exchange: 1
+
+Buyer: 19 Seller: 22 Token amount: 3.924888186859296 Transaction price: 2.034964980371561
+Supply was 62.01919651147572, Demand was 16.391610108779723 and now Supply is 58.09430832461642 and Demand is 20.31649829563902
+Price was 1.0 and now Price is 1.1034964980371562
+
+Buyer: 21 Seller: 22 Token amount: 2.3468195337421944 Transaction price: 0.39697632311146946
+Supply was 58.09430832461642, Demand was 20.31649829563902 and now Supply is 55.74748879087423 and Demand is 22.663317829381214
+Price was 1.1034964980371562 and now Price is 1.0328444805445876
+
+Buyer: 12 Seller: 16 Token amount: 50.041918449242374 Transaction price: 2.0095872693297077
+Supply was 55.74748879087423, Demand was 22.663317829381214 and now Supply is 5.705570341631855 and Demand is 72.70523627862359
+Price was 1.0328444805445876 and now Price is 1.1305187594230997
+
+Exchange: 2
+
+Buyer: 11 Seller: 10 Token amount: 94.54546162036026 Transaction price: 0.8253883990916104
+Supply was 133.98912951244182, Demand was 449.5784277946759 and now Supply is 39.443667892081564 and Demand is 544.1238894150362
+Price was 1.0 and now Price is 0.982538839909161
+
+Buyer: 24 Seller: 0 Token amount: 2.0304083049434762 Transaction price: 1.0931228161457276
+Supply was 39.443667892081564, Demand was 544.1238894150362 and now Supply is 37.413259587138086 and Demand is 546.1542977199796
+Price was 0.982538839909161 and now Price is 0.9935972375328177
+
+Buyer: 3 Seller: 10 Token amount: 10.895600837492536 Transaction price: 0.836402998629417
+Supply was 37.413259587138086, Demand was 546.1542977199796 and now Supply is 26.51765874964555 and Demand is 557.0498985574721
+Price was 0.9935972375328177 and now Price is 0.9778778136424777
+
+
+Tokens after transactions: 1116.7040047639896
+End of day 12 token price: 1.006997314020132
+
+Rebase
+Old token amount: 1116.7040047639896
+New token amount: 1116.7040047639896 tokens * 1.006997314020132 price per token = 1124.5179333528622 tokens
+
+Wallet: 0, old token amount: 0.009280639806813706, percentage: 8.325881079712721E-6
+Wallet: 0, new token amount: 0.009362602585100247, percentage: 8.325881079712721E-6
+
+Wallet: 1, old token amount: 55.54014334395042, percentage: 0.0497357787802405
+Wallet: 1, new token amount: 55.92877516765118, percentage: 0.0497357787802405
+
+Wallet: 2, old token amount: 24.63642142345068, percentage: 0.02206172926608021
+Wallet: 2, new token amount: 24.808810200482874, percentage: 0.02206172926608021
+
+Wallet: 3, old token amount: 303.59975585748276, percentage: 0.2718712877918327
+Wallet: 3, new token amount: 305.724138685653, percentage: 0.2718712877918327
+
+Wallet: 4, old token amount: 0.04347392943825984, percentage: 3.912941756709604E-5
+Wallet: 4, new token amount: 0.04400173177585202, percentage: 3.912941756709604E-5
+
+Wallet: 5, old token amount: 0.3112516598949898, percentage: 2.8014712094932994E-4
+Wallet: 5, new token amount: 0.3150304614846948, percentage: 2.8014712094932994E-4
+
+Wallet: 6, old token amount: 12.016383518293916, percentage: 0.010815541507501558
+Wallet: 6, new token amount: 12.162270384107751, percentage: 0.010815541507501558
+
+Wallet: 7, old token amount: 101.55070277950311, percentage: 0.09093788716282557
+Wallet: 7, new token amount: 102.26128493581639, percentage: 0.09093788716282557
+
+Wallet: 8, old token amount: 44.658832501290554, percentage: 0.03999164712472667
+Wallet: 8, new token amount: 44.97132437607457, percentage: 0.03999164712472667
+
+Wallet: 9, old token amount: 91.94047989601087, percentage: 0.08275252491908655
+Wallet: 9, new token amount: 93.05669830174244, percentage: 0.08275252491908655
+
+Wallet: 10, old token amount: 9.320790374618726, percentage: 0.00842893790779897
+Wallet: 10, new token amount: 9.478491836437696, percentage: 0.00842893790779897
+
+Wallet: 11, old token amount: 145.4932642385967, percentage: 0.1302881189804151
+Wallet: 11, new token amount: 146.5113262962882, percentage: 0.1302881189804151
+
+Wallet: 12, old token amount: 50.279855889095565, percentage: 0.0450252311038519
+Wallet: 12, new token amount: 50.63167982963855, percentage: 0.0450252311038519
+
+Wallet: 13, old token amount: 73.94642667355345, percentage: 0.06621846644955992
+Wallet: 13, new token amount: 74.46385304165497, percentage: 0.06621846644955992
+
+Wallet: 14, old token amount: 2.810818597620911, percentage: 0.0025213237222651975
+Wallet: 14, new token amount: 2.835273741475206, percentage: 0.0025213237222651975
+
+Wallet: 15, old token amount: 4.928574693048085, percentage: 0.004413653390504952
+Wallet: 15, new token amount: 4.963232389226482, percentage: 0.004413653390504952
+
+Wallet: 16, old token amount: 5.155956331578729, percentage: 0.004833729817277227
+Wallet: 16, new token amount: 5.435615864510695, percentage: 0.004833729817277227
+
+Wallet: 17, old token amount: 28.219921344737653, percentage: 0.025270726373639012
+Wallet: 17, new token amount: 28.417384996010213, percentage: 0.025270726373639012
+
+Wallet: 18, old token amount: 26.493319583450717, percentage: 0.023845743371130185
+Wallet: 18, new token amount: 26.81496605496603, percentage: 0.023845743371130185
+
+Wallet: 19, old token amount: 6.703915503088304, percentage: 0.0060033056875310005
+Wallet: 19, new token amount: 6.750824905027844, percentage: 0.0060033056875310005
+
+Wallet: 21, old token amount: 15.721464886439723, percentage: 0.01407845303622994
+Wallet: 21, new token amount: 15.831472913106621, percentage: 0.01407845303622994
+
+Wallet: 22, old token amount: 0.549614010053129, percentage: 4.932117074648452E-4
+Wallet: 22, new token amount: 0.5546254099838042, percentage: 4.932117074648452E-4
+
+Wallet: 23, old token amount: 4.816478627592853, percentage: 0.004335149959005368
+Wallet: 23, new token amount: 4.874953872675462, percentage: 0.004335149959005368
+
+Wallet: 24, old token amount: 107.95687846139273, percentage: 0.09667456908978216
+Wallet: 24, new token amount: 108.71228664062032, percentage: 0.09667456908978216
+
+Rebase finished, token amount: 1125.5576846389959
+
+Day 13 of the simulation----------------------------
+
+Token amount: 1125.5576846389959
+
+Wallet 0 does nothing.
+Wallet 1 wants to buy.
+Wallet 2 wants to sell.
+Wallet 3 wants to sell.
+Wallet 4 wants to sell.
+Wallet 5 wants to buy.
+Wallet 6 wants to buy.
+Wallet 7 wants to buy.
+Wallet 8 wants to sell.
+Wallet 9 wants to sell.
+Wallet 10 wants to buy.
+Wallet 11 wants to buy.
+Wallet 12 wants to buy.
+Wallet 13 wants to buy.
+Wallet 14 wants to sell.
 Wallet 15 wants to buy.
+Wallet 16 wants to sell.
+Wallet 17 wants to buy.
+Wallet 18 wants to sell.
+Wallet 19 does nothing.
+Wallet 21 wants to sell.
+Wallet 22 wants to sell.
+Wallet 23 wants to sell.
+Wallet 24 does nothing.
+
+Exchange: 0
+Buyer: 6
+Buyer: 7
+Buyer: 10
+Seller: 9
+Seller: 14
+Seller: 21
+Seller: 22
+
+Exchange: 1
+Buyer: 13
+Buyer: 15
+Buyer: 17
+Seller: 3
+Seller: 8
+Seller: 16
+Seller: 18
+
+Exchange: 2
+Buyer: 1
+Buyer: 5
+Buyer: 11
+Buyer: 12
+Seller: 2
+Seller: 4
+Seller: 23
+
+Exchange: 0
+
+Buyer: 7 Seller: 21 Token amount: 7.36049159540292 Transaction price: 1.9772740011589298
+Supply was 112.27807036630807, Demand was 123.90204715636185 and now Supply is 104.91757877090515 and Demand is 131.26253875176477
+Price was 1.0 and now Price is 1.097727400115893
+
+Buyer: 10 Seller: 22 Token amount: 0.023397904181621056 Transaction price: 0.17961233558354928
+Supply was 104.91757877090515, Demand was 131.26253875176477 and now Supply is 104.89418086672353 and Demand is 131.2859366559464
+Price was 1.097727400115893 and now Price is 1.0059158936626587
+
+Buyer: 6 Seller: 9 Token amount: 30.839650326963 Transaction price: 0.16342234785514798
+Supply was 104.89418086672353, Demand was 131.2859366559464 and now Supply is 74.05453053976053 and Demand is 162.1255869829094
+Price was 1.0059158936626587 and now Price is 0.9216665390819075
+
+Exchange: 1
+
+Buyer: 15 Seller: 16 Token amount: 5.097990522914386 Transaction price: 0.14415135298109116
+Supply was 382.94604498120424, Demand was 107.84447042689166 and now Supply is 377.8480544582899 and Demand is 112.94246094980605
+Price was 1.0 and now Price is 0.9144151352981091
+
+Buyer: 17 Seller: 18 Token amount: 23.52225876544305 Transaction price: 2.4154310503754752
+Supply was 377.8480544582899, Demand was 112.94246094980605 and now Supply is 354.32579569284684 and Demand is 136.4647197152491
+Price was 0.9144151352981091 and now Price is 1.0645167268058457
+
+Buyer: 13 Seller: 3 Token amount: 86.03088852637862 Transaction price: 1.0040096321533931
+Supply was 354.32579569284684, Demand was 136.4647197152491 and now Supply is 268.2949071664682 and Demand is 222.4956082416277
+Price was 1.0645167268058457 and now Price is 1.0584660173406006
+
+Exchange: 2
+
+Buyer: 5 Seller: 4 Token amount: 0.020836876614664462 Transaction price: 1.8679299880354927
+Supply was 29.727765804934187, Demand was 253.3868117550626 and now Supply is 29.706928928319524 and Demand is 253.40764863167726
+Price was 1.0 and now Price is 1.0867929988035492
+
+Buyer: 1 Seller: 2 Token amount: 2.704547475122714 Transaction price: 0.2852132959399012
+Supply was 29.706928928319524, Demand was 253.40764863167726 and now Supply is 27.00238145319681 and Demand is 256.11219610679996
+Price was 1.0867929988035492 and now Price is 1.0066350285171843
+
+Buyer: 12 Seller: 4 Token amount: 0.019603052204330507 Transaction price: 0.19099837978836343
+Supply was 27.00238145319681, Demand was 256.11219610679996 and now Supply is 26.98277840099248 and Demand is 256.1317991590043
+Price was 1.0066350285171843 and now Price is 0.9250713636443022
+
+Buyer: 11 Seller: 2 Token amount: 16.061653939120745 Transaction price: 1.8046198749288858
+Supply was 26.98277840099248, Demand was 256.1317991590043 and now Supply is 10.921124461871734 and Demand is 272.193453098125
+Price was 0.9250713636443022 and now Price is 1.0130262147727607
+
+
+Tokens after transactions: 1125.5576846389959
+End of day 13 token price: 0.997719590398423
+
+Rebase
+Old token amount: 1125.5576846389959
+New token amount: 1125.5576846389959 tokens * 0.997719590398423 price per token = 1122.9909520878161 tokens
+
+Wallet: 0, old token amount: 0.009362602585100247, percentage: 8.325881079712721E-6
+Wallet: 0, new token amount: 0.009349889120676523, percentage: 8.325881079712721E-6
+
+Wallet: 1, old token amount: 58.6333226427739, percentage: 0.05209268564638655
+Wallet: 1, new token amount: 58.499614650846944, percentage: 0.05209268564638655
+
+Wallet: 2, old token amount: 6.042608786239416, percentage: 0.005446264447136156
+Wallet: 2, new token amount: 6.116105696811456, percentage: 0.005446264447136156
+
+Wallet: 3, old token amount: 219.69325015927436, percentage: 0.21133967010839214
+Wallet: 3, new token amount: 237.33253734894825, percentage: 0.21133967010839214
+
+Wallet: 4, old token amount: 0.003561802956857048, percentage: 3.1645334930254807E-6
+Wallet: 4, new token amount: 0.003553742480246467, percentage: 3.1645334930254807E-6
+
+Wallet: 5, old token amount: 0.3358673380993593, percentage: 2.984008218175715E-4
+Wallet: 5, new token amount: 0.3351014229967014, percentage: 2.984008218175715E-4
+
+Wallet: 6, old token amount: 43.00192071107075, percentage: 0.03820499055529341
+Wallet: 6, new token amount: 42.90385871819497, percentage: 0.03820499055529341
+
+Wallet: 7, old token amount: 109.62177653121931, percentage: 0.0973932993637538
+Wallet: 7, new token amount: 109.37179397947557, percentage: 0.0973932993637538
+
+Wallet: 8, old token amount: 44.97132437607457, percentage: 0.03999164712472667
+Wallet: 8, new token amount: 44.91025788015678, percentage: 0.03999164712472667
+
+Wallet: 9, old token amount: 62.21704797477945, percentage: 0.05683385677836145
+Wallet: 9, new token amount: 63.8239069343547, percentage: 0.05683385677836145
+
+Wallet: 10, old token amount: 9.501889740619317, percentage: 0.00844193937840413
+Wallet: 10, new token amount: 9.480221540021681, percentage: 0.00844193937840413
+
+Wallet: 11, old token amount: 162.57298023540892, percentage: 0.14443771514700424
+Wallet: 11, new token amount: 162.20224725032307, percentage: 0.14443771514700424
+
+Wallet: 12, old token amount: 50.65128288184288, percentage: 0.0450010546532659
+Wallet: 12, new token amount: 50.53577721002692, percentage: 0.0450010546532659
+
+Wallet: 13, old token amount: 160.4947415680336, percentage: 0.14259130718787608
+Wallet: 13, new token amount: 160.12874781835922, percentage: 0.14259130718787608
+
+Wallet: 14, old token amount: 2.835273741475206, percentage: 0.0025213237222651975
+Wallet: 14, new token amount: 2.8314237273881906, percentage: 0.0025213237222651975
+
+Wallet: 15, old token amount: 10.061222912140867, percentage: 0.008938878077464185
+Wallet: 15, new token amount: 10.038279202808413, percentage: 0.008938878077464185
+
+Wallet: 16, old token amount: 0.3376253415963095, percentage: 3.013275206321978E-4
+Wallet: 16, new token amount: 0.33838807928501285, percentage: 3.013275206321978E-4
+
+Wallet: 17, old token amount: 51.93964376145326, percentage: 0.046145696902342284
+Wallet: 17, new token amount: 51.82120009911715, percentage: 0.046145696902342284
+
+Wallet: 18, old token amount: 3.29270728952298, percentage: 0.002987841599477569
+Wallet: 18, new token amount: 3.3553190824848986, percentage: 0.002987841599477569
+
+Wallet: 19, old token amount: 6.750824905027844, percentage: 0.0060033056875310005
+Wallet: 19, new token amount: 6.74165796971464, percentage: 0.0060033056875310005
+
+Wallet: 21, old token amount: 8.4709813177037, percentage: 0.007575570186012315
+Wallet: 21, new token amount: 8.507296775798045, percentage: 0.007575570186012315
+
+Wallet: 22, old token amount: 0.5312275058021831, percentage: 4.719780748246055E-4
+Wallet: 22, new token amount: 0.5300271076118582, percentage: 4.719780748246055E-4
+
+Wallet: 23, old token amount: 4.874953872675462, percentage: 0.004335149959005368
+Wallet: 23, new token amount: 4.8683341799068955, percentage: 0.004335149959005368
+
+Wallet: 24, old token amount: 108.71228664062032, percentage: 0.09667456908978216
+Wallet: 24, new token amount: 108.56466638481382, percentage: 0.09667456908978216
+
+Rebase finished, token amount: 1143.249666691046
+
+Day 14 of the simulation----------------------------
+
+Token amount: 1143.249666691046
+
+Wallet 0 wants to buy.
+Wallet 1 does nothing.
+Wallet 2 wants to sell.
+Wallet 3 wants to buy.
+Wallet 4 does nothing.
+Wallet 5 wants to buy.
+Wallet 6 wants to buy.
+Wallet 7 does nothing.
+Wallet 8 wants to buy.
+Wallet 9 wants to sell.
+Wallet 10 wants to sell.
+Wallet 11 wants to buy.
+Wallet 12 wants to buy.
+Wallet 13 wants to sell.
+Wallet 14 wants to sell.
+Wallet 15 wants to sell.
+Wallet 16 wants to sell.
+Wallet 17 wants to buy.
+Wallet 18 wants to buy.
+Wallet 19 wants to buy.
+Wallet 21 wants to buy.
+Wallet 22 wants to sell.
+Wallet 23 wants to sell.
+Wallet 24 wants to sell.
+
+Exchange: 0
+Buyer: 3
+Buyer: 5
+Buyer: 11
+Buyer: 19
+Seller: 10
+Seller: 13
+Seller: 14
+
+Exchange: 1
+Buyer: 0
+Buyer: 8
+Seller: 15
+Seller: 16
+Seller: 24
+
+Exchange: 2
+Buyer: 6
+Buyer: 12
+Buyer: 17
+Buyer: 18
+Buyer: 21
+Seller: 2
+Seller: 9
+Seller: 22
+Seller: 23
+
+Exchange: 0
+
+Buyer: 5 Seller: 13 Token amount: 152.24164800893624 Transaction price: 0.6923903605490892
+Supply was 172.4403930857691, Demand was 406.61154399198267 and now Supply is 20.198745076832864 and Demand is 558.8531920009189
+Price was 1.0 and now Price is 0.9692390360549089
+
+Buyer: 3 Seller: 10 Token amount: 3.9327841897602336 Transaction price: 1.876744147086457
+Supply was 20.198745076832864, Demand was 558.8531920009189 and now Supply is 16.26596088707263 and Demand is 562.7859761906791
+Price was 0.9692390360549089 and now Price is 1.0599895471580638
+
+Buyer: 19 Seller: 13 Token amount: 5.20738330788237 Transaction price: 1.2447755336477273
+Supply was 16.26596088707263, Demand was 562.7859761906791 and now Supply is 11.05857757919026 and Demand is 567.9933594985615
+Price was 1.0599895471580638 and now Price is 1.0784681458070302
+
+Buyer: 11 Seller: 10 Token amount: 1.8375807683991254 Transaction price: 0.8252461443822017
+Supply was 11.05857757919026, Demand was 567.9933594985615 and now Supply is 9.220996810791135 and Demand is 569.8309402669606
+Price was 1.0784681458070302 and now Price is 1.0531459456645473
+
+Exchange: 1
+
+Buyer: 0 Seller: 16 Token amount: 0.24714997555874405 Transaction price: 1.125026641521598
+Supply was 118.94133366690724, Demand was 44.919607769277455 and now Supply is 118.6941836913485 and Demand is 45.1667577448362
+Price was 1.0 and now Price is 1.0125026641521597
+
+Buyer: 8 Seller: 15 Token amount: 0.6942038280069468 Transaction price: 1.2286517529652545
+Supply was 118.6941836913485, Demand was 45.1667577448362 and now Supply is 117.99997986334155 and Demand is 45.860961572843145
+Price was 1.0125026641521597 and now Price is 1.0341175730334693
+
+Exchange: 2
+
+Buyer: 12 Seller: 22 Token amount: 0.4638052589943786 Transaction price: 2.543830692868104
+Supply was 75.33837391868491, Demand was 157.123451885622 and now Supply is 74.87456865969052 and Demand is 157.58725714461636
+Price was 1.0 and now Price is 1.1543830692868104
+
+Buyer: 21 Seller: 23 Token amount: 1.7377835788468303 Transaction price: 0.9608538108067128
+Supply was 74.87456865969052, Demand was 157.58725714461636 and now Supply is 73.1367850808437 and Demand is 159.3250407234632
+Price was 1.1543830692868104 and now Price is 1.1350301434388006
+
+Buyer: 17 Seller: 2 Token amount: 2.50628722789845 Transaction price: 0.21561599044091473
+Supply was 73.1367850808437, Demand was 159.3250407234632 and now Supply is 70.63049785294524 and Demand is 161.83132795136163
+Price was 1.1350301434388006 and now Price is 1.043088728139012
+
+Buyer: 6 Seller: 2 Token amount: 1.8887305031809276 Transaction price: 2.2452009516545086
+Supply was 70.63049785294524, Demand was 161.83132795136163 and now Supply is 68.74176734976432 and Demand is 163.72005845454257
+Price was 1.043088728139012 and now Price is 1.1632999504905617
+
+Buyer: 18 Seller: 2 Token amount: 0.17711581575878754 Transaction price: 1.5109635739582326
+Supply was 68.74176734976432, Demand was 163.72005845454257 and now Supply is 68.56465153400553 and Demand is 163.89717427030135
+Price was 1.1632999504905617 and now Price is 1.1980663128373288
+
+
+Tokens after transactions: 1143.249666691046
+End of day 14 token price: 1.095109943845115
+
+Rebase
+Old token amount: 1143.249666691046
+New token amount: 1143.249666691046 tokens * 1.095109943845115 price per token = 1251.984078290978 tokens
+
+Wallet: 0, old token amount: 0.25649986467942054, percentage: 2.2436032316704586E-4
+Wallet: 0, new token amount: 0.28089555240535985, percentage: 2.2436032316704586E-4
+
+Wallet: 1, old token amount: 58.499614650846944, percentage: 0.05209268564638655
+Wallet: 1, new token amount: 65.21921302469292, percentage: 0.05209268564638655
+
+Wallet: 2, old token amount: 1.5439721499732908, percentage: 0.0013507210446012563
+Wallet: 2, new token amount: 1.691081242053331, percentage: 0.0013507210446012563
+
+Wallet: 3, old token amount: 241.2653215387085, percentage: 0.21103467472421183
+Wallet: 3, new token amount: 264.2120527220287, percentage: 0.21103467472421183
+
+Wallet: 4, old token amount: 0.003553742480246467, percentage: 3.1645334930254807E-6
+Wallet: 4, new token amount: 0.003961945548486436, percentage: 3.1645334930254807E-6
+
+Wallet: 5, old token amount: 152.57674943193294, percentage: 0.13345881820682443
+Wallet: 5, new token amount: 167.08831550247427, percentage: 0.13345881820682443
+
+Wallet: 6, old token amount: 44.7925892213759, percentage: 0.03918005885015554
+Wallet: 6, new token amount: 49.05280986689826, percentage: 0.03918005885015554
+
+Wallet: 7, old token amount: 109.37179397947557, percentage: 0.0973932993637538
+Wallet: 7, new token amount: 121.93486013564659, percentage: 0.0973932993637538
+
+Wallet: 8, old token amount: 45.604461708163726, percentage: 0.03989020337102618
+Wallet: 8, new token amount: 49.94189950031388, percentage: 0.03989020337102618
+
+Wallet: 9, old token amount: 63.8239069343547, percentage: 0.05683385677836145
+Wallet: 9, new token amount: 71.15508379437831, percentage: 0.05683385677836145
+
+Wallet: 10, old token amount: 3.7098565818623213, percentage: 0.003250234185897465
+Wallet: 10, new token amount: 4.069241451460664, percentage: 0.003250234185897465
+
+Wallet: 11, old token amount: 164.0398280187222, percentage: 0.14348556819921002
+Wallet: 11, new token amount: 179.64164684994523, percentage: 0.14348556819921002
+
+Wallet: 12, old token amount: 50.9995824690213, percentage: 0.04460931321907267
+Wallet: 12, new token amount: 55.85014989377424, percentage: 0.04460931321907267
+
+Wallet: 13, old token amount: 2.6797165015406073, percentage: 0.002354672177534885
+Wallet: 13, new token amount: 2.9480120758684234, percentage: 0.002354672177534885
+
+Wallet: 14, old token amount: 2.8314237273881906, percentage: 0.0025213237222651975
+Wallet: 14, new token amount: 3.156657156493371, percentage: 0.0025213237222651975
+
+Wallet: 15, old token amount: 9.344075374801466, percentage: 0.008178224758898697
+Wallet: 15, new token amount: 10.23900718682624, percentage: 0.008178224758898697
+
+Wallet: 16, old token amount: 0.09123810372626881, percentage: 7.982318708138027E-5
+Wallet: 16, new token amount: 0.09993735930433018, percentage: 7.982318708138027E-5
+
+Wallet: 17, old token amount: 54.3274873270156, percentage: 0.0475202301910639
+Wallet: 17, new token amount: 59.49457159593424, percentage: 0.0475202301910639
+
+Wallet: 18, old token amount: 3.532434898243686, percentage: 0.0030898193117062135
+Wallet: 18, new token amount: 3.868404583052168, percentage: 0.0030898193117062135
+
+Wallet: 19, old token amount: 11.949041277597011, percentage: 0.010451821352532389
+Wallet: 19, new token amount: 13.085513922512225, percentage: 0.010451821352532389
+
+Wallet: 21, old token amount: 10.245080354644875, percentage: 0.008961367453793032
+Wallet: 21, new token amount: 11.219489371863839, percentage: 0.008961367453793032
+
+Wallet: 22, old token amount: 0.06622184861747965, percentage: 5.794773181258605E-5
+Wallet: 22, new token amount: 0.07254963760243333, percentage: 5.794773181258605E-5
+
+Wallet: 23, old token amount: 3.130550601060065, percentage: 0.002742459931757332
+Wallet: 23, new token amount: 3.4335161699111416, percentage: 0.002742459931757332
+
+Wallet: 24, old token amount: 108.56466638481382, percentage: 0.09667456908978216
+Wallet: 24, new token amount: 121.03502127604838, percentage: 0.09667456908978216
+
+Rebase finished, token amount: 1258.793891817037
+
+Day 15 of the simulation----------------------------
+
+Token amount: 1258.793891817037
+
+Wallet 0 wants to buy.
+Wallet 1 does nothing.
+Wallet 2 wants to sell.
+Wallet 3 does nothing.
+Wallet 4 wants to sell.
+Wallet 5 wants to buy.
+Wallet 6 wants to buy.
+Wallet 7 wants to sell.
+Wallet 8 wants to buy.
+Wallet 9 wants to sell.
+Wallet 10 wants to buy.
+Wallet 11 wants to sell.
+Wallet 12 wants to buy.
+Wallet 13 wants to buy.
+Wallet 14 does nothing.
+Wallet 15 wants to sell.
+Wallet 16 wants to buy.
+Wallet 17 wants to sell.
+Wallet 18 wants to buy.
+Wallet 19 wants to buy.
+Wallet 21 wants to sell.
+Wallet 22 wants to buy.
+Wallet 23 wants to sell.
+Wallet 24 wants to buy.
+
+Exchange: 0
+Buyer: 6
+Buyer: 8
+Buyer: 10
+Buyer: 12
+Buyer: 13
+Buyer: 19
+Buyer: 22
+Seller: 7
+Seller: 11
+Seller: 15
+
+Exchange: 1
+Buyer: 0
+Buyer: 5
+Buyer: 16
+Buyer: 24
+Seller: 9
+Seller: 21
+Seller: 23
+
+Exchange: 2
+Buyer: 18
+Seller: 2
+Seller: 4
+Seller: 17
+
+Exchange: 0
+
+Buyer: 19 Seller: 11 Token amount: 100.83812976112384 Transaction price: 2.2257853457627856
+Supply was 311.8155141724181, Demand was 175.02017634843014 and now Supply is 210.97738441129425 and Demand is 275.85830610955395
+Price was 1.0 and now Price is 1.1225785345762787
+
+Buyer: 12 Seller: 7 Token amount: 74.77307457744567 Transaction price: 0.036940100740117
+Supply was 210.97738441129425, Demand was 275.85830610955395 and now Supply is 136.20430983384858 and Demand is 350.6313806869996
+Price was 1.1225785345762787 and now Price is 1.0140146911926626
+
+Buyer: 6 Seller: 11 Token amount: 61.04979890386723 Transaction price: 0.3148743710919951
+Supply was 136.20430983384858, Demand was 350.6313806869996 and now Supply is 75.15451092998136 and Demand is 411.6811795908668
+Price was 1.0140146911926626 and now Price is 0.9441006591825959
+
+Buyer: 10 Seller: 7 Token amount: 13.983471637943653 Transaction price: 2.0138295891909643
+Supply was 75.15451092998136, Demand was 411.6811795908668 and now Supply is 61.171039292037705 and Demand is 425.66465122881044
+Price was 0.9441006591825959 and now Price is 1.0510735521834327
+
+Buyer: 13 Seller: 7 Token amount: 16.656535189176147 Transaction price: 2.7838294281934868
+Supply was 61.171039292037705, Demand was 425.66465122881044 and now Supply is 44.51450410286156 and Demand is 442.3211864179866
+Price was 1.0510735521834327 and now Price is 1.2243491397844382
+
+Buyer: 8 Seller: 7 Token amount: 11.725033841598943 Transaction price: 1.3917072595093092
+Supply was 44.51450410286156, Demand was 442.3211864179866 and now Supply is 32.789470261262615 and Demand is 454.04622025958554
+Price was 1.2243491397844382 and now Price is 1.2410849517569253
+
+Buyer: 22 Seller: 11 Token amount: 14.032704436383941 Transaction price: 2.153899860049091
+Supply was 32.789470261262615, Demand was 454.04622025958554 and now Supply is 18.756765824878673 and Demand is 468.0789246959695
+Price was 1.2410849517569253 and now Price is 1.332366442586142
+
+Exchange: 1
+
+Buyer: 5 Seller: 21 Token amount: 0.22798805357672958 Transaction price: 1.547377008762437
+Supply was 85.8080893361533, Demand was 288.50416969023235 and now Supply is 85.58010128257658 and Demand is 288.73215774380907
+Price was 1.0 and now Price is 1.0547377008762437
+
+Buyer: 0 Seller: 9 Token amount: 27.96051187694229 Transaction price: 1.9821459404650854
+Supply was 85.58010128257658, Demand was 288.73215774380907 and now Supply is 57.61958940563429 and Demand is 316.69266962075136
+Price was 1.0547377008762437 and now Price is 1.1474785248351278
+
+Buyer: 24 Seller: 21 Token amount: 10.36068348926154 Transaction price: 2.5062148100433292
+Supply was 57.61958940563429, Demand was 316.69266962075136 and now Supply is 47.25890591637275 and Demand is 327.0533531100129
+Price was 1.1474785248351278 and now Price is 1.283352153355948
+
+Buyer: 16 Seller: 9 Token amount: 15.288841918264565 Transaction price: 0.17789467232230227
+Supply was 47.25890591637275, Demand was 327.0533531100129 and now Supply is 31.97006399810818 and Demand is 342.34219502827744
+Price was 1.283352153355948 and now Price is 1.1728064052525835
+
+Exchange: 2
+
+Buyer: 18 Seller: 4 Token amount: 6.736125924235256E-4 Transaction price: 0.7351258773659972
+Supply was 61.18961478353606, Demand was 3.868404583052168 and now Supply is 61.188941170943636 and Demand is 3.869078195644591
+Price was 1.0 and now Price is 0.9735125877365998
+
+
+Tokens after transactions: 1258.793891817037
+End of day 15 token price: 1.1595618118584416
+
+Rebase
+Old token amount: 1258.793891817037
+New token amount: 1258.793891817037 tokens * 1.1595618118584416 price per token = 1459.6493259517026 tokens
+
+Wallet: 0, old token amount: 28.241407429347653, percentage: 0.022435291125048197
+Wallet: 0, new token amount: 32.74765756820682, percentage: 0.022435291125048197
+
+Wallet: 1, old token amount: 65.21921302469292, percentage: 0.05209268564638655
+Wallet: 1, new token amount: 76.03705349076206, percentage: 0.05209268564638655
+
+Wallet: 2, old token amount: 1.691081242053331, percentage: 0.0013507210446012563
+Wallet: 2, new token amount: 1.9715790623010034, percentage: 0.0013507210446012563
+
+Wallet: 3, old token amount: 264.2120527220287, percentage: 0.21103467472421183
+Wallet: 3, new token amount: 308.0366207136326, percentage: 0.21103467472421183
+
+Wallet: 4, old token amount: 0.00328833295606291, percentage: 2.612290015951485E-6
+Wallet: 4, new token amount: 0.003813027360973948, percentage: 2.612290015951485E-6
+
+Wallet: 5, old token amount: 167.316303556051, percentage: 0.13291794998666076
+Wallet: 5, new token amount: 194.0135961049115, percentage: 0.13291794998666076
+
+Wallet: 6, old token amount: 110.10260877076549, percentage: 0.08746674851737257
+Wallet: 6, new token amount: 127.67078051656996, percentage: 0.08746674851737257
+
+Wallet: 7, old token amount: 4.796744889482177, percentage: 0.003846415423499135
+Wallet: 7, new token amount: 5.614417680240745, percentage: 0.003846415423499135
+
+Wallet: 8, old token amount: 61.666933341912824, percentage: 0.04898890417469231
+Wallet: 8, new token amount: 71.50662095770218, percentage: 0.04898890417469231
+
+Wallet: 9, old token amount: 27.905729999171456, percentage: 0.02244118751382885
+Wallet: 9, new token amount: 32.756264228116045, percentage: 0.02244118751382885
+
+Wallet: 10, old token amount: 18.052713089404318, percentage: 0.014341277954046697
+Wallet: 10, new token amount: 20.933236698910274, percentage: 0.014341277954046697
+
+Wallet: 11, old token amount: 3.7210137485702255, percentage: 0.0029893394703287162
+Wallet: 11, new token amount: 4.3633873429061305, percentage: 0.0029893394703287162
+
+Wallet: 12, old token amount: 130.6232244712199, percentage: 0.1037685560125086
+Wallet: 12, new token amount: 151.4657028386397, percentage: 0.1037685560125086
+
+Wallet: 13, old token amount: 19.60454726504457, percentage: 0.015574072445446889
+Wallet: 13, new token amount: 22.732684347319537, percentage: 0.015574072445446889
+
+Wallet: 14, old token amount: 3.156657156493371, percentage: 0.0025213237222651975
+Wallet: 14, new token amount: 3.6802484717104336, percentage: 0.0025213237222651975
+
+Wallet: 15, old token amount: 10.23900718682624, percentage: 0.008178224758898697
+Wallet: 15, new token amount: 11.937340256808008, percentage: 0.008178224758898697
+
+Wallet: 16, old token amount: 15.388779277568895, percentage: 0.012225019026232787
+Wallet: 16, new token amount: 17.844240781387427, percentage: 0.012225019026232787
+
+Wallet: 17, old token amount: 59.49457159593424, percentage: 0.0475202301910639
+Wallet: 17, new token amount: 69.36287196745617, percentage: 0.0475202301910639
+
+Wallet: 18, old token amount: 3.869078195644591, percentage: 0.0030736391563353353
+Wallet: 18, new token amount: 4.486435322763632, percentage: 0.0030736391563353353
+
+Wallet: 19, old token amount: 113.92364368363606, percentage: 0.09050222155049559
+Wallet: 19, new token amount: 132.10150668331255, percentage: 0.09050222155049559
+
+Wallet: 21, old token amount: 0.6308178290255704, percentage: 5.0528760755293E-4
+Wallet: 21, new token amount: 0.7375427157763828, percentage: 5.0528760755293E-4
+
+Wallet: 22, old token amount: 14.105254073986375, percentage: 0.01120537219451057
+Wallet: 22, new token amount: 16.355913970755307, percentage: 0.01120537219451057
+
+Wallet: 23, old token amount: 3.4335161699111416, percentage: 0.002742459931757332
+Wallet: 23, new token amount: 4.003029790839142, percentage: 0.002742459931757332
+
+Wallet: 24, old token amount: 131.39570476530992, percentage: 0.10438222303068499
+Wallet: 24, new token amount: 152.36144148807963, percentage: 0.10438222303068499
+
+Rebase finished, token amount: 1462.723986026468
+
+Day 16 of the simulation----------------------------
+
+Token amount: 1462.723986026468
+
+Wallet 0 wants to buy.
+Wallet 1 wants to buy.
+Wallet 2 does nothing.
+Wallet 3 wants to sell.
+Wallet 4 wants to buy.
+Wallet 5 wants to buy.
+Wallet 6 wants to sell.
+Wallet 7 wants to buy.
+Wallet 8 wants to buy.
+Wallet 9 wants to sell.
+Wallet 10 does nothing.
+Wallet 11 wants to buy.
+Wallet 12 does nothing.
+Wallet 13 wants to sell.
+Wallet 14 wants to sell.
+Wallet 15 wants to sell.
+Wallet 16 wants to sell.
+Wallet 17 wants to buy.
+Wallet 18 does nothing.
+Wallet 19 wants to sell.
+Wallet 21 does nothing.
+Wallet 22 wants to buy.
+Wallet 23 wants to buy.
+Wallet 24 wants to buy.
+New buyers
+New Wallet 25 wants to buy.
+
+Exchange: 0
+Buyer: 0
+Buyer: 8
+Buyer: 17
+Seller: 6
+Seller: 15
+Seller: 16
+Seller: 19
+
+Exchange: 1
+Buyer: 1
+Buyer: 4
+Buyer: 5
+Buyer: 7
+Buyer: 24
+Buyer: 25
+Seller: 3
+Seller: 14
+
+Exchange: 2
+Buyer: 11
+Buyer: 22
+Buyer: 23
+Seller: 9
+Seller: 13
+
+Exchange: 0
+
+Buyer: 8 Seller: 16 Token amount: 10.011778846436094 Transaction price: 1.032054718901862
+Supply was 289.55386823807794, Demand was 173.61715049336516 and now Supply is 279.54208939164187 and Demand is 183.62892933980126
+Price was 1.0 and now Price is 1.0032054718901862
+
+Buyer: 17 Seller: 19 Token amount: 43.45724331757965 Transaction price: 0.1625728478606363
+Supply was 279.54208939164187, Demand was 183.62892933980126 and now Supply is 236.08484607406223 and Demand is 227.08617265738093
+Price was 1.0032054718901862 and now Price is 0.9191422094872311
+
+Buyer: 0 Seller: 6 Token amount: 88.55310484586528 Transaction price: 1.1023716302273685
+Supply was 236.08484607406223, Demand was 227.08617265738093 and now Supply is 147.53174122819695 and Demand is 315.6392775032462
+Price was 0.9191422094872311 and now Price is 0.9374651515612449
+
+Exchange: 1
+
+Buyer: 4 Seller: 14 Token amount: 2.741245006859041 Transaction price: 1.3244294511594552
+Supply was 311.71686918534306, Demand was 448.03032179135494 and now Supply is 308.975624178484 and Demand is 450.771566798214
+Price was 1.0 and now Price is 1.0324429451159456
+
+Buyer: 5 Seller: 14 Token amount: 0.2476899593382044 Transaction price: 1.9717106308848458
+Supply was 308.975624178484, Demand was 450.771566798214 and now Supply is 308.72793421914577 and Demand is 451.0192567575522
+Price was 1.0324429451159456 and now Price is 1.1263697136928357
+
+Buyer: 25 Seller: 3 Token amount: 114.09759169652284 Transaction price: 2.0935027130112918
+Supply was 308.72793421914577, Demand was 451.0192567575522 and now Supply is 194.63034252262293 and Demand is 565.1168484540751
+Price was 1.1263697136928357 and now Price is 1.2230830136246813
+
+Buyer: 7 Seller: 3 Token amount: 39.478011175131435 Transaction price: 0.5540124632067691
+Supply was 194.63034252262293, Demand was 565.1168484540751 and now Supply is 155.1523313474915 and Demand is 604.5948596292066
+Price was 1.2230830136246813 and now Price is 1.1561759585828901
+
+Buyer: 1 Seller: 3 Token amount: 136.8011833223175 Transaction price: 2.8390489237342758
+Supply was 155.1523313474915, Demand was 604.5948596292066 and now Supply is 18.351148025173984 and Demand is 741.3960429515241
+Price was 1.1561759585828901 and now Price is 1.3244632550980286
+
+Buyer: 24 Seller: 14 Token amount: 0.5708937923631915 Transaction price: 1.2584888592967522
+Supply was 18.351148025173984, Demand was 741.3960429515241 and now Supply is 17.780254232810794 and Demand is 741.9669367438873
+Price was 1.3244632550980286 and now Price is 1.317865815517901
+
+Exchange: 2
+
+Buyer: 22 Seller: 13 Token amount: 6.50058231196031 Transaction price: 0.8378223664277132
+Supply was 55.488948575435586, Demand was 24.72233110450058 and now Supply is 48.98836626347528 and Demand is 31.22291341646089
+Price was 1.0 and now Price is 0.9837822366427713
+
+Buyer: 23 Seller: 13 Token amount: 11.301343798056612 Transaction price: 0.03705953427792741
+Supply was 48.98836626347528, Demand was 31.22291341646089 and now Supply is 37.687022465418664 and Demand is 42.524257214517505
+Price was 0.9837822366427713 and now Price is 0.889109966406287
+
+Buyer: 11 Seller: 9 Token amount: 2.541721823705185 Transaction price: 0.01125595126556278
+Supply was 37.687022465418664, Demand was 42.524257214517505 and now Supply is 35.145300641713476 and Demand is 45.06597903822269
+Price was 0.889109966406287 and now Price is 0.8013245648922146
+
+
+Tokens after transactions: 1482.723986026468
+End of day 16 token price: 1.0188851773237868
+
+Rebase
+Old token amount: 1482.723986026468
+New token amount: 1482.723986026468 tokens * 1.0188851773237868 price per token = 1510.72549142481 tokens
+
+Wallet: 0, old token amount: 121.3007624140721, percentage: 0.08180940185579944
+Wallet: 0, new token amount: 123.59154882177235, percentage: 0.08180940185579944
+
+Wallet: 1, old token amount: 212.83823681307956, percentage: 0.1435454196593001
+Wallet: 1, new token amount: 216.8577246565767, percentage: 0.1435454196593001
+
+Wallet: 2, old token amount: 1.9715790623010034, percentage: 0.0013507210446012563
+Wallet: 2, new token amount: 2.0405687138830655, percentage: 0.0013507210446012563
+
+Wallet: 3, old token amount: 17.65983451966082, percentage: 0.013120986199341966
+Wallet: 3, new token amount: 19.82220832397904, percentage: 0.013120986199341966
+
+Wallet: 4, old token amount: 2.745058034220015, percentage: 0.0018513614537095733
+Wallet: 4, new token amount: 2.7968989419603454, percentage: 0.0018513614537095733
+
+Wallet: 5, old token amount: 194.2612860642497, percentage: 0.13101648580249103
+Wallet: 5, new token amount: 197.9299448987199, percentage: 0.13101648580249103
+
+Wallet: 6, old token amount: 39.117675670704685, percentage: 0.02805802086296574
+Wallet: 6, new token amount: 42.38796735661148, percentage: 0.02805802086296574
+
+Wallet: 7, old token amount: 45.09242885537218, percentage: 0.030411883317686635
+Wallet: 7, new token amount: 45.94400737026612, percentage: 0.030411883317686635
+
+Wallet: 8, old token amount: 81.51839980413828, percentage: 0.05497880965870009
+Wallet: 8, new token amount: 83.05788923959078, percentage: 0.05497880965870009
+
+Wallet: 9, old token amount: 30.21454240441086, percentage: 0.020412717497790476
+Wallet: 9, new token amount: 30.83801267316533, percentage: 0.020412717497790476
+
+Wallet: 10, old token amount: 20.933236698910274, percentage: 0.014341277954046697
+Wallet: 10, new token amount: 21.665734184786988, percentage: 0.014341277954046697
+
+Wallet: 11, old token amount: 6.905109166611315, percentage: 0.004657042869533812
+Wallet: 11, new token amount: 7.035513377662875, percentage: 0.004657042869533812
+
+Wallet: 12, old token amount: 151.4657028386397, percentage: 0.1037685560125086
+Wallet: 12, new token amount: 156.76580277643998, percentage: 0.1037685560125086
+
+Wallet: 13, old token amount: 4.930758237302614, percentage: 0.0033510142468891027
+Wallet: 13, new token amount: 5.0624626449030785, percentage: 0.0033510142468891027
+
+Wallet: 14, old token amount: 0.12041971314999667, percentage: 8.12464743223546E-5
+Wallet: 14, new token amount: 0.12274111984717236, percentage: 8.12464743223546E-5
+
+Wallet: 15, old token amount: 11.937340256808008, percentage: 0.008178224758898697
+Wallet: 15, new token amount: 12.35505261786978, percentage: 0.008178224758898697
+
+Wallet: 16, old token amount: 7.832461934951333, percentage: 0.0053183927564157485
+Wallet: 16, new token amount: 8.034631510526332, percentage: 0.0053183927564157485
+
+Wallet: 17, old token amount: 112.82011528503583, percentage: 0.07608976205165528
+Wallet: 17, new token amount: 114.95074316788377, percentage: 0.07608976205165528
+
+Wallet: 18, old token amount: 4.486435322763632, percentage: 0.0030736391563353353
+Wallet: 18, new token amount: 4.643425024917238, percentage: 0.0030736391563353353
+
+Wallet: 19, old token amount: 88.6442633657329, percentage: 0.061589878189565316
+Wallet: 19, new token amount: 93.04539899472525, percentage: 0.061589878189565316
+
+Wallet: 21, old token amount: 0.7375427157763828, percentage: 5.0528760755293E-4
+Wallet: 21, new token amount: 0.7633508692312667, percentage: 5.0528760755293E-4
+
+Wallet: 22, old token amount: 22.856496282715618, percentage: 0.015415206402621456
+Wallet: 22, new token amount: 23.288145268015175, percentage: 0.015415206402621456
+
+Wallet: 23, old token amount: 15.304373588895753, percentage: 0.010321795380075922
+Wallet: 23, new token amount: 15.59339939795153, percentage: 0.010321795380075922
+
+Wallet: 24, old token amount: 152.93233528044283, percentage: 0.10314282140284527
+Wallet: 24, new token amount: 155.82048955075481, percentage: 0.10314282140284527
+
+Wallet: 25, old token amount: 134.09759169652284, percentage: 0.09044002320073688
+Wallet: 25, new token amount: 136.63004849440443, percentage: 0.09044002320073688
+
+Rebase finished, token amount: 1521.0437099964447
+
+Day 17 of the simulation----------------------------
+
+Token amount: 1521.0437099964447
+
+Wallet 0 wants to sell.
+Wallet 1 wants to sell.
+Wallet 2 wants to sell.
+Wallet 3 wants to buy.
+Wallet 4 does nothing.
+Wallet 5 wants to buy.
+Wallet 6 wants to buy.
+Wallet 7 wants to sell.
+Wallet 8 wants to sell.
+Wallet 9 wants to sell.
+Wallet 10 wants to sell.
+Wallet 11 wants to sell.
+Wallet 12 wants to sell.
+Wallet 13 does nothing.
+Wallet 14 wants to buy.
+Wallet 15 wants to sell.
+Wallet 16 does nothing.
+Wallet 17 wants to sell.
+Wallet 18 wants to sell.
+Wallet 19 does nothing.
+Wallet 21 wants to buy.
+Wallet 22 does nothing.
+Wallet 23 wants to sell.
+Wallet 24 wants to sell.
+Wallet 25 wants to buy.
+New buyers
+New Wallet 26 wants to buy.
+
+Exchange: 0
+Buyer: 3
+Buyer: 14
+Seller: 1
+Seller: 7
+Seller: 24
+
+Exchange: 1
+Buyer: 5
+Buyer: 21
+Buyer: 25
+Buyer: 26
+Seller: 2
+Seller: 8
+Seller: 9
+Seller: 10
+Seller: 11
+Seller: 12
+Seller: 15
+Seller: 23
+
+Exchange: 2
+Buyer: 6
+Seller: 0
+Seller: 17
+Seller: 18
+
+Exchange: 0
+
+Buyer: 3 Seller: 7 Token amount: 22.945890976160225 Transaction price: 1.8829278782190024
+Supply was 418.62222157759766, Demand was 19.944949443826214 and now Supply is 395.6763306014374 and Demand is 42.89084041998644
+Price was 1.0 and now Price is 1.0882927878219002
+
+Buyer: 14 Seller: 1 Token amount: 123.32004153728236 Transaction price: 1.4125822943931046
+Supply was 395.6763306014374, Demand was 42.89084041998644 and now Supply is 272.3562890641551 and Demand is 166.2108819572688
+Price was 1.0882927878219002 and now Price is 1.1207217384790207
+
+Exchange: 1
+
+Buyer: 21 Seller: 11 Token amount: 0.07028987341900746 Transaction price: 2.2178740896178466
+Supply was 329.35197298135034, Demand was 355.3233442623556 and now Supply is 329.2816831079313 and Demand is 355.3936341357746
+Price was 1.0 and now Price is 1.1217874089617847
+
+Buyer: 5 Seller: 23 Token amount: 2.188277676730827 Transaction price: 0.08746310703388582
+Supply was 329.2816831079313, Demand was 355.3936341357746 and now Supply is 327.0934054312005 and Demand is 357.58191181250544
+Price was 1.1217874089617847 and now Price is 1.0183549787689947
+
+Buyer: 26 Seller: 2 Token amount: 1.5828252705038517 Transaction price: 1.5458952797282506
+Supply was 327.0934054312005, Demand was 357.58191181250544 and now Supply is 325.51058016069663 and Demand is 359.1647370830093
+Price was 1.0183549787689947 and now Price is 1.0711090088649202
+
+Buyer: 25 Seller: 2 Token amount: 0.42900217539219593 Transaction price: 1.4003338262908664
+Supply was 325.51058016069663, Demand was 359.1647370830093 and now Supply is 325.0815779853044 and Demand is 359.5937392584015
+Price was 1.0711090088649202 and now Price is 1.1040314906075148
+
+Exchange: 2
+
+Buyer: 6 Seller: 17 Token amount: 70.13257099506765 Transaction price: 0.1737331013469674
+Supply was 243.18571701457336, Demand was 42.38796735661148 and now Supply is 173.0531460195057 and Demand is 112.52053835167914
+Price was 1.0 and now Price is 0.9173733101346968
+
+
+Tokens after transactions: 1541.0437099964447
+End of day 17 token price: 1.047375513073744
+
+Rebase
+Old token amount: 1541.0437099964447
+New token amount: 1541.0437099964447 tokens * 1.047375513073744 price per token = 1614.0514464265923 tokens
+
+Wallet: 0, old token amount: 123.59154882177235, percentage: 0.08180940185579944
+Wallet: 0, new token amount: 132.04458339664743, percentage: 0.08180940185579944
+
+Wallet: 1, old token amount: 93.53768311929433, percentage: 0.06597737288321832
+Wallet: 1, new token amount: 106.49087413358517, percentage: 0.06597737288321832
+
+Wallet: 2, old token amount: 0.02874126798701787, percentage: 1.8655714398357064E-5
+Wallet: 2, new token amount: 0.03011128280878962, percentage: 1.8655714398357064E-5
+
+Wallet: 3, old token amount: 42.76809930013927, percentage: 0.027752684120970157
+Wallet: 3, new token amount: 44.7942599476722, percentage: 0.027752684120970157
+
+Wallet: 4, old token amount: 2.7968989419603454, percentage: 0.0018513614537095733
+Wallet: 4, new token amount: 2.9881926322183756, percentage: 0.0018513614537095733
+
+Wallet: 5, old token amount: 200.11822257545072, percentage: 0.12985888802330753
+Wallet: 5, new token amount: 209.5989260453684, percentage: 0.12985888802330753
+
+Wallet: 6, old token amount: 112.52053835167914, percentage: 0.0730157993714135
+Wallet: 6, new token amount: 117.85125658742383, percentage: 0.0730157993714135
+
+Wallet: 7, old token amount: 22.998116394105896, percentage: 0.015149298092627455
+Wallet: 7, new token amount: 24.451746498752957, percentage: 0.015149298092627455
+
+Wallet: 8, old token amount: 83.05788923959078, percentage: 0.05497880965870009
+Wallet: 8, new token amount: 88.73862725243718, percentage: 0.05497880965870009
+
+Wallet: 9, old token amount: 30.83801267316533, percentage: 0.020412717497790476
+Wallet: 9, new token amount: 32.947176202806126, percentage: 0.020412717497790476
+
+Wallet: 10, old token amount: 21.665734184786988, percentage: 0.014341277954046697
+Wallet: 10, new token amount: 23.14756042533487, percentage: 0.014341277954046697
+
+Wallet: 11, old token amount: 6.965223504243868, percentage: 0.004520015344383934
+Wallet: 11, new token amount: 7.295537304473281, percentage: 0.004520015344383934
+
+Wallet: 12, old token amount: 156.76580277643998, percentage: 0.1037685560125086
+Wallet: 12, new token amount: 167.48778792558838, percentage: 0.1037685560125086
+
+Wallet: 13, old token amount: 5.0624626449030785, percentage: 0.0033510142468891027
+Wallet: 13, new token amount: 5.4087093921874745, percentage: 0.0033510142468891027
+
+Wallet: 14, old token amount: 123.44278265712954, percentage: 0.08010336232280804
+Wallet: 14, new token amount: 129.29094782076172, percentage: 0.08010336232280804
+
+Wallet: 15, old token amount: 12.35505261786978, percentage: 0.008178224758898697
+Wallet: 15, new token amount: 13.20007550130221, percentage: 0.008178224758898697
+
+Wallet: 16, old token amount: 8.034631510526332, percentage: 0.0053183927564157485
+Wallet: 16, new token amount: 8.58415952115755, percentage: 0.0053183927564157485
+
+Wallet: 17, old token amount: 44.81817217281612, percentage: 0.03046966671504292
+Wallet: 17, new token amount: 49.17960963355122, percentage: 0.03046966671504292
+
+Wallet: 18, old token amount: 4.643425024917238, percentage: 0.0030736391563353353
+Wallet: 18, new token amount: 4.961011726076459, percentage: 0.0030736391563353353
+
+Wallet: 19, old token amount: 93.04539899472525, percentage: 0.061589878189565316
+Wallet: 19, new token amount: 99.40923197710552, percentage: 0.061589878189565316
+
+Wallet: 21, old token amount: 0.8336407426502742, percentage: 5.409585317032945E-4
+Wallet: 21, new token amount: 0.8731349005525081, percentage: 5.409585317032945E-4
+
+Wallet: 22, old token amount: 23.288145268015175, percentage: 0.015415206402621456
+Wallet: 22, new token amount: 24.880936191115627, percentage: 0.015415206402621456
+
+Wallet: 23, old token amount: 13.405121721220702, percentage: 0.008711098807386635
+Wallet: 23, new token amount: 14.060161630027363, percentage: 0.008711098807386635
+
+Wallet: 24, old token amount: 155.82048955075481, percentage: 0.10314282140284527
+Wallet: 24, new token amount: 166.47782007378208, percentage: 0.10314282140284527
+
+Wallet: 25, old token amount: 137.05905066979662, percentage: 0.08893910651639649
+Wallet: 25, new token amount: 143.5522935166785, percentage: 0.08893910651639649
+
+Wallet: 26, old token amount: 21.58282527050385, percentage: 0.014005329719397542
+Wallet: 26, new token amount: 22.605322691274942, percentage: 0.014005329719397542
+
+Rebase finished, token amount: 1640.3500542106901
+
+Day 18 of the simulation----------------------------
+
+Token amount: 1640.3500542106901
+
+Wallet 0 wants to buy.
+Wallet 1 wants to buy.
+Wallet 2 wants to buy.
+Wallet 3 wants to sell.
+Wallet 4 wants to buy.
+Wallet 5 wants to sell.
+Wallet 6 wants to buy.
+Wallet 7 wants to sell.
+Wallet 8 wants to buy.
+Wallet 9 does nothing.
+Wallet 10 does nothing.
+Wallet 11 wants to sell.
+Wallet 12 wants to sell.
+Wallet 13 wants to buy.
+Wallet 14 wants to sell.
+Wallet 15 wants to sell.
+Wallet 16 wants to sell.
+Wallet 17 wants to sell.
+Wallet 18 wants to sell.
+Wallet 19 wants to buy.
+Wallet 21 wants to sell.
+Wallet 22 wants to buy.
+Wallet 23 does nothing.
+Wallet 24 wants to buy.
+Wallet 25 wants to sell.
+Wallet 26 wants to sell.
+
+Exchange: 0
+Buyer: 6
+Buyer: 22
+Buyer: 24
+Seller: 5
+Seller: 15
+Seller: 18
+
+Exchange: 1
+Buyer: 0
+Buyer: 2
+Buyer: 8
+Buyer: 13
+Buyer: 19
+Seller: 12
+Seller: 14
+Seller: 16
+Seller: 21
+Seller: 25
+
+Exchange: 2
+Buyer: 1
+Buyer: 4
+Seller: 3
+Seller: 7
+Seller: 11
+Seller: 17
+Seller: 26
+
+Exchange: 0
+
+Buyer: 22 Seller: 15 Token amount: 6.509265991788258 Transaction price: 0.24784246074544614
+Supply was 227.76001327274707, Demand was 309.21001285232154 and now Supply is 221.25074728095882 and Demand is 315.7192788441098
+Price was 1.0 and now Price is 0.9247842460745447
+
+Buyer: 24 Seller: 5 Token amount: 88.38770639564446 Transaction price: 1.3125827737308564
+Supply was 221.25074728095882, Demand was 315.7192788441098 and now Supply is 132.86304088531438 and Demand is 404.10698523975424
+Price was 0.9247842460745447 and now Price is 0.9635640988401759
+
+Buyer: 6 Seller: 15 Token amount: 3.855170189264665 Transaction price: 1.76027763070149
+Supply was 132.86304088531438, Demand was 404.10698523975424 and now Supply is 129.0078706960497 and Demand is 407.9621554290189
+Price was 0.9635640988401759 and now Price is 1.0432354520263072
+
+Exchange: 1
+
+Buyer: 2 Seller: 12 Token amount: 10.690517536558957 Transaction price: 1.604542790844651
+Supply was 449.78832368473866, Demand was 325.63126330118644 and now Supply is 439.0978061481797 and Demand is 336.3217808377454
+Price was 1.0 and now Price is 1.060454279084465
+
+Buyer: 19 Seller: 21 Token amount: 0.19324663726540997 Transaction price: 0.9391947816971199
+Supply was 439.0978061481797, Demand was 336.3217808377454 and now Supply is 438.9045595109143 and Demand is 336.5150274750108
+Price was 1.060454279084465 and now Price is 1.0483283293457306
+
+Buyer: 8 Seller: 25 Token amount: 58.85065214141254 Transaction price: 2.0113202394281036
+Supply was 438.9045595109143, Demand was 336.5150274750108 and now Supply is 380.05390736950176 and Demand is 395.36567961642334
+Price was 1.0483283293457306 and now Price is 1.144627520353968
+
+Buyer: 0 Seller: 16 Token amount: 2.24062706703755 Transaction price: 0.6833889165055331
+Supply was 380.05390736950176, Demand was 395.36567961642334 and now Supply is 377.8132803024642 and Demand is 397.6063066834609
+Price was 1.144627520353968 and now Price is 1.0985036599691247
+
+Buyer: 13 Seller: 25 Token amount: 49.72465514216191 Transaction price: 0.7828049531781445
+Supply was 377.8132803024642, Demand was 397.6063066834609 and now Supply is 328.0886251603023 and Demand is 447.3309618256228
+Price was 1.0985036599691247 and now Price is 1.0669337892900268
+
+Exchange: 2
+
+Buyer: 1 Seller: 3 Token amount: 24.130303103437207 Transaction price: 1.525206927196617
+Supply was 148.3264760757246, Demand was 109.47906676580354 and now Supply is 124.1961729722874 and Demand is 133.60936986924074
+Price was 1.0 and now Price is 1.0525206927196618
+
+Buyer: 4 Seller: 17 Token amount: 1.5985900344269082 Transaction price: 0.4555978800663196
+Supply was 124.1961729722874, Demand was 133.60936986924074 and now Supply is 122.5975829378605 and Demand is 135.20795990366764
+Price was 1.0525206927196618 and now Price is 0.9928284114543275
+
+
+Tokens after transactions: 1640.3500542106904
+End of day 18 token price: 1.034332550923554
+
+Rebase
+Old token amount: 1640.3500542106904
+New token amount: 1640.3500542106904 tokens * 1.034332550923554 price per token = 1696.6674559793332 tokens
+
+Wallet: 0, old token amount: 134.28521046368496, percentage: 0.08186375226372082
+Wallet: 0, new token amount: 138.8955642902096, percentage: 0.08186375226372082
+
+Wallet: 1, old token amount: 130.62117723702238, percentage: 0.07963006243802952
+Wallet: 1, new token amount: 135.10573545620701, percentage: 0.07963006243802952
+
+Wallet: 2, old token amount: 10.720628819367747, percentage: 0.006535573789172909
+Wallet: 2, new token amount: 11.08869535424121, percentage: 0.006535573789172909
+
+Wallet: 3, old token amount: 20.663956844234995, percentage: 0.012785363395094238
+Wallet: 3, new token amount: 21.69250998532583, percentage: 0.012785363395094238
+
+Wallet: 4, old token amount: 4.586782666645284, percentage: 0.0027962218520804507
+Wallet: 4, new token amount: 4.744258616123157, percentage: 0.0027962218520804507
+
+Wallet: 5, old token amount: 121.21121964972393, percentage: 0.078101907446642
+Wallet: 5, new token amount: 132.51296461462744, percentage: 0.078101907446642
+
+Wallet: 6, old token amount: 121.7064267766885, percentage: 0.07419539900295956
+Wallet: 6, new token amount: 125.88491887172295, percentage: 0.07419539900295956
+
+Wallet: 7, old token amount: 24.451746498752957, percentage: 0.015149298092627455
+Wallet: 7, new token amount: 25.70332105469079, percentage: 0.015149298092627455
+
+Wallet: 8, old token amount: 147.58927939384972, percentage: 0.08997425824749782
+Wallet: 8, new token amount: 152.65639584440967, percentage: 0.08997425824749782
+
+Wallet: 9, old token amount: 32.947176202806126, percentage: 0.020412717497790476
+Wallet: 9, new token amount: 34.633593466600985, percentage: 0.020412717497790476
+
+Wallet: 10, old token amount: 23.14756042533487, percentage: 0.014341277954046697
+Wallet: 10, new token amount: 24.332379581784906, percentage: 0.014341277954046697
+
+Wallet: 11, old token amount: 7.295537304473281, percentage: 0.004520015344383934
+Wallet: 11, new token amount: 7.66896293534344, percentage: 0.004520015344383934
+
+Wallet: 12, old token amount: 156.79727038902942, percentage: 0.09621474109188904
+Wallet: 12, new token amount: 163.2444199960856, percentage: 0.09621474109188904
+
+Wallet: 13, old token amount: 55.13336453434938, percentage: 0.033610731070983904
+Wallet: 13, new token amount: 57.02623357981179, percentage: 0.033610731070983904
+
+Wallet: 14, old token amount: 129.29094782076172, percentage: 0.08010336232280804
+Wallet: 14, new token amount: 135.9087679676295, percentage: 0.08010336232280804
+
+Wallet: 15, old token amount: 2.8356393202492876, percentage: 0.0017327517170607682
+Wallet: 15, new token amount: 2.939903447629315, percentage: 0.0017327517170607682
+
+Wallet: 16, old token amount: 6.34353245412, percentage: 0.0038724717341875768
+Wallet: 16, new token amount: 6.570296765595913, percentage: 0.0038724717341875768
+
+Wallet: 17, old token amount: 47.58101959912432, percentage: 0.02903492118192642
+Wallet: 17, new token amount: 49.26260585629955, percentage: 0.02903492118192642
+
+Wallet: 18, old token amount: 4.961011726076459, percentage: 0.0030736391563353353
+Wallet: 18, new token amount: 5.214943527977938, percentage: 0.0030736391563353353
+
+Wallet: 19, old token amount: 99.60247861437092, percentage: 0.060720258068512105
+Wallet: 19, new token amount: 103.02208578351102, percentage: 0.060720258068512105
+
+Wallet: 21, old token amount: 0.6798882632870982, percentage: 4.1452637951914953E-4
+Wallet: 21, new token amount: 0.703313417775079, percentage: 4.1452637951914953E-4
+
+Wallet: 22, old token amount: 31.390202182903884, percentage: 0.019136282589394215
+Wallet: 22, new token amount: 32.46790789784909, percentage: 0.019136282589394215
+
+Wallet: 23, old token amount: 14.060161630027363, percentage: 0.008711098807386635
+Wallet: 23, new token amount: 14.779837852313287, percentage: 0.008711098807386635
+
+Wallet: 24, old token amount: 254.86552646942653, percentage: 0.15537264489076613
+Wallet: 24, new token amount: 263.61571013559654, percentage: 0.15537264489076613
+
+Wallet: 25, old token amount: 34.97698623310406, percentage: 0.021989455376222846
+Wallet: 25, new token amount: 37.308793311547085, percentage: 0.021989455376222846
+
+Wallet: 26, old token amount: 22.605322691274942, percentage: 0.014005329719397542
+Wallet: 26, new token amount: 23.762387145161977, percentage: 0.014005329719397542
+
+Rebase finished, token amount: 1710.7465067560709
+
+Day 19 of the simulation----------------------------
+
+Token amount: 1710.7465067560709
+
+Wallet 0 wants to buy.
+Wallet 1 wants to sell.
+Wallet 2 wants to sell.
+Wallet 3 does nothing.
+Wallet 4 does nothing.
+Wallet 5 wants to buy.
+Wallet 6 wants to buy.
+Wallet 7 wants to buy.
+Wallet 8 wants to buy.
+Wallet 9 wants to sell.
+Wallet 10 wants to buy.
+Wallet 11 wants to sell.
+Wallet 12 wants to buy.
+Wallet 13 wants to buy.
+Wallet 14 wants to sell.
+Wallet 15 wants to sell.
 Wallet 16 wants to sell.
 Wallet 17 wants to sell.
 Wallet 18 wants to buy.
-Wallet 19 does nothing.
-Wallet 21 wants to buy.
+Wallet 19 wants to buy.
+Wallet 21 does nothing.
 Wallet 22 wants to buy.
-End of day 19 token price: 0.9378088107892738
-Rebase, old token amount: 2795.7444571411347
-Rebase, new token amount: 2621.8737846222316
+Wallet 23 wants to sell.
+Wallet 24 wants to buy.
+Wallet 25 wants to sell.
+Wallet 26 wants to buy.
+New buyers
+New Wallet 27 wants to buy.
 
+Exchange: 0
+Buyer: 0
+Buyer: 5
+Buyer: 7
+Buyer: 19
+Buyer: 22
+Buyer: 24
+
+Exchange: 1
+Buyer: 6
+Buyer: 13
+Buyer: 18
+Seller: 2
+Seller: 16
+
+Exchange: 2
+Buyer: 8
+Buyer: 10
+Buyer: 12
+Buyer: 26
+Buyer: 27
+Seller: 1
+Seller: 9
+Seller: 11
+Seller: 14
+Seller: 15
+Seller: 17
+Seller: 23
+Seller: 25
+
+Exchange: 0
+
+Exchange: 1
+
+Buyer: 13 Seller: 16 Token amount: 3.9760275760982315 Transaction price: 1.9293695381886482
+Supply was 17.658992119837123, Demand was 188.12609597951268 and now Supply is 13.68296454373889 and Demand is 192.10212355561092
+Price was 1.0 and now Price is 1.092936953818865
+
+Buyer: 18 Seller: 16 Token amount: 1.0312544724234416 Transaction price: 1.224477650092793
+Supply was 13.68296454373889, Demand was 192.10212355561092 and now Supply is 12.65171007131545 and Demand is 193.13337802803437
+Price was 1.092936953818865 and now Price is 1.1060910234462578
+
+Buyer: 6 Seller: 2 Token amount: 7.200385671656499 Transaction price: 0.576902390274286
+Supply was 12.65171007131545, Demand was 193.13337802803437 and now Supply is 5.45132439965895 and Demand is 200.33376369969088
+Price was 1.1060910234462578 and now Price is 1.0531721601290607
+
+Exchange: 2
+
+Buyer: 10 Seller: 15 Token amount: 2.3818359593170593 Transaction price: 1.327683339856686
+Supply was 417.6082002935702, Demand was 383.9955825674422 and now Supply is 415.2263643342531 and Demand is 386.3774185267593
+Price was 1.0 and now Price is 1.0327683339856686
+
+Buyer: 27 Seller: 25 Token amount: 25.96872296259392 Transaction price: 2.3294636041468753
+Supply was 415.2263643342531, Demand was 386.3774185267593 and now Supply is 389.2576413716592 and Demand is 412.3461414893532
+Price was 1.0327683339856686 and now Price is 1.1624378610017891
+
+Buyer: 12 Seller: 1 Token amount: 94.44785567050026 Transaction price: 1.0508125817809573
+Supply was 389.2576413716592, Demand was 412.3461414893532 and now Supply is 294.80978570115894 and Demand is 506.79399715985346
+Price was 1.1624378610017891 and now Price is 1.151275333079706
+
+Buyer: 8 Seller: 1 Token amount: 28.742752766538942 Transaction price: 0.6893104376174488
+Supply was 294.80978570115894, Demand was 506.79399715985346 and now Supply is 266.06703293462 and Demand is 535.5367499263924
+Price was 1.151275333079706 and now Price is 1.1050788435334804
+
+Buyer: 26 Seller: 1 Token amount: 5.988466972429919 Transaction price: 0.25055576676244107
+Supply was 266.06703293462, Demand was 535.5367499263924 and now Supply is 260.07856596219005 and Demand is 541.5252168988224
+Price was 1.1050788435334804 and now Price is 1.0196265358563765
+
+
+Tokens after transactions: 1730.7465067560706
+End of day 19 token price: 1.0242662319951457
+
+Rebase
+Old token amount: 1730.7465067560706
+New token amount: 1730.7465067560706 tokens * 1.0242662319951457 price per token = 1772.7452030138013 tokens
+
+Wallet: 0, old token amount: 138.8955642902096, percentage: 0.08186375226372082
+Wallet: 0, new token amount: 145.1235741262213, percentage: 0.08186375226372082
+
+Wallet: 1, old token amount: 5.926660046737894, percentage: 0.003436226943160882
+Wallet: 1, new token amount: 6.091554829955232, percentage: 0.003436226943160882
+
+Wallet: 2, old token amount: 3.888309682584711, percentage: 0.0022559939853180598
+Wallet: 2, new token amount: 3.9993025155005784, percentage: 0.0022559939853180598
+
+Wallet: 3, old token amount: 21.69250998532583, percentage: 0.012785363395094238
+Wallet: 3, new token amount: 22.66519162744156, percentage: 0.012785363395094238
+
+Wallet: 4, old token amount: 4.744258616123157, percentage: 0.0027962218520804507
+Wallet: 4, new token amount: 4.956988874837986, percentage: 0.0027962218520804507
+
+Wallet: 5, old token amount: 132.51296461462744, percentage: 0.078101907446642
+Wallet: 5, new token amount: 138.4547817722625, percentage: 0.078101907446642
+
+Wallet: 6, old token amount: 133.08530454337944, percentage: 0.07689474109805977
+Wallet: 6, new token amount: 136.31478341857365, percentage: 0.07689474109805977
+
+Wallet: 7, old token amount: 25.70332105469079, percentage: 0.015149298092627455
+Wallet: 7, new token amount: 26.85584552273145, percentage: 0.015149298092627455
+
+Wallet: 8, old token amount: 181.3991486109486, percentage: 0.10480977306777531
+Wallet: 8, new token amount: 185.8010224348638, percentage: 0.10480977306777531
+
+Wallet: 9, old token amount: 34.633593466600985, percentage: 0.020412717497790476
+Wallet: 9, new token amount: 36.186547024683954, percentage: 0.020412717497790476
+
+Wallet: 10, old token amount: 26.714215541101964, percentage: 0.015435082744250213
+Wallet: 10, new token amount: 27.362468892990666, percentage: 0.015435082744250213
+
+Wallet: 11, old token amount: 7.66896293534344, percentage: 0.004520015344383934
+Wallet: 11, new token amount: 8.012835519305394, percentage: 0.004520015344383934
+
+Wallet: 12, old token amount: 257.6922756665859, percentage: 0.14889082523678018
+Wallet: 12, new token amount: 263.9454962112683, percentage: 0.14889082523678018
+
+Wallet: 13, old token amount: 61.00226115591002, percentage: 0.03524621365277012
+Wallet: 13, new token amount: 62.48255617734778, percentage: 0.03524621365277012
+
+Wallet: 14, old token amount: 135.9087679676295, percentage: 0.08010336232280804
+Wallet: 14, new token amount: 142.00285130303442, percentage: 0.08010336232280804
+
+Wallet: 15, old token amount: 0.5580674883122558, percentage: 3.2288758138928746E-4
+Wallet: 15, new token amount: 0.5723974110205877, percentage: 3.2288758138928746E-4
+
+Wallet: 16, old token amount: 1.5630147170742397, percentage: 9.036254464488752E-4
+Wallet: 16, new token amount: 1.601897675513448, percentage: 9.036254464488752E-4
+
+Wallet: 17, old token amount: 49.26260585629955, percentage: 0.02903492118192642
+Wallet: 17, new token amount: 51.47151724514387, percentage: 0.02903492118192642
+
+Wallet: 18, old token amount: 6.246198000401379, percentage: 0.0036089617838423924
+Wallet: 18, new token amount: 6.397769690166732, percentage: 0.0036089617838423924
+
+Wallet: 19, old token amount: 103.02208578351102, percentage: 0.060720258068512105
+Wallet: 19, new token amount: 107.6415462167149, percentage: 0.060720258068512105
+
+Wallet: 21, old token amount: 0.703313417775079, percentage: 4.1452637951914953E-4
+Wallet: 21, new token amount: 0.7348496508152508, percentage: 4.1452637951914953E-4
+
+Wallet: 22, old token amount: 32.46790789784909, percentage: 0.019136282589394215
+Wallet: 22, new token amount: 33.92375316386512, percentage: 0.019136282589394215
+
+Wallet: 23, old token amount: 14.779837852313287, percentage: 0.008711098807386635
+Wallet: 23, new token amount: 15.442558623773904, percentage: 0.008711098807386635
+
+Wallet: 24, old token amount: 263.61571013559654, percentage: 0.15537264489076613
+Wallet: 24, new token amount: 275.43611090967244, percentage: 0.15537264489076613
+
+Wallet: 25, old token amount: 11.340070348953166, percentage: 0.006651934613858709
+Wallet: 25, new token amount: 11.792185177479489, percentage: 0.006651934613858709
+
+Wallet: 26, old token amount: 29.750854117591896, percentage: 0.01718960806880597
+Wallet: 26, new token amount: 30.472795245663114, percentage: 0.01718960806880597
+
+Wallet: 27, old token amount: 45.968722962593915, percentage: 0.0265600553189923
+Wallet: 27, new token amount: 47.084210658524796, percentage: 0.0265600553189923
+
+Rebase finished, token amount: 1792.8273919193725
+
+
+Simulation finished
+Prices, Tokens
+------------
+1.0, 400
+1.095791571081863, 438.7361062191743
+1.049224859636445, 491.15416529627043
+1.1403584499091368, 562.1399252519794
+1.0542940052856722, 594.4305062499093
+1.1534477202014184, 688.3482546124652
+1.151507117161036, 829.8648869559602
+1.0578763587951248, 885.4424696778756
+0.9765812000149675, 898.6193521949958
+0.9719802986965155, 876.9361288369591
+0.982378724797479, 865.0722284482506
+1.1300940783129991, 979.872700185809
+1.1111707525786603, 1116.7040047639894
+1.006997314020132, 1125.5576846389959
+0.997719590398423, 1143.249666691046
+1.095109943845115, 1258.793891817037
+1.1595618118584416, 1462.723986026468
+1.0188851773237868, 1521.0437099964447
+1.047375513073744, 1640.3500542106901
+1.034332550923554, 1710.7465067560709
+1.0242662319951457, 1792.8273919193725

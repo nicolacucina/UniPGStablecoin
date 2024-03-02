@@ -1,5 +1,6 @@
 package simulation;
 
+import java.io.PrintWriter;
 import java.util.LinkedList;
 import java.util.Random;
 
@@ -27,18 +28,19 @@ public class Exchange{
         // riorganize
         fromWallet.setMoney(fromWallet.getMoney() - price);
         toWallet.setMoney(toWallet.getMoney() + price);
-        System.out.print("Supply was " + supply + ", Demand was " +  demand + " and now ");
+        PrintWriter out = Simulation.getWriter();
+        out.print("Supply was " + supply + ", Demand was " +  demand + " and now ");
         supply -= tokenAmount;
-        System.out.print("Supply is " + supply);
+        out.print("Supply is " + supply);
         demand += tokenAmount;
-        System.out.println(" and Demand is " + demand);
+        out.println(" and Demand is " + demand);
 
         //Price update, weighted average between old price and price of the latest transaction
-        System.out.print("Price was " + this.price + " and now ");
+        out.print("Price was " + this.price + " and now ");
         double w1 = 0.9;
         double w2 = 0.1;
         this.price = (this.price * w1 + price * w2) / (w1 + w2);
-        System.out.println("Price is " + this.price);
+        out.println("Price is " + this.price);
     }   
 
     //////////////////////////////////////////GETTERS AND SETTERS//////////////////////////////////////////

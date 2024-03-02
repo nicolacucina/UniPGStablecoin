@@ -18,20 +18,23 @@ public class Contract {
         this.rebase = false;
     }
     
-    public void rebase(PrintWriter out){
+    public void rebase(){
         rebase = true;
-        out.println("Rebase, old token amount: " + getNumberofToken());
-        double newTokenAmount = getNumberofToken()*value; 
-        out.println("Rebase, new token amount: " + newTokenAmount);
+        PrintWriter out = Simulation.getWriter();
+        out.println("Rebase");
+        out.println("Old token amount: " + getNumberofToken()); 
+        out.println("New token amount: " + getNumberofToken() + " tokens * " + value + " price per token = " + getNumberofToken()*value + " tokens");
+        double newTokenAmount = getNumberofToken()*value;
         out.println();
         for(Wallet wallet : wallets){
-            System.out.println(wallet.getName() + " token amount: " + wallet.getToken() + " percentage: " + wallet.getPercentage());
+            out.println("Wallet: "+wallet.getName() + ", old token amount: " + wallet.getToken() + ", percentage: " + wallet.getPercentage());
             wallet.setToken(newTokenAmount*wallet.getPercentage());
-            System.out.println(wallet.getName() + " token amount: " + wallet.getToken() + " percentage: " + wallet.getPercentage());
+            out.println("Wallet: "+wallet.getName() + ", new token amount: " + wallet.getToken() + ", percentage: " + wallet.getPercentage());
+            out.println();
         }
         rebase = false;
-        System.out.println("Rebase finished, token amount: " + getNumberofToken());
-        System.out.println();
+        out.println("Rebase finished, token amount: " + getNumberofToken());
+        out.println();
     }
     
     public void tranfer(Wallet fromWallet, Wallet toWallet, double tokenAmount){
@@ -41,11 +44,11 @@ public class Contract {
                 toWallet.setToken(toWallet.getToken() + tokenAmount);
             }
             else{
-                System.out.println("Transaction not allowed, not enough tokens");
+                Simulation.getWriter().println("Transaction between "+ fromWallet.getName() + " and "+ toWallet.getName() + " not allowed, not enough tokens");
             }
         }
         else{
-            System.out.println("Rebase in progress, transaction not allowed");
+            Simulation.getWriter().println("Rebase in progress, transaction not allowed");
         }
     }
 
