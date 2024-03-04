@@ -13,8 +13,11 @@ public class Exchange{
     private LinkedList<Wallet> buyerWallets;
     private LinkedList<Wallet> sellerWallets;
     private Random random;
+    private double w1;
+    private double w2;
 
-    Exchange(String name, double demand, double supply, double price){
+
+    Exchange(String name, double demand, double supply, double price, double w1, double w2){
         this.name = name;
         this.demand = demand;
         this.supply = supply;
@@ -22,6 +25,8 @@ public class Exchange{
         this.buyerWallets = new LinkedList<Wallet>();
         this.sellerWallets = new LinkedList<Wallet>();
         this.random = new Random(Simulation.getSeed());
+        this.w1 = w1;
+        this.w2 = w2;
     }
 
     public void transfer(Wallet fromWallet, Wallet toWallet, double price, double tokenAmount){
@@ -37,8 +42,6 @@ public class Exchange{
 
         //Price update, weighted average between old price and price of the latest transaction
         out.print("Price was " + this.price + " and now ");
-        double w1 = 0.9;
-        double w2 = 0.1;
         this.price = (this.price * w1 + price * w2) / (w1 + w2);
         out.println("Price is " + this.price);
     }   

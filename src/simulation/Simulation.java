@@ -1,10 +1,12 @@
 package simulation;
 
 import java.util.Random;
+import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.LinkedList;
+import java.util.Properties;
 
 
 public class Simulation {
@@ -13,36 +15,61 @@ public class Simulation {
     public static PrintWriter out;
     public static void main(String[] args) {
         // Simulation parameters
-        seed = Long.parseLong(args[0]);
-        Random random = new Random(seed);
+        //seed = Long.parseLong(args[0]);
 
-        int days = Integer.parseInt(args[1]);
-        int numberOfInitialWallets = Integer.parseInt(args[2]);
-        int initialTokenAmount, initialMoneyAmount; 
-        initialTokenAmount = initialMoneyAmount = Integer.parseInt(args[3]); // Assures that the initial price is 1
-        double buyProbability = 0.4;
-        double sellProbability = 0.4; 
-        double percentageOfNewBuyers = 0.1;
-        int numberOfExchanges = 3;  
+
+        //int days = Integer.parseInt(args[1]);
+        //int numberOfInitialWallets = Integer.parseInt(args[2]);
+        //int initialTokenAmount, initialMoneyAmount; 
+        //initialTokenAmount = initialMoneyAmount = Integer.parseInt(args[3]); // Assures that the initial price is 1
+        //double buyProbability = 0.4;
+        //double sellProbability = 0.4; 
+        ///double percentageOfNewBuyers = 0.1;
+        //int numberOfExchanges = 3;  
+        //double w1 = 0.9;
+        //double w2 = 0.1;
         
-        double[] prices = new double[days];
-        double[] tokenAmounts = new double[days];
 
-        // Setup phase, first minting of the tokens
-        Contract contract = new Contract();
-        for(int i = 0; i < numberOfInitialWallets; i++){
-            Wallet wallet = new Wallet(Integer.toString(i), initialTokenAmount, initialMoneyAmount, contract);
-            contract.addWallet(wallet);
-        }
-
-        // Initialize the percentage of the wallets after all wallets have been created
-        for(Wallet wallet : contract.getWallets()){
-            wallet.initPercentage();
-        }
-
+        Properties simulationProperties = new Properties();
         try {
+            simulationProperties.load(new FileInputStream("data/simulation.properties"));
+            long seed = Long.parseLong(simulationProperties.getProperty("seed"));
+            int days = Integer.parseInt(simulationProperties.getProperty("days"));
+            int numberOfInitialWallets = Integer.parseInt(simulationProperties.getProperty("numberOfInitialWallets"));
+            int initialTokenAmount, initialMoneyAmount;
+            initialTokenAmount = initialMoneyAmount = Integer.parseInt(simulationProperties.getProperty("initialTokenAmount"));
+            double buyProbability = Double.parseDouble(simulationProperties.getProperty("buyProbability"));
+            double sellProbability = Double.parseDouble(simulationProperties.getProperty("sellProbability"));
+            double percentageOfNewBuyers = Double.parseDouble(simulationProperties.getProperty("percentageOfNewBuyers"));
+            int numberOfExchanges = Integer.parseInt(simulationProperties.getProperty("numberOfExchanges"));
+            double w1 = Double.parseDouble(simulationProperties.getProperty("ExchangeWeight1"));
+            double w2 = Double.parseDouble(simulationProperties.getProperty("ExchangeWeight2"));
+
+            Random random = new Random(seed);
+
+            double[] prices = new double[days];
+            double[] tokenAmounts = new double[days];
+            boolean[] newBuyers = new boolean[days];
+
+            // Setup phase, first minting of the tokens
+            Contract contract = new Contract();
+            for(int i = 0; i < numberOfInitialWallets; i++){
+                Wallet wallet = new Wallet(Integer.toString(i), initialTokenAmount, initialMoneyAmount, contract);
+                contract.addWallet(wallet);
+            }
+
+            // Initialize the percentage of the wallets after all wallets have been created
+            for(Wallet wallet : contract.getWallets()){
+                wallet.initPercentage();
+            }
+
+            Exchange[] exchanges = new Exchange[numberOfExchanges];
+            for(int j = 0; j < numberOfExchanges; j++){
+                exchanges[j] = new Exchange(Integer.toString(j),0.0, 0.0, 1.0, w1, w2);
+            }
+
             out = new PrintWriter (new FileWriter("data/log.txt"));
-            // Simulation phase
+                // Simulation phase
             for(int i = 0; i < days; i++){
                 out.println("Day " + i + " of the simulation----------------------------");
                 out.println();
@@ -71,7 +98,7 @@ public class Simulation {
                 // Randomly add new buyers
 
                 boolean addBuyer = random.nextBoolean();
-                
+                newBuyers[i] = addBuyer;
                 if(addBuyer){
                     out.println("New buyers");
                     for(int j = 0; j < random.nextInt((int)(contract.getWallets().size()*percentageOfNewBuyers)); j++){
@@ -85,11 +112,6 @@ public class Simulation {
 
 
                 // Setup the exchanges
-
-                Exchange[] exchanges = new Exchange[numberOfExchanges];
-                for(int j = 0; j < numberOfExchanges; j++){
-                    exchanges[j] = new Exchange(Integer.toString(j),0.0, 0.0, 1.0);
-                }
                 
                 for(Wallet wallet: contract.getWallets()){
                     int temp = random.nextInt(numberOfExchanges);
@@ -149,7 +171,7 @@ public class Simulation {
                     while(exchange.getBuyerWallets().size() > 0 && exchange.getSellerWallets().size() > 0){
                         Wallet buyer = exchange.getBuyerWallet();
                         Wallet seller = exchange.getSellerWallet();
-    
+
                         double tokenAmount = seller.getToken()*random.nextDouble();    
                         double transationPrice = Math.abs(random.nextGaussian() + 1);
                         
@@ -182,16 +204,18 @@ public class Simulation {
             out.println();
             out.println("Simulation finished");
             out.println("Sta lista ha qualcosa che non va perchè le singole giornate invece funzionano");
-            out.println("Prices, Tokens");
-            out.println("------------");
-            out.println(1.0 +", " + initialTokenAmount*numberOfInitialWallets);
+            out.println();
+            out.println("Prices, Tokens, New buyers");
+            out.println("-----------------------------------------------------");
+            out.println(1.0 +", " + initialTokenAmount*numberOfInitialWallets + ", " + false);
             for(int i = 0; i < days; i++){
-                out.println(prices[i] + ", " + tokenAmounts[i]);
+                out.println(prices[i] + ", " + tokenAmounts[i] + ", " + newBuyers[i]);  
             }
             out.close();
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
+        
     }
 
     public static long getSeed(){
