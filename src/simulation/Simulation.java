@@ -14,25 +14,12 @@ public class Simulation {
     public static long seed;
     public static PrintWriter out;
     public static void main(String[] args) {
-        // Simulation parameters
-        //seed = Long.parseLong(args[0]);
-
-
-        //int days = Integer.parseInt(args[1]);
-        //int numberOfInitialWallets = Integer.parseInt(args[2]);
-        //int initialTokenAmount, initialMoneyAmount; 
-        //initialTokenAmount = initialMoneyAmount = Integer.parseInt(args[3]); // Assures that the initial price is 1
-        //double buyProbability = 0.4;
-        //double sellProbability = 0.4; 
-        ///double percentageOfNewBuyers = 0.1;
-        //int numberOfExchanges = 3;  
-        //double w1 = 0.9;
-        //double w2 = 0.1;
-        
+        // Simulation parameters    
 
         Properties simulationProperties = new Properties();
         try {
             simulationProperties.load(new FileInputStream("data/simulation.properties"));
+            String logname = simulationProperties.getProperty("logName");
             long seed = Long.parseLong(simulationProperties.getProperty("seed"));
             int days = Integer.parseInt(simulationProperties.getProperty("days"));
             int numberOfInitialWallets = Integer.parseInt(simulationProperties.getProperty("numberOfInitialWallets"));
@@ -68,7 +55,7 @@ public class Simulation {
                 exchanges[j] = new Exchange(Integer.toString(j),0.0, 0.0, 1.0, w1, w2);
             }
 
-            out = new PrintWriter (new FileWriter("data/log.txt"));
+            out = new PrintWriter (new FileWriter("data/"+logname+".txt"));
                 // Simulation phase
             for(int i = 0; i < days; i++){
                 out.println("Day " + i + " of the simulation----------------------------");
@@ -212,10 +199,16 @@ public class Simulation {
                 out.println(prices[i] + ", " + tokenAmounts[i] + ", " + newBuyers[i]);  
             }
             out.close();
+
+            PrintWriter csvWriter = new PrintWriter(new FileWriter("data/"+logname+".csv"));
+            csvWriter.println("Prices, Tokens");
+            for(int i=0; i < days; i++){
+                csvWriter.println(prices[i] + ", " + tokenAmounts[i]);
+            }
+            csvWriter.close(); 
         } catch (IOException e) {
             e.printStackTrace();
         }
-        
     }
 
     public static long getSeed(){
