@@ -25,6 +25,7 @@ public class Simulation {
             int numberOfInitialWallets = Integer.parseInt(simulationProperties.getProperty("numberOfInitialWallets"));
             int initialTokenAmount, initialMoneyAmount;
             initialTokenAmount = initialMoneyAmount = Integer.parseInt(simulationProperties.getProperty("initialTokenAmount"));
+            double maxMoneyAmount = Double.parseDouble(simulationProperties.getProperty("maxMoneyAmount"));
             double buyProbability = Double.parseDouble(simulationProperties.getProperty("buyProbability"));
             double sellProbability = Double.parseDouble(simulationProperties.getProperty("sellProbability"));
             double percentageOfNewBuyers = Double.parseDouble(simulationProperties.getProperty("percentageOfNewBuyers"));
@@ -43,11 +44,6 @@ public class Simulation {
             for(int i = 0; i < numberOfInitialWallets; i++){
                 Wallet wallet = new Wallet(Integer.toString(i), initialTokenAmount, initialMoneyAmount, contract);
                 contract.addWallet(wallet);
-            }
-
-            // Initialize the percentage of the wallets after all wallets have been created
-            for(Wallet wallet : contract.getWallets()){
-                wallet.initPercentage();
             }
 
             Exchange[] exchanges = new Exchange[numberOfExchanges];
@@ -82,14 +78,14 @@ public class Simulation {
                 }
                 out.println();
 
-                // Randomly add new buyers
+                // Randomly add new buyers that will purchase tokens from the users
 
                 boolean addBuyer = random.nextBoolean();
                 newBuyers[i] = addBuyer;
                 if(addBuyer){
                     out.println("New buyers");
                     for(int j = 0; j < random.nextInt((int)(contract.getWallets().size()*percentageOfNewBuyers)); j++){
-                        Wallet wallet = new Wallet(Integer.toString(contract.getWallets().size()+1), initialTokenAmount, initialMoneyAmount, contract);
+                        Wallet wallet = new Wallet(Integer.toString(contract.getWallets().size()+1), 0, random.nextDouble()*maxMoneyAmount, contract);
                         contract.addWallet(wallet);
                         buyers.add(wallet);
                         out.println("New Wallet " + wallet.getName() + " wants to buy.");
@@ -97,6 +93,8 @@ public class Simulation {
                     out.println();
                 }
 
+                // Initialize the percentage of the wallets after all wallets have been created
+                contract.initPercentages();
 
                 // Setup the exchanges
                 

@@ -23,7 +23,6 @@ public class Contract {
         PrintWriter out = Simulation.getWriter();
         out.println("Rebase");
         out.println("Old token amount: " + getNumberofToken()); 
-        out.println("New token amount: " + getNumberofToken() + " tokens * " + value + " price per token = " + getNumberofToken()*value + " tokens");
         double newTokenAmount = getNumberofToken()*value;
         out.println();
         for(Wallet wallet : wallets){
@@ -33,6 +32,7 @@ public class Contract {
             out.println();
         }
         rebase = false;
+        
         out.println("Rebase finished, token amount: " + getNumberofToken());
         out.println();
     }
@@ -49,6 +49,12 @@ public class Contract {
         }
         else{
             Simulation.getWriter().println("Rebase in progress, transaction not allowed");
+        }
+    }
+
+    public void initPercentages(){
+        for(Wallet wallet : wallets){
+            wallet.initPercentage();
         }
     }
 
