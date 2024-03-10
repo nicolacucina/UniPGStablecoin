@@ -6,7 +6,19 @@ import java.io.PrintWriter;
 
 public class Contract {
     
-    // this is a representation of a ERC20 smart contract
+    /* this is a representation of a ERC20 smart contract, these are its functions, 
+    not all of them are necessary in our simulation
+    
+        function name() public view returns (string) // optional 
+        function symbol() public view returns (string) // optional
+        function decimals() public view returns (uint8)
+        function totalSupply() public view returns (uint256)
+        function balanceOf(address _owner) public view returns (uint256 balance) // this is implemented in the Wallet class
+        function transfer(address _to, uint256 _value) public returns (bool success)
+        function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)
+        function approve(address _spender, uint256 _value) public returns (bool success)
+        function allowance(address _owner, address _spender) public view returns (uint256 remaining)
+    */
     private LinkedList<Wallet> wallets;
     private double value;
     private boolean rebase;
@@ -19,6 +31,7 @@ public class Contract {
     }
     
     public void rebase(){
+        // there are some numerical errors because of double precision
         rebase = true;
         PrintWriter out = Simulation.getWriter();
         out.println("Rebase");
