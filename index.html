@@ -30,7 +30,7 @@
     <div>
       <h2>Contract Address</h2>
       <div class="contract-address">
-        The address of the contract is: <span id="contract-address">0x
+        The address of the contract is: 
     </div>
 
     <div>
@@ -40,22 +40,26 @@
           <button id="get-name" class="get-name" onclick="getTokenName()">Get Token Name</button>
           <div id="token-name"></div>
         </div>
+        <br/>
         <div class="row">
           <button id="get-symbol" class="get-symbol" onclick="getTokenSymbol()">Get Token Symbol</button>
           <img id="token-symbol"></img>
         </div>
-        <div>
+        <br/>
+        <div class="row">
           <button id="get-decimals" class="get-decimals">Get Token Decimals</button>
           <div id="token-decimals"></div>
         </div>
-        <div>
-          <button id="get-total-supply" class="get-total-supply">Get Token Total Supply</button>
+        <br/>
+        <div class="row">
+          <button id="get-total-supply" class="get-total-supply" onclick="getTotalSupply()">Get Token Total Supply</button>
           <div id="token-total-supply"></div>
         </div>
-        <div>
+        <br/>
+        <div class="row">
           <input type="text" id="user-balance" placeholder="Enter your wallet address">
-          <button id="get-balance" class="get-balance">Get Token Balance</button>
-          <div id="token-balance"></div>
+          <button id="get-balance" class="get-balance" onclick="getBalance()">Get Wallet Balance</button>
+          <div id="wallet-balance"></div>
         </div>
 
         <!--button id="get-price" class="get-price">Get Price</button-->

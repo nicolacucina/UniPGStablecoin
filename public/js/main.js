@@ -1,7 +1,30 @@
+// Define contract paramenters 
+const testnet = 'https://rpc2.sepolia.org';
+console.log('Connecting to ' + testnet);
+const web3 = new Web3(new Web3.providers.HttpProvider(testnet));
+
+// Test the connection
+web3.eth.getBlock('latest').then(console.log)
+web3.eth.getBlockNumber().then(console.log)
+
+const jsonInterface = []
+const contractAddress = '';
+const Contract = new web3.eth.Contract(jsonInterface, contractAddress);
+const myAddress = '';
+const minterAddress = '';
+
+// Draw the charts
+
+createCoinChart();
+
+createTokenChart();
+
 // Placeholder methods to test interaction with the html page
+
 async function getTokenName(){
     var n = document.getElementById("token-name");
-    n.innerHTML = "UniPG Stablecoin";
+    //n.innerHTML = await Contract.methods.name().call().then()
+    n.innerHTML = " &emsp; UniPG Stablecoin";
 }
 
 async function getTokenSymbol(){
@@ -12,9 +35,17 @@ async function getTokenSymbol(){
     img.height = 200;
 }
 
+async function getBalance(){
+    var n = document.getElementById("wallet-balance");
+    //var balance = await Contract.methods.balances(myAddress).call().then(n.innerHTML = "&emsp;" + balance)
+    balance = 1000;
+    n.innerHTML = "&emsp;" + balance;
+}
 
-// Draw the charts
+async function getTotalSupply(){
+    var n = document.getElementById("token-total-supply");
+    //var supply = await Contract.methods.totalSupply().call().then()
+    supply = 1000000;
+    n.innerHTML = "&emsp;" + supply;
+}
 
-createCoinChart();
-
-createTokenChart();
