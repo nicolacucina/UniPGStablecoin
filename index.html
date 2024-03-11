@@ -1,22 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <title>Stablecoin</title>
-  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-  <script>
-    // add javascript code here
-  </script>
-</head>
-<body>
-<h2>Testing Interaction with a Sepolia Ethereum Node</h2>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Stablecoin</title>
+    <link rel="icon" type="image/x-icon" href="./public/img/Stablecoin.ico">
+    <link rel="stylesheet" type="text/css" href="./public/css/base.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/visualization.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <h2>Contract Address</h2>
+      <div class="contract-address">
+        The address of the contract is: <span id="contract-address">0x
+    </div>
 
-<p>
-We use this Web page to interact with Ethereum smart contracts.
-The smart contracts are deployed on the Sepolia Testnet.
-We will use the web3.js library.
-Most examples will be executed from the console of the browser's Web developer tools.
-</p>
 
-</body>
+    <div class="container">
+      <h1>New York City 2021 Weather</h1>
+      <div class="row">
+        <div class="col col-6">
+          <h2>Coin price</h2>
+          <div class="responsive-svg-container">
+            <div id="coin-line-chart"></div>
+          </div>
+        </div>
+        <div class="col col-6">
+          <h2>Token supply</h2>
+          <div class="responsive-svg-container">
+            <div id="token-line-chart"></div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    <!--section>
+      <div class="row">
+        <div class="col col-3">
+          <h2>Coin price</h2>
+          <div class="coin-intro" style="text-align: justify">
+            The price of the coin is displayed in the chart below.
+          </div>
+          <div id="coin-chart" class="coin-chart-container"></div>
+        </div>
+        <div class="col col-3">
+          <h2>Token supply</h2>
+          <div class="token-intro" style="text-align: justify">
+            The supply of the token is displayed in the chart below.
+          </div>
+          <div id="token-chart" class="token-chart-container"></div>
+        </div>  
+      </div>
+    </section-->
+    
+
+    <div>
+      <h2>Contract Interaction</h2>
+      <div class="contract-interaction">
+        <button id="get-price" class="get-price">Get Price</button>
+        <button id="get-supply" class="get-supply">Get Supply</button>
+      </div>
+    </div>
+
+    <div>
+      <h2>Contract Transactions</h2>
+      <div class="contract-transactions">
+        <button id="buy-coin" class="buy-coin">Buy Coin</button>
+        <button id="sell-coin" class="sell-coin">Sell Coin</button>
+    </div>
+    <script src="./public/js/coin.js"></script>
+    <script src="./public/js/token.js"></script>
+    <script src="./public/js/main.js"></script>
+  </body>
 </html>
