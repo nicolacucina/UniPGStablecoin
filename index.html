@@ -10,15 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
   </head>
   <body>
-    <div>
-      <h2>Contract Address</h2>
-      <div class="contract-address">
-        The address of the contract is: <span id="contract-address">0x
-    </div>
-
-
     <div class="container">
-      <h1>New York City 2021 Weather</h1>
+      <h1>UniPG Stablecoin</h1>
       <div class="row">
         <div class="col col-6">
           <h2>Coin price</h2>
@@ -34,46 +27,61 @@
         </div>
       </div>
 
-
-
-
-
-    <!--section>
-      <div class="row">
-        <div class="col col-3">
-          <h2>Coin price</h2>
-          <div class="coin-intro" style="text-align: justify">
-            The price of the coin is displayed in the chart below.
-          </div>
-          <div id="coin-chart" class="coin-chart-container"></div>
-        </div>
-        <div class="col col-3">
-          <h2>Token supply</h2>
-          <div class="token-intro" style="text-align: justify">
-            The supply of the token is displayed in the chart below.
-          </div>
-          <div id="token-chart" class="token-chart-container"></div>
-        </div>  
-      </div>
-    </section-->
-    
+    <div>
+      <h2>Contract Address</h2>
+      <div class="contract-address">
+        The address of the contract is: <span id="contract-address">0x
+    </div>
 
     <div>
-      <h2>Contract Interaction</h2>
+      <h2>Contract Interaction according to the ERC-20 standard</h2>
       <div class="contract-interaction">
-        <button id="get-price" class="get-price">Get Price</button>
-        <button id="get-supply" class="get-supply">Get Supply</button>
+        <div class="row">
+          <button id="get-name" class="get-name" onclick="getTokenName()">Get Token Name</button>
+          <div id="token-name"></div>
+        </div>
+        <div class="row">
+          <button id="get-symbol" class="get-symbol" onclick="getTokenSymbol()">Get Token Symbol</button>
+          <img id="token-symbol"></img>
+        </div>
+        <div>
+          <button id="get-decimals" class="get-decimals">Get Token Decimals</button>
+          <div id="token-decimals"></div>
+        </div>
+        <div>
+          <button id="get-total-supply" class="get-total-supply">Get Token Total Supply</button>
+          <div id="token-total-supply"></div>
+        </div>
+        <div>
+          <input type="text" id="user-balance" placeholder="Enter your wallet address">
+          <button id="get-balance" class="get-balance">Get Token Balance</button>
+          <div id="token-balance"></div>
+        </div>
+
+        <!--button id="get-price" class="get-price">Get Price</button-->
+
       </div>
     </div>
 
     <div>
       <h2>Contract Transactions</h2>
       <div class="contract-transactions">
-        <button id="buy-coin" class="buy-coin">Buy Coin</button>
-        <button id="sell-coin" class="sell-coin">Sell Coin</button>
+        <div>
+          Insert your wallet address here:
+          <input type="text" id="user-wallet" placeholder="Enter your wallet address">
+        </div>
+        <div>
+          Insert here the address of the wallet you want to buy tokens from:
+          <input type="text" id="buy-from-wallet" placeholder="Enter address where you want to buy tokens from">
+        </div>
+        <div>
+          Insert here the address of the wallet you want to sell tokens to:
+          <input type="text" id="sell-to-wallet" placeholder="Enter address where you want to sell tokens to">
+        </div>
     </div>
-    <script src="./public/js/coin.js"></script>
-    <script src="./public/js/token.js"></script>
+
+    <script src="./public/js/coinLineChart.js"></script>
+    <script src="./public/js/tokenLineChart.js"></script>
     <script src="./public/js/main.js"></script>
   </body>
 </html>
