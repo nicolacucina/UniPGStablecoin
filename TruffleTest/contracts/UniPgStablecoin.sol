@@ -2,6 +2,7 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 import "./IERC20.sol";
+import "./PriceGenerator.sol";
 
 contract UniPGStablecoin is IERC20 {
     /* This event is emitted when the amount of tokens (value) is sent from the from address to the to address.
@@ -33,31 +34,35 @@ contract UniPGStablecoin is IERC20 {
     uint256 public totalSupply;
     bool public isRebasing;
     bool public initialMinting;
+    address public minter;
     mapping(address => uint256) public balanceOf;
     address[] public walletAddresses;
     mapping(address => mapping(address => uint256)) public allowance;
     string public name;
     string public symbol;
-    uint8 public decimals; 
+    uint8 public decimals;
+    PriceGenerator public priceGen; 
 
-    constructor(string memory _name, string memory _symbol, uint8 _decimals) {
+    constructor(string memory _name, string memory _symbol, uint8 _decimals, PriceGenerator _priceGenerator) {
         name = _name;
         symbol = _symbol;
         decimals = _decimals;
+        priceGen = _priceGenerator;
+        minter = msg.sender;
         isRebasing = false;
         initialMinting = true;
     }
         
     /* this is used only in the inital phase of the contract where tokens are given to initial backers.*/
     function mint(address to, uint256 amount) external {
-        require(msg.sender == address(0), "Only the contract can mint tokens");
+        require(msg.sender == minter, "Only the contract can mint tokens");
         require(initialMinting == true, "Initial minting is over");
         walletAddresses.push(to);
         _mint(to, amount);
     }
 
     function blockMinting() external {
-        require(msg.sender == address(0), "Only the contract can block minting");
+        require(msg.sender == minter, "Only the contract can block minting");
         require(initialMinting == true, "Initial minting is over");
         initialMinting = false;
     }
@@ -65,26 +70,32 @@ contract UniPGStablecoin is IERC20 {
     function _mint(address to, uint256 amount) internal {
         balanceOf[to] += amount;
         totalSupply += amount;
-        emit Transfer(address(0), to, amount);
+        emit Transfer(minter, to, amount);
     }
 
     function _burn(address from, uint256 amount) internal {
         balanceOf[from] -= amount;
         totalSupply -= amount;
-        emit Transfer(from, address(0), amount);
+        emit Transfer(from, minter, amount);
+    }
+
+    /* this is used only in testing, the internal method should be called periodically each day */
+    function rebase() external {
+        require(msg.sender == minter, "Only the contract can rebase");
+        _rebase();
     }
 
     function _rebase() internal {
         isRebasing = true;
-        uint16 price = 105;
+        uint256 price = priceGen.price();
         
         /*for loops are not defined for mappings, the workaround is that when a key is added to a mapping,
         it also added to an array */
         for(uint i = 0; i < walletAddresses.length; i++) {
             /* fastest method, but using mint and burn triggers Transfer event
             balanceOf[account] = balanceOf[account] * price; */
-
-            uint256 diff = balanceOf[walletAddresses[i]] - balanceOf[walletAddresses[i]] * price; 
+            uint256 temp = balanceOf[walletAddresses[i]];
+            uint256 diff = temp - (temp*price); 
             if(price > 1){
                 _mint(walletAddresses[i], diff);
             }else if(price < 1){

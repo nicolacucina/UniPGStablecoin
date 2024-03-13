@@ -1,0 +1,22 @@
+# init ganashe
+truffle migrate
+truffle develop
+    let accounts = await web3.eth.getAccounts()
+    let pricegen = await PriceGenerator.deployed()
+    let stablecoin = await UniPGStablecoin.deployed()
+    accounts[0]
+    pricegen.minter()
+    stablecoin.minter()
+    pricegen.setPrice(1, {from : accounts[0]})
+    stablecoin.initialMinting()
+    stablecoin.mint(accounts[1], 20, {from : accounts[0]})
+    stablecoin.mint(accounts[2], 20, {from : accounts[0]})
+    stablecoin.mint(accounts[3], 20, {from : accounts[0]})
+    stablecoin.balanceOf(accounts[1])
+    stablecoin.balanceOf(accounts[2])
+    stablecoin.balanceOf(accounts[3])
+    stablecoin.blockMinting()
+    stablecoin.rebase({from: accounts[0]})
+    pricegen.setPrice(10, {from : accounts[0]}) // number format?
+    stablecoin.rebase({from: accounts[0]}) // panic arithmetic overflow
+
