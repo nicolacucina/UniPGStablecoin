@@ -1,5 +1,6 @@
 // Define contract paramenters 
-const testnet = 'https://rpc2.sepolia.org';
+//const testnet = 'https://rpc2.sepolia.org';
+const testnet = 'localhost:8545';
 console.log('Connecting to ' + testnet);
 const web3 = new Web3(new Web3.providers.HttpProvider(testnet));
 

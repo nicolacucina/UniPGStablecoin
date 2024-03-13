@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.21;
+pragma solidity >=0.4.22 <0.9.0;
 
 interface IERC20 {
     /* Keep in mind that there are no floats in Solidity. Therefore most tokens adopt 18 decimals

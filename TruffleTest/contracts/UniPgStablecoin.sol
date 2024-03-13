@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.21;
+pragma solidity >=0.4.22 <0.9.0;
 
 import "./IERC20.sol";
 
@@ -18,17 +18,17 @@ contract UniPGStablecoin is IERC20 {
 
     ERC20InvalidApprover(approver)
 
-    ERC20InvalidSpender(spender)*/
+    ERC20InvalidSpender(spender)
 
     error RebaseInProgress();
 
     error InitialMintingOver();
 
-    error InsufficientBalance(uint requested, uint available);
-
     error InvalidSender(address sender);
 
-    error InvalidReceiver(address receiver);
+    error InvalidReceiver(address receiver);*/
+
+    error InsufficientBalance(uint requested, uint available);
 
     uint256 public totalSupply;
     bool public isRebasing;
@@ -50,15 +50,15 @@ contract UniPGStablecoin is IERC20 {
         
     /* this is used only in the inital phase of the contract where tokens are given to initial backers.*/
     function mint(address to, uint256 amount) external {
-        require(msg.sender == address(0));
-        require(initialMinting == true);
+        require(msg.sender == address(0), "Only the contract can mint tokens");
+        require(initialMinting == true, "Initial minting is over");
         walletAddresses.push(to);
         _mint(to, amount);
     }
 
     function blockMinting() external {
-        require(msg.sender == address(0));
-        require(initialMinting == true);
+        require(msg.sender == address(0), "Only the contract can block minting");
+        require(initialMinting == true, "Initial minting is over");
         initialMinting = false;
     }
 
