@@ -31,17 +31,20 @@ contract UniPGStablecoin is IERC20 {
 
     error InsufficientBalance(uint requested, uint available);
 
+    PriceGenerator public priceGen;
+    
+    string public name;
+    string public symbol;
+    uint8 public decimals;
     uint256 public totalSupply;
     bool public isRebasing;
     bool public initialMinting;
+    
     address public minter;
     mapping(address => uint256) public balanceOf;
     address[] public walletAddresses;
     mapping(address => mapping(address => uint256)) public allowance;
-    string public name;
-    string public symbol;
-    uint8 public decimals;
-    PriceGenerator public priceGen; 
+     
 
     constructor(string memory _name, string memory _symbol, uint8 _decimals, PriceGenerator _priceGenerator) {
         name = _name;
@@ -87,7 +90,7 @@ contract UniPGStablecoin is IERC20 {
 
     function _rebase() internal {
         isRebasing = true;
-        uint256 price = priceGen.price();
+        uint price = priceGen.price();
         
         /*for loops are not defined for mappings, the workaround is that when a key is added to a mapping,
         it also added to an array */
@@ -96,9 +99,9 @@ contract UniPGStablecoin is IERC20 {
             balanceOf[account] = balanceOf[account] * price; */
             uint256 temp = balanceOf[walletAddresses[i]];
             uint256 diff = temp - (temp*price); 
-            if(price > 1){
+            if(price > 1e18){
                 _mint(walletAddresses[i], diff);
-            }else if(price < 1){
+            }else if(price < 1e18){
                 _burn(walletAddresses[i], diff);
             }else{
                 // do nothing

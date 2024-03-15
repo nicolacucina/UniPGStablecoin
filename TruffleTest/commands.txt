@@ -1,4 +1,4 @@
-# init ganashe
+ganache-cli
 truffle migrate
 truffle develop
     let accounts = await web3.eth.getAccounts()
