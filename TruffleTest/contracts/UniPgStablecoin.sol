@@ -98,7 +98,7 @@ contract UniPGStablecoin is IERC20 {
             /* fastest method, but using mint and burn triggers Transfer event
             balanceOf[account] = balanceOf[account] * price; */
             uint256 temp = balanceOf[walletAddresses[i]];
-            uint256 diff = temp - (temp*price); 
+            uint256 diff = temp - (temp*price/1 ether); 
             if(price > 1e18){
                 _mint(walletAddresses[i], diff);
             }else if(price < 1e18){
