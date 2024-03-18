@@ -2,7 +2,7 @@
 
 ## Setup
 
-As shown in https://archive.trufflesuite.com/blog/build-on-web3-with-truffle-vs-code-extension/ , the requirements are:
+As shown in https://archive.trufflesuite.com/blog/build-on-web3-with-truffle-vs-code-extension/ and https://archive.trufflesuite.com/docs/vscode-ext/how-to/install-dependencies/, the requirements are:
 
 - Node.js --version^14.0.0
 - Git --version^2.10.0
@@ -80,3 +80,5 @@ Now that everything is set up
     newprice = 9.5e17.toString() // pass numbers as strings to avoid overflow   
     pricegen.setPrice(newprice, {from : accounts[0]}) // 
     stablecoin.rebase({from: accounts[0]}) //
+
+These instructions are implemented inside the html page so that they can be used by a UI instead of the terminal
