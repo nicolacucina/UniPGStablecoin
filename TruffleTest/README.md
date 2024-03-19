@@ -52,6 +52,13 @@ The _migrations_ folder is used to `deploy` the contracts on the network, they a
         deployer.deploy(UniPGStablecoin, "UniPGStablecoin", "UPG", 18, PriceGenerator.address);
     };
 
+The Ganache Command Line Interface has various flags that can be used, as shown in https://archive.trufflesuite.com/docs/ganache/reference/cli-options/:
+
+    -a <int>, number of accounts generated at startup, default 10
+    -s 'String', seed to randomly generate mnemonics
+    -m 'String', uses the specified mnemonics to generate addresses
+    --wallet.accountKeysPath=<STRING>, filepath to save both accounts and private keys
+
 Now that everything is set up
 
     ganache-cli

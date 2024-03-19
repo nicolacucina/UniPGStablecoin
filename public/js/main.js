@@ -50,6 +50,7 @@ async function createContractParams(){
         });
 
     // Get contract address from Ganache
+    // This is done explicitly to show blockchain interaction, but the minter of both accounts is always the first account in Ganache
 
     let FirstBlockHash = await web3.eth.getBlock('1');
     let PriceGeneratorDeployment = await web3.eth.getTransactionReceipt(FirstBlockHash.transactions[0]);
@@ -71,13 +72,23 @@ async function createContractParams(){
     console.log('UniPG Stablecoin contract owner: ');
     console.log(UniPGStablecoinMinter);
 
+    // Get the wallets
+    // This can be done using web3, but since Ganache is used, the wallets are stored inside /public/data/keys.json
     
+    /*
     wallets = await web3.eth.getAccounts().then((data)=>{  
         console.log('Accounts: ' + data);
         return data;
-    });
+    });*/
 
-    // display information on the page
+    wallets = await d3.json('./public/data/keys.json')
+        .then((data)=>{
+            console.log('Accounts: ')
+            console.log(data);
+            return data;
+        });
+
+    // Display information on the page
 
     var addresshtml = document.getElementById("contract-address");
     addresshtml.innerHTML = "<b>Price Generator contract address: </b>" + PriceGeneratorAddress + "<br><b>UniPG Stablecoin contract address: </b>" + UniPGStablecoinAddress;  
@@ -86,9 +97,16 @@ async function createContractParams(){
     minterhtml.innerHTML = "<b>Price Generator contract owner: </b>" + PriceGeneratorMinter + "<br><b>UniPG Stablecoin contract owner: </b>" + UniPGStablecoinMinter;  
 
     var n = document.getElementById("wallet-list");
-    wallets.forEach((wallet)=>{
-        n.innerHTML += "<option value=" + wallet + "> - " + wallet + "</option>";
-    });
+    console.log(wallets.addresses);
+    for(let address in wallets.addresses){
+       n.innerHTML += "<p class=\"row\"> " + wallets.addresses[address] + "</p>";
+    }
+
+    var m = document.getElementById("private-keys");
+    console.log(wallets.private_keys);
+    for(let key in wallets.private_keys){
+        m.innerHTML += "<p class=\"row\"> " + wallets.private_keys[key] + "</p>";
+    }   
 }
 
 createContractParams();
@@ -98,6 +116,8 @@ createContractParams();
 createCoinChart();
 
 createTokenChart();
+
+// Interaction methods
 
 async function getTokenName(){
     var n = document.getElementById("token-name");
@@ -150,7 +170,7 @@ async function getPrice(){
     }
     PriceGenerator.methods.price().call().then((data)=>{
         console.log(data)
-        n.innerHTML = " &emsp;" + data/BigInt(1e18) ;
+        n.innerHTML = " &emsp;" + data/BigInt(1e18) + " Euro";
     });
 }
 
@@ -171,8 +191,6 @@ async function mintTokens(){
     var minter = document.getElementById("user-wallet").value;
     var account = document.getElementById("target-wallet").value;
     var amount = document.getElementById("token-amount").value;
-    console.log(account);
-    console.log(amount);
     if (UniPGStablecoin == undefined){
         UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
     }
@@ -181,7 +199,14 @@ async function mintTokens(){
     var gasAmount = await UniPGStablecoin.methods.mint(account, amount).estimateGas({from: minter});
     console.log("Gas amount is " + gasAmount);
     var gasPrice = await web3.eth.getGasPrice();
-    const privateKey = "0x6fe7ac8879f36047d68dc946aee079044405cbc13aa74f6eef95af93f688afbb"
+    console.log("Gas price is " + gasPrice);
+    if(minter != UniPGStablecoinMinter){
+        console.log("You are not the owner of this contract");
+        alert("You are not the owner of this contract");
+        return;
+    }
+    
+    const privateKey = wallets.private_keys[minter];
     var transaction = {
         'from': minter,
         'to': UniPGStablecoinAddress,
@@ -197,5 +222,38 @@ async function mintTokens(){
                 console.log("Something went wrong while submitting your transaction:", error)
             }
         })
-    })
+    });
+}
+
+async function tranferTokens(){
+    var from = document.getElementById("from-wallet").value;
+    var to = document.getElementById("to-wallet").value;
+    var amount = document.getElementById("token-amount").value;
+    if (UniPGStablecoin == undefined){
+        UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
+    }
+
+    // since this method changes the state of the contract, it requires a signed transaction
+    var gasAmount = await UniPGStablecoin.methods.mint(account, amount).estimateGas({from: minter});
+    console.log("Gas amount is " + gasAmount);
+    var gasPrice = await web3.eth.getGasPrice();
+    console.log("Gas price is " + gasPrice);
+    
+    const privateKey = wallets.private_keys[from];
+    var transaction = {
+        'from': from,
+        'to': UniPGStablecoinAddress,
+        'gas': gasAmount,
+        'gasPrice': gasPrice,
+        'data': UniPGStablecoin.methods.transfer(to, amount).encodeABI(),
+    };
+    web3.eth.accounts.signTransaction(transaction, privateKey).then(signed => {
+        web3.eth.sendSignedTransaction(signed.rawTransaction, function(error, hash) {
+            if (!error) {
+                console.log("The hash of your transaction is: ", hash);
+            } else {
+                console.log("Something went wrong while submitting your transaction:", error)
+            }
+        })
+    });
 }

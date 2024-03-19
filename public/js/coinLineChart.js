@@ -1,3 +1,6 @@
+// The data used is a template coming from the simulation. When Ganache is running, each block will be recorded
+// and formatted in a csv file so that the drawCoinLineChart function can be called.
+
 async function createCoinChart() {
     d3.csv("./simulation/bin/data/run1.csv", (d) => {
         return {

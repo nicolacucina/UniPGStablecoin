@@ -28,13 +28,23 @@
           </div>
         </div>
       </div>
+    
+
 
     <!-- Second row is reserved for contract information -->
-    <div>
-      <h2>Contract Address</h2>
-      <div id="contract-address"></div>
-      <h2>Contract Owner</h2>
-      <div id="contract-owner"></div>
+    <div class="row">
+      <div class="col-6">
+        <h2>Contract Address</h2>
+        <div id="contract-address"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <h2>Contract Owner</h2>
+        <div id="contract-owner"></div>
+      </div>
+    </div>
+      
     <!-- Third row is reserved for intercation -->
     <div>
       <h2>Contract Interaction according to the ERC-20 standard</h2>
@@ -68,16 +78,26 @@
       <!-- This closes the third row -->
     </div>
 
+
+
     <!-- Fourth row is reserved for contract transactions -->
     <div>
       <h2>Contract Transactions</h2>
       <!-- Display all the wallets in the Network to allow user interaction that requires them -->
-      <div class="col-9">
-        <h3>Wallets in the Network</h3>
-        <p id="wallet-list"></p>
+      <div class="row">
+        <div class="col-9">
+          <h3>Wallets in the Network</h3>
+          <p id="wallet-list"></p>
+        </div>
+        <div class="col-9">
+          <h3>Private Keys</h3>
+          <p id="private-keys"></p>
+          <h4>Since Ganache is a local Blockchain the private keys can be shown</h4>
+        </div>
       </div>
-      <div class="contract-transactions">
-        <div>
+      </br>
+      <div id="contract-transactions">
+        <div class="row">
           Insert your wallet address here: &emsp;
           <input type="text" id="user-wallet" placeholder="Enter your wallet address">
         </div>
@@ -88,21 +108,20 @@
         </div>  
         <br/>
         <div class="row">
-          Mint Tokens: &emsp;
+          Mint Tokens (can only be done by the contract owner): &emsp;
           <input type="text" id="target-wallet" placeholder="Enter destination address"> &emsp;
           <input type="number" id="token-amount" placeholder="Token amount"> &emsp;
-          <button id="get-balance" class="get-balance" onclick="mintTokens()">Mint</button>
+          <button id="mint" class="mint" onclick="mintTokens()">Mint</button>
         </div>  
         <br/>
-        <div>
-          Insert here the address of the wallet you want to buy tokens from:
-          <input type="text" id="buy-from-wallet" placeholder="Enter address where you want to buy tokens from">
+        <div class="row">
+          Trasfer Tokens: &emsp;
+          <input type="text" id="from-wallet" placeholder="Enter address from which tokens will be tranferred from"> &emsp;
+          <input type="text" id="to-wallet" placeholder="Enter address where tokens will be sent"> &emsp;
+          <input type="number" id="transfer-amount" placeholder="Token amount"> &emsp;
+          <button id="transfer" class="transfer" onclick="TransferTokens()">Transfer</button>
         </div>
-        <br/>
-        <div>
-          Insert here the address of the wallet you want to sell tokens to:
-          <input type="text" id="sell-to-wallet" placeholder="Enter address where you want to sell tokens to">
-        </div>
+      </div>
     </div>
 
     <script src="./public/js/coinLineChart.js"></script>

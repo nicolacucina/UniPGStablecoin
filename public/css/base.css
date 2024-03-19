@@ -104,6 +104,10 @@ button {
   max-height: 22px;
 }
 
+input {
+  width: 300px;
+}
+
 /* Sources */
 .source {
   padding: 50px 0 30px;
