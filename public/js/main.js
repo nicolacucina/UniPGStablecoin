@@ -13,7 +13,6 @@ var UniPGStablecoin;
 
 async function createContractParams(){
 
-    // const testnet = 'https://rpc2.sepolia.org';
     const testnet = 'http://localhost:8545';
     console.log('Connecting to ' + testnet);
     web3 = new Web3(new Web3.providers.HttpProvider(testnet));
@@ -90,6 +89,22 @@ async function createContractParams(){
 
     // Display information on the page
 
+    displayBlocks();
+    
+    // let blockhtml = document.getElementById("blocks");
+    // let blockBatch = await displayBlocks();
+    // console.log('BlocksBatch: ');
+    // console.log(blockBatch);
+    // console.log();
+    // .then((data)=>{
+    //     console.log('Blocks: ');
+    //     console.log(data);
+    //     console.log(typeof(data));
+    //     return data;
+    // });
+
+    displayTransactions();
+    
     var addresshtml = document.getElementById("contract-address");
     addresshtml.innerHTML = "<b>Price Generator contract address: </b>" + PriceGeneratorAddress + "<br><b>UniPG Stablecoin contract address: </b>" + UniPGStablecoinAddress;  
     
@@ -97,15 +112,21 @@ async function createContractParams(){
     minterhtml.innerHTML = "<b>Price Generator contract owner: </b>" + PriceGeneratorMinter + "<br><b>UniPG Stablecoin contract owner: </b>" + UniPGStablecoinMinter;  
 
     var n = document.getElementById("wallet-list");
+    console.log('Addresses: ');
     console.log(wallets.addresses);
+    let i = 0;
     for(let address in wallets.addresses){
-       n.innerHTML += "<p class=\"row\"> " + wallets.addresses[address] + "</p>";
+       n.innerHTML += "<p class=\"row\"> " + i.toString() +"): " + wallets.addresses[address] + "</p>";
+       i++;
     }
 
+    let j=0;
     var m = document.getElementById("private-keys");
+    console.log('Private keys: ');
     console.log(wallets.private_keys);
     for(let key in wallets.private_keys){
-        m.innerHTML += "<p class=\"row\"> " + wallets.private_keys[key] + "</p>";
+        m.innerHTML += "<p class=\"row\"> " + j.toString() +"): " + wallets.private_keys[key] + "</p>";
+        j++;
     }   
 }
 
@@ -116,6 +137,33 @@ createContractParams();
 createCoinChart();
 
 createTokenChart();
+
+async function displayBlocks(){
+    
+    let blockhtml = document.getElementById("blocks");
+    let latestBlock = await web3.eth.getBlockNumber();
+    console.log('Latest block number: ');
+    console.log(latestBlock);
+
+    let blockrange = 10;
+    
+    for (let i = 0; i < blockrange; i++) {
+        let temp = Number(latestBlock)-i;
+        if (temp < 0){
+            break;
+        }else{
+            web3.eth.getBlock(temp).then((data)=>{
+                //console.log(data);
+                //blocks.push(data);
+                blockhtml.innerHTML += data.hash + "<br>";
+            })
+        }
+    } 
+}
+
+async function displayTransactions(){
+    
+}
 
 // Interaction methods
 
@@ -187,6 +235,11 @@ async function getBalance(){
     });
 }
 
+
+async function getAllowance(){
+    
+}
+
 async function mintTokens(){
     var minter = document.getElementById("user-wallet").value;
     var account = document.getElementById("target-wallet").value;
@@ -225,16 +278,16 @@ async function mintTokens(){
     });
 }
 
-async function tranferTokens(){
+async function transferTokens(){
     var from = document.getElementById("from-wallet").value;
     var to = document.getElementById("to-wallet").value;
-    var amount = document.getElementById("token-amount").value;
+    var amount = document.getElementById("transfer-amount").value;
     if (UniPGStablecoin == undefined){
         UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
     }
 
     // since this method changes the state of the contract, it requires a signed transaction
-    var gasAmount = await UniPGStablecoin.methods.mint(account, amount).estimateGas({from: minter});
+    var gasAmount = await UniPGStablecoin.methods.transfer(to, amount).estimateGas({from: from});
     console.log("Gas amount is " + gasAmount);
     var gasPrice = await web3.eth.getGasPrice();
     console.log("Gas price is " + gasPrice);
@@ -256,4 +309,32 @@ async function tranferTokens(){
             }
         })
     });
+}
+
+
+async function createWallet(){
+
+    var n = document.getElementById("wallet-creation");
+    var password = document.getElementById("user-password").value;
+    var wallet = await web3.eth.accounts.create(password);
+    
+    console.log('New wallet: ');
+    console.log(wallet);
+    n.innerHTML = " Wallet created: ";
+    n.innerHTML += "<p class=\"row\"> " + wallet.address + "</p>";
+    n.innerHTML += "<p class=\"row\"> " + wallet.privateKey + "</p>";
+
+    console.log('Old wallets: ');
+    console.log(wallets['addresses']);
+    wallets.addresses = JSON.parse(JSON.stringify(wallets['addresses']).slice(0, -1) + ', "' + wallet.address + '":"' + wallet.address + '"}');
+    console.log('New wallets: ')
+    console.log(wallets['addresses']);
+    
+    console.log('Old private keys: ');
+    console.log(wallets['private_keys']);
+    wallets.private_keys = JSON.parse(JSON.stringify(wallets['private_keys']).slice(0, -1) + ', "' + wallet.address + '":"' + wallet.privateKey + '"}');
+    console.log('New private keys: ');
+    console.log(wallets['private_keys']);
+
+    // check if it saves the wallets
 }

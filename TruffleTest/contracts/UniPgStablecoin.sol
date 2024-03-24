@@ -45,7 +45,6 @@ contract UniPGStablecoin is IERC20 {
     address[] public walletAddresses;
     mapping(address => mapping(address => uint256)) public allowance;
      
-
     constructor(string memory _name, string memory _symbol, uint8 _decimals, PriceGenerator _priceGenerator) {
         name = _name;
         symbol = _symbol;
