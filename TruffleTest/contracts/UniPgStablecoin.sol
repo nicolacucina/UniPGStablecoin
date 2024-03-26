@@ -72,13 +72,13 @@ contract UniPGStablecoin is IERC20 {
     function _mint(address to, uint256 amount) internal {
         balanceOf[to] += amount;
         totalSupply += amount;
-        emit Transfer(minter, to, amount);
+        emit Transfer(address(this), to, amount);
     }
 
     function _burn(address from, uint256 amount) internal {
         balanceOf[from] -= amount;
         totalSupply -= amount;
-        emit Transfer(from, minter, amount);
+        emit Transfer(from, address(this), amount);
     }
 
     /* this is used only in testing, the internal method should be called periodically each day */

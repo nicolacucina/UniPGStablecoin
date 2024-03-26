@@ -22,6 +22,7 @@ Inside the Truffle tab in VS Code, a local blockchain can be setup in the Networ
 
 This particular setup is reserved inside Truffle, as explained in the _truffle-config.js_ file:
 
+    ...
     networks: {
         // Useful for testing. The `development` name is special - truffle uses it by default
         // if it's defined here and no other network is specified at the command line.
@@ -34,6 +35,7 @@ This particular setup is reserved inside Truffle, as explained in the _truffle-c
          port: 8545,            // Standard Ethereum port (default: none)
          network_id: "*",       // Any network (default: none)
     },
+    ...
 
 This file is created alongside the entire directory structure by using the command:
 
@@ -59,11 +61,11 @@ The Ganache Command Line Interface has various flags that can be used, as shown 
     -m 'String', uses the specified mnemonics to generate addresses
     --wallet.accountKeysPath=<STRING>, filepath to save both accounts and private keys
 
-Now that everything is set up
+Now that everything is set up, here are some example intructions:
 
     ganache-cli
     truffle migrate
-    truffle develop
+    truffle console
     let accounts = await web3.eth.getAccounts(); 
     let pricegen = await PriceGenerator.deployed();
     let stablecoin = await UniPGStablecoin.deployed();
@@ -83,9 +85,33 @@ Now that everything is set up
     web3.eth.getBalance(accounts[0])
     web3.eth.getBalance(accounts[1])
     stablecoin.blockMinting()
-    stablecoin.rebase({from: accounts[0]}) // does nothing, price is at 1
-    newprice = 9.5e17.toString() // pass numbers as strings to avoid overflow   
-    pricegen.setPrice(newprice, {from : accounts[0]}) // 
-    stablecoin.rebase({from: accounts[0]}) //
+
+    // pass either strings or BigInts to avoid overflow
+    newprice = 9.5e17.toString() 
+    // newprice = BigInt(9.5e17)   
+
+    pricegen.setPrice(newprice, {from : accounts[0]}) 
+    stablecoin.rebase({from: accounts[0]})
 
 These instructions are implemented inside the html page so that they can be used by a UI instead of the terminal
+
+To simulate the changes in the price of the stablecoin, we can run the following function:
+    
+    const pricegen = await PriceGenerator.deployed();
+    const accounts = await web3.eth.getAccounts();
+    const timeout = 10; // time in seconds
+
+    function myFunction() {
+        let price = BigInt((Math.random()*0.5 + 1)*1e18);
+        console.log(price);
+        pricegen.setPrice(price, {from: accounts[0]}).then(() => {
+            console.log("Price set to " + price);
+        });
+        setTimeout(myFunction, timeout*1000);
+    }
+
+    myFunction();
+
+This recursively calls the setPrice function of the PriceGenerator Contract every 10 seconds until the script is stopped. To launch the script inside the truffle enviroment it must be contained inside a callback function exported via module (this is what truffle expects to find), therefore the script has been saved inside the file _priceChanger.js_, which can be launched using:
+
+    truffle exec priceChanger.js

@@ -155,11 +155,11 @@
       </br>  
       <div id="wallet-creation"></div>
     </div>
-    <!--
+    <!-------------------------------------------------------------------------------------------------
     <script src="./public/js/coinLineChart.js"></script>
     <script src="./public/js/tokenLineChart.js"></script>
     <script src="./public/js/main.js"></script> 
-    -->
+    --------------------------------------------------------------------------------------------------->
     <script>
       // Define contract paramenters
 
@@ -173,7 +173,9 @@
       var wallets;
       var PriceGenerator;
       var UniPGStablecoin;
+      var coinPriceData;
 
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////
       async function createContractParams(){
         const testnet = 'http://localhost:8545';
         console.log('Connecting to ' + testnet);
@@ -194,7 +196,7 @@
           console.log('Block Number:' + data); 
         });
 
-          // Get ABI from the Truffle build
+        // Get ABI from the Truffle build
 
         d3.json('./TruffleTest/build/contracts/PriceGenerator.json')
           .then((data) => {
@@ -210,14 +212,15 @@
             console.log(UniPGStablecoinABI);
           });
 
-          // Get contract address from Ganache
-          // This is done explicitly to show blockchain interaction, but the minter of both accounts is always the first account in Ganache
+        // Get contract address from Ganache
+        // This is done explicitly to show blockchain interaction, but the minter of both accounts is always the first account in Ganache
 
         let FirstBlockHash = await web3.eth.getBlock('1');
         let PriceGeneratorDeployment = await web3.eth.getTransactionReceipt(FirstBlockHash.transactions[0]);
         console.log(PriceGeneratorDeployment);
         PriceGeneratorAddress = PriceGeneratorDeployment.contractAddress
         PriceGeneratorMinter = PriceGeneratorDeployment.from;
+        
         console.log('Price Generator contract address: ');
         console.log(PriceGeneratorAddress);
         console.log('Price Generator contract owner: ');
@@ -228,6 +231,7 @@
         console.log(UniPGStablecoinDeployment);
         UniPGStablecoinAddress = UniPGStablecoinDeployment.contractAddress
         UniPGStablecoinMinter = UniPGStablecoinDeployment.from;
+        
         console.log('UniPG Stablecoin contract address: ');
         console.log(UniPGStablecoinAddress);
         console.log('UniPG Stablecoin contract owner: ');
@@ -236,12 +240,12 @@
           // Get the wallets
           // This can be done using web3, but since Ganache is used, the wallets are stored inside /public/data/keys.json
           
-          /*
-          wallets = await web3.eth.getAccounts().then((data)=>{  
-              console.log('Accounts: ' + data);
-              return data;
-          });*/
-
+        
+        // wallets = await web3.eth.getAccounts().then((data)=>{  
+        //     console.log('Accounts: ' + data);
+        //     return data;
+        // });
+        
         wallets = await d3.json('./public/data/keys.json')
           .then((data)=>{
             console.log('Accounts: ')
@@ -252,18 +256,6 @@
           // Display information on the page
 
         displayBlocks();
-          
-          // let blockhtml = document.getElementById("blocks");
-          // let blockBatch = await displayBlocks();
-          // console.log('BlocksBatch: ');
-          // console.log(blockBatch);
-          // console.log();
-          // .then((data)=>{
-          //     console.log('Blocks: ');
-          //     console.log(data);
-          //     console.log(typeof(data));
-          //     return data;
-          // });
 
         displayTransactions();
           
@@ -273,39 +265,25 @@
         var minterhtml = document.getElementById("contract-owner");
         minterhtml.innerHTML = "<b>Price Generator contract owner: </b>" + PriceGeneratorMinter + "<br><b>UniPG Stablecoin contract owner: </b>" + UniPGStablecoinMinter;  
 
-        var n = document.getElementById("wallet-list");
-        console.log('Addresses: ');
-        console.log(wallets.addresses);
-        let i = 0;
-        for(let address in wallets.addresses){
-          n.innerHTML += "<p class=\"row\"> " + i.toString() +"): " + wallets.addresses[address] + "</p>";
-          i++;
-        }
+        displayWalletsAndKeys();
 
-        let j=0;
-        var m = document.getElementById("private-keys");
-        console.log('Private keys: ');
-        console.log(wallets.private_keys);
-        for(let key in wallets.private_keys){
-            m.innerHTML += "<p class=\"row\"> " + j.toString() +"): " + wallets.private_keys[key] + "</p>";
-            j++;
-        }   
       }
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       createContractParams();
 
       // Draw the charts
 
-      createCoinChart();
+      createCoinChart(test=false);
 
       createTokenChart();
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       async function displayBlocks(){
         let blockhtml = document.getElementById("blocks");
         let latestBlock = await web3.eth.getBlockNumber();
         console.log('Latest block number: ');
         console.log(latestBlock);
 
+        blockhtml.innerHTML = '';
         let blockrange = 10;
         
         for (let i = 0; i < blockrange; i++) {
@@ -321,12 +299,34 @@
           }
         } 
       }
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       async function displayTransactions(){
           
       }
-
-      // Interaction methods
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      async function displayWalletsAndKeys(){
+        var n = document.getElementById("wallet-list");
+        console.log('Addresses: ');
+        console.log(wallets.addresses);
+        n.innerHTML = '';
+        let i = 0;
+        for(let address in wallets.addresses){
+          n.innerHTML += "<p class=\"row\"> " + i.toString() +"): " + wallets.addresses[address] + "</p>";
+          i++;
+        }
+        let j=0;
+        var m = document.getElementById("private-keys");
+        console.log('Private keys: ');
+        console.log(wallets.private_keys);
+        m.innerHTML = '';
+        for(let key in wallets.private_keys){
+            m.innerHTML += "<p class=\"row\"> " + j.toString() +"): " + wallets.private_keys[key] + "</p>";
+            j++;
+        }   
+      }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      
+// Interaction methods
 
       async function getTokenName(){
         var n = document.getElementById("token-name");
@@ -374,12 +374,14 @@
 
       async function getPrice(){
         var n = document.getElementById("token-price");
+        n.innerHTML = '';
         if (PriceGenerator == undefined){
           PriceGenerator = new web3.eth.Contract(PriceGeneratorABI, PriceGeneratorAddress);
         }
         PriceGenerator.methods.price().call().then((data)=>{
-          console.log(data)
-          n.innerHTML = " &emsp;" + data/BigInt(1e18) + " Euro";
+          let temp = Number(data).toExponential()/Number(BigInt(1e18)).toExponential();
+          console.log(temp);
+          n.innerHTML = " &emsp;" + temp + " Euro";
         });
       }
 
@@ -472,8 +474,10 @@
         });
       }
 
-
       async function createWallet(){
+        // The data is lost if the page is realoaded, but the blockchain state has been changed
+        // Wallets created this way do not have any eth to call transactions
+
         var n = document.getElementById("wallet-creation");
         var password = document.getElementById("user-password").value;
         var wallet = await web3.eth.accounts.create(password);
@@ -486,131 +490,131 @@
 
         console.log('Old wallets: ');
         console.log(wallets['addresses']);
-        wallets.addresses = JSON.parse(JSON.stringify(wallets['addresses']).slice(0, -1) + ', "' + wallet.address + '":"' + wallet.address + '"}');
+        wallets['addresses'] = JSON.parse(JSON.stringify(wallets['addresses']).slice(0, -1) + ', "' + wallet.address + '":"' + wallet.address + '"}');
         console.log('New wallets: ')
         console.log(wallets['addresses']);
         
         console.log('Old private keys: ');
         console.log(wallets['private_keys']);
-        wallets.private_keys = JSON.parse(JSON.stringify(wallets['private_keys']).slice(0, -1) + ', "' + wallet.address + '":"' + wallet.privateKey + '"}');
+        wallets['private_keys'] = JSON.parse(JSON.stringify(wallets['private_keys']).slice(0, -1) + ', "' + wallet.address + '":"' + wallet.privateKey + '"}');
         console.log('New private keys: ');
         console.log(wallets['private_keys']);
 
-          // check if it saves the wallets
+        // Update blocks and wallets
+        displayBlocks();
+        displayWalletsAndKeys();
       }
 
-      async function createTokenChart() {
-        d3.csv("./simulation/bin/data/run1.csv", (d) => {
-          return {
-              day: +d.Day,
-              token: +d.Token,
-          };
-        }).then((data) => {
-          drawTokenLineChart(data);
-        });
-        
+      async function createTokenChart(test=true) {
         const drawTokenLineChart = (data) => {
             
-          const margin = { top: 40, right: 40, bottom: 25, left: 60 };
-          const width = 500;
-          const height = 400;
-          const innerWidth = width - (margin.left + margin.right);
-          const innerHeight = height - (margin.top + margin.bottom);
-      
-          const svg = d3
-            .select("#token-line-chart")
-            .append("svg")
-            .attr("viewBox", `0 0 ${width} ${height}`);
-      
-          const innerChart = svg
-            .append("g")
-            .attr("transform", `translate(${margin.left}, ${margin.top})`)
-
-          const xScale = d3
-            .scaleLinear()
-            .domain([0, d3.max(data, (d) => d.day)])
-            .range([0, innerWidth]);
-          
-          const yScale = d3
-            .scaleLinear()
-            .domain([0, d3.max(data, (d) => d.token)])
-            .range([innerHeight, 0]);
-      
-          const bottomAxis = d3
-            .axisBottom(xScale)
-
-          innerChart
-            .append("g")
-            .attr("class", "axis-x")
-            .attr("transform", `translate(0, ${innerHeight})`)
-            .call(bottomAxis);
-      
-          const leftAxis = d3.axisLeft(yScale);
-          innerChart.append("g").attr("class", "axis-y").call(leftAxis);
-      
-          d3.selectAll(".axis-x text, .axis-y text")
-            .style("font-family", "Roboto, sans-serif")
-            .style("font-size", "14px");
-      
-          d3.selectAll(".axis-y text").attr("x", "-10px");
-
-          svg
-            .append("text")
-            .text("Number of Tokens")
-            .attr("y", 30)
-            .attr("font-family", "sans-serif");
-      
-          svg
-            .append("text")
-            .text("Day")
-            .attr("x", width - margin.right)
-            .attr("y", height - margin.bottom + 20)
-            .attr("font-family", "sans-serif");
-      
-          /* Line Chart */
-          const violet = "#8080ff";
-          innerChart
-            .selectAll("circle")
-            .data(data)
-            .join("circle")
-            .attr("r", 4)
-            .attr("cx", (d) => xScale(d.day))
-            .attr("cy", (d) => yScale(d.token))
-            .attr("fill", violet);
-      
-          const lineGenerator = d3
-            .line()
-            .x((d) => xScale(d.day))
-            .y((d) => yScale(d.token));
-      
-          const curveGenerator = d3
-            .line()
-            .x((d) => xScale(d.day))
-            .y((d) => yScale(d.token))
-            .curve(d3.curveCatmullRom);
-      
-          innerChart
-            .append("path")
-            .attr("d", curveGenerator(data))
-            .attr("fill", "none")
-            .attr("stroke", violet);
-        };
-      }
-      
-      // The data used is a template coming from the simulation. When Ganache is running, each block will be recorded
-// and formatted in a csv file so that the drawCoinLineChart function can be called.
-
-      async function createCoinChart() {
-        d3.csv("./simulation/bin/data/run1.csv", (d) => {
-          return {
-            day: +d.Day,
-            coin: +d.Price,
+            const margin = { top: 40, right: 40, bottom: 25, left: 60 };
+            const width = 500;
+            const height = 400;
+            const innerWidth = width - (margin.left + margin.right);
+            const innerHeight = height - (margin.top + margin.bottom);
+        
+            const svg = d3
+              .select("#token-line-chart")
+              .append("svg")
+              .attr("viewBox", `0 0 ${width} ${height}`);
+        
+            const innerChart = svg
+              .append("g")
+              .attr("transform", `translate(${margin.left}, ${margin.top})`)
+  
+            const xScale = d3
+              .scaleLinear()
+              .domain([0, d3.max(data, (d) => d.day)])
+              .range([0, innerWidth]);
+            
+            const yScale = d3
+              .scaleLinear()
+              .domain([0, d3.max(data, (d) => d.token)])
+              .range([innerHeight, 0]);
+        
+            const bottomAxis = d3
+              .axisBottom(xScale)
+  
+            innerChart
+              .append("g")
+              .attr("class", "axis-x")
+              .attr("transform", `translate(0, ${innerHeight})`)
+              .call(bottomAxis);
+        
+            const leftAxis = d3.axisLeft(yScale);
+            innerChart.append("g").attr("class", "axis-y").call(leftAxis);
+        
+            d3.selectAll(".axis-x text, .axis-y text")
+              .style("font-family", "Roboto, sans-serif")
+              .style("font-size", "14px");
+        
+            d3.selectAll(".axis-y text").attr("x", "-10px");
+  
+            svg
+              .append("text")
+              .text("Number of Tokens")
+              .attr("y", 30)
+              .attr("font-family", "sans-serif");
+        
+            svg
+              .append("text")
+              .text("Day")
+              .attr("x", width - margin.right)
+              .attr("y", height - margin.bottom + 20)
+              .attr("font-family", "sans-serif");
+        
+            /* Line Chart */
+            const violet = "#8080ff";
+            innerChart
+              .selectAll("circle")
+              .data(data)
+              .join("circle")
+              .attr("r", 4)
+              .attr("cx", (d) => xScale(d.day))
+              .attr("cy", (d) => yScale(d.token))
+              .attr("fill", violet);
+        
+            const lineGenerator = d3
+              .line()
+              .x((d) => xScale(d.day))
+              .y((d) => yScale(d.token));
+        
+            const curveGenerator = d3
+              .line()
+              .x((d) => xScale(d.day))
+              .y((d) => yScale(d.token))
+              .curve(d3.curveCatmullRom);
+        
+            innerChart
+              .append("path")
+              .attr("d", curveGenerator(data))
+              .attr("fill", "none")
+              .attr("stroke", violet);
           };
-      }).then((data) => {
-          drawCoinLineChart(data);
-      });
-    
-      const drawCoinLineChart = (data) => {
+
+        if(test){
+          d3.csv("./simulation/bin/data/run1.csv", (d) => {
+            return {
+              day: +d.Day,
+              token: +d.Token,
+            };
+          }).then((data) => {
+            drawTokenLineChart(data);
+          });
+        }else{
+          // Get the token supply from the blockchain
+          // each day, there are tokens minted or burned, so we need to look at all the transactions that have changed the token supply in a given day
+          // sum everything up, repete for all days and draw the chart
+          // read the transactions from the blockchain and look for event Tranfer(ContractAddress, to, amount) in the case of minting
+          // or Transfer(from, ContractAddress, amount) in the case of burning
+
+
+        }
+      }
+
+      async function createCoinChart(test=true) {
+        const drawCoinLineChart = (data) => {
         
         const margin = { top: 40, right: 100, bottom: 25, left: 40 };
         const width = 500;
@@ -718,6 +722,49 @@
           .attr("font-size", "12px")
           .attr("fill", violet);
         };
+
+        if(test){
+          d3.csv('./simulation/bin/data/run1.csv', (d) => {
+            return {
+              day: +d.Day,
+              coin: +d.Price,
+            };
+          }).then((data) => {
+            drawCoinLineChart(data);
+          });
+        }else{
+          let latestBlock = await web3.eth.getBlockNumber();
+          let dayrange = 20;
+          let index = 0;
+          let mydata = '[';
+          while(dayrange>0){
+            // Look for 20 blocks that have changed the price in the entire blockchain
+            let temp = Number(latestBlock)-index;
+            if (temp < 0){
+              break;
+            }else{
+              let block = await web3.eth.getBlock(Number(latestBlock)-index);
+              // We only access the first transaction of the block since Ganache only has one transaction per block in the default config
+              let transaction = await web3.eth.getTransaction(block.transactions[0]); 
+              if(transaction.to == PriceGeneratorAddress && transaction.from == PriceGeneratorMinter){
+                console.log('Price change transaction found');
+                let decoded = await web3.eth.abi.decodeParameters(PriceGeneratorABI[3].inputs, transaction.input.slice(10));
+                console.log(decoded);
+                let price = BigInt(decoded['0']);
+                console.log(price);
+                mydata += '{"day": ' + dayrange + ', "coin": ' +  Number(price).toExponential()/Number(BigInt(1e18)).toExponential() + '},';
+                dayrange--;
+              }
+              index++;
+            }      
+          }
+          mydata = mydata.slice(0, -1) + ']';
+          console.log(mydata);
+          coinPriceData = JSON.parse(mydata);
+          console.log(coinPriceData);
+          
+          drawCoinLineChart(coinPriceData);
+        }
       }    
     </script>
   </body>
