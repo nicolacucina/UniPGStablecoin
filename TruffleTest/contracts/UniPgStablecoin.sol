@@ -14,6 +14,8 @@ contract UniPGStablecoin is IERC20 {
         address indexed owner, address indexed spender, uint256 value
     );
 
+    event Rebase(uint256 total);
+
     /*
     ERC20InsufficientAllowance(spender, allowance, needed)
 
@@ -85,11 +87,12 @@ contract UniPGStablecoin is IERC20 {
     function rebase() external {
         require(msg.sender == minter, "Only the contract can rebase");
         _rebase();
+        emit Rebase(totalSupply);
     }
 
     function _rebase() internal {
         isRebasing = true;
-        uint price = priceGen.price();
+        uint price = priceGen.price(); 
         
         /*for loops are not defined for mappings, the workaround is that when a key is added to a mapping,
         it also added to an array */
@@ -97,7 +100,7 @@ contract UniPGStablecoin is IERC20 {
             /* fastest method, but using mint and burn triggers Transfer event
             balanceOf[account] = balanceOf[account] * price; */
             uint256 temp = balanceOf[walletAddresses[i]];
-            uint256 diff = temp - (temp*price/1 ether); 
+            uint256 diff = temp - (temp*price/1 ether); // too much approximation maybe
             if(price > 1e18){
                 _mint(walletAddresses[i], diff);
             }else if(price < 1e18){

@@ -174,6 +174,7 @@
       var PriceGenerator;
       var UniPGStablecoin;
       var coinPriceData;
+      var tokenSupplyData;
 
       ////////////////////////////////////////////////////////////////////////////////////////////////////////////
       async function createContractParams(){
@@ -237,10 +238,9 @@
         console.log('UniPG Stablecoin contract owner: ');
         console.log(UniPGStablecoinMinter);
 
-          // Get the wallets
-          // This can be done using web3, but since Ganache is used, the wallets are stored inside /public/data/keys.json
+        // Get the wallets
+        // This can be done using web3, but since Ganache is used, the wallets are stored inside /public/data/keys.json
           
-        
         // wallets = await web3.eth.getAccounts().then((data)=>{  
         //     console.log('Accounts: ' + data);
         //     return data;
@@ -275,13 +275,13 @@
 
       createCoinChart(test=false);
 
-      createTokenChart();
+      createTokenChart(test=false);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       async function displayBlocks(){
         let blockhtml = document.getElementById("blocks");
         let latestBlock = await web3.eth.getBlockNumber();
-        console.log('Latest block number: ');
-        console.log(latestBlock);
+        // console.log('Latest block number: ');
+        // console.log(latestBlock);
 
         blockhtml.innerHTML = '';
         let blockrange = 10;
@@ -301,7 +301,24 @@
       }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       async function displayTransactions(){
-          
+        let transactionhtml = document.getElementById("transactions");
+        let latestBlock = await web3.eth.getBlockNumber();
+        // console.log('Latest block number: ');
+        // console.log(latestBlock);
+
+        transactionhtml.innerHTML = '';
+        let blockrange = 10;
+        
+        for (let i = 0; i < blockrange; i++) {
+          let temp = Number(latestBlock)-i;
+          if (temp < 0){
+            break;
+          }else{
+            web3.eth.getBlock(temp).then((data)=>{
+              transactionhtml.innerHTML += data.transactions[0] + "<br>";
+            })
+          }
+        } 
       }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       async function displayWalletsAndKeys(){
@@ -397,7 +414,6 @@
           n.innerHTML = " &emsp;" + data;
         });
       }
-
 
       async function getAllowance(){
           
@@ -603,13 +619,56 @@
             drawTokenLineChart(data);
           });
         }else{
-          // Get the token supply from the blockchain
-          // each day, there are tokens minted or burned, so we need to look at all the transactions that have changed the token supply in a given day
-          // sum everything up, repete for all days and draw the chart
-          // read the transactions from the blockchain and look for event Tranfer(ContractAddress, to, amount) in the case of minting
-          // or Transfer(from, ContractAddress, amount) in the case of burning
+          // Get the token supply, the contract emits an event when the token supply changes
+          // Logic is similar to the coin chart, look for transaction coming from the contract, inside
+          // the transaction look for the event that changes the token supply, saved inside logs
+          let latestBlock = await web3.eth.getBlockNumber();
+          let dayrange = 20;
+          let index = 0;
+          let mydata = '[';
+          while(dayrange>0){
+            let temp = Number(latestBlock)-index;
+            if (temp < 0){
+              break;
+            }else{
+              let block = await web3.eth.getBlock(Number(latestBlock)-index);
+              //console.log(block);
+              let transaction = await web3.eth.getTransaction(block.transactions[0]); 
+              if(transaction.to == UniPGStablecoinAddress && transaction.from == UniPGStablecoinMinter){
+                console.log('Rebase transaction found');
+                //console.log(transaction);
+                let receipt = await web3.eth.getTransactionReceipt(transaction.hash);
+                //console.log(receipt);
+                let logs = receipt.logs;
+                //console.log(logs);
+                let sum = 0;
+                for(let i =0; i<logs.length;i++){
+                  let log = logs[i];
+                  //console.log(log);
+                  //web3.eth.abi.decodeLog(inputs, hexString, topics)
+                  let decoded = await web3.eth.abi.decodeLog(UniPGStablecoinABI[3].inputs, log.data, log.topics);
+                  //console.log(decoded);
+                  let token = Number(BigInt(decoded['0']));
+                  //console.log(token);
+                  sum += token;
+                }
 
-
+                // let decoded = await web3.eth.abi.decodeParameters(PriceGeneratorABI[3].inputs, transaction.input.slice(10));
+                // console.log(decoded);
+                // let price = BigInt(decoded['0']);
+                // console.log(price);
+                mydata += '{"day": ' + dayrange + ', "token": ' + sum + '},';
+                dayrange--;
+              }
+              index++;
+            }      
+          }
+          mydata = mydata.slice(0, -1) + ']';
+          console.log(mydata);
+          tokenSupplyData = JSON.parse(mydata);
+          console.log(tokenSupplyData);
+          
+          drawTokenLineChart(tokenSupplyData);
         }
       }
 
@@ -743,6 +802,7 @@
             if (temp < 0){
               break;
             }else{
+              
               let block = await web3.eth.getBlock(Number(latestBlock)-index);
               // We only access the first transaction of the block since Ganache only has one transaction per block in the default config
               let transaction = await web3.eth.getTransaction(block.transactions[0]); 
