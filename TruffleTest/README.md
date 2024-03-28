@@ -74,12 +74,13 @@ Now that everything is set up, here are some example intructions:
     stablecoin.minter()
     let currentprice = await pricegen.price();
     let myfunction = (numbers)=>{var result = '';for(var i = numbers.length -1; i >= 0; i--){var temp = Number(numbers[i]).toString(2);while(temp.length < 26){temp = '0' + temp;}result += temp;}return parseInt(result, 2);};
+    // let result = pricegen.price().then((data)=>{return BigInt(data)})
     let convertedPrice = myfunction(currentprice.words.slice(0,-1));
     stablecoin.initialMinting()
     stablecoin.mint(accounts[1], 20, {from : accounts[0]});
     stablecoin.mint(accounts[2], 20, {from : accounts[0]});
     stablecoin.mint(accounts[3], 20, {from : accounts[0]});
-    stablecoin.balanceOf(accounts[1])
+    stablecoin.balanceOf(accounts[1]).then((data)=>{return BigInt(data)})
     stablecoin.balanceOf(accounts[2])
     stablecoin.balanceOf(accounts[3])
     web3.eth.getBalance(accounts[0])

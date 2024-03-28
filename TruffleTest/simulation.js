@@ -5,21 +5,13 @@ module.exports = async function(callback) {
     const UniPGStableCoin = artifacts.require("UniPGStableCoin");
     let stablecoin = await UniPGStableCoin.deployed();
     const accounts = await web3.eth.getAccounts();
-    const timeout = 5; // time in seconds
-    const amount = BigInt(20);
+    
+    const timeout = 4; // time in seconds
+    const amount = BigInt(1e10);
     var counter = 0;
 
-    stablecoin.mint(accounts[1], amount, {from: accounts[0]}).then((data) => {
-        console.log('Minted ' + amount + ' stablecoins to ' + accounts[1]);
-        //console.log(data);
-    });
-    stablecoin.mint(accounts[2], amount, {from: accounts[0]}).then((data) => {
-        console.log('Minted ' + amount + ' stablecoins to ' + accounts[2]);
-        //console.log(data);
-    });
-
     function myFunction() {
-        if(counter >= 20){
+        if(counter > 25){
             console.log("Stopping");
             callback();
         }else{
@@ -28,15 +20,24 @@ module.exports = async function(callback) {
             pricegen.setPrice(price, {from: accounts[0]}).then((data) => {
                 console.log("Price set to " + price);
                 // console.log(data);
-
                 stablecoin.rebase({from: accounts[0]}).then((data) => {
                     console.log("Rebase done");
                     //console.log(data);
                     counter++;
+                    setTimeout(myFunction, timeout*1000);
                 });
             });
-            setTimeout(myFunction, timeout*1000);
         }
     } 
-    myFunction();
+
+    stablecoin.mint(accounts[1], amount, {from: accounts[0]}).then((data) => {
+        console.log('Minted ' + amount + ' stablecoins to ' + accounts[1]);
+        //console.log(data);
+        stablecoin.mint(accounts[2], amount, {from: accounts[0]}).then((data) => {
+            console.log('Minted ' + amount + ' stablecoins to ' + accounts[2]);
+            //console.log(data);
+            myFunction();
+        });
+    });
+
 }

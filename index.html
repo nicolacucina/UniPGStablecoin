@@ -522,9 +522,10 @@
       }
 
       async function createTokenChart(test=true) {
+        // this chart seems to be one step behind the coin price chart
         const drawTokenLineChart = (data) => {
             
-            const margin = { top: 40, right: 40, bottom: 25, left: 60 };
+            const margin = { top: 40, right: 50, bottom: 25, left: 140 };
             const width = 500;
             const height = 400;
             const innerWidth = width - (margin.left + margin.right);
@@ -576,7 +577,7 @@
             svg
               .append("text")
               .text("Day")
-              .attr("x", width - margin.right)
+              .attr("x", width - margin.right + 15)
               .attr("y", height - margin.bottom + 20)
               .attr("font-family", "sans-serif");
         
@@ -730,7 +731,7 @@
         svg
           .append("text")
           .text("Day")
-          .attr("x", width - margin.right)
+          .attr("x", width - margin.right + 15)
           .attr("y", height - margin.bottom + 20)
           .attr("font-family", "sans-serif");
     
