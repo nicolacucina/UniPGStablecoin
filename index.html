@@ -720,7 +720,7 @@
             console.log("Gas price:", gasPrice);
 
             // Ottieni la quantità di gas stimata
-            const gasAmount = await UniPGStablecoin.methods.transferFrom(from, recipient, amount).estimateGas({ from: recipient });
+            const gasAmount = await UniPGStablecoin.methods.transfer(recipient, amount).estimateGas({ from: from });
             console.log("Gas amount is:", gasAmount);
 
             // Crea la transazione firmata
@@ -736,15 +736,15 @@
                 'data': encodedABI,
             };
 
-            // Firma e invia la transazione
-            const signedTx = await web3.eth.accounts.signTransaction(transaction, privateKey);
-            const receipt = await web3.eth.sendSignedTransaction(signedTx.rawTransaction);
-            console.log("Transaction hash:", receipt.transactionHash);
-            console.log("Transfer successful");
-
-            // Aggiorna l'allowance dopo il trasferimento
-            const updatedAllowance = await UniPGStablecoin.methods.allowance(from, recipient).call();
-            console.log("Updated allowance:", updatedAllowance);
+            web3.eth.accounts.signTransaction(transaction, privateKey).then(signed => {
+            web3.eth.sendSignedTransaction(signed.rawTransaction, function(error, hash) {
+            if (!error) {
+              console.log("The hash of your transaction is: ", hash);
+            } else {
+              console.log("Something went wrong while submitting your transaction:", error)
+            }
+          })
+        });
         } else {
             console.log("Insufficient allowance");
         }
@@ -752,9 +752,7 @@
         console.error("Error during transfer:", error);
         // Gestione dell'errore
     }
-}
-
-      
+}      
 
 
 
