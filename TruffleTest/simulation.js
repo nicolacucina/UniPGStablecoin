@@ -6,13 +6,14 @@ module.exports = async function(callback) {
     let stablecoin = await UniPGStableCoin.deployed();
     const accounts = await web3.eth.getAccounts();
     
-    const timeout = 4; // time in seconds
+    const timeout = 3; // time in seconds
     const amount = BigInt(1e10);
     var counter = 0;
 
     function myFunction() {
-        if(counter > 25){
+        if(counter >= 20){
             console.log("Stopping");
+            //return
             callback();
         }else{
             console.log('Counter: ' + counter);

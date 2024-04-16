@@ -351,6 +351,7 @@
 
         let FirstBlockHash = await web3.eth.getBlock('1');
         let PriceGeneratorDeployment = await web3.eth.getTransactionReceipt(FirstBlockHash.transactions[0]);
+        console.log('Price Generator contract deployment: ');
         console.log(PriceGeneratorDeployment);
         PriceGeneratorAddress = PriceGeneratorDeployment.contractAddress
         PriceGeneratorMinter = PriceGeneratorDeployment.from;
@@ -362,6 +363,7 @@
 
         let SecondBlockHash = await web3.eth.getBlock('2');
         let UniPGStablecoinDeployment = await web3.eth.getTransactionReceipt(SecondBlockHash.transactions[0]);
+        console.log('UniPG Stablecoin contract deployment: ');
         console.log(UniPGStablecoinDeployment);
         UniPGStablecoinAddress = UniPGStablecoinDeployment.contractAddress
         UniPGStablecoinMinter = UniPGStablecoinDeployment.from;
@@ -402,13 +404,12 @@
 
       }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-      createContractParams();
-
-      // Draw the charts
-
-      createCoinChart(test=false);
-
-      createTokenChart(test=false);
+      createContractParams().then(()=>{
+        console.log('Contract parameters created')
+        // Draw the charts
+        createCoinChart(test=false);
+        createTokenChart(test=false);
+      });
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       async function displayBlocks(){
         let blockhtml = document.getElementById("blocks");
@@ -768,8 +769,8 @@
               let block = await web3.eth.getBlock(Number(latestBlock)-index);
               //console.log(block);
               let transaction = await web3.eth.getTransaction(block.transactions[0]); 
-              if(transaction.to == UniPGStablecoinAddress && transaction.from == UniPGStablecoinMinter){
-                console.log('Rebase transaction found');
+              if(transaction.to === UniPGStablecoinAddress && transaction.from == UniPGStablecoinMinter){
+                console.log('Rebase transaction found, block number ' + block.number);
                 //console.log(transaction);
                 let receipt = await web3.eth.getTransactionReceipt(transaction.hash);
                 //console.log(receipt);
@@ -793,6 +794,8 @@
                 // console.log(price);
                 mydata += '{"day": ' + dayrange + ', "token": ' + sum + '},';
                 dayrange--;
+              }else{
+                console.log('No rebase transaction found, block number ' + block.number);
               }
               index++;
             }      
@@ -940,14 +943,16 @@
               let block = await web3.eth.getBlock(Number(latestBlock)-index);
               // We only access the first transaction of the block since Ganache only has one transaction per block in the default config
               let transaction = await web3.eth.getTransaction(block.transactions[0]); 
-              if(transaction.to == PriceGeneratorAddress && transaction.from == PriceGeneratorMinter){
-                console.log('Price change transaction found');
+              if(transaction.to === PriceGeneratorAddress && transaction.from == PriceGeneratorMinter){
+                console.log('Price change transaction found, block number ' + block.number);
                 let decoded = await web3.eth.abi.decodeParameters(PriceGeneratorABI[3].inputs, transaction.input.slice(10));
-                console.log(decoded);
+                //console.log(decoded);
                 let price = BigInt(decoded['0']);
-                console.log(price);
+                //console.log(price);
                 mydata += '{"day": ' + dayrange + ', "coin": ' +  Number(price).toExponential()/Number(BigInt(1e18)).toExponential() + '},';
                 dayrange--;
+              }else{
+                console.log('No price change transaction found, block number ' + block.number);
               }
               index++;
             }      
