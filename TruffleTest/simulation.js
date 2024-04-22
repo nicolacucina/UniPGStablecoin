@@ -11,7 +11,7 @@ module.exports = async function(callback) {
     var counter = 0;
 
     function myFunction() {
-        if(counter >= 20){
+        if(counter >= 22){
             console.log("Stopping");
             //return
             callback();
@@ -40,5 +40,4 @@ module.exports = async function(callback) {
             myFunction();
         });
     });
-
 }

@@ -257,34 +257,42 @@
       <div id="contract-transactions">
         <hr style="border: none; height: 1px; background-color: #ddd; margin-bottom: 10px;">
           <div style="margin-top: 10px; margin-bottom: 30px; font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #7c7676;">
-            Check your wallet balance and specify the address of another wallet to check whether you have allowance rights.
+            Check your wallet balance here.
           </div>
         <div class="row">
           Insert your wallet address here: &emsp;
           <input type="text" id="user-wallet" placeholder="Enter your wallet address">
           <!--input type="text" id="user-key" placeholder="Enter your wallet private key"-->
         </div>
-        <div class="row">
-          Insert recipient wallet address here: &emsp;
-          <input type="text" id="recipient-wallet" placeholder="Enter recipient wallet address">
-          <!--input type="text" id="user-key" placeholder="Enter your wallet private key"-->
-        </div>
-        <br/>
+        <br/>      
         <div class="row">
           <button id="get-balance" class="get-balance" onclick="getBalance()">Get Wallet Balance</button> 
           <div id="wallet-balance"></div>
         </div>  
         <br/>
-        <div>
+        <hr style="border: none; height: 1px; background-color: #ddd; margin-bottom: 10px;">
+        <div style="margin-top: 10px; margin-bottom: 30px; font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #7c7676;">
+          Check if your wallet has allowance rights.
+        </div>
+        <div class="row">
+          Insert recipient wallet address here: &emsp;
+          <input type="text" id="owner-wallet" placeholder="Enter owner wallet address"> &emsp;
+          <input type="text" id="recipient-wallet" placeholder="Enter recipient wallet address">
+          <!--input type="text" id="user-key" placeholder="Enter your wallet private key"-->
+        </div>
+        <br/>
+        <div class="row">
           <button id="get-allowance" class="get-allowance" onclick="getAllowance()">Get Wallet Allowance</button>
           <div id="wallet-allowance"></div>
         </div>
         <br/>
+
         <hr style="border: none; height: 1px; background-color: #ddd; margin-bottom: 10px;">
           <div style="margin-top: 10px; margin-bottom: 30px; font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #7c7676;">
               This section is reserved to the contract owner.
           </div>
         <div class="row">
+          <input type="text" id="minter-wallet" placeholder="Enter minter address"> &emsp;
           <input type="text" id="target-wallet" placeholder="Enter destination address"> &emsp;
           <input type="number" id="token-amount" placeholder="Token amount"> &emsp;
           <button id="mint" class="mint" onclick="mintTokens()">Mint</button>
@@ -296,7 +304,7 @@
         <br/>
         <div class="row">
           Trasfer Tokens: &emsp;
-          <input type="text" id="from-wallet" placeholder="Enter address from which tokens will be tranferred from"> &emsp;
+          <input type="text" id="from-wallet" placeholder="Enter address of the owner of the token"> &emsp;
           <input type="text" id="to-wallet" placeholder="Enter address where tokens will be sent"> &emsp;
           <input type="number" id="transfer-amount" placeholder="Token amount"> &emsp;
           <button id="transfer" class="transfer" onclick="transferTokens()">Transfer</button>
@@ -304,18 +312,19 @@
         <br/>
         <div id="allowance-section" style="background-color: #dddddd; padding: 10px; border-radius: 5px;">
         <div class="row">
-          Permit allowance: &emsp;
-          <input type="text" id="from-wallet-allowance" placeholder="Enter address from which tokens will be tranferred from"> &emsp;
-          <input type="text" id="to-wallet-allowance" placeholder="Enter address where tokens will be sent"> &emsp;
-          <input type="number" id="transfer-amount-allowance" placeholder="Token amount"> &emsp;
+          Give allowance: &emsp;
+          <input type="text" id="from-wallet-allowance" placeholder="Enter address of the owner of the tokens"> &emsp;
+          <input type="text" id="to-wallet-allowance" placeholder="Enter address of the wallet that will be spending the tokens"> &emsp;
+          <input type="number" id="amount-permitted-allowance" placeholder="Token amount"> &emsp;
           <button id="permit-allowance" class="permit-allowance" onclick="approveAllowance()">Permit</button>
         </div>
         <br/>
         <div class="row">
-          Transfer allowance: &emsp;
-          <input type="text" id="us-wallet" placeholder="Enter address from which tokens will be tranferred from"> &emsp;
-          <input type="text" id="rec-wallet" placeholder="Enter address where tokens will be sent"> &emsp;
-          <input type="number" id="tran-amount" placeholder="Token amount"> &emsp;
+          Transfer allow.: &emsp;
+          <input type="text" id="owner-wallet-allowance" placeholder="Enter owner address"> &emsp;
+          <input type="text" id="proxy-wallet-allowance" placeholder="Enter proxy address"> &emsp;
+          <input type="text" id="recipient-wallet-allowance" placeholder="Enter address where tokens will be sent"> &emsp;
+          <input type="number" id="transfer-amount-allowance" placeholder="Token amount"> &emsp;
           <button id="transfer-allowance" class="transfer-allowance" onclick="transferIfAllowed()">Transfer</button>
         </div>
       </div>
@@ -340,8 +349,10 @@
     <script src="./public/js/main.js"></script> 
     --------------------------------------------------------------------------------------------------->
     <script>
-      // Define contract paramenters
-
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      // Define variables
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      
       var web3;
       var PriceGeneratorABI;
       var UniPGStablecoinABI;
@@ -356,6 +367,8 @@
       var tokenSupplyData;
 
       ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      // Define contract parameters
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////
       async function createContractParams(){
         const testnet = 'http://localhost:8545';
         console.log('Connecting to ' + testnet);
@@ -363,7 +376,9 @@
         console.log('Web3: ');
         console.log(web3);
 
+        ////////////////////////////////////////////
         // Test the connection
+        ////////////////////////////////////////////
 
         web3.eth.net.getId().then((data)=>{
           console.log('Net Id:' + data); 
@@ -376,7 +391,9 @@
           console.log('Block Number:' + data); 
         });
 
+        ////////////////////////////////////////////
         // Get ABI from the Truffle build
+        ////////////////////////////////////////////
 
         d3.json('./TruffleTest/build/contracts/PriceGenerator.json')
           .then((data) => {
@@ -392,8 +409,9 @@
             console.log(UniPGStablecoinABI);
           });
 
+        ////////////////////////////////////////////
         // Get contract address from Ganache
-        // This is done explicitly to show blockchain interaction, but the minter of both accounts is always the first account in Ganache
+        ////////////////////////////////////////////
 
         let FirstBlockHash = await web3.eth.getBlock('1');
         let PriceGeneratorDeployment = await web3.eth.getTransactionReceipt(FirstBlockHash.transactions[0]);
@@ -417,13 +435,9 @@
         console.log('UniPG Stablecoin contract owner: ');
         console.log(UniPGStablecoinMinter);
 
+        ////////////////////////////////////////////
         // Get the wallets
-        // This can be done using web3, but since Ganache is used, the wallets are stored inside /public/data/keys.json
-          
-        // wallets = await web3.eth.getAccounts().then((data)=>{  
-        //     console.log('Accounts: ' + data);
-        //     return data;
-        // });
+        ////////////////////////////////////////////
         
         wallets = await d3.json('./public/data/keys.json')
           .then((data)=>{
@@ -431,8 +445,10 @@
             console.log(data);
             return data;
           });
-
+        
+        ////////////////////////////////////////////
         // Display information on the page
+        ////////////////////////////////////////////
 
         displayBlocks();
 
@@ -448,13 +464,14 @@
 
       }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-      createContractParams();
-
-      // Draw the charts
-
-      createCoinChart(test=false);
-
-      createTokenChart(test=false);
+      createContractParams().then(()=>{
+        console.log('Contract parameters created')
+        ////////////////////////////////////////////
+        // Draw the charts
+        ////////////////////////////////////////////
+        createCoinChart(test=false);
+        createTokenChart(test=false);
+      });
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       async function displayBlocks(){
         let blockhtml = document.getElementById("blocks");
@@ -521,8 +538,10 @@
         }   
       }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-      
-// Interaction methods
+
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      // Interaction methods
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
       async function getTokenName(){
         var n = document.getElementById("token-name");
@@ -596,22 +615,26 @@
 
       async function getAllowance(){
         var n = document.getElementById("wallet-allowance");
-        var account = document.getElementById("user-wallet").value;
+        var owner = document.getElementById("owner-wallet").value;
         var recipient = document.getElementById("recipient-wallet").value;
-        console.log(account);
+        console.log('owner:' + owner);
+        console.log('recipient:' + recipient);
         if (UniPGStablecoin == undefined){
           UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
         }
-        UniPGStablecoin.methods.allowance(account,recipient).call().then((data)=>{
+        UniPGStablecoin.methods.allowance(owner,recipient).call().then((data)=>{
           console.log(data)
           n.innerHTML = " &emsp;" + data;
         });
       }
 
       async function mintTokens(){
-        var minter = document.getElementById("user-wallet").value;
+        var minter = document.getElementById("minter-wallet").value;
         var account = document.getElementById("target-wallet").value;
         var amount = document.getElementById("token-amount").value;
+        console.log('minter:'+ minter);
+        console.log('account:' + account);
+        console.log('amount:' + amount);
         if (UniPGStablecoin == undefined){
           UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
         }
@@ -647,22 +670,20 @@
       }
 
     async function approveAllowance() {
-       var account = document.getElementById("from-wallet-allowance").value;
+       var owner = document.getElementById("from-wallet-allowance").value;
        var recipient = document.getElementById("to-wallet-allowance").value;
-       var amount = document.getElementById("transfer-amount-allowance").value;
+       var amount = document.getElementById("amount-permitted-allowance").value;
 
         try {
             if (UniPGStablecoin === undefined) {
                 UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
             }
-            await UniPGStablecoin.methods.approve(recipient, amount).send({ from: account });
+            await UniPGStablecoin.methods.approve(recipient, amount).send({ from: owner });
             console.log("Approvazione dell'allowance eseguita con successo");
         } catch (error) {
             console.error("Errore durante l'approvazione dell'allowance:", error);
         }
       }
-
-
 
       async function transferTokens(){
         var from = document.getElementById("from-wallet").value;
@@ -696,65 +717,61 @@
           })
         });
       }
-
-
       
       async function transferIfAllowed() {
-    var from = document.getElementById("us-wallet").value;
-    var recipient = document.getElementById("rec-wallet").value;
-    var amount = document.getElementById("tran-amount").value;
+        var owner = document.getElementById("owner-wallet-allowance").value;
+        var proxy = document.getElementById("proxy-wallet-allowance").value;
+        var recipient = document.getElementById("recipient-wallet-allowance").value;
+        var amount = document.getElementById("transfer-amount-allowance").value;
 
-    if (UniPGStablecoin === undefined) {
-        UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
-    }
-
-    try {
-        // Controlla l'allowance dell'account corrente per il destinatario
-        const allowance = await UniPGStablecoin.methods.allowance(from, recipient).call();
-        console.log("Allowance:", allowance);
-
-        // Se l'allowance è sufficiente, esegui il trasferimento
-        if (allowance >= amount) {
-            // Ottieni il prezzo del gas attuale
-            const gasPrice = await web3.eth.getGasPrice();
-            console.log("Gas price:", gasPrice);
-
-            // Ottieni la quantità di gas stimata
-            const gasAmount = await UniPGStablecoin.methods.transfer(recipient, amount).estimateGas({ from: from });
-            console.log("Gas amount is:", gasAmount);
-
-            // Crea la transazione firmata
-            const privateKey = wallets.private_keys[from];
-            console.log("arrivo");
-            const encodedABI = UniPGStablecoin.methods.transferFrom(from, recipient, amount).encodeABI();
-            console.log("non arrivo");
-            const transaction = {
-                'from': from,
-                'to': UniPGStablecoinAddress,
-                'gas': gasAmount,
-                'gasPrice': gasPrice,
-                'data': encodedABI,
-            };
-
-            web3.eth.accounts.signTransaction(transaction, privateKey).then(signed => {
-            web3.eth.sendSignedTransaction(signed.rawTransaction, function(error, hash) {
-            if (!error) {
-              console.log("The hash of your transaction is: ", hash);
-            } else {
-              console.log("Something went wrong while submitting your transaction:", error)
-            }
-          })
-        });
-        } else {
-            console.log("Insufficient allowance");
+        if (UniPGStablecoin === undefined) {
+          UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
         }
-    } catch (error) {
-        console.error("Error during transfer:", error);
-        // Gestione dell'errore
-    }
-}      
 
+        try {
+          // Controlla l'allowance dell'account corrente per il destinatario
+          const allowance = await UniPGStablecoin.methods.allowance(owner, proxy).call();
+          console.log("Allowance:", allowance);
 
+          // Se l'allowance è sufficiente, esegui il trasferimento
+          if (allowance >= amount) {
+
+              // Ottieni la quantità di gas stimata
+              const gasAmount = await UniPGStablecoin.methods.transferFrom(owner, recipient, amount).estimateGas({ from: proxy});
+              console.log("Gas amount is:", gasAmount);
+              
+              // Ottieni il prezzo del gas attuale
+              const gasPrice = await web3.eth.getGasPrice();
+              console.log("Gas price:", gasPrice);
+
+              // Crea la transazione firmata
+              const privateKey = wallets.private_keys[proxy];
+              const encodedABI = UniPGStablecoin.methods.transferFrom(owner, recipient, amount).encodeABI();
+              const transaction = {
+                  'from': proxy,
+                  'to': UniPGStablecoinAddress,
+                  'gas': gasAmount,
+                  'gasPrice': gasPrice,
+                  'data': encodedABI,
+              };
+
+              web3.eth.accounts.signTransaction(transaction, privateKey).then(signed => {
+              web3.eth.sendSignedTransaction(signed.rawTransaction, function(error, hash) {
+                if (!error) {
+                console.log("The hash of your transaction is: ", hash);
+                } else {
+                  console.log("Something went wrong while submitting your transaction:", error)
+                }
+              })
+            });
+            } else {
+              console.log("Insufficient allowance");
+            }
+          } catch (error) {
+            console.error("Error during transfer:", error);
+          // Gestione dell'errore
+        }
+      }      
 
       async function createWallet(){
         // The data is lost if the page is realoaded, but the blockchain state has been changed
