@@ -138,7 +138,7 @@ contract UniPGStablecoin is IERC20 {
         return true;
     }
 
-    function transferFrom(address sender, address recipient, uint256 amount)
+    function transferFrom(address owner, address recipient, uint256 amount)
         external
         returns (bool)
     {
@@ -151,10 +151,10 @@ contract UniPGStablecoin is IERC20 {
                     available: balanceOf[msg.sender]
                 });
             }
-            allowance[sender][msg.sender] -= amount;
-            balanceOf[sender] -= amount;
+            allowance[owner][msg.sender] -= amount;
+            balanceOf[owner] -= amount;
             balanceOf[recipient] += amount;
-            emit Transfer(sender, recipient, amount);
+            emit Transfer(owner, recipient, amount);
             return true;
         }
     }

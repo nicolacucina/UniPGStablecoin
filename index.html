@@ -902,7 +902,7 @@
               //console.log(block);
               let transaction = await web3.eth.getTransaction(block.transactions[0]); 
               if(transaction.to == UniPGStablecoinAddress && transaction.from == UniPGStablecoinMinter){
-                console.log('Rebase transaction found');
+                console.log('Rebase transaction found in block ' + block.number);
                 //console.log(transaction);
                 let receipt = await web3.eth.getTransactionReceipt(transaction.hash);
                 //console.log(receipt);
@@ -1074,11 +1074,11 @@
               // We only access the first transaction of the block since Ganache only has one transaction per block in the default config
               let transaction = await web3.eth.getTransaction(block.transactions[0]); 
               if(transaction.to == PriceGeneratorAddress && transaction.from == PriceGeneratorMinter){
-                console.log('Price change transaction found');
+                console.log('Price change transaction found in block ' + block.number);
                 let decoded = await web3.eth.abi.decodeParameters(PriceGeneratorABI[3].inputs, transaction.input.slice(10));
-                console.log(decoded);
+                //console.log(decoded);
                 let price = BigInt(decoded['0']);
-                console.log(price);
+                //console.log(price);
                 mydata += '{"day": ' + dayrange + ', "coin": ' +  Number(price).toExponential()/Number(BigInt(1e18)).toExponential() + '},';
                 dayrange--;
               }
