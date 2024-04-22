@@ -26,8 +26,8 @@ with open(csv_path, 'r', encoding='utf-8') as csvfile:
     reader = csv.DictReader(csvfile, delimiter=',')
     i = 0
     for row in reader:
-        prices.append(float(row['Prices']))
-        tokens.append(float(row[' Tokens']))
+        prices.append(float(row['Price']))
+        tokens.append(float(row['Token']))
         days.append(i)
         i += 1
 

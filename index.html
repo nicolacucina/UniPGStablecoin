@@ -1,22 +1,970 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <title>Stablecoin</title>
-  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-  <script>
-    // add javascript code here
-  </script>
-</head>
-<body>
-<h2>Testing Interaction with a Sepolia Ethereum Node</h2>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Stablecoin</title>
+    <link rel="icon" type="image/x-icon" href="./public/img/Stablecoin.ico">
+    <!--link rel="stylesheet" type="text/css" href="./public/css/base.css"-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+      html {
+        font-size: 62.5%;
+        -webkit-font-smoothing: antialiased;
+        box-sizing: border-box;
+      }
+      *,
+      ::after,
+      ::before {
+        box-sizing: inherit;
+      }
+      body {
+        margin: 0;
+        background-color: #fffdfe;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.4;
+        font-weight: 400;
+        color: #272626;
+      }
+      .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 30px;
+        padding-left: 30px;
+        width: 100%;
+        max-width: 1200px;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: +0px;
+        margin-right: -15px;
+      }
+      .col {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+      }
+      .col-9 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .col-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
 
-<p>
-We use this Web page to interact with Ethereum smart contracts.
-The smart contracts are deployed on the Sepolia Testnet.
-We will use the web3.js library.
-Most examples will be executed from the console of the browser's Web developer tools.
-</p>
 
-</body>
+      @media screen and (max-width: 820px) {
+        .col {
+          margin-bottom: 30px;
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+
+      /* Type */
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-weight: 500;
+      }
+      h1 {
+        margin: 6rem 0 1.2rem;
+        font-size: 4rem;
+      }
+      h2 {
+        margin: 3rem 0 1.2rem;
+        font-size: 2.4rem;
+        line-height: 1.2;
+      }
+      @media screen and (max-width: 596px) {
+        h1 {
+          font-size: 3rem;
+        }
+        h2 {
+          font-size: 2rem;
+        }
+      }
+      p {
+        margin: 1.2rem 0;
+      }
+
+      button {
+        max-height: 22px;
+      }
+
+      input {
+        width: 300px;
+      }
+
+      div.scroll {
+        background-color: #f2f2f2;
+        width: 500px;
+        height: 200px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
+        padding: 20px;
+      }
+
+      div.scrollKey {
+        background-color: #f2f2f2;
+        width: 700px;
+        height: 200px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
+        padding: 20px;
+      }
+
+      div.scrollBlocks {
+        background-color: #f2f2f2;
+        width: 600px;
+        height: 200px;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+
+      .responsive-svg-container {
+        width: 100%;
+        max-width: 800px;
+      }
+
+    </style>
+    <!--link rel="stylesheet" type="text/css" href="./public/css/visualization.css"-->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>UniPG Stablecoin</h1>
+
+      <!-- First row is reserved for data visualization -->
+      <div class="row">
+        <div class="col col-6">
+          <h2>Coin price</h2>
+          <div class="responsive-svg-container">
+            <div id="coin-line-chart"></div>
+          </div>
+        </div>
+        <div class="col col-6">
+          <h2>Token supply</h2>
+          <div class="responsive-svg-container">
+            <div id="token-line-chart"></div>
+          </div>
+        </div>
+      </div>
+    
+    <div>
+      <div class="row">
+        <div class="col-6">
+          <h3>Latest Blocks</h3>
+          <div id="blocks" class="scrollBlocks"></div>
+        </div>
+        <div class="col-9">
+          <h3>Latest Transactions</h3>
+          <div id="transactions" class="scroll"></div>
+        </div>
+      </div>
+      <!-- show latest block and transactions -->
+    </div>
+
+
+    <!-- Second row is reserved for contract information -->
+    <div class="row">
+      <div class="col-6">
+        <h2>Contract Address</h2>
+        <div id="contract-address"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <h2>Contract Owner</h2>
+        <div id="contract-owner"></div>
+      </div>
+    </div>
+      
+    <!-- Third row is reserved for interation -->
+    <div>
+      <h2>Contract Interaction according to the ERC-20 standard</h2>
+        <!-- Interaction with the contract that does not change status is done via buttons -->
+      <div class="col-9">
+        <div class="row">
+          <button id="get-name" class="get-name" onclick="getTokenName()">Get Token Name</button>
+          <div id="token-name"></div>
+        </div>
+        <br/>
+        <div class="row">
+          <button id="get-symbol" class="get-symbol" onclick="getTokenSymbol()">Get Token Symbol</button>
+          <id id="token-symbol"></img>
+        </div>
+        <br/>
+        <div class="row">
+          <button id="get-decimals" class="get-decimals" onclick="getTokenDecimals()">Get Token Decimals</button>
+          <div id="token-decimals"></div>
+        </div>
+        <br/>
+        <div class="row">
+          <button id="get-total-supply" class="get-total-supply" onclick="getTotalSupply()">Get Token Total Supply</button>
+          <div id="token-total-supply"></div>
+        </div>
+        <br/>
+        <div class="row">
+          <button id="get-price" class="get-price" onclick="getPrice()">Get Token Price</button>
+          <div id="token-price"></div>
+        </div>
+      </div>
+      <!-- This closes the third row -->
+    </div>
+
+
+
+    <!-- Fourth row is reserved for contract transactions -->
+    <div>
+      <h2>Contract Transactions</h2>
+      <p>Since Ganache is being used as the preferred blockchain, wallets and associated private keys are automatically generated at startup</p>
+      <!-- Display all the wallets in the Network to allow user interaction that requires them -->
+      <div class="row">
+        <div class="col-9">
+          <h3>Wallets in the Network</h3>
+          <div id="wallet-list" class="scroll"></div>
+        </div>
+        <div class="col-9">
+          <h3>Private Keys</h3>
+          <div id="private-keys" class="scrollKey"></div>
+        </div>
+      </div>
+      </br>
+      <div id="contract-transactions">
+        <div class="row">
+          Insert your wallet address here: &emsp;
+          <input type="text" id="user-wallet" placeholder="Enter your wallet address">
+          <!--input type="text" id="user-key" placeholder="Enter your wallet private key"-->
+        </div>
+        <br/>
+        <div class="row">
+          <button id="get-balance" class="get-balance" onclick="getBalance()">Get Wallet Balance</button> 
+          <div id="wallet-balance"></div>
+        </div>  
+        <br/>
+        <div>
+          <button id="get-allowance" class="get-allowance" onclick="getAllowance()">Get Wallet Allowance</button>
+          <div id="wallet-allowance"></div>
+        </div>
+        <br/>
+        <div class="row">
+          Mint Tokens (can only be done by the contract owner): &emsp;
+          <input type="text" id="target-wallet" placeholder="Enter destination address"> &emsp;
+          <input type="number" id="token-amount" placeholder="Token amount"> &emsp;
+          <button id="mint" class="mint" onclick="mintTokens()">Mint</button>
+        </div>  
+        <br/>
+        <div class="row">
+          Trasfer Tokens: &emsp;
+          <input type="text" id="from-wallet" placeholder="Enter address from which tokens will be tranferred from"> &emsp;
+          <input type="text" id="to-wallet" placeholder="Enter address where tokens will be sent"> &emsp;
+          <input type="number" id="transfer-amount" placeholder="Token amount"> &emsp;
+          <button id="transfer" class="transfer" onclick="transferTokens()">Transfer</button>
+        </div>
+      </div>
+      <!-- This closes the fourth row -->
+    </div>
+
+    </br>
+
+    <div>
+      <h3>Don't have a wallet? Create one here</h3>
+      <div class="row">
+        <input type="text" id="user-password" placeholder="Enter a password"> &emsp;
+        <button id="create-wallet" class="create-wallet" onclick="createWallet()">Create Wallet</button>
+      </div>
+      </br>  
+      <div id="wallet-creation"></div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------
+    <script src="./public/js/coinLineChart.js"></script>
+    <script src="./public/js/tokenLineChart.js"></script>
+    <script src="./public/js/main.js"></script> 
+    --------------------------------------------------------------------------------------------------->
+    <script>
+      // Define contract paramenters
+
+      var web3;
+      var PriceGeneratorABI;
+      var UniPGStablecoinABI;
+      var PriceGeneratorAddress;
+      var UniPGStablecoinAddress;
+      var PriceGeneratorMinter;
+      var UniPGStablecoinMinter;
+      var wallets;
+      var PriceGenerator;
+      var UniPGStablecoin;
+      var coinPriceData;
+      var tokenSupplyData;
+
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      async function createContractParams(){
+        const testnet = 'http://localhost:8545';
+        console.log('Connecting to ' + testnet);
+        web3 = new Web3(new Web3.providers.HttpProvider(testnet));
+        console.log('Web3: ');
+        console.log(web3);
+
+        // Test the connection
+
+        web3.eth.net.getId().then((data)=>{
+          console.log('Net Id:' + data); 
+        });
+        web3.eth.getBlock('latest').then((data)=>{
+          console.log('Lastest Block: ');
+          console.log(data); 
+        });
+        web3.eth.getBlockNumber().then((data)=>{
+          console.log('Block Number:' + data); 
+        });
+
+        // Get ABI from the Truffle build
+
+        d3.json('./TruffleTest/build/contracts/PriceGenerator.json')
+          .then((data) => {
+            PriceGeneratorABI = data.abi;
+            console.log('Price Generator ABI: ');
+            console.log(PriceGeneratorABI);
+          });
+          
+        d3.json('./TruffleTest/build/contracts/UniPGStablecoin.json')
+          .then((data) => {
+            UniPGStablecoinABI = data.abi;
+            console.log('UniPG Stablecoin ABI: ')
+            console.log(UniPGStablecoinABI);
+          });
+
+        // Get contract address from Ganache
+        // This is done explicitly to show blockchain interaction, but the minter of both accounts is always the first account in Ganache
+
+        let FirstBlockHash = await web3.eth.getBlock('1');
+        let PriceGeneratorDeployment = await web3.eth.getTransactionReceipt(FirstBlockHash.transactions[0]);
+        console.log('Price Generator contract deployment: ');
+        console.log(PriceGeneratorDeployment);
+        PriceGeneratorAddress = PriceGeneratorDeployment.contractAddress
+        PriceGeneratorMinter = PriceGeneratorDeployment.from;
+        
+        console.log('Price Generator contract address: ');
+        console.log(PriceGeneratorAddress);
+        console.log('Price Generator contract owner: ');
+        console.log(PriceGeneratorMinter);
+
+        let SecondBlockHash = await web3.eth.getBlock('2');
+        let UniPGStablecoinDeployment = await web3.eth.getTransactionReceipt(SecondBlockHash.transactions[0]);
+        console.log('UniPG Stablecoin contract deployment: ');
+        console.log(UniPGStablecoinDeployment);
+        UniPGStablecoinAddress = UniPGStablecoinDeployment.contractAddress
+        UniPGStablecoinMinter = UniPGStablecoinDeployment.from;
+        
+        console.log('UniPG Stablecoin contract address: ');
+        console.log(UniPGStablecoinAddress);
+        console.log('UniPG Stablecoin contract owner: ');
+        console.log(UniPGStablecoinMinter);
+
+        // Get the wallets
+        // This can be done using web3, but since Ganache is used, the wallets are stored inside /public/data/keys.json
+          
+        // wallets = await web3.eth.getAccounts().then((data)=>{  
+        //     console.log('Accounts: ' + data);
+        //     return data;
+        // });
+        
+        wallets = await d3.json('./public/data/keys.json')
+          .then((data)=>{
+            console.log('Accounts: ')
+            console.log(data);
+            return data;
+          });
+
+        // Display information on the page
+
+        displayBlocks();
+
+        displayTransactions();
+          
+        var addresshtml = document.getElementById("contract-address");
+        addresshtml.innerHTML = "<b>Price Generator contract address: </b>" + PriceGeneratorAddress + "<br><b>UniPG Stablecoin contract address: </b>" + UniPGStablecoinAddress;  
+        
+        var minterhtml = document.getElementById("contract-owner");
+        minterhtml.innerHTML = "<b>Price Generator contract owner: </b>" + PriceGeneratorMinter + "<br><b>UniPG Stablecoin contract owner: </b>" + UniPGStablecoinMinter;  
+
+        displayWalletsAndKeys();
+
+      }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      createContractParams().then(()=>{
+        console.log('Contract parameters created')
+        // Draw the charts
+        createCoinChart(test=false);
+        createTokenChart(test=false);
+      });
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      async function displayBlocks(){
+        let blockhtml = document.getElementById("blocks");
+        let latestBlock = await web3.eth.getBlockNumber();
+        // console.log('Latest block number: ');
+        // console.log(latestBlock);
+
+        blockhtml.innerHTML = '';
+        let blockrange = 10;
+        
+        for (let i = 0; i < blockrange; i++) {
+          let temp = Number(latestBlock)-i;
+          if (temp < 0){
+            break;
+          }else{
+            web3.eth.getBlock(temp).then((data)=>{
+                  //console.log(data);
+                  //blocks.push(data);
+              blockhtml.innerHTML += data.hash + "<br>";
+            })
+          }
+        } 
+      }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      async function displayTransactions(){
+        let transactionhtml = document.getElementById("transactions");
+        let latestBlock = await web3.eth.getBlockNumber();
+        // console.log('Latest block number: ');
+        // console.log(latestBlock);
+
+        transactionhtml.innerHTML = '';
+        let blockrange = 10;
+        
+        for (let i = 0; i < blockrange; i++) {
+          let temp = Number(latestBlock)-i;
+          if (temp < 0){
+            break;
+          }else{
+            web3.eth.getBlock(temp).then((data)=>{
+              transactionhtml.innerHTML += data.transactions[0] + "<br>";
+            })
+          }
+        } 
+      }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      async function displayWalletsAndKeys(){
+        var n = document.getElementById("wallet-list");
+        console.log('Addresses: ');
+        console.log(wallets.addresses);
+        n.innerHTML = '';
+        let i = 0;
+        for(let address in wallets.addresses){
+          n.innerHTML += "<p class=\"row\"> " + i.toString() +"): " + wallets.addresses[address] + "</p>";
+          i++;
+        }
+        let j=0;
+        var m = document.getElementById("private-keys");
+        console.log('Private keys: ');
+        console.log(wallets.private_keys);
+        m.innerHTML = '';
+        for(let key in wallets.private_keys){
+            m.innerHTML += "<p class=\"row\"> " + j.toString() +"): " + wallets.private_keys[key] + "</p>";
+            j++;
+        }   
+      }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      
+// Interaction methods
+
+      async function getTokenName(){
+        var n = document.getElementById("token-name");
+        if(UniPGStablecoin == undefined){
+          UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
+        }
+        UniPGStablecoin.methods.name().call().then((data)=>{
+          console.log(data)
+          n.innerHTML = " &emsp;" + data ;
+        });
+      }
+
+      async function getTokenSymbol(){
+        var n = document.getElementById("token-symbol");
+        if(UniPGStablecoin == undefined){
+          UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
+        }
+        UniPGStablecoin.methods.symbol().call().then((data)=>{
+          console.log(data)
+          n.innerHTML = " &emsp;" + data ;
+        });
+      }
+
+      async function getTokenDecimals(){
+        var n = document.getElementById("token-decimals");
+        if(UniPGStablecoin == undefined){
+          UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
+        }
+        UniPGStablecoin.methods.decimals().call().then((data)=>{
+          console.log(data)
+          n.innerHTML = " &emsp;" + data ;
+        });
+      }
+
+      async function getTotalSupply(){
+        var n = document.getElementById("token-total-supply");
+        if(UniPGStablecoin == undefined){
+          UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
+        }
+        UniPGStablecoin.methods.totalSupply().call().then((data)=>{
+          console.log(data)
+          n.innerHTML = " &emsp;" + data ;
+        });
+      }
+
+      async function getPrice(){
+        var n = document.getElementById("token-price");
+        n.innerHTML = '';
+        if (PriceGenerator == undefined){
+          PriceGenerator = new web3.eth.Contract(PriceGeneratorABI, PriceGeneratorAddress);
+        }
+        PriceGenerator.methods.price().call().then((data)=>{
+          let temp = Number(data).toExponential()/Number(BigInt(1e18)).toExponential();
+          console.log(temp);
+          n.innerHTML = " &emsp;" + temp + " Euro";
+        });
+      }
+
+      async function getBalance(){
+        var n = document.getElementById("wallet-balance");
+        var account = document.getElementById("user-wallet").value;
+        console.log(account);
+        if (UniPGStablecoin == undefined){
+          UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
+        }
+        UniPGStablecoin.methods.balanceOf(account).call().then((data)=>{
+          console.log(data)
+          n.innerHTML = " &emsp;" + data;
+        });
+      }
+
+      async function getAllowance(){
+          
+      }
+
+      async function mintTokens(){
+        var minter = document.getElementById("user-wallet").value;
+        var account = document.getElementById("target-wallet").value;
+        var amount = document.getElementById("token-amount").value;
+        if (UniPGStablecoin == undefined){
+          UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
+        }
+
+        // since this method changes the state of the contract, it requires a signed transaction
+        var gasAmount = await UniPGStablecoin.methods.mint(account, amount).estimateGas({from: minter});
+        console.log("Gas amount is " + gasAmount);
+        var gasPrice = await web3.eth.getGasPrice();
+        console.log("Gas price is " + gasPrice);
+        if(minter != UniPGStablecoinMinter){
+          console.log("You are not the owner of this contract");
+          alert("You are not the owner of this contract");
+          return;
+        }
+        
+        const privateKey = wallets.private_keys[minter];
+        var transaction = {
+          'from': minter,
+          'to': UniPGStablecoinAddress,
+          'gas': gasAmount,
+          'gasPrice': gasPrice,
+          'data': UniPGStablecoin.methods.mint(account, amount).encodeABI(),
+        };
+        web3.eth.accounts.signTransaction(transaction, privateKey).then(signed => {
+          web3.eth.sendSignedTransaction(signed.rawTransaction, function(error, hash) {
+            if (!error) {
+              console.log("The hash of your transaction is: ", hash);
+            } else {
+              console.log("Something went wrong while submitting your transaction:", error)
+            }
+          })
+        });
+      }
+
+      async function transferTokens(){
+        var from = document.getElementById("from-wallet").value;
+        var to = document.getElementById("to-wallet").value;
+        var amount = document.getElementById("transfer-amount").value;
+        if (UniPGStablecoin == undefined){
+            UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
+        }
+
+        // since this method changes the state of the contract, it requires a signed transaction
+        var gasAmount = await UniPGStablecoin.methods.transfer(to, amount).estimateGas({from: from});
+        console.log("Gas amount is " + gasAmount);
+        var gasPrice = await web3.eth.getGasPrice();
+        console.log("Gas price is " + gasPrice);
+        
+        const privateKey = wallets.private_keys[from];
+        var transaction = {
+          'from': from,
+          'to': UniPGStablecoinAddress,
+          'gas': gasAmount,
+          'gasPrice': gasPrice,
+          'data': UniPGStablecoin.methods.transfer(to, amount).encodeABI(),
+        };
+        web3.eth.accounts.signTransaction(transaction, privateKey).then(signed => {
+          web3.eth.sendSignedTransaction(signed.rawTransaction, function(error, hash) {
+            if (!error) {
+              console.log("The hash of your transaction is: ", hash);
+            } else {
+              console.log("Something went wrong while submitting your transaction:", error)
+            }
+          })
+        });
+      }
+
+      async function createWallet(){
+        // The data is lost if the page is realoaded, but the blockchain state has been changed
+        // Wallets created this way do not have any eth to call transactions
+
+        var n = document.getElementById("wallet-creation");
+        var password = document.getElementById("user-password").value;
+        var wallet = await web3.eth.accounts.create(password);
+        
+        console.log('New wallet: ');
+        console.log(wallet);
+        n.innerHTML = " Wallet created: ";
+        n.innerHTML += "<p class=\"row\"> " + wallet.address + "</p>";
+        n.innerHTML += "<p class=\"row\"> " + wallet.privateKey + "</p>";
+
+        console.log('Old wallets: ');
+        console.log(wallets['addresses']);
+        wallets['addresses'] = JSON.parse(JSON.stringify(wallets['addresses']).slice(0, -1) + ', "' + wallet.address + '":"' + wallet.address + '"}');
+        console.log('New wallets: ')
+        console.log(wallets['addresses']);
+        
+        console.log('Old private keys: ');
+        console.log(wallets['private_keys']);
+        wallets['private_keys'] = JSON.parse(JSON.stringify(wallets['private_keys']).slice(0, -1) + ', "' + wallet.address + '":"' + wallet.privateKey + '"}');
+        console.log('New private keys: ');
+        console.log(wallets['private_keys']);
+
+        // Update blocks and wallets
+        displayBlocks();
+        displayWalletsAndKeys();
+      }
+
+      async function createTokenChart(test=true) {
+        // this chart seems to be one step behind the coin price chart
+        const drawTokenLineChart = (data) => {
+            
+            const margin = { top: 40, right: 50, bottom: 25, left: 140 };
+            const width = 500;
+            const height = 400;
+            const innerWidth = width - (margin.left + margin.right);
+            const innerHeight = height - (margin.top + margin.bottom);
+        
+            const svg = d3
+              .select("#token-line-chart")
+              .append("svg")
+              .attr("viewBox", `0 0 ${width} ${height}`);
+        
+            const innerChart = svg
+              .append("g")
+              .attr("transform", `translate(${margin.left}, ${margin.top})`)
+  
+            const xScale = d3
+              .scaleLinear()
+              .domain([0, d3.max(data, (d) => d.day)])
+              .range([0, innerWidth]);
+            
+            const yScale = d3
+              .scaleLinear()
+              .domain([0, d3.max(data, (d) => d.token)])
+              .range([innerHeight, 0]);
+        
+            const bottomAxis = d3
+              .axisBottom(xScale)
+  
+            innerChart
+              .append("g")
+              .attr("class", "axis-x")
+              .attr("transform", `translate(0, ${innerHeight})`)
+              .call(bottomAxis);
+        
+            const leftAxis = d3.axisLeft(yScale);
+            innerChart.append("g").attr("class", "axis-y").call(leftAxis);
+        
+            d3.selectAll(".axis-x text, .axis-y text")
+              .style("font-family", "Roboto, sans-serif")
+              .style("font-size", "14px");
+        
+            d3.selectAll(".axis-y text").attr("x", "-10px");
+  
+            svg
+              .append("text")
+              .text("Number of Tokens")
+              .attr("y", 30)
+              .attr("font-family", "sans-serif");
+        
+            svg
+              .append("text")
+              .text("Day")
+              .attr("x", width - margin.right + 15)
+              .attr("y", height - margin.bottom + 20)
+              .attr("font-family", "sans-serif");
+        
+            /* Line Chart */
+            const violet = "#8080ff";
+            innerChart
+              .selectAll("circle")
+              .data(data)
+              .join("circle")
+              .attr("r", 4)
+              .attr("cx", (d) => xScale(d.day))
+              .attr("cy", (d) => yScale(d.token))
+              .attr("fill", violet);
+        
+            const lineGenerator = d3
+              .line()
+              .x((d) => xScale(d.day))
+              .y((d) => yScale(d.token));
+        
+            const curveGenerator = d3
+              .line()
+              .x((d) => xScale(d.day))
+              .y((d) => yScale(d.token))
+              .curve(d3.curveCatmullRom);
+        
+            innerChart
+              .append("path")
+              .attr("d", curveGenerator(data))
+              .attr("fill", "none")
+              .attr("stroke", violet);
+          };
+
+        if(test){
+          d3.csv("./simulation/bin/data/run1.csv", (d) => {
+            return {
+              day: +d.Day,
+              token: +d.Token,
+            };
+          }).then((data) => {
+            drawTokenLineChart(data);
+          });
+        }else{
+          // Get the token supply, the contract emits an event when the token supply changes
+          // Logic is similar to the coin chart, look for transaction coming from the contract, inside
+          // the transaction look for the event that changes the token supply, saved inside logs
+          let latestBlock = await web3.eth.getBlockNumber();
+          let dayrange = 20;
+          let index = 0;
+          let mydata = '[';
+          while(dayrange>0){
+            let temp = Number(latestBlock)-index;
+            if (temp < 0){
+              break;
+            }else{
+              let block = await web3.eth.getBlock(Number(latestBlock)-index);
+              //console.log(block);
+              let transaction = await web3.eth.getTransaction(block.transactions[0]); 
+              if(transaction.to === UniPGStablecoinAddress && transaction.from == UniPGStablecoinMinter){
+                console.log('Rebase transaction found, block number ' + block.number);
+                //console.log(transaction);
+                let receipt = await web3.eth.getTransactionReceipt(transaction.hash);
+                //console.log(receipt);
+                let logs = receipt.logs;
+                //console.log(logs);
+                let sum = 0;
+                for(let i =0; i<logs.length;i++){
+                  let log = logs[i];
+                  //console.log(log);
+                  //web3.eth.abi.decodeLog(inputs, hexString, topics)
+                  let decoded = await web3.eth.abi.decodeLog(UniPGStablecoinABI[3].inputs, log.data, log.topics);
+                  //console.log(decoded);
+                  let token = Number(BigInt(decoded['0']));
+                  //console.log(token);
+                  sum += token;
+                }
+
+                // let decoded = await web3.eth.abi.decodeParameters(PriceGeneratorABI[3].inputs, transaction.input.slice(10));
+                // console.log(decoded);
+                // let price = BigInt(decoded['0']);
+                // console.log(price);
+                mydata += '{"day": ' + dayrange + ', "token": ' + sum + '},';
+                dayrange--;
+              }else{
+                console.log('No rebase transaction found, block number ' + block.number);
+              }
+              index++;
+            }      
+          }
+          mydata = mydata.slice(0, -1) + ']';
+          console.log(mydata);
+          tokenSupplyData = JSON.parse(mydata);
+          console.log(tokenSupplyData);
+          
+          drawTokenLineChart(tokenSupplyData);
+        }
+      }
+
+      async function createCoinChart(test=true) {
+        const drawCoinLineChart = (data) => {
+        
+        const margin = { top: 40, right: 100, bottom: 25, left: 40 };
+        const width = 500;
+        const height = 400;
+        const innerWidth = width - (margin.left + margin.right);
+        const innerHeight = height - (margin.top + margin.bottom);
+    
+        const svg = d3
+          .select("#coin-line-chart")
+          .append("svg")
+          .attr("viewBox", `0 0 ${width} ${height}`);
+    
+        const innerChart = svg
+          .append("g")
+          .attr("transform", `translate(${margin.left}, ${margin.top})`)
+
+        const xScale = d3
+          .scaleLinear()
+          .domain([0, d3.max(data, (d) => d.day)])
+          .range([0, innerWidth]);
+        
+        const yScale = d3
+          .scaleLinear()
+          .domain([0, d3.max(data, (d) => d.coin)])
+          .range([innerHeight, 0]);
+    
+        const bottomAxis = d3
+          .axisBottom(xScale)
+
+        innerChart
+          .append("g")
+          .attr("class", "axis-x")
+          .attr("transform", `translate(0, ${innerHeight})`)
+          .call(bottomAxis);
+    
+        const leftAxis = d3.axisLeft(yScale);
+        innerChart.append("g").attr("class", "axis-y").call(leftAxis);
+    
+        d3.selectAll(".axis-x text, .axis-y text")
+          .style("font-family", "Roboto, sans-serif")
+          .style("font-size", "14px");
+    
+        d3.selectAll(".axis-y text")
+          .attr("x", "-10px");
+
+        // Y-Label
+        svg
+          .append("text")
+          .text("Price (€)")
+          .attr("y", 30)
+          .attr("font-family", "sans-serif");
+        
+        // X-Label
+        svg
+          .append("text")
+          .text("Day")
+          .attr("x", width - margin.right + 15)
+          .attr("y", height - margin.bottom + 20)
+          .attr("font-family", "sans-serif");
+    
+        // Line Chart 
+        const violet = "#8080ff";
+        innerChart
+          .selectAll("circle")
+          .data(data)
+          .join("circle")
+          .attr("r", 4)
+          .attr("cx", (d) => xScale(d.day))
+          .attr("cy", (d) => yScale(d.coin))
+          .attr("fill", violet);
+    
+        const curveGenerator = d3
+          .line()
+          .x((d) => xScale(d.day))
+          .y((d) => yScale(d.coin))
+          .curve(d3.curveCatmullRom);
+    
+        innerChart
+          .append("path")
+          .attr("d", curveGenerator(data))
+          .attr("fill", "none")
+          .attr("stroke", violet);
+
+        // Equilibrium Line
+        const lineGenerator = d3
+          .line()
+          .x((d) => xScale(d.day))
+          .y((d) => yScale(1.0));
+
+        innerChart
+          .append("path")
+          .attr("class", "line")
+          .style("stroke-dasharray", ("3, 3"))
+          .attr("d", lineGenerator(data))
+          .attr("fill", "none")
+          .attr("stroke", violet);
+
+        // Equilibrium Label
+        svg
+          .append("text")
+          .text("Equilibrium Price")
+          .attr("x", width - margin.right)
+          .attr("y", yScale(1.0) + 60)
+          .attr("font-family", "sans-serif")
+          .attr("font-size", "12px")
+          .attr("fill", violet);
+        };
+
+        if(test){
+          d3.csv('./simulation/bin/data/run1.csv', (d) => {
+            return {
+              day: +d.Day,
+              coin: +d.Price,
+            };
+          }).then((data) => {
+            drawCoinLineChart(data);
+          });
+        }else{
+          let latestBlock = await web3.eth.getBlockNumber();
+          let dayrange = 20;
+          let index = 0;
+          let mydata = '[';
+          while(dayrange>0){
+            // Look for 20 blocks that have changed the price in the entire blockchain
+            let temp = Number(latestBlock)-index;
+            if (temp < 0){
+              break;
+            }else{
+              
+              let block = await web3.eth.getBlock(Number(latestBlock)-index);
+              // We only access the first transaction of the block since Ganache only has one transaction per block in the default config
+              let transaction = await web3.eth.getTransaction(block.transactions[0]); 
+              if(transaction.to === PriceGeneratorAddress && transaction.from == PriceGeneratorMinter){
+                console.log('Price change transaction found, block number ' + block.number);
+                let decoded = await web3.eth.abi.decodeParameters(PriceGeneratorABI[3].inputs, transaction.input.slice(10));
+                //console.log(decoded);
+                let price = BigInt(decoded['0']);
+                //console.log(price);
+                mydata += '{"day": ' + dayrange + ', "coin": ' +  Number(price).toExponential()/Number(BigInt(1e18)).toExponential() + '},';
+                dayrange--;
+              }else{
+                console.log('No price change transaction found, block number ' + block.number);
+              }
+              index++;
+            }      
+          }
+          mydata = mydata.slice(0, -1) + ']';
+          console.log(mydata);
+          coinPriceData = JSON.parse(mydata);
+          console.log(coinPriceData);
+          
+          drawCoinLineChart(coinPriceData);
+        }
+      }    
+    </script>
+  </body>
 </html>

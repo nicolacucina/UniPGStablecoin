@@ -199,9 +199,9 @@ public class Simulation {
             out.close();
 
             PrintWriter csvWriter = new PrintWriter(new FileWriter("data/"+logname+".csv"));
-            csvWriter.println("Prices, Tokens");
+            csvWriter.println("Day,Price,Token");
             for(int i=0; i < days; i++){
-                csvWriter.println(prices[i] + ", " + tokenAmounts[i]);
+                csvWriter.println(i + "," + prices[i] + "," + tokenAmounts[i]);
             }
             csvWriter.close(); 
         } catch (IOException e) {
