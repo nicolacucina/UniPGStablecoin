@@ -144,7 +144,7 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.9.0;\r\n\r\ninterface IERC20 {\r\n    /* Keep in mind that there are no floats in Solidity. Therefore most tokens adopt 18 decimals\r\n    and will return the total supply and other results as followed 1000000000000000000 for 1 token*/\r\n    function totalSupply() external view returns (uint256);\r\n\r\n    /*Returns the amount of tokens owned by an address (account). \r\n    This function is a getter and does not modify the state of the contract.*/    \r\n    function balanceOf(address account) external view returns (uint256);\r\n\r\n    /*The ERC-20 standard allows an address to give an allowance to another address to be able to retrieve tokens from it. \r\n    This getter returns the remaining number of tokens that the spender will be allowed to spend on behalf of owner. \r\n    This function is a getter and does not modify the state of the contract and should return 0 by default.*/    \r\n    function allowance(address owner, address spender)\r\n        external\r\n        view\r\n        returns (uint256);\r\n    \r\n    /*Moves the amount of tokens from the function caller address (msg.sender) to the recipient address.\r\n    This function emits the Transfer event defined later. It returns true if the transfer was possible.*/\r\n    function transfer(address recipient, uint256 amount)\r\n        external\r\n        returns (bool);\r\n\r\n    /*Set the amount of allowance the spender is allowed to transfer from the function caller (msg.sender) balance. \r\n    This function emits the Approval event. The function returns whether the allowance was successfully set.*/\r\n    function approve(address spender, uint256 amount) external returns (bool);\r\n    \r\n    /*Moves the amount of tokens from sender to recipient using the allowance mechanism. \r\n    amount is then deducted from the caller’s allowance. This function emits the Transfer event.*/\r\n    function transferFrom(address sender, address recipient, uint256 amount)\r\n        external\r\n        returns (bool);\r\n}",
-  "sourcePath": "C:\\Users\\utente\\Documents\\Uni\\magistrale\\data security\\progetto\\Stablecoin\\TruffleTest\\contracts\\IERC20.sol",
+  "sourcePath": "C:\\Users\\utente\\Documents\\Uni\\magistrale\\data security\\Stablecoin-main\\Stablecoin\\TruffleTest\\contracts\\IERC20.sol",
   "ast": {
     "absolutePath": "project:/contracts/IERC20.sol",
     "exportedSymbols": {
@@ -812,7 +812,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-04-15T09:51:55.137Z",
+  "updatedAt": "2024-04-22T15:28:13.097Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

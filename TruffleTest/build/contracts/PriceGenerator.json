@@ -1765,7 +1765,7 @@
   "sourceMap": "69:1250:1:-:0;;;1060:7;1040:27;;1106:52;;;;;;;;;;1140:10;1131:6;;:19;;;;;;;;;;;;;;;;;;69:1250;;;;;;",
   "deployedSourceMap": "69:1250:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1076:21;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;1166:150;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;1040:27;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;1076:21;;;;;;;;;;;;;:::o;1166:150::-;1237:6;;;;;;;;;;;1223:20;;:10;:20;;;1215:68;;;;;;;;;;;;:::i;:::-;;;;;;;;;1302:6;1294:5;:14;;;;1166:150;:::o;1040:27::-;;;;:::o;7:126:3:-;44:7;84:42;77:5;73:54;62:65;;7:126;;;:::o;139:96::-;176:7;205:24;223:5;205:24;:::i;:::-;194:35;;139:96;;;:::o;241:118::-;328:24;346:5;328:24;:::i;:::-;323:3;316:37;241:118;;:::o;365:222::-;458:4;496:2;485:9;481:18;473:26;;509:71;577:1;566:9;562:17;553:6;509:71;:::i;:::-;365:222;;;;:::o;674:117::-;783:1;780;773:12;920:77;957:7;986:5;975:16;;920:77;;;:::o;1003:122::-;1076:24;1094:5;1076:24;:::i;:::-;1069:5;1066:35;1056:63;;1115:1;1112;1105:12;1056:63;1003:122;:::o;1131:139::-;1177:5;1215:6;1202:20;1193:29;;1231:33;1258:5;1231:33;:::i;:::-;1131:139;;;;:::o;1276:329::-;1335:6;1384:2;1372:9;1363:7;1359:23;1355:32;1352:119;;;1390:79;;:::i;:::-;1352:119;1510:1;1535:53;1580:7;1571:6;1560:9;1556:22;1535:53;:::i;:::-;1525:63;;1481:117;1276:329;;;;:::o;1611:118::-;1698:24;1716:5;1698:24;:::i;:::-;1693:3;1686:37;1611:118;;:::o;1735:222::-;1828:4;1866:2;1855:9;1851:18;1843:26;;1879:71;1947:1;1936:9;1932:17;1923:6;1879:71;:::i;:::-;1735:222;;;;:::o;1963:169::-;2047:11;2081:6;2076:3;2069:19;2121:4;2116:3;2112:14;2097:29;;1963:169;;;;:::o;2138:222::-;2278:34;2274:1;2266:6;2262:14;2255:58;2347:5;2342:2;2334:6;2330:15;2323:30;2138:222;:::o;2366:366::-;2508:3;2529:67;2593:2;2588:3;2529:67;:::i;:::-;2522:74;;2605:93;2694:3;2605:93;:::i;:::-;2723:2;2718:3;2714:12;2707:19;;2366:366;;;:::o;2738:419::-;2904:4;2942:2;2931:9;2927:18;2919:26;;2991:9;2985:4;2981:20;2977:1;2966:9;2962:17;2955:47;3019:131;3145:4;3019:131;:::i;:::-;3011:139;;2738:419;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.9.0;\r\n\r\ncontract PriceGenerator{\r\n\r\n    /* Since floating point numbers are not supported in Solidity, \r\n    we have to use a fixed point number with 18 decimal places.\r\n        1000000000000000000 = 1.0 ether(that for us is 1.0 euro)\r\n    In javascript(truffle) this value will be returned as the array\r\n        [56885248, 2993385, 222]\r\n    which represents the number in intervals of 26 bits from the least significat (left) to the most significat (right).\r\n    To prove that this is the case convert the three numbers in binary, extend them to 26 bits and concatenate them\r\n        decimal => binary    \r\n        56885248 => 11011001000000000000000000\r\n        2993385 => 00001011011010110011101001\r\n        222 => 00000000000000000011011110\r\n    -----------------------------------------------------------------------------------------\r\n        binary => decimal\r\n        00000000000000000011011110 00001011011010110011101001 11011001000000000000000000 => 1e18\r\n    */\r\n    uint public price = 1 ether;  \r\n    address public minter;\r\n\r\n    constructor() {\r\n        minter = msg.sender;\r\n    }\r\n\r\n    function setPrice(uint _price) public {\r\n        require(msg.sender == minter, \"Only the contract can set the price\");\r\n        price = _price;\r\n    }\r\n}",
-  "sourcePath": "C:\\Users\\utente\\Documents\\Uni\\magistrale\\data security\\progetto\\Stablecoin\\TruffleTest\\contracts\\PriceGenerator.sol",
+  "sourcePath": "C:\\Users\\utente\\Documents\\Uni\\magistrale\\data security\\Stablecoin-main\\Stablecoin\\TruffleTest\\contracts\\PriceGenerator.sol",
   "ast": {
     "absolutePath": "project:/contracts/PriceGenerator.sol",
     "exportedSymbols": {
@@ -2661,10 +2661,22 @@
       "links": {},
       "address": "0x728a941f26f33c8F96C373BFe4F13DD98aAE2ac3",
       "transactionHash": "0xea7d649cd38c21cc1f9bb746962811330368715f7289dd7ec1e9d45b5e78b866"
+    },
+    "1713799544447": {
+      "events": {},
+      "links": {},
+      "address": "0x728a941f26f33c8F96C373BFe4F13DD98aAE2ac3",
+      "transactionHash": "0xea7d649cd38c21cc1f9bb746962811330368715f7289dd7ec1e9d45b5e78b866"
+    },
+    "1713799691151": {
+      "events": {},
+      "links": {},
+      "address": "0x728a941f26f33c8F96C373BFe4F13DD98aAE2ac3",
+      "transactionHash": "0xea7d649cd38c21cc1f9bb746962811330368715f7289dd7ec1e9d45b5e78b866"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-04-15T09:51:57.349Z",
+  "updatedAt": "2024-04-22T15:28:15.224Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

@@ -78,9 +78,11 @@
       h1 {
         margin: 6rem 0 1.2rem;
         font-size: 4rem;
+        color: #138a0f;
       }
       h2 {
         margin: 3rem 0 1.2rem;
+        color: #138a0f;
         font-size: 2.4rem;
         line-height: 1.2;
       }
@@ -104,33 +106,43 @@
         width: 300px;
       }
 
-      div.scroll {
-        background-color: #f2f2f2;
-        width: 500px;
-        height: 200px;
-        overflow-x: hidden;
-        overflow-y: auto;
-        text-align: center;
-        padding: 20px;
-      }
 
-      div.scrollKey {
-        background-color: #f2f2f2;
-        width: 700px;
-        height: 200px;
-        overflow-x: hidden;
-        overflow-y: auto;
-        text-align: center;
-        padding: 20px;
-      }
+      #private-keys.scroll {
+         margin-left: 40px;
+         background-color: #91b673;
+         width: 610px;
+         height: 200px; 
+         overflow-x: auto;
+         overflow-y: auto;
+         text-align: center;
+      }   
 
-      div.scrollBlocks {
-        background-color: #f2f2f2;
-        width: 600px;
-        height: 200px;
-        overflow-x: hidden;
-        overflow-y: auto;
-      }
+      #transactions.scroll {
+         margin-left: 40px;
+         background-color: #a6c76a;
+         width: 570px; 
+         height: 200px; 
+         overflow-x: auto;
+         overflow-y: auto; 
+      } 
+      
+      #wallet-list.scroll {
+         background-color: #91b673;
+         width: 570px; 
+         height: 200px; 
+         overflow-x: auto;
+         overflow-y: auto; 
+      } 
+
+
+      #blocks.scrollBlocks {
+         background-color: #a6c76a;
+         width: 570px; 
+         height: 200px; 
+         overflow-x: auto;
+         overflow-y: auto;
+      }   
+
 
       .responsive-svg-container {
         width: 100%;
@@ -168,8 +180,8 @@
           <h3>Latest Blocks</h3>
           <div id="blocks" class="scrollBlocks"></div>
         </div>
-        <div class="col-9">
-          <h3>Latest Transactions</h3>
+        <div class="col-9 ">
+          <h3 style="padding-left: 40px;">Latest Transactions</h3>
           <div id="transactions" class="scroll"></div>
         </div>
       </div>
@@ -195,32 +207,32 @@
     <div>
       <h2>Contract Interaction according to the ERC-20 standard</h2>
         <!-- Interaction with the contract that does not change status is done via buttons -->
-      <div class="col-9">
-        <div class="row">
-          <button id="get-name" class="get-name" onclick="getTokenName()">Get Token Name</button>
-          <div id="token-name"></div>
-        </div>
-        <br/>
-        <div class="row">
-          <button id="get-symbol" class="get-symbol" onclick="getTokenSymbol()">Get Token Symbol</button>
-          <id id="token-symbol"></img>
-        </div>
-        <br/>
-        <div class="row">
-          <button id="get-decimals" class="get-decimals" onclick="getTokenDecimals()">Get Token Decimals</button>
-          <div id="token-decimals"></div>
-        </div>
-        <br/>
-        <div class="row">
-          <button id="get-total-supply" class="get-total-supply" onclick="getTotalSupply()">Get Token Total Supply</button>
-          <div id="token-total-supply"></div>
-        </div>
-        <br/>
-        <div class="row">
-          <button id="get-price" class="get-price" onclick="getPrice()">Get Token Price</button>
-          <div id="token-price"></div>
-        </div>
-      </div>
+        <div class="col-9">
+          <div class="row" style="margin-top: 20px; border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+            <button id="get-name" class="get-name" onclick="getTokenName()">Get Token Name</button>
+            <div id="token-name"></div>
+          </div>
+          <br/>
+          <div class="row" style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+            <button id="get-symbol" class="get-symbol" onclick="getTokenSymbol()">Get Token Symbol</button>
+            <id id="token-symbol"></img>
+          </div>
+          <br/>
+          <div class="row" style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+            <button id="get-decimals" class="get-decimals" onclick="getTokenDecimals()">Get Token Decimals</button>
+            <div id="token-decimals"></div>
+          </div>
+          <br/>
+          <div class="row" style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+            <button id="get-total-supply" class="get-total-supply" onclick="getTotalSupply()">Get Token Total Supply</button>
+            <div id="token-total-supply"></div>
+          </div>
+          <br/>
+          <div class="row" style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+            <button id="get-price" class="get-price" onclick="getPrice()">Get Token Price</button>
+            <div id="token-price"></div>
+          </div>
+        </div>        
       <!-- This closes the third row -->
     </div>
 
@@ -237,15 +249,24 @@
           <div id="wallet-list" class="scroll"></div>
         </div>
         <div class="col-9">
-          <h3>Private Keys</h3>
-          <div id="private-keys" class="scrollKey"></div>
+          <h3 style="padding-left: 40px;">Private Keys</h3>
+          <div id="private-keys" class="scroll"></div>
         </div>
       </div>
       </br>
       <div id="contract-transactions">
+        <hr style="border: none; height: 1px; background-color: #ddd; margin-bottom: 10px;">
+          <div style="margin-top: 10px; margin-bottom: 30px; font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #7c7676;">
+            Check your wallet balance and specify the address of another wallet to check whether you have allowance rights.
+          </div>
         <div class="row">
           Insert your wallet address here: &emsp;
           <input type="text" id="user-wallet" placeholder="Enter your wallet address">
+          <!--input type="text" id="user-key" placeholder="Enter your wallet private key"-->
+        </div>
+        <div class="row">
+          Insert recipient wallet address here: &emsp;
+          <input type="text" id="recipient-wallet" placeholder="Enter recipient wallet address">
           <!--input type="text" id="user-key" placeholder="Enter your wallet private key"-->
         </div>
         <br/>
@@ -259,12 +280,19 @@
           <div id="wallet-allowance"></div>
         </div>
         <br/>
+        <hr style="border: none; height: 1px; background-color: #ddd; margin-bottom: 10px;">
+          <div style="margin-top: 10px; margin-bottom: 30px; font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #7c7676;">
+              This section is reserved to the contract owner.
+          </div>
         <div class="row">
-          Mint Tokens (can only be done by the contract owner): &emsp;
           <input type="text" id="target-wallet" placeholder="Enter destination address"> &emsp;
           <input type="number" id="token-amount" placeholder="Token amount"> &emsp;
           <button id="mint" class="mint" onclick="mintTokens()">Mint</button>
         </div>  
+        <hr style="border: none; margin-top: 30px; height: 1px; background-color: #ddd;">
+        <div style="margin-top: 10px; margin-bottom: 20px; font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #7c7676;">
+          Make your transactions here.
+        </div>
         <br/>
         <div class="row">
           Trasfer Tokens: &emsp;
@@ -273,6 +301,24 @@
           <input type="number" id="transfer-amount" placeholder="Token amount"> &emsp;
           <button id="transfer" class="transfer" onclick="transferTokens()">Transfer</button>
         </div>
+        <br/>
+        <div id="allowance-section" style="background-color: #dddddd; padding: 10px; border-radius: 5px;">
+        <div class="row">
+          Permit allowance: &emsp;
+          <input type="text" id="from-wallet-allowance" placeholder="Enter address from which tokens will be tranferred from"> &emsp;
+          <input type="text" id="to-wallet-allowance" placeholder="Enter address where tokens will be sent"> &emsp;
+          <input type="number" id="transfer-amount-allowance" placeholder="Token amount"> &emsp;
+          <button id="permit-allowance" class="permit-allowance" onclick="approveAllowance()">Permit</button>
+        </div>
+        <br/>
+        <div class="row">
+          Transfer allowance: &emsp;
+          <input type="text" id="us-wallet" placeholder="Enter address from which tokens will be tranferred from"> &emsp;
+          <input type="text" id="rec-wallet" placeholder="Enter address where tokens will be sent"> &emsp;
+          <input type="number" id="tran-amount" placeholder="Token amount"> &emsp;
+          <button id="transfer-allowance" class="transfer-allowance" onclick="transferIfAllowed()">Transfer</button>
+        </div>
+      </div>
       </div>
       <!-- This closes the fourth row -->
     </div>
@@ -351,7 +397,6 @@
 
         let FirstBlockHash = await web3.eth.getBlock('1');
         let PriceGeneratorDeployment = await web3.eth.getTransactionReceipt(FirstBlockHash.transactions[0]);
-        console.log('Price Generator contract deployment: ');
         console.log(PriceGeneratorDeployment);
         PriceGeneratorAddress = PriceGeneratorDeployment.contractAddress
         PriceGeneratorMinter = PriceGeneratorDeployment.from;
@@ -363,7 +408,6 @@
 
         let SecondBlockHash = await web3.eth.getBlock('2');
         let UniPGStablecoinDeployment = await web3.eth.getTransactionReceipt(SecondBlockHash.transactions[0]);
-        console.log('UniPG Stablecoin contract deployment: ');
         console.log(UniPGStablecoinDeployment);
         UniPGStablecoinAddress = UniPGStablecoinDeployment.contractAddress
         UniPGStablecoinMinter = UniPGStablecoinDeployment.from;
@@ -404,12 +448,13 @@
 
       }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-      createContractParams().then(()=>{
-        console.log('Contract parameters created')
-        // Draw the charts
-        createCoinChart(test=false);
-        createTokenChart(test=false);
-      });
+      createContractParams();
+
+      // Draw the charts
+
+      createCoinChart(test=false);
+
+      createTokenChart(test=false);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       async function displayBlocks(){
         let blockhtml = document.getElementById("blocks");
@@ -550,7 +595,17 @@
       }
 
       async function getAllowance(){
-          
+        var n = document.getElementById("wallet-allowance");
+        var account = document.getElementById("user-wallet").value;
+        var recipient = document.getElementById("recipient-wallet").value;
+        console.log(account);
+        if (UniPGStablecoin == undefined){
+          UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
+        }
+        UniPGStablecoin.methods.allowance(account,recipient).call().then((data)=>{
+          console.log(data)
+          n.innerHTML = " &emsp;" + data;
+        });
       }
 
       async function mintTokens(){
@@ -591,6 +646,24 @@
         });
       }
 
+    async function approveAllowance() {
+       var account = document.getElementById("from-wallet-allowance").value;
+       var recipient = document.getElementById("to-wallet-allowance").value;
+       var amount = document.getElementById("transfer-amount-allowance").value;
+
+        try {
+            if (UniPGStablecoin === undefined) {
+                UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
+            }
+            await UniPGStablecoin.methods.approve(recipient, amount).send({ from: account });
+            console.log("Approvazione dell'allowance eseguita con successo");
+        } catch (error) {
+            console.error("Errore durante l'approvazione dell'allowance:", error);
+        }
+      }
+
+
+
       async function transferTokens(){
         var from = document.getElementById("from-wallet").value;
         var to = document.getElementById("to-wallet").value;
@@ -623,6 +696,65 @@
           })
         });
       }
+
+
+      
+      async function transferIfAllowed() {
+    var from = document.getElementById("us-wallet").value;
+    var recipient = document.getElementById("rec-wallet").value;
+    var amount = document.getElementById("tran-amount").value;
+
+    if (UniPGStablecoin === undefined) {
+        UniPGStablecoin = new web3.eth.Contract(UniPGStablecoinABI, UniPGStablecoinAddress);
+    }
+
+    try {
+        // Controlla l'allowance dell'account corrente per il destinatario
+        const allowance = await UniPGStablecoin.methods.allowance(from, recipient).call();
+        console.log("Allowance:", allowance);
+
+        // Se l'allowance è sufficiente, esegui il trasferimento
+        if (allowance >= amount) {
+            // Ottieni il prezzo del gas attuale
+            const gasPrice = await web3.eth.getGasPrice();
+            console.log("Gas price:", gasPrice);
+
+            // Ottieni la quantità di gas stimata
+            const gasAmount = await UniPGStablecoin.methods.transfer(recipient, amount).estimateGas({ from: from });
+            console.log("Gas amount is:", gasAmount);
+
+            // Crea la transazione firmata
+            const privateKey = wallets.private_keys[from];
+            console.log("arrivo");
+            const encodedABI = UniPGStablecoin.methods.transferFrom(from, recipient, amount).encodeABI();
+            console.log("non arrivo");
+            const transaction = {
+                'from': from,
+                'to': UniPGStablecoinAddress,
+                'gas': gasAmount,
+                'gasPrice': gasPrice,
+                'data': encodedABI,
+            };
+
+            web3.eth.accounts.signTransaction(transaction, privateKey).then(signed => {
+            web3.eth.sendSignedTransaction(signed.rawTransaction, function(error, hash) {
+            if (!error) {
+              console.log("The hash of your transaction is: ", hash);
+            } else {
+              console.log("Something went wrong while submitting your transaction:", error)
+            }
+          })
+        });
+        } else {
+            console.log("Insufficient allowance");
+        }
+    } catch (error) {
+        console.error("Error during transfer:", error);
+        // Gestione dell'errore
+    }
+}      
+
+
 
       async function createWallet(){
         // The data is lost if the page is realoaded, but the blockchain state has been changed
@@ -769,8 +901,8 @@
               let block = await web3.eth.getBlock(Number(latestBlock)-index);
               //console.log(block);
               let transaction = await web3.eth.getTransaction(block.transactions[0]); 
-              if(transaction.to === UniPGStablecoinAddress && transaction.from == UniPGStablecoinMinter){
-                console.log('Rebase transaction found, block number ' + block.number);
+              if(transaction.to == UniPGStablecoinAddress && transaction.from == UniPGStablecoinMinter){
+                console.log('Rebase transaction found');
                 //console.log(transaction);
                 let receipt = await web3.eth.getTransactionReceipt(transaction.hash);
                 //console.log(receipt);
@@ -794,8 +926,6 @@
                 // console.log(price);
                 mydata += '{"day": ' + dayrange + ', "token": ' + sum + '},';
                 dayrange--;
-              }else{
-                console.log('No rebase transaction found, block number ' + block.number);
               }
               index++;
             }      
@@ -943,16 +1073,14 @@
               let block = await web3.eth.getBlock(Number(latestBlock)-index);
               // We only access the first transaction of the block since Ganache only has one transaction per block in the default config
               let transaction = await web3.eth.getTransaction(block.transactions[0]); 
-              if(transaction.to === PriceGeneratorAddress && transaction.from == PriceGeneratorMinter){
-                console.log('Price change transaction found, block number ' + block.number);
+              if(transaction.to == PriceGeneratorAddress && transaction.from == PriceGeneratorMinter){
+                console.log('Price change transaction found');
                 let decoded = await web3.eth.abi.decodeParameters(PriceGeneratorABI[3].inputs, transaction.input.slice(10));
-                //console.log(decoded);
+                console.log(decoded);
                 let price = BigInt(decoded['0']);
-                //console.log(price);
+                console.log(price);
                 mydata += '{"day": ' + dayrange + ', "coin": ' +  Number(price).toExponential()/Number(BigInt(1e18)).toExponential() + '},';
                 dayrange--;
-              }else{
-                console.log('No price change transaction found, block number ' + block.number);
               }
               index++;
             }      
