@@ -76,9 +76,15 @@
         font-weight: 500;
       }
       h1 {
-        margin: 6rem 0 1.2rem;
-        font-size: 4rem;
-        color: #138a0f;
+        font-size: 45px;
+        color: transparent; 
+        text-align: center;
+        background-image: url('./public/img/Stablecoin.png'); 
+        background-size: cover; 
+        -webkit-background-clip: text; 
+        background-clip: text; 
+        background-position: center;
+        margin-bottom: 20px;
       }
       h2 {
         margin: 3rem 0 1.2rem;
@@ -158,6 +164,9 @@
     <div class="container">
       <h1>UniPG Stablecoin</h1>
 
+        <div style="margin-top: 10px; margin-bottom: 30px; font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #7c7676;">
+          Welcome to the stablecoins world, a form of cryptocurrency designed to maintain a stable value relative to other currencies such as the US dollar or the euro. These digital assets are ideal for those who wish to conduct transactions without worrying about the extreme price fluctuations common to traditional cryptocurrencies like Bitcoin. Stablecoins offer valuable stability, as they are anchored to reserves of fiat currency or other assets, ensuring a level of reliability and predictability. Explore our website to discover UniPGStablecoin!
+        </div>
       <!-- First row is reserved for data visualization -->
       <div class="row">
         <div class="col col-6">
@@ -272,7 +281,7 @@
         <br/>
         <hr style="border: none; height: 1px; background-color: #ddd; margin-bottom: 10px;">
         <div style="margin-top: 10px; margin-bottom: 30px; font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #7c7676;">
-          Check if your wallet has allowance rights.
+          Check if your wallet has allowance rights. You can be eligible for an allowance by first using the section below "Give allowance".
         </div>
         <div class="row">
           Insert recipient wallet address here: &emsp;
@@ -289,7 +298,7 @@
 
         <hr style="border: none; height: 1px; background-color: #ddd; margin-bottom: 10px;">
           <div style="margin-top: 10px; margin-bottom: 30px; font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #7c7676;">
-              This section is reserved to the contract owner.
+              This section is reserved to the contract owner. The holder owns the only wallet that is allowed to create tokens for the benefit of another wallet.
           </div>
         <div class="row">
           <input type="text" id="minter-wallet" placeholder="Enter minter address"> &emsp;
@@ -299,7 +308,7 @@
         </div>  
         <hr style="border: none; margin-top: 30px; height: 1px; background-color: #ddd;">
         <div style="margin-top: 10px; margin-bottom: 20px; font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #7c7676;">
-          Make your transactions here.
+          Make your transactions here. "Transfer tokens" is used for a common transaction between two users. "Give allowance", in a preliminary phase, allows a user to have another user spend tokens from his wallet. The transaction can be carried out in the "Transfer allow" section from the wallet of the user who allows the loan, on behalf of the beneficiary of the loan and in favor of a third wallet who is the actual beneficiary who receives the tokens.
         </div>
         <br/>
         <div class="row">
@@ -310,11 +319,11 @@
           <button id="transfer" class="transfer" onclick="transferTokens()">Transfer</button>
         </div>
         <br/>
-        <div id="allowance-section" style="background-color: #dddddd; padding: 10px; border-radius: 5px;">
+        <div id="allowance-section" style="background-color: #dddddd; padding: 12px; border-radius: 5px;">
         <div class="row">
           Give allowance: &emsp;
           <input type="text" id="from-wallet-allowance" placeholder="Enter address of the owner of the tokens"> &emsp;
-          <input type="text" id="to-wallet-allowance" placeholder="Enter address of the wallet that will be spending the tokens"> &emsp;
+          <input type="text" id="to-wallet-allowance" placeholder="Enter wallet address that can spend tokens"> &emsp;
           <input type="number" id="amount-permitted-allowance" placeholder="Token amount"> &emsp;
           <button id="permit-allowance" class="permit-allowance" onclick="approveAllowance()">Permit</button>
         </div>
