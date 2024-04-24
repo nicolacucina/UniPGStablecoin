@@ -40,7 +40,7 @@ public class Simulation {
             boolean[] newBuyers = new boolean[days];
 
             // Setup phase, first minting of the tokens
-            Contract contract = new Contract();
+            Contract contract = Contract.getInstance();
             for(int i = 0; i < numberOfInitialWallets; i++){
                 Wallet wallet = new Wallet(Integer.toString(i), initialTokenAmount, initialMoneyAmount, contract);
                 contract.addWallet(wallet);

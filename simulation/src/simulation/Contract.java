@@ -9,12 +9,19 @@ public class Contract {
     private LinkedList<Wallet> wallets;
     private double value;
     private boolean rebase;
-    
+    private static Contract instance = null; 
 
-    Contract(){
+    private Contract(){
         this.wallets = new LinkedList<Wallet>();
         this.value = 1.0;
         this.rebase = false;
+    }
+
+    public static Contract getInstance(){
+        if(instance == null){
+            instance = new Contract();
+        }
+        return instance;
     }
     
     public void rebase(){

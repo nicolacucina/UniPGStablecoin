@@ -20,7 +20,14 @@ Inside the Truffle tab in VS Code, a local blockchain can be setup in the Networ
     >Port number => 8545
     >Name => development
 
-This particular setup is reserved inside Truffle, as explained in the _truffle-config.js_ file:
+Otherwise, the CLI version can be used. The Ganache Command Line Interface has various flags, as shown in https://archive.trufflesuite.com/docs/ganache/reference/cli-options/:
+
+    -a <int>, number of accounts generated at startup, default 10
+    -s 'String', seed to randomly generate mnemonics
+    -m 'String', uses the specified mnemonics to generate addresses
+    --wallet.accountKeysPath=<STRING>, filepath to save both accounts and private keys
+
+The `development` Ganache name is used as the default one and is reserved inside Truffle, as explained in the _truffle-config.js_ file:
 
     ...
     networks: {
@@ -54,18 +61,12 @@ The _migrations_ folder is used to `deploy` the contracts on the network, they a
         deployer.deploy(UniPGStablecoin, "UniPGStablecoin", "UPG", 18, PriceGenerator.address);
     };
 
-The Ganache Command Line Interface has various flags that can be used, as shown in https://archive.trufflesuite.com/docs/ganache/reference/cli-options/:
-
-    -a <int>, number of accounts generated at startup, default 10
-    -s 'String', seed to randomly generate mnemonics
-    -m 'String', uses the specified mnemonics to generate addresses
-    --wallet.accountKeysPath=<STRING>, filepath to save both accounts and private keys
 
 ## Execution
 
 Now that everything is set up, here are some example intructions:
 
-    ganache-cli
+    ganache-cli <flags>
     truffle migrate
     truffle console
         let accounts = await web3.eth.getAccounts();
@@ -215,7 +216,7 @@ To launch the script inside the truffle enviroment it must be contained inside a
 
 The users will not use the Command Line to interact with the blockchain but instead a html page.
 
-The page is served locally using node.js using a simple script 
+The page is served locally using node.js using a simple script:
 
     var express = require('express');
     var app = express();
@@ -232,7 +233,8 @@ The page is served locally using node.js using a simple script
     })
 
 Using this solution forces the js code to be embedded directly inside the html page.
-The code is organized in different functions 
+
+The code is organized in different functions
 
 ### Setup functions
 
@@ -314,7 +316,6 @@ This is the preliminary function that creates the connection with the blockchain
         minterhtml.innerHTML = "<b>Price Generator contract owner: </b>" + PriceGeneratorMinter + "<br><b>UniPG Stablecoin contract owner: </b>" + UniPGStablecoinMinter;  
 
         displayWalletsAndKeys();
-
     }
 
 #### displayBlocks()

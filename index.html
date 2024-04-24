@@ -746,15 +746,17 @@
           if (allowance >= amount) {
 
               // Ottieni la quantità di gas stimata
-              const gasAmount = await UniPGStablecoin.methods.transferFrom(owner, recipient, amount).estimateGas({ from: proxy});
-              console.log("Gas amount is:", gasAmount);
+              const gasAmount = await UniPGStablecoin.methods.transferFrom(owner, recipient, amount)
+                .estimateGas({ from: proxy})
+                .then((data)=>{console.log("Gas amount is:", data); return data;});
               
               // Ottieni il prezzo del gas attuale
-              const gasPrice = await web3.eth.getGasPrice();
-              console.log("Gas price:", gasPrice);
+              const gasPrice = await web3.eth.getGasPrice()
+                .then((data)=>{console.log("Gas price is:", data); return data;});
 
               // Crea la transazione firmata
               const privateKey = wallets.private_keys[proxy];
+              console.log("Private key:", privateKey);
               const encodedABI = UniPGStablecoin.methods.transferFrom(owner, recipient, amount).encodeABI();
               const transaction = {
                   'from': proxy,
