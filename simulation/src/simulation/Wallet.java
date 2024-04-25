@@ -21,13 +21,21 @@ public class Wallet{
     //Buying and selling is split up in two transactions, 
     //one for the token transfer and one for the money transfer
     public void buy(Wallet fromWallet, double tokenAmount, Exchange exchange, double price){
-        contract.tranfer(fromWallet, this, tokenAmount);
-        exchange.transfer(this, fromWallet, price, tokenAmount);
+        boolean result = contract.tranfer(fromWallet, this, tokenAmount);
+        if(result){
+            exchange.buy(this, tokenAmount);
+        }
+        //exchange.transfer(this, fromWallet, price, tokenAmount);
+        
     }
 
     public void sell(Wallet toWallet, double tokenAmount, Exchange exchange, double price){
-        contract.tranfer(this, toWallet, tokenAmount);
-        exchange.transfer(toWallet, this, price, -tokenAmount);
+        boolean result = contract.tranfer(this, toWallet, tokenAmount);
+        if(result){
+            exchange.sell(this, tokenAmount);
+        }
+        //exchange.transfer(toWallet, this, price, -tokenAmount);
+        
     }
 
 //////////////////////////////////////////GETTERS AND SETTERS////////////////////////////////////////// 
