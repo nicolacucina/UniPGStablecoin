@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
-
 html {
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
@@ -69,11 +68,19 @@ h4 {
   font-weight: 500;
 }
 h1 {
-  margin: 6rem 0 1.2rem;
-  font-size: 4rem;
+  font-size: 45px;
+  color: transparent; 
+  text-align: center;
+  background-image: url('./public/img/Stablecoin.png'); 
+  background-size: cover; 
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  background-position: center;
+  margin-bottom: 20px;
 }
 h2 {
   margin: 3rem 0 1.2rem;
+  color: #138a0f;
   font-size: 2.4rem;
   line-height: 1.2;
 }
@@ -97,30 +104,45 @@ input {
   width: 300px;
 }
 
-div.scroll {
-  background-color: #f2f2f2;
-  width: 500px;
-  height: 200px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  text-align: center;
-  padding: 20px;
-}
 
-div.scrollKey {
-  background-color: #f2f2f2;
-  width: 700px;
-  height: 200px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  text-align: center;
-  padding: 20px;
-}
+#private-keys.scroll {
+   margin-left: 40px;
+   background-color: #91b673;
+   width: 610px;
+   height: 200px; 
+   overflow-x: auto;
+   overflow-y: auto;
+   text-align: center;
+}   
 
-div.scrollBlocks {
-  background-color: #f2f2f2;
-  width: 600px;
-  height: 200px;
-  overflow-x: hidden;
-  overflow-y: auto;
+#transactions.scroll {
+   margin-left: 40px;
+   background-color: #a6c76a;
+   width: 570px; 
+   height: 200px; 
+   overflow-x: auto;
+   overflow-y: auto; 
+} 
+
+#wallet-list.scroll {
+   background-color: #91b673;
+   width: 570px; 
+   height: 200px; 
+   overflow-x: auto;
+   overflow-y: auto; 
+} 
+
+
+#blocks.scrollBlocks {
+   background-color: #a6c76a;
+   width: 570px; 
+   height: 200px; 
+   overflow-x: auto;
+   overflow-y: auto;
+}   
+
+
+.responsive-svg-container {
+  width: 100%;
+  max-width: 800px;
 }
