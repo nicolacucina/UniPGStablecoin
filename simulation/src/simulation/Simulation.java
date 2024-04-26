@@ -14,7 +14,9 @@ public class Simulation {
     public static long seed;
     public static PrintWriter out;
     public static void main(String[] args) {
+        ////////////////////////////////////////////////////////////////////////////////////
         // Simulation parameters    
+        ////////////////////////////////////////////////////////////////////////////////////
 
         Properties simulationProperties = new Properties();
         try {
@@ -30,8 +32,13 @@ public class Simulation {
             double sellProbability = Double.parseDouble(simulationProperties.getProperty("sellProbability"));
             double percentageOfNewBuyers = Double.parseDouble(simulationProperties.getProperty("percentageOfNewBuyers"));
             int numberOfExchanges = Integer.parseInt(simulationProperties.getProperty("numberOfExchanges"));
-            double w1 = Double.parseDouble(simulationProperties.getProperty("ExchangeWeight1"));
-            double w2 = Double.parseDouble(simulationProperties.getProperty("ExchangeWeight2"));
+            int exchangeDimension = Integer.parseInt(simulationProperties.getProperty("exchangeDimension"));
+            double buyPrice = Double.parseDouble(simulationProperties.getProperty("buyPrice"));
+            double sellPrice = Double.parseDouble(simulationProperties.getProperty("sellPrice"));
+            double priceGap = Double.parseDouble(simulationProperties.getProperty("priceGap"));
+            double w1 = Double.parseDouble(simulationProperties.getProperty("buyWeight1"));
+            double w2 = Double.parseDouble(simulationProperties.getProperty("sellWeight2"));
+            
 
             Random random = new Random(seed);
 
@@ -39,20 +46,26 @@ public class Simulation {
             double[] tokenAmounts = new double[days];
             boolean[] newBuyers = new boolean[days];
 
+            ////////////////////////////////////////////////////////////////////////////////////
             // Setup phase, first minting of the tokens
+            ////////////////////////////////////////////////////////////////////////////////////
+
             Contract contract = Contract.getInstance();
             for(int i = 0; i < numberOfInitialWallets; i++){
                 Wallet wallet = new Wallet(Integer.toString(i), initialTokenAmount, initialMoneyAmount, contract);
                 contract.addWallet(wallet);
             }
 
-            Exchange[] exchanges = new Exchange[numberOfExchanges];
+            ExchangeNew[] exchanges = new ExchangeNew[numberOfExchanges];
             for(int j = 0; j < numberOfExchanges; j++){
-                exchanges[j] = new Exchange(Integer.toString(j),0.0, 0.0, 1.0, w1, w2);
+                exchanges[j] = new ExchangeNew(Integer.toString(j), initialMoneyAmount*exchangeDimension, initialTokenAmount*exchangeDimension, contract, 0.0, 0.0, buyPrice, sellPrice, priceGap, w1, w2);
             }
 
             out = new PrintWriter (new FileWriter("data/"+logname+".txt"));
-                // Simulation phase
+            ////////////////////////////////////////////////////////////////////////////////////
+            // Simulation phase
+            ////////////////////////////////////////////////////////////////////////////////////
+
             for(int i = 0; i < days; i++){
                 out.println("Day " + i + " of the simulation----------------------------");
                 out.println();
@@ -60,7 +73,10 @@ public class Simulation {
                 out.println("Token amount: " + contract.getNumberofToken());
                 out.println();
 
+                ////////////////////////////////////////////////////////////////////////////////////
                 // Setup wallet intentions
+                ////////////////////////////////////////////////////////////////////////////////////
+
                 LinkedList<Wallet> buyers = new LinkedList<Wallet>();
                 LinkedList<Wallet> sellers = new LinkedList<Wallet>();
 
@@ -78,7 +94,9 @@ public class Simulation {
                 }
                 out.println();
 
+                ////////////////////////////////////////////////////////////////////////////////////
                 // Randomly add new buyers that will purchase tokens from the users
+                ////////////////////////////////////////////////////////////////////////////////////
 
                 boolean addBuyer = random.nextBoolean();
                 newBuyers[i] = addBuyer;
@@ -93,10 +111,15 @@ public class Simulation {
                     out.println();
                 }
 
+                ////////////////////////////////////////////////////////////////////////////////////
                 // Initialize the percentage of the wallets after all wallets have been created
+                ////////////////////////////////////////////////////////////////////////////////////
+
                 contract.initPercentages();
 
+                ////////////////////////////////////////////////////////////////////////////////////
                 // Setup the exchanges
+                ////////////////////////////////////////////////////////////////////////////////////
                 
                 for(Wallet wallet: contract.getWallets()){
                     int temp = random.nextInt(numberOfExchanges);
@@ -119,7 +142,7 @@ public class Simulation {
                     }
                 }
 
-                for(Exchange exchange : exchanges){
+                for(ExchangeNew exchange : exchanges){
                     out.println("Exchange: " + exchange.getName());
                     for(Wallet wallet : exchange.getBuyerWallets()){
                         out.println("Buyer: " + wallet.getName());
@@ -130,7 +153,7 @@ public class Simulation {
                     out.println();
                 }
 
-                for(Exchange exchange : exchanges){
+                for(ExchangeNew exchange : exchanges){
                     double supply = 0.0;
                     double demand = 0.0;
 
@@ -138,47 +161,63 @@ public class Simulation {
                         supply += wallet.getToken();
                     }
 
-                    for(Wallet wallet : exchange.getBuyerWallets()){
-                        demand += wallet.getToken();
-                        // change
-                    }
+                    demand = supply + random.nextGaussian();
                                         
                     exchange.setSupply(supply);
                     exchange.setDemand(demand);
                 }
                 
+                ////////////////////////////////////////////////////////////////////////////////////
                 // Buy and sell phase
+                ////////////////////////////////////////////////////////////////////////////////////
 
-                for(Exchange exchange : exchanges){
+                for(ExchangeNew exchange : exchanges){
                     //randomly select a buyer and a seller from the exchange, whitout repetition
                     out.println("Exchange: " + exchange.getName());
                     out.println();
                     
                     while(exchange.getBuyerWallets().size() > 0 && exchange.getSellerWallets().size() > 0){
-                        Wallet buyer = exchange.getBuyerWallet();
-                        Wallet seller = exchange.getSellerWallet();
-
-                        double tokenAmount = seller.getToken()*random.nextDouble();    
-                        double transationPrice = Math.abs(random.nextGaussian() + 1);
-                        
-                        out.println("Buyer: " + buyer.getName() + " Seller: " + seller.getName() + " Token amount: " + tokenAmount + " Transaction price: " + transationPrice);
-                        buyer.buy(seller, tokenAmount, exchange, transationPrice);
-                        out.println();
-
+                        // transactions have to be randomized because of the buy and sell updates
+                        double tokenAmount = exchange.getSupply() * random.nextDouble(); 
+                        if(random.nextBoolean()){
+                            Wallet buyer = exchange.getBuyerWallet();
+                            out.println("Buyer: " + buyer.getName() + " Token amount: " + tokenAmount);
+                            exchange.buy(buyer, tokenAmount);
+                            out.println();
+                        }else{
+                            Wallet seller = exchange.getSellerWallet();
+                            out.println("Seller: " + seller.getName() + " Token amount: " + tokenAmount);
+                            exchange.sell(seller, tokenAmount);
+                            out.println();
+                        }
                     }
                 }
                 
                 out.println();
                 out.println("Tokens after transactions: " + contract.getNumberofToken());
-                
-                double endOfDayValue = 0.0;
+
+                ////////////////////////////////////////////////////////////////////////////////////
                 // Rebase phase
-                for(Exchange exchange : exchanges){
-                    endOfDayValue += exchange.getPrice();
+                ////////////////////////////////////////////////////////////////////////////////////
+
+                double endOfDayValue = 0.0;
+                double endOfDayBuyPrice = 0.0;
+                double endOfDaySellPrice = 0.0;
+                
+                for(ExchangeNew exchange : exchanges){
+                    endOfDayBuyPrice += exchange.getBuyPrice();
+                    endOfDaySellPrice += exchange.getSellPrice();
                     exchange.resetWallets();
                 }
-                endOfDayValue = endOfDayValue/numberOfExchanges;
-                out.println("End of day " + i + " token price: " + endOfDayValue);
+
+                endOfDayBuyPrice = endOfDayBuyPrice/numberOfExchanges;
+                out.println("End of day " + i + " medium buy price: " + endOfDayBuyPrice);
+
+                endOfDaySellPrice = endOfDaySellPrice/numberOfExchanges;
+                out.println("End of day " + i + " medium sell price: " + endOfDaySellPrice);
+
+                endOfDayValue = (endOfDayBuyPrice + endOfDaySellPrice)/2;
+                out.println("End of day " + i + " medium token price: " + endOfDayValue);
                 out.println();
 
                 contract.setValue(endOfDayValue);

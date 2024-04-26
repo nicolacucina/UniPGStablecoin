@@ -6,9 +6,6 @@ import java.util.Random;
 
 public class ExchangeNew extends Wallet{
 
-    //private String name;
-    //private double moneyReserve;
-    //private double tokenReserve;
     private double demand;
     private double supply; 
     private double buyPrice; // price at which users buys tokens from the exchange
@@ -23,9 +20,6 @@ public class ExchangeNew extends Wallet{
 
     ExchangeNew(String name, double moneyReserve, double tokenReserve, Contract contract, double demand, double supply, double buyprice, double sellprice, double priceGap, double w1, double w2){
         super(name, tokenReserve, moneyReserve, contract);
-        //this.name = name;
-        //this.moneyReserve = moneyReserve;
-        //this.tokenReserve = tokenReserve;
         this.demand = demand;
         this.supply = supply; 
         this.buyPrice = buyprice;
@@ -53,13 +47,18 @@ public class ExchangeNew extends Wallet{
 
         //If people buy, the buy price goes up
         out.print("Buy price was " + buyPrice + " and now ");
-        buyPrice += buyPrice * w1;
+        if(buyPrice + (buyPrice * w1) > 1.3){
+            buyPrice = 1.3;
+        } else {
+            buyPrice += buyPrice * w1;
+        }
         out.println("Buy price is " + buyPrice);
 
         //Update sell price using priceGap
         out.print("Sell price was " + sellPrice + " and now ");
         sellPrice = buyPrice - priceGap;
         out.println("Sell price is " + sellPrice);
+        out.println();
     }   
 
     public void sell(Wallet toWallet, double tokenAmount){
@@ -77,21 +76,22 @@ public class ExchangeNew extends Wallet{
 
         //If people sell, the sell price goes down
         out.print("Sell price was " + sellPrice + " and now ");
-        sellPrice -= sellPrice * w2;
+        if(sellPrice - (sellPrice * w2) < 0.7){
+            sellPrice = 0.7;
+        } else {
+            sellPrice -= sellPrice * w2;
+        }
         out.println("Sell price is " + sellPrice);
 
         //Update buy price using priceGap
         out.print("Buy price was " + buyPrice + " and now ");
         buyPrice = sellPrice + priceGap;
         out.println("Buy price is " + buyPrice);
+        out.println();
     }   
 
     //////////////////////////////////////////GETTERS AND SETTERS//////////////////////////////////////////
-
-    // public String getName(){
-    //     return name;
-    // }
-
+    
     public void addBuyerWallet(Wallet wallet){
         buyerWallets.add(wallet);
     }

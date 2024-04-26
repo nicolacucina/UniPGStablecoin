@@ -20,7 +20,7 @@ public class Wallet{
 
     //Buying and selling is split up in two transactions, 
     //one for the token transfer and one for the money transfer
-    public void buy(Wallet fromWallet, double tokenAmount, Exchange exchange, double price){
+    public void buy(Wallet fromWallet, double tokenAmount, ExchangeNew exchange, double price){
         boolean result = contract.tranfer(fromWallet, this, tokenAmount);
         if(result){
             exchange.buy(this, tokenAmount);
@@ -29,7 +29,7 @@ public class Wallet{
         
     }
 
-    public void sell(Wallet toWallet, double tokenAmount, Exchange exchange, double price){
+    public void sell(Wallet toWallet, double tokenAmount, ExchangeNew exchange, double price){
         boolean result = contract.tranfer(this, toWallet, tokenAmount);
         if(result){
             exchange.sell(this, tokenAmount);
