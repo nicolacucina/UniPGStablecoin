@@ -39,30 +39,56 @@ In this simulation, the costs of using the blockchain for the computations is no
 This class represents a user wallet. Each wallet has a _token_ amount that it owns, a _money_ variable that represents the investements or the earnings of the wallet and a _percentage_ used to keep track of the proportion of tokens owned by each wallet
 
     public void buy(Wallet fromWallet, double tokenAmount, Exchange exchange, double price){
-        contract.tranfer(fromWallet, this, tokenAmount);
-        exchange.transfer(this, fromWallet, price, tokenAmount);
+        boolean result = contract.transfer(fromWallet, this, tokenAmount);
+        if(result){
+            exchange.buy(this, tokenAmount);
+        }
     }
 
     public void sell(Wallet toWallet, double tokenAmount, Exchange exchange, double price){
-        contract.tranfer(this, toWallet, tokenAmount);
-        exchange.transfer(toWallet, this, price, -tokenAmount);
+        boolean result = contract.transfer(this, toWallet, tokenAmount);
+        if(result){
+            exchange.sell(this, tokenAmount);
+        }
     }
 
-the _buy()_ and _sell()_ methods are used by the wallets to signal their intentions, and are split between a call to the contract to transfer the tokens and a call to the exchange to transfer money
+the _buy()_ and _sell()_ methods are used by the wallets to signal their intentions, and are split between a call to the contract to transfer the tokens and a call to the exchange to transfer money. Money is trasfered only after the contract has transfered the tokens between the two wallets
 
 ## Exchange
 
-This models a platform where tokens can be exchanged at a certain price. Each day the wallets choose an exchange wehere they want to operate and they are added either to a list of _buyers_ or _sellers_. The Exchange keeps track of the _demand_, _supply_ and _price_ of the tokens, modeled as the amounts of tokens available in the platform.
+This models a platform where tokens can be exchanged at a certain price. An Exchange is a certain type of `Wallet`, the main difference being the amount of token and money that it handles.
+Each day the user wallets can choose one exchange where they can trade. This is done by adding the wallets either to a _buyers_ or _sellers_ list.
+To compute the price at which the token are bought and sold, the exchange keeps track of _demand_, _supply_, _buyPrice_, _sellPrice_ and _priceGap_.
 
-    public void transfer(Wallet fromWallet, Wallet toWallet, double price, double tokenAmount){
-        fromWallet.setMoney(fromWallet.getMoney() - price);
-        toWallet.setMoney(toWallet.getMoney() + price);
-        supply -= tokenAmount;
+    public void buy(Wallet fromWallet, double tokenAmount){
+        fromWallet.setMoney(fromWallet.getMoney() - (buyPrice*tokenAmount));
+        this.setMoney(this.getMoney() + (buyPrice*tokenAmount));
+        supply -= tokenAmount;   
         demand += tokenAmount;
-        this.price = (this.price * w1 + price * w2) / (w1 + w2);
+        if(buyPrice + (buyPrice * w1) > 1.3){
+            buyPrice = 1.3;
+        } else {
+            buyPrice += buyPrice * w1;
+        }
+        sellPrice = buyPrice - priceGap;
+    }  
+
+    public void sell(Wallet toWallet, double tokenAmount){
+        toWallet.setMoney(toWallet.getMoney() + (sellPrice*tokenAmount));
+        this.setMoney(this.getMoney() - (sellPrice*tokenAmount));
+        supply += tokenAmount;
+        demand -= tokenAmount;
+        if(sellPrice - (sellPrice * w2) < 0.7){
+            sellPrice = 0.7;
+        } else {
+            sellPrice -= sellPrice * w2;
+        }
+        buyPrice = sellPrice + priceGap;
     }   
 
-The exchange does not concern itself with the transfer of token but only of the payment of the tokens. The price is adjusted as a weighted mean of the previous price and the new one because other models where too difficult to implement and led to unwanted behavious
+The balance of the user wallet is not checked since negative money is accepted and can be interpreted as either an investement in the tokens or a loss of money.
+_supply_ and _demand_ are updated using the amount of tokens transferred.
+The _buyPrice_ and _sellPrice_ are adjusted using both the weights _w1_ e _w2_ and the _priceGap_
 
 ## Simulation
 
@@ -79,8 +105,12 @@ Inside _/bin/data/_ the _simulation.properties_ file can be found where all the 
     sellProbability=0.4
     percentageOfNewBuyers=0.1
     numberOfExchanges=3
-    ExchangeWeight1=0.85
-    ExchangeWeight2=0.15
+    exchangeDimension=50
+    buyPrice=1.02
+    sellPrice=1.0
+    priceGap=0.02
+    buyWeight1=0.05
+    sellWeight2=0.05
 
 The two scripts _compile.bat_ and _run.bat_ simplify the execution of the simulation. The output is stored in the _/bin/data/_ folder in two files
 

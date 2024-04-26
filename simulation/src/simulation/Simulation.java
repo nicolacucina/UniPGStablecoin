@@ -56,9 +56,9 @@ public class Simulation {
                 contract.addWallet(wallet);
             }
 
-            ExchangeNew[] exchanges = new ExchangeNew[numberOfExchanges];
+            Exchange[] exchanges = new Exchange[numberOfExchanges];
             for(int j = 0; j < numberOfExchanges; j++){
-                exchanges[j] = new ExchangeNew(Integer.toString(j), initialMoneyAmount*exchangeDimension, initialTokenAmount*exchangeDimension, contract, 0.0, 0.0, buyPrice, sellPrice, priceGap, w1, w2);
+                exchanges[j] = new Exchange(Integer.toString(j), initialMoneyAmount*exchangeDimension, initialTokenAmount*exchangeDimension, contract, 0.0, 0.0, buyPrice, sellPrice, priceGap, w1, w2);
             }
 
             out = new PrintWriter (new FileWriter("data/"+logname+".txt"));
@@ -142,7 +142,7 @@ public class Simulation {
                     }
                 }
 
-                for(ExchangeNew exchange : exchanges){
+                for(Exchange exchange : exchanges){
                     out.println("Exchange: " + exchange.getName());
                     for(Wallet wallet : exchange.getBuyerWallets()){
                         out.println("Buyer: " + wallet.getName());
@@ -153,7 +153,7 @@ public class Simulation {
                     out.println();
                 }
 
-                for(ExchangeNew exchange : exchanges){
+                for(Exchange exchange : exchanges){
                     double supply = 0.0;
                     double demand = 0.0;
 
@@ -171,7 +171,7 @@ public class Simulation {
                 // Buy and sell phase
                 ////////////////////////////////////////////////////////////////////////////////////
 
-                for(ExchangeNew exchange : exchanges){
+                for(Exchange exchange : exchanges){
                     //randomly select a buyer and a seller from the exchange, whitout repetition
                     out.println("Exchange: " + exchange.getName());
                     out.println();
@@ -204,7 +204,7 @@ public class Simulation {
                 double endOfDayBuyPrice = 0.0;
                 double endOfDaySellPrice = 0.0;
                 
-                for(ExchangeNew exchange : exchanges){
+                for(Exchange exchange : exchanges){
                     endOfDayBuyPrice += exchange.getBuyPrice();
                     endOfDaySellPrice += exchange.getSellPrice();
                     exchange.resetWallets();

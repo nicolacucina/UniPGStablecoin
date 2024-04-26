@@ -44,7 +44,7 @@ public class Contract {
         out.println();
     }
     
-    public boolean tranfer(Wallet fromWallet, Wallet toWallet, double tokenAmount){
+    public boolean transfer(Wallet fromWallet, Wallet toWallet, double tokenAmount){
         if(!rebase){
             if(fromWallet.getToken() >= tokenAmount){
                 fromWallet.setToken(fromWallet.getToken() - tokenAmount);
