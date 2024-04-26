@@ -44,18 +44,20 @@ public class Contract {
         out.println();
     }
     
-    public void tranfer(Wallet fromWallet, Wallet toWallet, double tokenAmount){
+    public boolean tranfer(Wallet fromWallet, Wallet toWallet, double tokenAmount){
         if(!rebase){
             if(fromWallet.getToken() >= tokenAmount){
                 fromWallet.setToken(fromWallet.getToken() - tokenAmount);
                 toWallet.setToken(toWallet.getToken() + tokenAmount);
+                return true;
             }
             else{
                 Simulation.getWriter().println("Transaction between "+ fromWallet.getName() + " and "+ toWallet.getName() + " not allowed, not enough tokens");
+                return false;
             }
-        }
-        else{
+        } else{
             Simulation.getWriter().println("Rebase in progress, transaction not allowed");
+            return false;
         }
     }
 

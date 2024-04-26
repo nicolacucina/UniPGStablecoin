@@ -35,7 +35,7 @@ public class Exchange{
         toWallet.setMoney(toWallet.getMoney() + price);
         PrintWriter out = Simulation.getWriter();
         out.print("Supply was " + supply + ", Demand was " +  demand + " and now ");
-        supply -= tokenAmount;
+        supply -= tokenAmount; 
         out.print("Supply is " + supply);
         demand += tokenAmount;
         out.println(" and Demand is " + demand);
@@ -43,6 +43,7 @@ public class Exchange{
         //Price update, weighted average between old price and price of the latest transaction
         out.print("Price was " + this.price + " and now ");
         this.price = (this.price * w1 + price * w2) / (w1 + w2);
+
         out.println("Price is " + this.price);
     }   
 

@@ -140,6 +140,7 @@ public class Simulation {
 
                     for(Wallet wallet : exchange.getBuyerWallets()){
                         demand += wallet.getToken();
+                        // change
                     }
                                         
                     exchange.setSupply(supply);
