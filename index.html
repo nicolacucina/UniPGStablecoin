@@ -403,14 +403,14 @@
         // Get ABI from the Truffle build
         ////////////////////////////////////////////
 
-        d3.json('./TruffleTest/build/contracts/PriceGenerator.json')
+        d3.json('./public/data/PriceGenerator.json')
           .then((data) => {
             PriceGeneratorABI = data.abi;
             console.log('Price Generator ABI: ');
             console.log(PriceGeneratorABI);
           });
           
-        d3.json('./TruffleTest/build/contracts/UniPGStablecoin.json')
+        d3.json('./public/data/UniPGStablecoin.json')
           .then((data) => {
             UniPGStablecoinABI = data.abi;
             console.log('UniPG Stablecoin ABI: ')

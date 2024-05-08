@@ -502,3 +502,21 @@ This serves as an example of a function that needs to change the state of the bl
             })
         });
     }
+
+## Real implementation
+
+### PriceGenerator
+
+Addresses:
+- from etherscan: 0x459e96cfab458e015f9fd04565a30afd16cef65a
+- from RemixIDE: 0x459E96CFaB458e015f9fD04565A30afd16CEf65A
+
+https://sepolia.etherscan.io/tx/0xabf6ff779f19d358d2c4398b968ba6a2c9bc448e693007b879db111077d686c6
+
+### UniPGStablecoin
+
+Addresses:
+- from etherscan: 0x6f8fee46c241ade719ce091256895097c81fb244
+- from RemixIDE: 0x6f8FEe46C241aDe719Ce091256895097C81FB244
+
+https://sepolia.etherscan.io/tx/0xee22e391e99b039e23a2cca0f308198eccebc4327f4c75e5906e7bc9d6160835
