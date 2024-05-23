@@ -58,7 +58,6 @@ public class Exchange extends Wallet{
         out.print("Sell price was " + sellPrice + " and now ");
         sellPrice = buyPrice - priceGap;
         out.println("Sell price is " + sellPrice);
-        out.println();
     }   
 
     public void sell(Wallet toWallet, double tokenAmount){
@@ -85,7 +84,6 @@ public class Exchange extends Wallet{
         out.print("Buy price was " + buyPrice + " and now ");
         buyPrice = sellPrice + priceGap;
         out.println("Buy price is " + buyPrice);
-        out.println();
     }   
 
     //////////////////////////////////////////GETTERS AND SETTERS//////////////////////////////////////////
@@ -110,7 +108,7 @@ public class Exchange extends Wallet{
 
     public Wallet getSellerWallet(){
         Wallet seller = sellerWallets.get(this.random.nextInt(sellerWallets.size()));
-        buyerWallets.remove(seller);
+        sellerWallets.remove(seller);
         return seller;
     }
 

@@ -33,9 +33,9 @@ public class Contract {
         double newTokenAmount = getNumberofToken()*value;
         out.println();
         for(Wallet wallet : wallets){
-            out.println("Wallet: "+wallet.getName() + ", old token amount: " + wallet.getToken() + ", percentage: " + wallet.getPercentage());
+            out.println(wallet.getClass().getSimpleName() + ": "+wallet.getName() + ", old token amount: " + wallet.getToken() + ", percentage: " + wallet.getPercentage());
             wallet.setToken(newTokenAmount*wallet.getPercentage());
-            out.println("Wallet: "+wallet.getName() + ", new token amount: " + wallet.getToken() + ", percentage: " + wallet.getPercentage());
+            out.println(wallet.getClass().getSimpleName() + ": "+wallet.getName() + ", new token amount: " + wallet.getToken() + ", percentage: " + wallet.getPercentage());
             out.println();
         }
         rebase = false;

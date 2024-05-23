@@ -59,6 +59,7 @@ public class Simulation {
             Exchange[] exchanges = new Exchange[numberOfExchanges];
             for(int j = 0; j < numberOfExchanges; j++){
                 exchanges[j] = new Exchange(Integer.toString(j), initialMoneyAmount*exchangeDimension, initialTokenAmount*exchangeDimension, contract, 0.0, 0.0, buyPrice, sellPrice, priceGap, w1, w2);
+                contract.addWallet(exchanges[j]);
             }
 
             out = new PrintWriter (new FileWriter("data/"+logname+".txt"));
@@ -142,13 +143,18 @@ public class Simulation {
                     }
                 }
 
+                out.println("###########################");
                 for(Exchange exchange : exchanges){
                     out.println("Exchange: " + exchange.getName());
+                    out.println();
+                    out.println("Buy price: " + exchange.getBuyPrice());
+                    out.println("Sell price: " + exchange.getSellPrice());
+                    out.println();
                     for(Wallet wallet : exchange.getBuyerWallets()){
-                        out.println("Buyer: " + wallet.getName());
+                        out.println("Buyer: " + wallet.getName() + " has " + wallet.getToken() + " tokens");
                     }
                     for(Wallet wallet : exchange.getSellerWallets()){
-                        out.println("Seller: " + wallet.getName());
+                        out.println("Seller: " + wallet.getName() + " has " + wallet.getToken() + " tokens");
                     }
                     out.println();
                 }
@@ -171,6 +177,7 @@ public class Simulation {
                 // Buy and sell phase
                 ////////////////////////////////////////////////////////////////////////////////////
 
+                out.println("###########################");
                 for(Exchange exchange : exchanges){
                     //randomly select a buyer and a seller from the exchange, whitout repetition
                     out.println("Exchange: " + exchange.getName());
@@ -178,20 +185,31 @@ public class Simulation {
                     
                     while(exchange.getBuyerWallets().size() > 0 && exchange.getSellerWallets().size() > 0){
                         // transactions have to be randomized because of the buy and sell updates
-                        double tokenAmount = exchange.getSupply() * random.nextDouble(); 
                         if(random.nextBoolean()){
+                            double tokenAmount = exchange.getSupply() * random.nextDouble(); 
                             Wallet buyer = exchange.getBuyerWallet();
-                            out.println("Buyer: " + buyer.getName() + " Token amount: " + tokenAmount);
-                            exchange.buy(buyer, tokenAmount);
+                            out.println("Buyer: " + buyer.getName() + ", Tokens owned: " + buyer.getToken() + ", transaction amount: " + tokenAmount);
+                            boolean result = contract.transfer(exchange, buyer, tokenAmount);
+                            if(result){
+                                exchange.buy(buyer, tokenAmount);
+                            }
+                            out.println("Buyer: " + buyer.getName() + " has " + buyer.getToken() + " tokens");
+                            out.println("Exchange: " + exchange.getName() + " has " + exchange.getToken() + " tokens");
                             out.println();
                         }else{
+                            double tokenAmount = exchange.getDemand() * random.nextDouble(); 
                             Wallet seller = exchange.getSellerWallet();
-                            out.println("Seller: " + seller.getName() + " Token amount: " + tokenAmount);
-                            exchange.sell(seller, tokenAmount);
+                            out.println("Seller: " + seller.getName() + ", Tokens owned: " + seller.getToken() + ", transaction amount: " + tokenAmount);
+                            boolean result = contract.transfer(seller, exchange, tokenAmount);
+                            if(result){
+                                exchange.sell(seller, tokenAmount);
+                            }
+                            out.println("Seller: " + seller.getName() + " has " + seller.getToken() + " tokens");
+                            out.println("Exchange: " + exchange.getName() + " has " + exchange.getToken() + " tokens");
                             out.println();
                         }
                     }
-                }
+                } //synch exchange and contract transactions, magari invertire ordine o if
                 
                 out.println();
                 out.println("Tokens after transactions: " + contract.getNumberofToken());
@@ -228,7 +246,6 @@ public class Simulation {
 
             out.println();
             out.println("Simulation finished");
-            out.println("Sta lista ha qualcosa che non va perchè le singole giornate invece funzionano");
             out.println();
             out.println("Prices, Tokens, New buyers");
             out.println("-----------------------------------------------------");

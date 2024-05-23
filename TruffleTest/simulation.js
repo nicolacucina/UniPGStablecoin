@@ -7,7 +7,7 @@ module.exports = async function(callback) {
     const accounts = await web3.eth.getAccounts();
     
     const timeout = 3; // time in seconds
-    const amount = BigInt(1e10);
+    const amount = BigInt(1e18);
     var counter = 0;
 
     function myFunction() {
