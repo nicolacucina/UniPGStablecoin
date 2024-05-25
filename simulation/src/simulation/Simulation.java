@@ -82,6 +82,10 @@ public class Simulation {
                 LinkedList<Wallet> sellers = new LinkedList<Wallet>();
 
                 for(Wallet wallet : contract.getWallets()){
+                    //check if wallet is Wallet or Exchange
+                    if(wallet instanceof Exchange){
+                        continue;
+                    }
                     if(random.nextDouble() < buyProbability){
                         buyers.add(wallet);
                         out.println("Wallet " + wallet.getName() + " wants to buy.");
@@ -91,7 +95,7 @@ public class Simulation {
                     }else {
                         // Do nothing
                         out.println("Wallet " + wallet.getName() + " does nothing.");
-                    }
+                    }   
                 }
                 out.println();
 
@@ -209,7 +213,7 @@ public class Simulation {
                             out.println();
                         }
                     }
-                } //synch exchange and contract transactions, magari invertire ordine o if
+                }
                 
                 out.println();
                 out.println("Tokens after transactions: " + contract.getNumberofToken());
