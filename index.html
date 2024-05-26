@@ -737,27 +737,27 @@
         }
 
         try {
-          // Controlla l'allowance dell'account corrente per il destinatario
-          const allowance = await UniPGStablecoin.methods.allowance(owner, proxy).call();
+          // Check the allowance
+          var allowance = await UniPGStablecoin.methods.allowance(owner, proxy).call();
           console.log("Allowance:", allowance);
 
-          // Se l'allowance è sufficiente, esegui il trasferimento
+          // If the allowance is sufficient, transfer the tokens
           if (allowance >= amount) {
 
-              // Ottieni la quantità di gas stimata
-              const gasAmount = await UniPGStablecoin.methods.transferFrom(owner, recipient, amount)
+              // Estimate gas
+              var gasAmount = await UniPGStablecoin.methods.transferFrom(owner, recipient, amount)
                 .estimateGas({ from: proxy})
                 .then((data)=>{console.log("Gas amount is:", data); return data;});
               
-              // Ottieni il prezzo del gas attuale
-              const gasPrice = await web3.eth.getGasPrice()
+              // Gas price
+              var gasPrice = await web3.eth.getGasPrice()
                 .then((data)=>{console.log("Gas price is:", data); return data;});
 
-              // Crea la transazione firmata
+              // Create signed transaction
               const privateKey = wallets.private_keys[proxy];
               console.log("Private key:", privateKey);
-              const encodedABI = UniPGStablecoin.methods.transferFrom(owner, recipient, amount).encodeABI();
-              const transaction = {
+              var encodedABI = UniPGStablecoin.methods.transferFrom(owner, recipient, amount).encodeABI();
+              var transaction = {
                   'from': proxy,
                   'to': UniPGStablecoinAddress,
                   'gas': gasAmount,
@@ -779,7 +779,6 @@
             }
           } catch (error) {
             console.error("Error during transfer:", error);
-          // Gestione dell'errore
         }
       }      
 

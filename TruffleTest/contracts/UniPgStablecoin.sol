@@ -16,21 +16,6 @@ contract UniPGStablecoin is IERC20 {
 
     event Rebase(uint256 total);
 
-    /*
-    ERC20InsufficientAllowance(spender, allowance, needed)
-
-    ERC20InvalidApprover(approver)
-
-    ERC20InvalidSpender(spender)
-
-    error RebaseInProgress();
-
-    error InitialMintingOver();
-
-    error InvalidSender(address sender);
-
-    error InvalidReceiver(address receiver);*/
-
     error InsufficientBalance(uint requested, uint available);
 
     PriceGenerator public priceGen;

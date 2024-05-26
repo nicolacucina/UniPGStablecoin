@@ -17,7 +17,7 @@ This class represents the Smart Contract. Acts as a the central point of all tra
 
 The flag _rebase_ is used to signal that the contract will not accept transactions during the rebase transactions. To update the token supply, the _value_ stored in the contract is used along side the _percentage_ that each wallet owns
     
-    public void tranfer(Wallet fromWallet, Wallet toWallet, double tokenAmount){
+    public void transfer(Wallet fromWallet, Wallet toWallet, double tokenAmount){
         if(!rebase){
             if(fromWallet.getToken() >= tokenAmount){
                 fromWallet.setToken(fromWallet.getToken() - tokenAmount);

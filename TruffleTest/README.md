@@ -206,7 +206,7 @@ To simulate the changes in the price of the stablecoin, we can run the following
         });
     });
 
-This script mints an _amount_ of tokens to the wallets _accounts[1]_ and _accounts[2]_ then calls the recursive function _myFunction()_ that changes the price of the stablecoin and invokes the rebase process. The _then()_ construct is used to ensure that the asynchronous model used by node.js doesnt interfere with the ordeer of execution.
+This script mints an _amount_ of tokens to the wallets _accounts[1]_ and _accounts[2]_ then calls the recursive function _myFunction()_ that changes the price of the stablecoin and invokes the rebase process. The _then()_ construct is used to ensure that the asynchronous model used by node.js doesn't interfere with the ordeer of execution.
 
 To launch the script inside the truffle enviroment it must be contained inside a callback function exported via module (this is what truffle expects to find), therefore the script has been saved inside the file _simulation.js_, which can be launched using:
 
@@ -454,7 +454,7 @@ These functions are invoked by the various buttons in the html page to trigger s
 #### getTotalSupply()
 
 This serves as an example of getter functions, since they dont alter the state in the blockchain and can be invoked without creating a transaction.
-The check UniPGStablecoin == _undefined_ is needed to ensure that the asynchronous code doesnt encounter problems.
+The check UniPGStablecoin == _undefined_ is needed to ensure that the asynchronous code doesn't encounter problems.
 
     async function getTotalSupply(){
         var n = document.getElementById("token-total-supply");
