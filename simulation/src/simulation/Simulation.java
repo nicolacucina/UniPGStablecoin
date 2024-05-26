@@ -189,8 +189,8 @@ public class Simulation {
                     
                     while(exchange.getBuyerWallets().size() > 0 && exchange.getSellerWallets().size() > 0){
                         // transactions have to be randomized because of the buy and sell updates
+                        double tokenAmount = exchange.getSupply() * random.nextDouble(); 
                         if(random.nextBoolean()){
-                            double tokenAmount = exchange.getSupply() * random.nextDouble(); 
                             Wallet buyer = exchange.getBuyerWallet();
                             out.println("Buyer: " + buyer.getName() + ", Tokens owned: " + buyer.getToken() + ", transaction amount: " + tokenAmount);
                             boolean result = contract.transfer(exchange, buyer, tokenAmount);
@@ -201,7 +201,6 @@ public class Simulation {
                             out.println("Exchange: " + exchange.getName() + " has " + exchange.getToken() + " tokens");
                             out.println();
                         }else{
-                            double tokenAmount = exchange.getDemand() * random.nextDouble(); 
                             Wallet seller = exchange.getSellerWallet();
                             out.println("Seller: " + seller.getName() + ", Tokens owned: " + seller.getToken() + ", transaction amount: " + tokenAmount);
                             boolean result = contract.transfer(seller, exchange, tokenAmount);

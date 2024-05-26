@@ -126,10 +126,21 @@ contract UniPGStablecoin is IERC20 {
             });
         }                
         balanceOf[msg.sender] -= amount;
-        balanceOf[recipient] += amount;
-        walletAddresses.push(recipient);
+        balanceOf[recipient] += amount;        
+        if(findAddress(recipient) == false){
+            walletAddresses.push(recipient);
+        }
         emit Transfer(msg.sender, recipient, amount);
         return true;        
+    }
+
+    function findAddress(address account) internal view returns (bool){
+        for(uint i = 0; i < walletAddresses.length; i++){
+            if(walletAddresses[i] == account){
+                return true;
+            }
+        }
+        return false;
     }
 
     function approve(address spender, uint256 amount) external returns (bool) {
@@ -154,6 +165,9 @@ contract UniPGStablecoin is IERC20 {
             allowance[owner][msg.sender] -= amount;
             balanceOf[owner] -= amount;
             balanceOf[recipient] += amount;
+            if(findAddress(recipient) == false){
+                walletAddresses.push(recipient);
+            }
             emit Transfer(owner, recipient, amount);
             return true;
         }
